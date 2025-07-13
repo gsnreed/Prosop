@@ -1,0 +1,776 @@
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+13-07-2025 20:28:48 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+13-07-2025 20:28:48 - Romans - DEBUG - Erstelle Zeichenkette von Roman-Objekt 'Octavia maior '.
+13-07-2025 20:28:48 - Romans - DEBUG - Erstelle Zeichenkette von Roman-Objekt 'Octavia minor '.
+13-07-2025 20:28:48 - Romans - DEBUG - Erstelle Zeichenkette von Roman-Objekt 'Antonia maior'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+13-07-2025 20:29:37 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia maior '.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia minor '.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia maior'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia minor'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Domitia Lepida'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Servillia '.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Clodia'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Scribonia '.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Drusilla'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Iulia'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Agrippina'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina maior'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina minor'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Livilla'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Lollia Paulina'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Milonia Caesonia'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla '.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aemilia Lepida '.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Medullina'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Plautia Urgulanilla'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aelia Paetina'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Valeria Messalina'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia, Tochter des Drusus'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Octavia'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Antonia'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia Claudia'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Poppaea Sabina'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Augusta'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Statilia Messalina'.
+13-07-2025 20:29:37 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Acte'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+13-07-2025 20:29:54 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia maior '.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia minor '.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia maior'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia minor'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Domitia Lepida'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Servillia '.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Clodia'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Scribonia '.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Drusilla'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Iulia'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Agrippina'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina maior'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina minor'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Livilla'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Lollia Paulina'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Milonia Caesonia'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla '.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aemilia Lepida '.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Medullina'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Plautia Urgulanilla'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aelia Paetina'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Valeria Messalina'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia, Tochter des Drusus'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Octavia'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Antonia'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia Claudia'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Poppaea Sabina'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Augusta'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Statilia Messalina'.
+13-07-2025 20:29:54 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Acte'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'nan'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'nan'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'nan'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'nan'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+13-07-2025 20:39:02 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'nan'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'nan'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia maior '.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia minor '.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'nan'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia maior'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia minor'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Domitia Lepida'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Servillia '.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Clodia'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Scribonia '.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Drusilla'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Iulia'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Agrippina'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina maior'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'nan'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina minor'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Livilla'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Lollia Paulina'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Milonia Caesonia'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla '.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aemilia Lepida '.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Medullina'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Plautia Urgulanilla'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aelia Paetina'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Valeria Messalina'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia, Tochter des Drusus'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Octavia'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Antonia'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia Claudia'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Poppaea Sabina'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Augusta'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Statilia Messalina'.
+13-07-2025 20:39:02 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Acte'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'nan'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'nan'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'nan'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'nan'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+13-07-2025 20:39:09 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'nan'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'nan'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia maior '.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia minor '.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'nan'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia maior'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia minor'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Domitia Lepida'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Servillia '.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Clodia'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Scribonia '.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Drusilla'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Iulia'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Agrippina'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina maior'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'nan'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina minor'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Livilla'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Lollia Paulina'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Milonia Caesonia'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla '.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aemilia Lepida '.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Medullina'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Plautia Urgulanilla'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aelia Paetina'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Valeria Messalina'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia, Tochter des Drusus'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Octavia'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Antonia'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia Claudia'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Poppaea Sabina'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Augusta'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Statilia Messalina'.
+13-07-2025 20:39:09 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Acte'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+13-07-2025 20:40:16 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia maior '.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia minor '.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia maior'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia minor'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Domitia Lepida'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Servillia '.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Clodia'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Scribonia '.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Drusilla'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Iulia'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Agrippina'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina maior'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina minor'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Livilla'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Lollia Paulina'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Milonia Caesonia'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla '.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aemilia Lepida '.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Medullina'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Plautia Urgulanilla'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aelia Paetina'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Valeria Messalina'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia, Tochter des Drusus'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Octavia'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Antonia'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia Claudia'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Poppaea Sabina'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Augusta'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Statilia Messalina'.
+13-07-2025 20:40:16 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Acte'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+13-07-2025 20:52:23 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia maior '.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia minor '.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia maior'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia minor'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Domitia Lepida'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Servillia '.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Clodia'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Scribonia '.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Drusilla'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Iulia'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Agrippina'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina maior'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina minor'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Livilla'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Lollia Paulina'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Milonia Caesonia'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla '.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aemilia Lepida '.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Medullina'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Plautia Urgulanilla'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aelia Paetina'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Valeria Messalina'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia, Tochter des Drusus'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Octavia'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Antonia'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia Claudia'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Poppaea Sabina'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Augusta'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Statilia Messalina'.
+13-07-2025 20:52:23 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Acte'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+13-07-2025 20:52:29 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia maior '.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia minor '.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia maior'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia minor'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Domitia Lepida'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Servillia '.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Clodia'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Scribonia '.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Drusilla'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Iulia'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Agrippina'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina maior'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina minor'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Livilla'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Lollia Paulina'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Milonia Caesonia'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla '.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aemilia Lepida '.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Medullina'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Plautia Urgulanilla'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aelia Paetina'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Valeria Messalina'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia, Tochter des Drusus'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Octavia'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Antonia'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia Claudia'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Poppaea Sabina'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Augusta'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Statilia Messalina'.
+13-07-2025 20:52:29 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Acte'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+13-07-2025 20:52:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia maior '.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia minor '.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia maior'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia minor'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Domitia Lepida'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Servillia '.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Clodia'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Scribonia '.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Drusilla'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Iulia'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Agrippina'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina maior'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina minor'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Livilla'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Lollia Paulina'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Milonia Caesonia'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla '.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aemilia Lepida '.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Medullina'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Plautia Urgulanilla'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aelia Paetina'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Valeria Messalina'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia, Tochter des Drusus'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Octavia'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Antonia'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia Claudia'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Poppaea Sabina'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Augusta'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Statilia Messalina'.
+13-07-2025 20:52:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Acte'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+13-07-2025 20:53:43 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia maior '.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia minor '.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia maior'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia minor'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Domitia Lepida'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Livia Iulia = Livilla'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Servillia '.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Clodia'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Scribonia '.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Drusilla'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Iulia'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Agrippina'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina maior'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina minor'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Livilla'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Lollia Paulina'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Milonia Caesonia'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla '.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aemilia Lepida '.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Medullina'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Plautia Urgulanilla'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aelia Paetina'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Valeria Messalina'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia, Tochter des Drusus'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Octavia'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Antonia'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia Claudia'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Poppaea Sabina'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Augusta'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Statilia Messalina'.
+13-07-2025 20:53:43 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Acte'.
+13-07-2025 20:53:43 - Romans - DEBUG - Erstelle Zeichenkette von Roman-Objekt 'Octavia maior '.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+13-07-2025 21:06:47 - Romans - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia maior'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia minor'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia maior'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia minor'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Domitia Lepida'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Livia Iulia = Livilla'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Servillia'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Clodia'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Scribonia'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Drusilla'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Iulia'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Vipsania Agrippina'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina maior'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Agrippina minor'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Livilla'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iunia Claudilla (oder Iunia Claudia)'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Orestilla / Cornelia(Livia) Orestina'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Lollia Paulina'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Milonia Caesonia'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia Drusilla'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aemilia Lepida'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Livia Medullina'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Plautia Urgulanilla'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Aelia Paetina'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Antonia'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Valeria Messalina'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Iulia, Tochter des Drusus'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Octavia'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Antonia'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Octavia Claudia'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Poppaea Sabina'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Augusta'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Statilia Messalina'.
+13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Acte'.
