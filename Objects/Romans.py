@@ -1,5 +1,11 @@
 import logging
-logging.basicConfig(filename='log.log', 
+import os
+
+script_dir = os.path.dirname(os.path.abspath(__file__))  # Aktuelles Verzeichnis des Skripts
+parent_dir = os.path.dirname(script_dir)  # Übergeordnetes Verzeichnis (project_root)
+log_dir = os.path.join(parent_dir, 'Log')  # Log-Verzeichnis
+
+logging.basicConfig(filename=os.path.join(log_dir, 'log.log'), 
                     level=logging.NOTSET,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     datefmt='%d-%m-%Y %H:%M:%S'

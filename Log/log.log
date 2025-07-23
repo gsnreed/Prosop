@@ -774,3 +774,5 @@
 13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Augusta'.
 13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Statilia Messalina'.
 13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Acte'.
+23-07-2025 23:38:03 - __main__ - INFO - Erstelle neues Roman-Objekt mit Name 'Test'.
+23-07-2025 23:38:03 - __main__ - DEBUG - Erstelle Repr�sentation von Roman-Objekt 'Test'.
