@@ -28,7 +28,7 @@ class AppColors:
     SELECTION_BAR = '#eff5f6'
     TOP_FRAME = '#F5E1FD'
     SIDEBAR_FRAME = "#EEC6FF"
-    SUBMENU_FRAME = "#F5DDFF"
+    SUBMENU_FRAME = "#F1D0FF"
     HEADER = '#53366b'
     CONTENT_FRAME = "#ffffff"
     KU_COLOR = '#232F66'
@@ -200,7 +200,8 @@ class SubMenuFrame(tk.Frame):
             old_label = self.submenu_labels[self.selected_submenu_item]
             old_label.configure(
                 bg=AppColors.SUBMENU_FRAME,
-                font=('Helvetica', 11)  # Normale Schrift
+                font=('Helvetica', 11),  # Normale Schrift
+                fg=AppColors.KU_COLOR
             )
         
         # Neue Auswahl setzen
@@ -209,11 +210,79 @@ class SubMenuFrame(tk.Frame):
             selected_label = self.submenu_labels[sub_option]
             selected_label.configure(
                 bg=AppColors.HOVER,
-                font=('Helvetica', 11, 'bold')  # Fettschrift
+                font=('Helvetica', 11, 'bold'),  # Fettschrift
+                
             )
         
         # Inhalt aktualisieren
         self.parent.HandleSubmenuSelect(option, sub_option)
+
+class ContentManager:
+    """Verwaltet die verschiedenen Content-Frames"""
+    
+    def __init__(self, parent):
+        self.parent = parent
+        self.current_frame = None
+        
+        # Frame-Mapping
+        self.frames = {
+            'Startseite': StartseiteFrame,
+            'Ansicht - Liste': ListenViewFrame,
+            'Erstellung - Person': ErstellungPersonFrame,
+            # Weitere Frames hier hinzufügen
+        }
+    
+    def ShowContent(self, option):
+        """Zeigt den Content für die gewählte Option an"""
+        # Entferne alten Frame
+        if self.current_frame:
+            self.current_frame.destroy()
+        
+        # Bestimme den korrekten Frame-Typ
+        frame_class = None
+        
+        if option in self.frames:
+            frame_class = self.frames[option]
+        elif ' - ' in option:
+            # Bei Unteroptionen wie "Ansicht - Liste" prüfen
+            frame_class = self.frames.get(option, None)
+        
+        if not frame_class:
+            # Fallback auf einen generischen Frame
+            self.current_frame = BaseContentFrame(self.parent)
+            label = tk.Label(
+                self.current_frame, 
+                text=f"Inhalt für '{option}' noch nicht implementiert",
+                font=('Helvetica', 18, 'bold'),
+                bg=AppColors.CONTENT_FRAME,
+                fg=AppColors.KU_COLOR
+            )
+            label.pack(padx=50, pady=50)
+        else:
+            # Erstelle den neuen Frame
+            self.current_frame = frame_class(self.parent)
+        
+        # Zeige den Frame an
+        self.current_frame.pack(fill='both', expand=True)
+        
+        # Bei Bedarf Daten aktualisieren
+        if hasattr(self.current_frame, 'UpdateData'):
+            self.current_frame.UpdateData()
+
+class BaseContentFrame(tk.Frame):
+    """Basisklasse für alle Content-Frames"""
+    
+    def __init__(self, parent):
+        super().__init__(parent, bg=AppColors.CONTENT_FRAME)
+        self._CreateUi()
+    
+    def _CreateUi(self):
+        """Erstellt die UI-Komponenten (von Unterklassen zu überschreiben)"""
+        pass
+    
+    def UpdateData(self, data=None):
+        """Aktualisiert die Daten im Frame (von Unterklassen zu überschreiben)"""
+        pass
 
 class ContentFrame(tk.Frame):
     """
@@ -223,26 +292,11 @@ class ContentFrame(tk.Frame):
     def __init__(self, parent):
         """Initialisiere den Inhaltsrahmen"""
         super().__init__(parent, bg=AppColors.CONTENT_FRAME)
+        self.content_manager = ContentManager(self)
     
     def UpdateContent(self, option):
-        """
-        Aktualisiert den Inhalt basierend auf der ausgewählten Navigation
-        
-        Args:
-            option: Die ausgewählte Navigationsoption
-        """
-        # Bestehenden Inhalt entfernen
-        for widget in self.winfo_children():
-            widget.destroy()
-        
-        # Neuen Inhalt anzeigen (hier nur ein Beispiellabel)
-        label = tk.Label(
-            self,
-            text=f"Inhalt von {option}",
-            font=('Helvetica', 18, 'bold'),
-            bg=AppColors.CONTENT_FRAME
-        )
-        label.pack(padx=50, pady=50)
+        """Aktualisiert den Inhalt basierend auf der ausgewählten Navigation."""
+        self.content_manager.ShowContent(option)
 
 class NavigationFrame(tk.Frame):
     """
@@ -330,6 +384,7 @@ class NavigationFrame(tk.Frame):
             prefix = "» " if self.HasSubmenu(self.selected_option) else "  "
             old_label.configure(
                 bg=AppColors.SIDEBAR_FRAME,
+                fg=AppColors.KU_COLOR,
                 font=('Helvetica', 12),
                 text=prefix + self.selected_option
             )
@@ -340,6 +395,7 @@ class NavigationFrame(tk.Frame):
         prefix = "» " if self.HasSubmenu(option) else "  "
         selected_label.configure(
             bg=AppColors.HOVER,
+            fg=AppColors.KU_COLOR,
             font=('Helvetica', 12, 'bold'),
             text=prefix + option
         )
