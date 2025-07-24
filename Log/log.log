@@ -776,3 +776,653 @@
 13-07-2025 21:06:47 - Romans - DEBUG - Lese alle Eigenschaften aus Roman-Objekt 'Claudia Acte'.
 23-07-2025 23:38:03 - __main__ - INFO - Erstelle neues Roman-Objekt mit Name 'Test'.
 23-07-2025 23:38:03 - __main__ - DEBUG - Erstelle Reprï¿½sentation von Roman-Objekt 'Test'.
+24-07-2025 09:28:23 - __main__ - INFO - Switched to view: Startseite
+24-07-2025 09:28:23 - __main__ - INFO - Application initialized
+24-07-2025 09:28:25 - __main__ - INFO - Switched to view: Ansicht
+24-07-2025 09:28:25 - __main__ - INFO - Switched to view: Erstellung
+24-07-2025 09:28:25 - __main__ - INFO - Switched to view: Import
+24-07-2025 09:28:26 - __main__ - INFO - Switched to view: BibTex
+24-07-2025 09:28:29 - __main__ - INFO - Switched to view: Export
+24-07-2025 09:28:29 - __main__ - INFO - Switched to view: Statistik
+24-07-2025 09:28:36 - __main__ - INFO - Switched to view: Hilfe
+24-07-2025 09:28:40 - __main__ - INFO - Switched to view: Impressum
+24-07-2025 09:29:12 - __main__ - INFO - Switched to view: Startseite
+24-07-2025 09:29:12 - __main__ - INFO - Application initialized
+24-07-2025 09:31:05 - __main__ - INFO - Switched to view: Startseite
+24-07-2025 09:31:05 - __main__ - INFO - Application initialized
+24-07-2025 09:31:07 - __main__ - INFO - Switched to view: Startseite
+24-07-2025 09:31:07 - __main__ - INFO - Switched to view: Ansicht
+24-07-2025 09:31:08 - __main__ - INFO - Switched to view: Erstellung
+24-07-2025 09:31:08 - __main__ - INFO - Switched to view: Statistik
+24-07-2025 09:31:08 - __main__ - INFO - Switched to view: BibTex
+24-07-2025 09:31:09 - __main__ - INFO - Switched to view: Impressum
+24-07-2025 09:31:09 - __main__ - INFO - Switched to view: Hilfe
+24-07-2025 09:31:09 - __main__ - INFO - Switched to view: BibTex
+24-07-2025 09:31:10 - __main__ - INFO - Switched to view: Erstellung
+24-07-2025 09:31:10 - __main__ - INFO - Switched to view: Startseite
+24-07-2025 09:31:11 - __main__ - INFO - Switched to view: Erstellung
+24-07-2025 09:31:11 - __main__ - INFO - Switched to view: Ansicht
+24-07-2025 09:31:11 - __main__ - INFO - Switched to view: Statistik
+24-07-2025 09:31:12 - __main__ - INFO - Switched to view: Erstellung
+24-07-2025 09:31:13 - __main__ - INFO - Switched to view: Statistik
+24-07-2025 09:31:16 - __main__ - INFO - Switched to view: Erstellung
+24-07-2025 09:31:16 - __main__ - INFO - Switched to view: Ansicht
+24-07-2025 09:31:17 - __main__ - INFO - Switched to view: Startseite
+24-07-2025 09:31:19 - __main__ - INFO - Switched to view: Erstellung
+24-07-2025 09:31:21 - __main__ - INFO - Switched to view: Ansicht
+24-07-2025 09:50:18 - __main__ - INFO - Switched to view: Startseite
+24-07-2025 09:50:18 - __main__ - INFO - App initialisiert
+24-07-2025 09:50:21 - __main__ - INFO - Switched to view: Erstellung
+24-07-2025 09:50:21 - __main__ - INFO - Switched to view: Ansicht
+24-07-2025 09:50:22 - __main__ - INFO - Switched to view: Startseite
+24-07-2025 09:50:23 - __main__ - INFO - Switched to view: Impressum
+24-07-2025 09:50:24 - __main__ - INFO - Switched to view: BibTex
+24-07-2025 09:50:41 - __main__ - INFO - Switched to view: Ansicht
+24-07-2025 09:50:45 - __main__ - INFO - Switched to view: Statistik
+24-07-2025 09:52:54 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 09:52:54 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 09:52:54 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 09:52:54 - __main__ - INFO - App initialisiert
+24-07-2025 09:52:56 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 09:52:56 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 09:52:56 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 09:52:56 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 09:52:56 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 09:52:56 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 09:52:57 - __main__ - INFO - Showing view: BibTex -> Literaturverwaltung
+24-07-2025 09:52:57 - __main__ - INFO - Selected submenu: BibTex -> Literaturverwaltung
+24-07-2025 09:52:57 - __main__ - INFO - Selected main menu: BibTex
+24-07-2025 09:52:58 - __main__ - INFO - Showing view: Statistik -> Demographische Daten
+24-07-2025 09:52:58 - __main__ - INFO - Selected submenu: Statistik -> Demographische Daten
+24-07-2025 09:52:58 - __main__ - INFO - Selected main menu: Statistik
+24-07-2025 09:53:00 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 09:53:00 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 09:53:00 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 09:53:02 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 09:53:02 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 09:53:02 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 09:53:02 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 09:53:02 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 09:53:02 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 09:53:02 - __main__ - INFO - Showing view: Statistik -> Demographische Daten
+24-07-2025 09:53:02 - __main__ - INFO - Selected submenu: Statistik -> Demographische Daten
+24-07-2025 09:53:02 - __main__ - INFO - Selected main menu: Statistik
+24-07-2025 09:53:03 - __main__ - INFO - Showing view: Export -> CSV Export
+24-07-2025 09:53:03 - __main__ - INFO - Selected submenu: Export -> CSV Export
+24-07-2025 09:53:03 - __main__ - INFO - Selected main menu: Export
+24-07-2025 09:53:03 - __main__ - INFO - Showing view: Hilfe -> Dokumentation
+24-07-2025 09:53:03 - __main__ - INFO - Selected submenu: Hilfe -> Dokumentation
+24-07-2025 09:53:03 - __main__ - INFO - Selected main menu: Hilfe
+24-07-2025 09:53:03 - __main__ - INFO - Showing view: Statistik -> Demographische Daten
+24-07-2025 09:53:03 - __main__ - INFO - Selected submenu: Statistik -> Demographische Daten
+24-07-2025 09:53:03 - __main__ - INFO - Selected main menu: Statistik
+24-07-2025 09:53:04 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 09:53:04 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 09:53:04 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 09:53:05 - __main__ - INFO - Showing view: Statistik -> Demographische Daten
+24-07-2025 09:53:05 - __main__ - INFO - Selected submenu: Statistik -> Demographische Daten
+24-07-2025 09:53:05 - __main__ - INFO - Selected main menu: Statistik
+24-07-2025 09:53:05 - __main__ - INFO - Showing view: Export -> CSV Export
+24-07-2025 09:53:05 - __main__ - INFO - Selected submenu: Export -> CSV Export
+24-07-2025 09:53:05 - __main__ - INFO - Selected main menu: Export
+24-07-2025 09:53:06 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 09:53:06 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 09:53:06 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 09:53:06 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 09:53:06 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 09:53:06 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 09:53:07 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 09:53:07 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 09:53:07 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 09:53:07 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 09:53:07 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 09:53:07 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 09:53:08 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 09:53:08 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 09:53:08 - __main__ - INFO - Selected main menu: Import
+24-07-2025 09:53:08 - __main__ - INFO - Showing view: BibTex -> Literaturverwaltung
+24-07-2025 09:53:08 - __main__ - INFO - Selected submenu: BibTex -> Literaturverwaltung
+24-07-2025 09:53:08 - __main__ - INFO - Selected main menu: BibTex
+24-07-2025 09:53:08 - __main__ - INFO - Showing view: Statistik -> Demographische Daten
+24-07-2025 09:53:08 - __main__ - INFO - Selected submenu: Statistik -> Demographische Daten
+24-07-2025 09:53:08 - __main__ - INFO - Selected main menu: Statistik
+24-07-2025 09:53:09 - __main__ - INFO - Showing view: BibTex -> Literaturverwaltung
+24-07-2025 09:53:09 - __main__ - INFO - Selected submenu: BibTex -> Literaturverwaltung
+24-07-2025 09:53:09 - __main__ - INFO - Selected main menu: BibTex
+24-07-2025 09:53:11 - __main__ - INFO - Showing view: BibTex -> Zitationen
+24-07-2025 09:53:11 - __main__ - INFO - Selected submenu: BibTex -> Zitationen
+24-07-2025 09:53:11 - __main__ - INFO - Showing view: BibTex -> Quellen
+24-07-2025 09:53:11 - __main__ - INFO - Selected submenu: BibTex -> Quellen
+24-07-2025 09:53:12 - __main__ - INFO - Showing view: BibTex -> Zitationen
+24-07-2025 09:53:12 - __main__ - INFO - Selected submenu: BibTex -> Zitationen
+24-07-2025 09:53:12 - __main__ - INFO - Showing view: BibTex -> Literaturverwaltung
+24-07-2025 09:53:12 - __main__ - INFO - Selected submenu: BibTex -> Literaturverwaltung
+24-07-2025 09:53:13 - __main__ - INFO - Showing view: Impressum -> Kontakt
+24-07-2025 09:53:13 - __main__ - INFO - Selected submenu: Impressum -> Kontakt
+24-07-2025 09:53:13 - __main__ - INFO - Selected main menu: Impressum
+24-07-2025 09:53:14 - __main__ - INFO - Showing view: Impressum -> Lizenzen
+24-07-2025 09:53:14 - __main__ - INFO - Selected submenu: Impressum -> Lizenzen
+24-07-2025 09:53:15 - __main__ - INFO - Showing view: Impressum -> Datenschutz
+24-07-2025 09:53:15 - __main__ - INFO - Selected submenu: Impressum -> Datenschutz
+24-07-2025 09:53:15 - __main__ - INFO - Showing view: Impressum -> Rechtliches
+24-07-2025 09:53:15 - __main__ - INFO - Selected submenu: Impressum -> Rechtliches
+24-07-2025 09:53:17 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 09:53:17 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 09:53:17 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 09:53:18 - __main__ - INFO - Showing view: Startseite -> Neuigkeiten
+24-07-2025 09:53:18 - __main__ - INFO - Selected submenu: Startseite -> Neuigkeiten
+24-07-2025 09:53:18 - __main__ - INFO - Showing view: Startseite -> Schnellzugriff
+24-07-2025 09:53:18 - __main__ - INFO - Selected submenu: Startseite -> Schnellzugriff
+24-07-2025 09:53:19 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 09:53:19 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 09:53:19 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 09:53:22 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 09:53:22 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 09:53:22 - __main__ - INFO - Selected main menu: Import
+24-07-2025 09:53:23 - __main__ - INFO - Showing view: Export -> CSV Export
+24-07-2025 09:53:23 - __main__ - INFO - Selected submenu: Export -> CSV Export
+24-07-2025 09:53:23 - __main__ - INFO - Selected main menu: Export
+24-07-2025 09:53:24 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 09:53:24 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 09:53:24 - __main__ - INFO - Selected main menu: Import
+24-07-2025 09:53:26 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 09:53:26 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 09:53:27 - __main__ - INFO - Showing view: Import -> Datenbank Import
+24-07-2025 09:53:27 - __main__ - INFO - Selected submenu: Import -> Datenbank Import
+24-07-2025 09:53:28 - __main__ - INFO - Showing view: Import -> XML Import
+24-07-2025 09:53:28 - __main__ - INFO - Selected submenu: Import -> XML Import
+24-07-2025 09:53:29 - __main__ - INFO - Showing view: Import -> JSON Import
+24-07-2025 09:53:29 - __main__ - INFO - Selected submenu: Import -> JSON Import
+24-07-2025 09:53:29 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 09:53:29 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 09:53:30 - __main__ - INFO - Showing view: Import -> JSON Import
+24-07-2025 09:53:30 - __main__ - INFO - Selected submenu: Import -> JSON Import
+24-07-2025 09:53:30 - __main__ - INFO - Showing view: Import -> XML Import
+24-07-2025 09:53:30 - __main__ - INFO - Selected submenu: Import -> XML Import
+24-07-2025 09:53:31 - __main__ - INFO - Showing view: Import -> JSON Import
+24-07-2025 09:53:31 - __main__ - INFO - Selected submenu: Import -> JSON Import
+24-07-2025 09:53:31 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 09:53:31 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 09:53:33 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 09:53:33 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 09:53:33 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 09:53:34 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 09:53:34 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 09:53:34 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 09:53:34 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 09:53:34 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 09:53:34 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 09:53:35 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 09:53:35 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 09:53:35 - __main__ - INFO - Selected main menu: Import
+24-07-2025 09:53:35 - __main__ - INFO - Showing view: BibTex -> Literaturverwaltung
+24-07-2025 09:53:35 - __main__ - INFO - Selected submenu: BibTex -> Literaturverwaltung
+24-07-2025 09:53:35 - __main__ - INFO - Selected main menu: BibTex
+24-07-2025 09:53:35 - __main__ - INFO - Showing view: Impressum -> Kontakt
+24-07-2025 09:53:35 - __main__ - INFO - Selected submenu: Impressum -> Kontakt
+24-07-2025 09:53:35 - __main__ - INFO - Selected main menu: Impressum
+24-07-2025 09:53:36 - __main__ - INFO - Showing view: Export -> CSV Export
+24-07-2025 09:53:36 - __main__ - INFO - Selected submenu: Export -> CSV Export
+24-07-2025 09:53:36 - __main__ - INFO - Selected main menu: Export
+24-07-2025 09:53:36 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 09:53:36 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 09:53:36 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 09:53:36 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 09:53:36 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 09:53:36 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 09:53:37 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 09:53:37 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 09:53:37 - __main__ - INFO - Selected main menu: Import
+24-07-2025 09:53:38 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 09:53:38 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 09:53:38 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 09:53:38 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 09:53:38 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 09:53:38 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 09:54:11 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 09:54:11 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 09:54:11 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 09:54:32 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 09:54:32 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 09:54:32 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 09:54:32 - __main__ - INFO - App initialisiert
+24-07-2025 09:54:34 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 09:54:34 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 09:54:34 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 09:55:03 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 09:55:03 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 09:55:03 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 09:55:03 - __main__ - INFO - App initialisiert
+24-07-2025 09:55:05 - __main__ - INFO - Showing view: Impressum -> Kontakt
+24-07-2025 09:55:05 - __main__ - INFO - Selected submenu: Impressum -> Kontakt
+24-07-2025 09:55:05 - __main__ - INFO - Selected main menu: Impressum
+24-07-2025 09:55:06 - __main__ - INFO - Showing view: Impressum -> Kontakt
+24-07-2025 09:55:06 - __main__ - INFO - Selected submenu: Impressum -> Kontakt
+24-07-2025 09:55:08 - __main__ - INFO - Showing view: Hilfe -> Dokumentation
+24-07-2025 09:55:08 - __main__ - INFO - Selected submenu: Hilfe -> Dokumentation
+24-07-2025 09:55:08 - __main__ - INFO - Selected main menu: Hilfe
+24-07-2025 09:55:09 - __main__ - INFO - Showing view: Impressum -> Kontakt
+24-07-2025 09:55:09 - __main__ - INFO - Selected submenu: Impressum -> Kontakt
+24-07-2025 09:55:09 - __main__ - INFO - Selected main menu: Impressum
+24-07-2025 09:55:09 - __main__ - INFO - Showing view: Hilfe -> Dokumentation
+24-07-2025 09:55:09 - __main__ - INFO - Selected submenu: Hilfe -> Dokumentation
+24-07-2025 09:55:09 - __main__ - INFO - Selected main menu: Hilfe
+24-07-2025 09:58:05 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 09:58:05 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 09:58:05 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 09:58:05 - __main__ - INFO - App initialisiert
+24-07-2025 09:58:07 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 09:58:07 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 09:58:07 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 09:58:07 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 09:58:07 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 09:58:07 - __main__ - INFO - Selected main menu: Import
+24-07-2025 09:58:08 - __main__ - INFO - Showing view: BibTex -> Literaturverwaltung
+24-07-2025 09:58:08 - __main__ - INFO - Selected submenu: BibTex -> Literaturverwaltung
+24-07-2025 09:58:08 - __main__ - INFO - Selected main menu: BibTex
+24-07-2025 09:58:08 - __main__ - INFO - Showing view: Impressum -> Kontakt
+24-07-2025 09:58:08 - __main__ - INFO - Selected submenu: Impressum -> Kontakt
+24-07-2025 09:58:08 - __main__ - INFO - Selected main menu: Impressum
+24-07-2025 09:58:08 - __main__ - INFO - Showing view: Export -> CSV Export
+24-07-2025 09:58:08 - __main__ - INFO - Selected submenu: Export -> CSV Export
+24-07-2025 09:58:08 - __main__ - INFO - Selected main menu: Export
+24-07-2025 09:58:09 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 09:58:09 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 09:58:09 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 09:58:09 - __main__ - INFO - Showing view: Ansicht -> Tabellenansicht
+24-07-2025 09:58:09 - __main__ - INFO - Selected submenu: Ansicht -> Tabellenansicht
+24-07-2025 09:58:09 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 09:58:10 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 09:58:10 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 09:58:10 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 09:58:10 - __main__ - INFO - Showing view: Ansicht -> Tabellenansicht
+24-07-2025 09:58:10 - __main__ - INFO - Selected submenu: Ansicht -> Tabellenansicht
+24-07-2025 09:58:10 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 09:58:11 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 09:58:11 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 09:58:11 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 09:58:11 - __main__ - INFO - Showing view: Statistik -> Demographische Daten
+24-07-2025 09:58:11 - __main__ - INFO - Selected submenu: Statistik -> Demographische Daten
+24-07-2025 09:58:11 - __main__ - INFO - Selected main menu: Statistik
+24-07-2025 09:58:11 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 09:58:11 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 09:58:11 - __main__ - INFO - Selected main menu: Import
+24-07-2025 09:58:12 - __main__ - INFO - Showing view: Statistik -> Demographische Daten
+24-07-2025 09:58:12 - __main__ - INFO - Selected submenu: Statistik -> Demographische Daten
+24-07-2025 09:58:12 - __main__ - INFO - Selected main menu: Statistik
+24-07-2025 09:58:14 - __main__ - INFO - Showing view: Export -> CSV Export
+24-07-2025 09:58:14 - __main__ - INFO - Selected submenu: Export -> CSV Export
+24-07-2025 09:58:14 - __main__ - INFO - Selected main menu: Export
+24-07-2025 09:58:14 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 09:58:14 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 09:58:14 - __main__ - INFO - Selected main menu: Import
+24-07-2025 09:58:15 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 09:58:15 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 09:58:15 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 09:59:32 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 09:59:32 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 09:59:32 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 09:59:32 - __main__ - INFO - App initialisiert
+24-07-2025 09:59:37 - __main__ - INFO - Showing view: Ansicht -> Tabellenansicht
+24-07-2025 09:59:37 - __main__ - INFO - Selected submenu: Ansicht -> Tabellenansicht
+24-07-2025 09:59:37 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 09:59:38 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 09:59:38 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 09:59:38 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 09:59:39 - __main__ - INFO - Showing view: Ansicht -> Tabellenansicht
+24-07-2025 09:59:39 - __main__ - INFO - Selected submenu: Ansicht -> Tabellenansicht
+24-07-2025 09:59:39 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 09:59:39 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 09:59:39 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 09:59:39 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 09:59:40 - __main__ - INFO - Showing view: Ansicht -> Tabellenansicht
+24-07-2025 09:59:40 - __main__ - INFO - Selected submenu: Ansicht -> Tabellenansicht
+24-07-2025 09:59:40 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 09:59:40 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 09:59:40 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 09:59:40 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 09:59:41 - __main__ - INFO - Showing view: Ansicht -> Tabellenansicht
+24-07-2025 09:59:41 - __main__ - INFO - Selected submenu: Ansicht -> Tabellenansicht
+24-07-2025 09:59:41 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 09:59:42 - __main__ - INFO - Showing view: Ansicht -> Detailansicht
+24-07-2025 09:59:42 - __main__ - INFO - Selected submenu: Ansicht -> Detailansicht
+24-07-2025 09:59:42 - __main__ - INFO - Showing view: Ansicht -> Netzwerkansicht
+24-07-2025 09:59:42 - __main__ - INFO - Selected submenu: Ansicht -> Netzwerkansicht
+24-07-2025 09:59:43 - __main__ - INFO - Showing view: Ansicht -> Zeitleiste
+24-07-2025 09:59:43 - __main__ - INFO - Selected submenu: Ansicht -> Zeitleiste
+24-07-2025 09:59:44 - __main__ - INFO - Showing view: Ansicht -> Kartenansicht
+24-07-2025 09:59:44 - __main__ - INFO - Selected submenu: Ansicht -> Kartenansicht
+24-07-2025 09:59:45 - __main__ - INFO - Showing view: Statistik -> Demographische Daten
+24-07-2025 09:59:45 - __main__ - INFO - Selected submenu: Statistik -> Demographische Daten
+24-07-2025 09:59:45 - __main__ - INFO - Selected main menu: Statistik
+24-07-2025 09:59:46 - __main__ - INFO - Showing view: Ansicht -> Tabellenansicht
+24-07-2025 09:59:46 - __main__ - INFO - Selected submenu: Ansicht -> Tabellenansicht
+24-07-2025 09:59:46 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 09:59:46 - __main__ - INFO - Showing view: Ansicht -> Detailansicht
+24-07-2025 09:59:46 - __main__ - INFO - Selected submenu: Ansicht -> Detailansicht
+24-07-2025 09:59:47 - __main__ - INFO - Showing view: Ansicht -> Kartenansicht
+24-07-2025 09:59:47 - __main__ - INFO - Selected submenu: Ansicht -> Kartenansicht
+24-07-2025 10:01:06 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 10:01:06 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 10:01:06 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 10:01:06 - __main__ - INFO - App initialisiert
+24-07-2025 10:01:07 - __main__ - INFO - Showing view: Startseite -> Neuigkeiten
+24-07-2025 10:01:07 - __main__ - INFO - Selected submenu: Startseite -> Neuigkeiten
+24-07-2025 10:01:08 - __main__ - INFO - Showing view: Startseite -> Schnellzugriff
+24-07-2025 10:01:08 - __main__ - INFO - Selected submenu: Startseite -> Schnellzugriff
+24-07-2025 10:01:08 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 10:01:08 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 10:01:09 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 10:01:09 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 10:01:09 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 10:01:09 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 10:01:09 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 10:01:09 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 10:01:10 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 10:01:10 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 10:01:10 - __main__ - INFO - Selected main menu: Import
+24-07-2025 10:01:10 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 10:01:10 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 10:01:10 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 10:01:11 - __main__ - INFO - Showing view: Ansicht -> Detailansicht
+24-07-2025 10:01:11 - __main__ - INFO - Selected submenu: Ansicht -> Detailansicht
+24-07-2025 10:01:12 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 10:01:12 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 10:01:12 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 10:01:13 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 10:01:13 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 10:01:13 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 10:01:14 - __main__ - INFO - Showing view: Ansicht -> Detailansicht
+24-07-2025 10:01:14 - __main__ - INFO - Selected submenu: Ansicht -> Detailansicht
+24-07-2025 10:01:15 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 10:01:15 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 10:01:15 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 10:01:15 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 10:01:15 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 10:01:15 - __main__ - INFO - Selected main menu: Import
+24-07-2025 10:01:15 - __main__ - INFO - Showing view: Export -> CSV Export
+24-07-2025 10:01:15 - __main__ - INFO - Selected submenu: Export -> CSV Export
+24-07-2025 10:01:15 - __main__ - INFO - Selected main menu: Export
+24-07-2025 10:01:16 - __main__ - INFO - Showing view: Hilfe -> Dokumentation
+24-07-2025 10:01:16 - __main__ - INFO - Selected submenu: Hilfe -> Dokumentation
+24-07-2025 10:01:16 - __main__ - INFO - Selected main menu: Hilfe
+24-07-2025 10:01:21 - __main__ - INFO - Showing view: Hilfe -> FAQ
+24-07-2025 10:01:21 - __main__ - INFO - Selected submenu: Hilfe -> FAQ
+24-07-2025 10:01:22 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 10:01:22 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 10:01:22 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 10:01:23 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 10:01:23 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 10:01:23 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 10:01:23 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 10:01:23 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 10:01:23 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 10:01:23 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 10:01:23 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 10:01:23 - __main__ - INFO - Selected main menu: Import
+24-07-2025 10:01:24 - __main__ - INFO - Showing view: Hilfe -> Dokumentation
+24-07-2025 10:01:24 - __main__ - INFO - Selected submenu: Hilfe -> Dokumentation
+24-07-2025 10:01:24 - __main__ - INFO - Selected main menu: Hilfe
+24-07-2025 10:01:54 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 10:01:54 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 10:01:54 - __main__ - INFO - Selected main menu: Import
+24-07-2025 10:01:54 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 10:01:54 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 10:01:54 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 10:01:56 - __main__ - INFO - Showing view: Erstellung -> Neue Beziehung
+24-07-2025 10:01:56 - __main__ - INFO - Selected submenu: Erstellung -> Neue Beziehung
+24-07-2025 10:01:56 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 10:01:56 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 10:01:56 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 10:01:57 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 10:01:57 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 10:01:57 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 10:02:00 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 10:02:00 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 10:02:00 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 10:02:01 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 10:02:01 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 10:02:01 - __main__ - INFO - Selected main menu: Import
+24-07-2025 10:02:01 - __main__ - INFO - Showing view: Hilfe -> Dokumentation
+24-07-2025 10:02:01 - __main__ - INFO - Selected submenu: Hilfe -> Dokumentation
+24-07-2025 10:02:01 - __main__ - INFO - Selected main menu: Hilfe
+24-07-2025 10:02:01 - __main__ - INFO - Showing view: Export -> CSV Export
+24-07-2025 10:02:01 - __main__ - INFO - Selected submenu: Export -> CSV Export
+24-07-2025 10:02:01 - __main__ - INFO - Selected main menu: Export
+24-07-2025 10:02:02 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 10:02:02 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 10:02:02 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 10:02:02 - __main__ - INFO - Showing view: Erstellung -> Neues Ereignis
+24-07-2025 10:02:02 - __main__ - INFO - Selected submenu: Erstellung -> Neues Ereignis
+24-07-2025 10:02:03 - __main__ - INFO - Showing view: Erstellung -> Neuer Ort
+24-07-2025 10:02:03 - __main__ - INFO - Selected submenu: Erstellung -> Neuer Ort
+24-07-2025 10:02:03 - __main__ - INFO - Showing view: Erstellung -> Neue Beziehung
+24-07-2025 10:02:03 - __main__ - INFO - Selected submenu: Erstellung -> Neue Beziehung
+24-07-2025 10:02:03 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 10:02:03 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 10:02:04 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 10:02:04 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 10:02:04 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 10:02:04 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 10:02:04 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 10:02:04 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 10:02:05 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 10:02:05 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 10:02:05 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 10:02:05 - __main__ - INFO - Showing view: Export -> CSV Export
+24-07-2025 10:02:05 - __main__ - INFO - Selected submenu: Export -> CSV Export
+24-07-2025 10:02:05 - __main__ - INFO - Selected main menu: Export
+24-07-2025 10:02:05 - __main__ - INFO - Showing view: BibTex -> Literaturverwaltung
+24-07-2025 10:02:05 - __main__ - INFO - Selected submenu: BibTex -> Literaturverwaltung
+24-07-2025 10:02:05 - __main__ - INFO - Selected main menu: BibTex
+24-07-2025 10:02:06 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 10:02:06 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 10:02:06 - __main__ - INFO - Selected main menu: Import
+24-07-2025 10:02:06 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 10:02:06 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 10:02:06 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 10:02:07 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 10:02:07 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 10:02:07 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 10:02:07 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 10:02:07 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 10:02:07 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 10:02:07 - __main__ - INFO - Showing view: Statistik -> Demographische Daten
+24-07-2025 10:02:07 - __main__ - INFO - Selected submenu: Statistik -> Demographische Daten
+24-07-2025 10:02:07 - __main__ - INFO - Selected main menu: Statistik
+24-07-2025 10:02:08 - __main__ - INFO - Showing view: Export -> CSV Export
+24-07-2025 10:02:08 - __main__ - INFO - Selected submenu: Export -> CSV Export
+24-07-2025 10:02:08 - __main__ - INFO - Selected main menu: Export
+24-07-2025 10:02:08 - __main__ - INFO - Showing view: BibTex -> Literaturverwaltung
+24-07-2025 10:02:08 - __main__ - INFO - Selected submenu: BibTex -> Literaturverwaltung
+24-07-2025 10:02:08 - __main__ - INFO - Selected main menu: BibTex
+24-07-2025 10:02:08 - __main__ - INFO - Showing view: Impressum -> Kontakt
+24-07-2025 10:02:08 - __main__ - INFO - Selected submenu: Impressum -> Kontakt
+24-07-2025 10:02:08 - __main__ - INFO - Selected main menu: Impressum
+24-07-2025 10:02:09 - __main__ - INFO - Showing view: Hilfe -> Dokumentation
+24-07-2025 10:02:09 - __main__ - INFO - Selected submenu: Hilfe -> Dokumentation
+24-07-2025 10:02:09 - __main__ - INFO - Selected main menu: Hilfe
+24-07-2025 10:02:09 - __main__ - INFO - Showing view: Export -> CSV Export
+24-07-2025 10:02:09 - __main__ - INFO - Selected submenu: Export -> CSV Export
+24-07-2025 10:02:09 - __main__ - INFO - Selected main menu: Export
+24-07-2025 10:02:09 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 10:02:09 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 10:02:09 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 10:02:10 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 10:02:10 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 10:02:10 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 10:02:10 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 10:02:10 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 10:02:10 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 10:02:10 - __main__ - INFO - Showing view: Erstellung -> Neue Person
+24-07-2025 10:02:10 - __main__ - INFO - Selected submenu: Erstellung -> Neue Person
+24-07-2025 10:02:10 - __main__ - INFO - Selected main menu: Erstellung
+24-07-2025 10:02:11 - __main__ - INFO - Showing view: Export -> CSV Export
+24-07-2025 10:02:11 - __main__ - INFO - Selected submenu: Export -> CSV Export
+24-07-2025 10:02:11 - __main__ - INFO - Selected main menu: Export
+24-07-2025 10:02:11 - __main__ - INFO - Showing view: Impressum -> Kontakt
+24-07-2025 10:02:11 - __main__ - INFO - Selected submenu: Impressum -> Kontakt
+24-07-2025 10:02:11 - __main__ - INFO - Selected main menu: Impressum
+24-07-2025 10:02:12 - __main__ - INFO - Showing view: Import -> CSV Import
+24-07-2025 10:02:12 - __main__ - INFO - Selected submenu: Import -> CSV Import
+24-07-2025 10:02:12 - __main__ - INFO - Selected main menu: Import
+24-07-2025 10:02:13 - __main__ - INFO - Showing view: Ansicht -> Listenansicht
+24-07-2025 10:02:13 - __main__ - INFO - Selected submenu: Ansicht -> Listenansicht
+24-07-2025 10:02:13 - __main__ - INFO - Selected main menu: Ansicht
+24-07-2025 10:02:14 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 10:02:14 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 10:02:14 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 10:03:50 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 10:03:50 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 10:03:50 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 10:03:50 - __main__ - INFO - App initialisiert
+24-07-2025 10:03:52 - __main__ - INFO - Showing view: Startseite -> Neuigkeiten
+24-07-2025 10:03:52 - __main__ - INFO - Selected submenu: Startseite -> Neuigkeiten
+24-07-2025 10:03:53 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 10:03:53 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 10:03:53 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 10:03:54 - __main__ - INFO - Showing view: Katalog -> Tabellen
+24-07-2025 10:03:54 - __main__ - INFO - Selected submenu: Katalog -> Tabellen
+24-07-2025 10:03:54 - __main__ - INFO - Selected main menu: Katalog
+24-07-2025 10:03:54 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 10:03:54 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 10:03:54 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 10:03:55 - __main__ - INFO - Showing view: Katalog -> Tabellen
+24-07-2025 10:03:55 - __main__ - INFO - Selected submenu: Katalog -> Tabellen
+24-07-2025 10:03:55 - __main__ - INFO - Selected main menu: Katalog
+24-07-2025 10:04:45 - __main__ - INFO - Showing view: Startseite -> Übersicht
+24-07-2025 10:04:45 - __main__ - INFO - Selected submenu: Startseite -> Übersicht
+24-07-2025 10:04:45 - __main__ - INFO - Selected main menu: Startseite
+24-07-2025 10:04:45 - __main__ - INFO - App initialisiert
+24-07-2025 10:08:49 - __main__ - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 10:08:49 - __main__ - INFO - Anwendung gestartet
+24-07-2025 10:08:50 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:08:51 - __main__ - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 10:08:51 - __main__ - INFO - Navigation: Option 'Export' ausgewählt
+24-07-2025 10:08:51 - __main__ - INFO - Navigation: Option 'BibTex' ausgewählt
+24-07-2025 10:08:52 - __main__ - INFO - Navigation: Option 'Impressum' ausgewählt
+24-07-2025 10:08:53 - __main__ - INFO - Navigation: Option 'Hilfe' ausgewählt
+24-07-2025 10:08:53 - __main__ - INFO - Navigation: Option 'Export' ausgewählt
+24-07-2025 10:08:53 - __main__ - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 10:17:44 - __main__ - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 10:17:44 - __main__ - INFO - Anwendung gestartet
+24-07-2025 10:17:46 - __main__ - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 10:17:46 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:17:46 - __main__ - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 10:17:47 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:17:47 - __main__ - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 10:17:47 - __main__ - INFO - Navigation: Option 'Hilfe' ausgewählt
+24-07-2025 10:17:48 - __main__ - INFO - Navigation: Option 'Impressum' ausgewählt
+24-07-2025 10:17:48 - __main__ - INFO - Navigation: Option 'BibTex' ausgewählt
+24-07-2025 10:17:48 - __main__ - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 10:17:49 - __main__ - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 10:17:50 - __main__ - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 10:17:50 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:17:50 - __main__ - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 10:17:51 - __main__ - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 10:17:55 - __main__ - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 10:17:56 - __main__ - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 10:17:56 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:17:56 - __main__ - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 10:20:08 - __main__ - INFO - Anwendung gestartet
+24-07-2025 10:20:15 - __main__ - INFO - Navigation: Hauptoption 'Import' ausgewählt
+24-07-2025 10:20:18 - __main__ - INFO - Navigation: Unteroption 'Hilfe/Kontakt' ausgewählt
+24-07-2025 10:20:19 - __main__ - INFO - Navigation: Unteroption 'Export/CSV' ausgewählt
+24-07-2025 10:20:19 - __main__ - INFO - Navigation: Unteroption 'Export/XML' ausgewählt
+24-07-2025 10:20:19 - __main__ - INFO - Navigation: Unteroption 'Statistik/Allgemeine Statistiken' ausgewählt
+24-07-2025 10:20:20 - __main__ - INFO - Navigation: Unteroption 'Export/XML' ausgewählt
+24-07-2025 10:20:20 - __main__ - INFO - Navigation: Unteroption 'Hilfe/FAQ' ausgewählt
+24-07-2025 10:20:21 - __main__ - INFO - Navigation: Unteroption 'Export/CSV' ausgewählt
+24-07-2025 10:20:21 - __main__ - INFO - Navigation: Unteroption 'Statistik/Allgemeine Statistiken' ausgewählt
+24-07-2025 10:20:21 - __main__ - INFO - Navigation: Unteroption 'Statistik/Beziehungsanalyse' ausgewählt
+24-07-2025 10:20:34 - __main__ - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 10:20:34 - __main__ - INFO - Anwendung gestartet
+24-07-2025 10:20:35 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:20:36 - __main__ - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 10:23:24 - __main__ - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 10:23:24 - __main__ - INFO - Anwendung gestartet
+24-07-2025 10:23:26 - __main__ - INFO - Submenü: Option 'Personen' ausgewählt unter 'Ansicht'
+24-07-2025 10:23:26 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:23:28 - __main__ - INFO - Submenü: Option 'Orte' ausgewählt unter 'Ansicht'
+24-07-2025 10:23:28 - __main__ - INFO - Submenü: Option 'Ereignisse' ausgewählt unter 'Ansicht'
+24-07-2025 10:23:29 - __main__ - INFO - Submenü: Option 'Demografische Daten' ausgewählt unter 'Statistik'
+24-07-2025 10:23:29 - __main__ - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 10:23:29 - __main__ - INFO - Submenü: Option 'CSV-Import' ausgewählt unter 'Import'
+24-07-2025 10:23:29 - __main__ - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 10:23:30 - __main__ - INFO - Submenü: Option 'Demografische Daten' ausgewählt unter 'Statistik'
+24-07-2025 10:23:30 - __main__ - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 10:23:30 - __main__ - INFO - Submenü: Option 'Personen' ausgewählt unter 'Ansicht'
+24-07-2025 10:23:30 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:23:31 - __main__ - INFO - Submenü: Option 'Person erstellen' ausgewählt unter 'Erstellung'
+24-07-2025 10:23:31 - __main__ - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 10:23:31 - __main__ - INFO - Submenü: Option 'Demografische Daten' ausgewählt unter 'Statistik'
+24-07-2025 10:23:31 - __main__ - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 10:23:33 - __main__ - INFO - Submenü: Option 'CSV-Import' ausgewählt unter 'Import'
+24-07-2025 10:23:33 - __main__ - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 10:23:33 - __main__ - INFO - Submenü: Option 'Demografische Daten' ausgewählt unter 'Statistik'
+24-07-2025 10:23:33 - __main__ - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 10:23:33 - __main__ - INFO - Submenü: Option 'Personen' ausgewählt unter 'Ansicht'
+24-07-2025 10:23:33 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:23:35 - __main__ - INFO - Submenü: Option 'Personen' ausgewählt unter 'Ansicht'
+24-07-2025 10:23:35 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:23:35 - __main__ - INFO - Submenü: Option 'Personen' ausgewählt unter 'Ansicht'
+24-07-2025 10:23:35 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:23:36 - __main__ - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 10:23:36 - __main__ - INFO - Submenü: Option 'Personen' ausgewählt unter 'Ansicht'
+24-07-2025 10:23:36 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:23:37 - __main__ - INFO - Submenü: Option 'Person erstellen' ausgewählt unter 'Erstellung'
+24-07-2025 10:23:37 - __main__ - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 10:23:38 - __main__ - INFO - Submenü: Option 'Demografische Daten' ausgewählt unter 'Statistik'
+24-07-2025 10:23:38 - __main__ - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 10:23:39 - __main__ - INFO - Submenü: Option 'Personen' ausgewählt unter 'Ansicht'
+24-07-2025 10:23:39 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:23:46 - __main__ - INFO - Submenü: Option 'Person erstellen' ausgewählt unter 'Erstellung'
+24-07-2025 10:23:46 - __main__ - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 10:23:46 - __main__ - INFO - Submenü: Option 'CSV-Import' ausgewählt unter 'Import'
+24-07-2025 10:23:46 - __main__ - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 10:23:47 - __main__ - INFO - Submenü: Option 'JSON-Import' ausgewählt unter 'Import'
+24-07-2025 10:23:47 - __main__ - INFO - Submenü: Option 'XML-Import' ausgewählt unter 'Import'
+24-07-2025 10:23:48 - __main__ - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 10:23:50 - __main__ - INFO - Submenü: Option 'Personen' ausgewählt unter 'Ansicht'
+24-07-2025 10:23:50 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:23:51 - __main__ - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 10:23:53 - __main__ - INFO - Navigation: Option 'Impressum' ausgewählt
+24-07-2025 10:23:53 - __main__ - INFO - Submenü: Option 'Dokumentation' ausgewählt unter 'Hilfe'
+24-07-2025 10:23:53 - __main__ - INFO - Navigation: Option 'Hilfe' ausgewählt
+24-07-2025 10:23:54 - __main__ - INFO - Submenü: Option 'CSV-Export' ausgewählt unter 'Export'
+24-07-2025 10:23:54 - __main__ - INFO - Navigation: Option 'Export' ausgewählt
+24-07-2025 10:23:56 - __main__ - INFO - Submenü: Option 'CSV-Import' ausgewählt unter 'Import'
+24-07-2025 10:23:56 - __main__ - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 10:23:56 - __main__ - INFO - Submenü: Option 'CSV-Export' ausgewählt unter 'Export'
+24-07-2025 10:23:56 - __main__ - INFO - Navigation: Option 'Export' ausgewählt
+24-07-2025 10:23:57 - __main__ - INFO - Submenü: Option 'XML-Export' ausgewählt unter 'Export'
+24-07-2025 10:23:57 - __main__ - INFO - Submenü: Option 'JSON-Export' ausgewählt unter 'Export'
+24-07-2025 10:23:58 - __main__ - INFO - Submenü: Option 'CSV-Import' ausgewählt unter 'Import'
+24-07-2025 10:23:58 - __main__ - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 10:23:59 - __main__ - INFO - Submenü: Option 'Demografische Daten' ausgewählt unter 'Statistik'
+24-07-2025 10:23:59 - __main__ - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 10:23:59 - __main__ - INFO - Submenü: Option 'Person erstellen' ausgewählt unter 'Erstellung'
+24-07-2025 10:23:59 - __main__ - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 10:24:01 - __main__ - INFO - Submenü: Option 'Personen' ausgewählt unter 'Ansicht'
+24-07-2025 10:24:01 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:24:02 - __main__ - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 10:24:03 - __main__ - INFO - Submenü: Option 'Personen' ausgewählt unter 'Ansicht'
+24-07-2025 10:24:03 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:24:07 - __main__ - INFO - Submenü: Option 'Ereignisse' ausgewählt unter 'Ansicht'
+24-07-2025 10:24:18 - __main__ - INFO - Submenü: Option 'Personen' ausgewählt unter 'Ansicht'
+24-07-2025 10:24:18 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:24:19 - __main__ - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 10:24:20 - __main__ - INFO - Submenü: Option 'Personen' ausgewählt unter 'Ansicht'
+24-07-2025 10:24:20 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 10:24:22 - __main__ - INFO - Submenü: Option 'Person erstellen' ausgewählt unter 'Erstellung'
+24-07-2025 10:24:22 - __main__ - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 10:24:22 - __main__ - INFO - Submenü: Option 'Demografische Daten' ausgewählt unter 'Statistik'
+24-07-2025 10:24:22 - __main__ - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 10:24:29 - __main__ - INFO - Submenü: Option 'Dokumentation' ausgewählt unter 'Hilfe'
+24-07-2025 10:24:29 - __main__ - INFO - Navigation: Option 'Hilfe' ausgewählt
+24-07-2025 10:24:30 - __main__ - INFO - Navigation: Option 'BibTex' ausgewählt
+24-07-2025 10:24:30 - __main__ - INFO - Submenü: Option 'Dokumentation' ausgewählt unter 'Hilfe'
+24-07-2025 10:24:30 - __main__ - INFO - Navigation: Option 'Hilfe' ausgewählt
+24-07-2025 10:24:56 - __main__ - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 10:24:56 - __main__ - INFO - Anwendung gestartet
+24-07-2025 10:24:57 - __main__ - INFO - Navigation: Option 'Ansicht' ausgewählt
