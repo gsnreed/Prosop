@@ -14,6 +14,7 @@ if parent_dir not in sys.path:
 from Objects.Config import AppConfig, AppColors
 from Objects.Logger import logger
 from Objects.Content import ContentManager
+from Main import *
 
 # --- UI-Komponenten ---
 class TopFrame(tk.Frame):
@@ -21,7 +22,7 @@ class TopFrame(tk.Frame):
     Oberer Rahmen der Anwendung mit Logo, Titel und Uhr.
     """
     
-    def __init__(self, parent):
+    def __init__(self, parent: MainApp) -> None:
         """Initialisiere den oberen Rahmen"""
         super().__init__(parent, bg=AppColors.TOP_FRAME)
         
@@ -35,13 +36,13 @@ class TopFrame(tk.Frame):
         self._CreateTitle()
         self._CreateClock()
     
-    def _CreateLogo(self):
+    def _CreateLogo(self) -> None:
         """Erstellt und platziert das Universitätslogo"""
         self.uni_logo = tk.PhotoImage(file=AppConfig.UNIVERSITY_LOGO).subsample(15)
         logo_label = tk.Label(self, image=self.uni_logo, bg=AppColors.TOP_FRAME)
         logo_label.grid(row=0, column=0, padx=20, pady=10, sticky='w')
     
-    def _CreateTitle(self):
+    def _CreateTitle(self) -> None:
         """Erstellt und platziert den Anwendungstitel"""
         self.title_label = tk.Label(
             self,
@@ -52,7 +53,7 @@ class TopFrame(tk.Frame):
         )
         self.title_label.grid(row=0, column=1, padx=20, pady=10, sticky='nsew')
     
-    def _CreateClock(self):
+    def _CreateClock(self) -> None:
         """Erstellt und platziert die Uhr"""
         self.time_label = tk.Label(
             self,
@@ -63,7 +64,7 @@ class TopFrame(tk.Frame):
         self.time_label.grid(row=0, column=2, padx=20, pady=10, sticky='e')
         self.UpdateClock()
     
-    def UpdateClock(self):
+    def UpdateClock(self) -> None:
         """Aktualisiert das Zeit-Label mit der aktuellen Uhrzeit"""
         current_time = datetime.now().strftime("%H:%M:%S")
         self.time_label.config(text=current_time)
@@ -75,7 +76,7 @@ class SubMenuFrame(tk.Frame):
     Rahmen für Submenü-Optionen, erscheint rechts neben dem Navigation Frame.
     """
     
-    def __init__(self, parent):
+    def __init__(self, parent: MainApp) -> None:
         super().__init__(parent, bg=AppColors.SUBMENU_FRAME)
         self.parent = parent
         self.selected_submenu_item = None
@@ -99,12 +100,12 @@ class SubMenuFrame(tk.Frame):
         self.submenus = {
             'Ansicht': ['Liste', 'Karte', 'Tabelle', 'Zeitstrahl'],
             'Erstellung': ['Person', 'Ort', 'Ereignis', 'Quelle'],
-            'Export': ['PDF', 'CSV', 'Excel', 'XML'],
-            'Import': ['CSV-Import', 'XML-Import', 'Datenbank-Import'],
+            'Export': ['PDF', 'CSV', 'Excel', 'JSON'],
+            'Import': ['CSV-Import', 'JSON-Import', 'Datenbank-Import'],
             'BibTex': ['Literatur hinzufügen', 'Zitieren', 'Verwalten']
         }
     
-    def UpdateSubmenu(self, option):
+    def UpdateSubmenu(self, option: str) -> None:
         """Aktualisiert die Submenüoptionen für die gewählte Hauptoption"""
         # Bestehende Optionen entfernen
         for widget in self.options_frame.winfo_children():
@@ -147,7 +148,7 @@ class SubMenuFrame(tk.Frame):
                 first_option = submenu_items[0]
                 self.OnSubMenuSelect(option, first_option)
     
-    def OnSubMenuHover(self, label, is_hover):
+    def OnSubMenuHover(self, label: str, is_hover: bool) -> None:
         """Behandelt Hover-Events für Submenüoptionen"""
         sub_option = label.cget("text")
         # Nur hervorheben, wenn nicht ausgewählt
@@ -157,7 +158,7 @@ class SubMenuFrame(tk.Frame):
             else:
                 label.configure(bg=AppColors.SUBMENU_FRAME)
     
-    def OnSubMenuSelect(self, option, sub_option):
+    def OnSubMenuSelect(self, option: str, sub_option: str) -> None:
         """Behandelt die Auswahl einer Submenüoption"""
         # Zurücksetzen der vorherigen Auswahl
         if self.selected_submenu_item and self.selected_submenu_item in self.submenu_labels:
@@ -181,12 +182,15 @@ class SubMenuFrame(tk.Frame):
         # Inhalt aktualisieren
         self.parent.HandleSubmenuSelect(option, sub_option)
 
+        # Ereignis protokollieren
+        logger.info(f"Option '{sub_option}' ausgewählt")
+
 class NavigationFrame(tk.Frame):
     """
     Seitenleiste mit Navigationsoptionen.
     """
     
-    def __init__(self, parent, content_updater):
+    def __init__(self, parent: MainApp, content_updater: MainApp) -> None:
         super().__init__(parent, bg=AppColors.SIDEBAR_FRAME)
         self.content_updater = content_updater
         self.nav_labels = {}
@@ -198,7 +202,7 @@ class NavigationFrame(tk.Frame):
         self._CreateHeader()
         self._CreateNavigationOptions()
     
-    def _CreateHeader(self):
+    def _CreateHeader(self) -> None:
         """Erstellt die Navigationsüberschrift"""
         self.navigation_header = tk.Label(
             self,
@@ -209,7 +213,7 @@ class NavigationFrame(tk.Frame):
         )
         self.navigation_header.pack(side='top', padx=10, pady=10)  # Padding hinzugefügt
     
-    def _CreateNavigationOptions(self):
+    def _CreateNavigationOptions(self) -> None:
         """Erstellt alle Navigationsoptionen"""
         # Container-Frame mit Padding
         container_frame = tk.Frame(self, bg=AppColors.SIDEBAR_FRAME)
@@ -233,7 +237,7 @@ class NavigationFrame(tk.Frame):
                 padx=15,  # Reduziert von 20 auf 15 für konsistenteres Aussehen
                 pady=5,
                 cursor="hand2",
-                anchor='w'
+                anchor=tk.w
             )
             label.pack(fill=tk.X, pady=2)
             
@@ -245,11 +249,11 @@ class NavigationFrame(tk.Frame):
             # Label im Dictionary speichern
             self.nav_labels[option] = label
     
-    def HasSubmenu(self, option):
+    def HasSubmenu(self, option: str) -> None:
         """Prüft, ob eine Option ein Submenü hat"""
         return option in self.options_with_submenu
     
-    def OnHover(self, option, is_hover):
+    def OnHover(self, option: str, is_hover: bool) -> None:
         """Behandelt Hover-Events für Navigationsoptionen"""
         label = self.nav_labels[option]
         # Nur hervorheben, wenn nicht ausgewählt
@@ -259,7 +263,7 @@ class NavigationFrame(tk.Frame):
             else:
                 label.configure(bg=AppColors.SIDEBAR_FRAME)
     
-    def OnSelect(self, option):
+    def OnSelect(self, option: str) -> None:
         """Behandelt die Auswahl einer Navigationsoption"""
         # Zurücksetzen der vorherigen Auswahl
         if self.selected_option:
@@ -294,11 +298,14 @@ class ContentFrame(tk.Frame):
     Hauptinhaltsfläche für den ausgewählten Navigationsbereich.
     """
     
-    def __init__(self, parent):
+    def __init__(self, parent: MainApp) -> None:
         """Initialisiere den Inhaltsrahmen"""
         super().__init__(parent, bg=AppColors.CONTENT_FRAME)
         self.content_manager = ContentManager(self)
     
-    def UpdateContent(self, option):
+    def UpdateContent(self, option: str) -> None:
         """Aktualisiert den Inhalt basierend auf der ausgewählten Navigation."""
         self.content_manager.ShowContent(option)
+
+        # Ereignis protokollieren
+        logger.info(f"Content der Option '{option}' wurde geladen.")

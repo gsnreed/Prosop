@@ -17,7 +17,7 @@ class MainApp(tk.Tk):
     Hauptanwendungsklasse für Prosop.
     """
     
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__()
         
         # --- Fensterkonfiguration ---
@@ -42,20 +42,20 @@ class MainApp(tk.Tk):
         # Anwendungsstart protokollieren
         logger.info("Anwendung gestartet")
     
-    def _SelectInitialNavigation(self):
+    def _SelectInitialNavigation(self) -> None:
         """Wählt das erste Navigationselement aus"""
         if len(AppConfig.NAV_OPTIONS) > 0:
             logger.info(f"Automatische Auswahl des ersten Elements: {AppConfig.NAV_OPTIONS[0]}")
             self.navigation_frame.OnSelect(AppConfig.NAV_OPTIONS[0])
     
-    def _SetupIcon(self):
+    def _SetupIcon(self) -> None:
         try:
             self.icon = tk.PhotoImage(file=AppConfig.APP_ICON)
             self.iconphoto(True, self.icon)
         except Exception as e:
             logger.error(f"Fehler beim Laden des Icons: {e}")
     
-    def _ConfigureMainGrid(self):
+    def _ConfigureMainGrid(self) -> None:
         """Konfiguriert das Grid-Layout des Hauptfensters"""
         self.columnconfigure(0, weight=0)   # Navigationsspalte (feste Breite)
         self.columnconfigure(1, weight=0)   # Submenüspalte (passt sich an Inhalt an)
@@ -63,7 +63,7 @@ class MainApp(tk.Tk):
         self.rowconfigure(0, weight=0)      # Obere Zeile (feste Höhe)
         self.rowconfigure(1, weight=1)      # Inhaltszeile (dehnbar)
     
-    def _CreateUiComponents(self):
+    def _CreateUiComponents(self) -> None:
         """Erstellt alle UI-Komponenten der Anwendung"""
         # Oberen Rahmen erstellen
         self.top_frame = TopFrame(self)
@@ -81,22 +81,20 @@ class MainApp(tk.Tk):
         self.navigation_frame = NavigationFrame(self, self)
         self.navigation_frame.grid(row=1, column=0, sticky='nsew')
     
-    def UpdateContent(self, option):
+    def UpdateContent(self, option: str) -> None:
         """Aktualisiert den Inhaltsbereich basierend auf der Navigationsoption"""
         # Prüfe, ob die Option ein Submenü hat
         if self.navigation_frame.HasSubmenu(option):
             # Zeige Submenü an
             self.submenu_frame.grid(row=1, column=1, sticky='nsew')
             self.submenu_frame.UpdateSubmenu(option)
-            # Kein rechter Rand für das Navigationsmenu nötig, wenn Submenu angezeigt wird
-            self.navigation_frame.grid_configure(padx=(0, 0))
         else:
             # Verstecke Submenü
             self.submenu_frame.grid_forget()
             # Aktualisiere den Inhalt direkt
             self.content_frame.UpdateContent(option)
     
-    def HandleSubmenuSelect(self, main_option, submenu_option):
+    def HandleSubmenuSelect(self, main_option: str, submenu_option: str):
         """Behandelt die Auswahl einer Submenüoption"""
         # Verstecke das Submenü nicht, damit es sichtbar bleibt
         # Aktualisiere nur den Inhalt

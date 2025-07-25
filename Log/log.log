@@ -3,3 +3,1137 @@ Manuelle Log-Prüfung: Objects.Logger ist bereit.
 24-07-2025 12:50:13 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
 24-07-2025 12:50:13 - Objects.Logger - INFO - Anwendung gestartet
 24-07-2025 12:50:16 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 12:57:40 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 12:57:41 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 12:57:41 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 12:57:43 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 12:58:34 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 12:58:39 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 12:58:39 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 12:58:39 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 12:58:39 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 12:58:44 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 12:58:44 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 12:58:44 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 12:58:54 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 12:58:54 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 12:58:54 - Objects.Logger - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 12:58:59 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 12:58:59 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 12:58:59 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 12:58:59 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 12:59:00 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 12:59:00 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 12:59:01 - Objects.Logger - INFO - Content der Option 'Import - XML-Import' wurde geladen.
+24-07-2025 12:59:01 - Objects.Logger - INFO - Option 'XML-Import' ausgewählt
+24-07-2025 12:59:02 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 12:59:02 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 12:59:02 - Objects.Logger - INFO - Content der Option 'Import - XML-Import' wurde geladen.
+24-07-2025 12:59:02 - Objects.Logger - INFO - Option 'XML-Import' ausgewählt
+24-07-2025 12:59:03 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 12:59:03 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 12:59:04 - Objects.Logger - INFO - Content der Option 'Import - Datenbank-Import' wurde geladen.
+24-07-2025 12:59:04 - Objects.Logger - INFO - Option 'Datenbank-Import' ausgewählt
+24-07-2025 12:59:04 - Objects.Logger - INFO - Content der Option 'Import - XML-Import' wurde geladen.
+24-07-2025 12:59:04 - Objects.Logger - INFO - Option 'XML-Import' ausgewählt
+24-07-2025 12:59:05 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 12:59:05 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 13:40:28 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 13:40:29 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 13:40:29 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 13:40:29 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 13:40:31 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 13:40:31 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 13:40:31 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 13:40:32 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 13:40:32 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 13:40:33 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 13:40:33 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 13:40:34 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 13:40:34 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 13:40:36 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 13:40:36 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 13:40:36 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 13:40:37 - Objects.Logger - INFO - Content der Option 'Statistik' wurde geladen.
+24-07-2025 13:40:37 - Objects.Logger - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 13:40:37 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 13:40:37 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 13:40:37 - Objects.Logger - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 13:40:38 - Objects.Logger - INFO - Content der Option 'Export - PDF' wurde geladen.
+24-07-2025 13:40:38 - Objects.Logger - INFO - Option 'PDF' ausgewählt
+24-07-2025 13:40:38 - Objects.Logger - INFO - Navigation: Option 'Export' ausgewählt
+24-07-2025 13:40:38 - Objects.Logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+24-07-2025 13:40:38 - Objects.Logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+24-07-2025 13:40:38 - Objects.Logger - INFO - Navigation: Option 'BibTex' ausgewählt
+24-07-2025 13:40:39 - Objects.Logger - INFO - Content der Option 'Hilfe' wurde geladen.
+24-07-2025 13:40:39 - Objects.Logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+24-07-2025 13:40:40 - Objects.Logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+24-07-2025 13:40:40 - Objects.Logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+24-07-2025 13:40:40 - Objects.Logger - INFO - Navigation: Option 'BibTex' ausgewählt
+24-07-2025 13:40:41 - Objects.Logger - INFO - Content der Option 'BibTex - Zitieren' wurde geladen.
+24-07-2025 13:40:41 - Objects.Logger - INFO - Option 'Zitieren' ausgewählt
+24-07-2025 13:40:41 - Objects.Logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+24-07-2025 13:40:41 - Objects.Logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+24-07-2025 13:40:56 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 13:40:56 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 13:41:34 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 13:41:34 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 13:41:34 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 13:41:35 - Objects.Logger - INFO - Content der Option 'Statistik' wurde geladen.
+24-07-2025 13:41:35 - Objects.Logger - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 13:41:36 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 13:41:36 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 13:41:36 - Objects.Logger - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 13:41:47 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 13:41:47 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 13:41:47 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 13:41:47 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 13:41:55 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 13:41:55 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 13:41:55 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 13:41:56 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 13:41:56 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 13:41:59 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 13:41:59 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 13:42:00 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 13:42:00 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 13:42:04 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 13:42:04 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 13:42:05 - Objects.Logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+24-07-2025 13:42:05 - Objects.Logger - INFO - Option 'Zeitstrahl' ausgewählt
+24-07-2025 13:42:17 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 13:42:17 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 13:42:18 - Objects.Logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+24-07-2025 13:42:18 - Objects.Logger - INFO - Option 'Zeitstrahl' ausgewählt
+24-07-2025 13:42:22 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 13:42:22 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 13:42:23 - Objects.Logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+24-07-2025 13:42:23 - Objects.Logger - INFO - Option 'Zeitstrahl' ausgewählt
+24-07-2025 13:42:24 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 13:42:24 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 13:42:25 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 13:42:25 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 13:42:26 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 13:42:26 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 13:42:27 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 13:42:27 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 13:42:27 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 13:42:29 - Objects.Logger - INFO - Content der Option 'Erstellung - Quelle' wurde geladen.
+24-07-2025 13:42:29 - Objects.Logger - INFO - Option 'Quelle' ausgewählt
+24-07-2025 13:42:30 - Objects.Logger - INFO - Content der Option 'Erstellung - Ereignis' wurde geladen.
+24-07-2025 13:42:30 - Objects.Logger - INFO - Option 'Ereignis' ausgewählt
+24-07-2025 13:42:30 - Objects.Logger - INFO - Content der Option 'Erstellung - Ort' wurde geladen.
+24-07-2025 13:42:30 - Objects.Logger - INFO - Option 'Ort' ausgewählt
+24-07-2025 13:42:33 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 13:42:33 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 13:42:34 - Objects.Logger - INFO - Content der Option 'Statistik' wurde geladen.
+24-07-2025 13:42:34 - Objects.Logger - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 13:42:36 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 13:42:36 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 13:42:36 - Objects.Logger - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 13:42:41 - Objects.Logger - INFO - Content der Option 'Export - PDF' wurde geladen.
+24-07-2025 13:42:41 - Objects.Logger - INFO - Option 'PDF' ausgewählt
+24-07-2025 13:42:41 - Objects.Logger - INFO - Navigation: Option 'Export' ausgewählt
+24-07-2025 13:42:42 - Objects.Logger - INFO - Content der Option 'Export - CSV' wurde geladen.
+24-07-2025 13:42:42 - Objects.Logger - INFO - Option 'CSV' ausgewählt
+24-07-2025 13:42:43 - Objects.Logger - INFO - Content der Option 'Export - Excel' wurde geladen.
+24-07-2025 13:42:43 - Objects.Logger - INFO - Option 'Excel' ausgewählt
+24-07-2025 13:42:43 - Objects.Logger - INFO - Content der Option 'Export - XML' wurde geladen.
+24-07-2025 13:42:43 - Objects.Logger - INFO - Option 'XML' ausgewählt
+24-07-2025 13:42:44 - Objects.Logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+24-07-2025 13:42:44 - Objects.Logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+24-07-2025 13:42:44 - Objects.Logger - INFO - Navigation: Option 'BibTex' ausgewählt
+24-07-2025 13:42:45 - Objects.Logger - INFO - Content der Option 'BibTex - Zitieren' wurde geladen.
+24-07-2025 13:42:45 - Objects.Logger - INFO - Option 'Zitieren' ausgewählt
+24-07-2025 13:42:45 - Objects.Logger - INFO - Content der Option 'BibTex - Verwalten' wurde geladen.
+24-07-2025 13:42:45 - Objects.Logger - INFO - Option 'Verwalten' ausgewählt
+24-07-2025 13:42:46 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 13:42:46 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 13:42:47 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 13:42:47 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 13:42:47 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 13:42:49 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 13:42:49 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 13:42:49 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 13:42:49 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 13:43:05 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 13:43:05 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 13:43:08 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 13:43:08 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 17:39:17 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 17:39:18 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 17:39:18 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 17:39:18 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 17:39:24 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 17:39:24 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 17:39:24 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 17:39:25 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 17:39:25 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 17:39:25 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 17:39:26 - Objects.Logger - INFO - Content der Option 'Statistik' wurde geladen.
+24-07-2025 17:39:26 - Objects.Logger - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 17:39:28 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 17:39:28 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 17:39:28 - Objects.Logger - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 17:39:30 - Objects.Logger - INFO - Content der Option 'Export - PDF' wurde geladen.
+24-07-2025 17:39:30 - Objects.Logger - INFO - Option 'PDF' ausgewählt
+24-07-2025 17:39:30 - Objects.Logger - INFO - Navigation: Option 'Export' ausgewählt
+24-07-2025 17:39:31 - Objects.Logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+24-07-2025 17:39:31 - Objects.Logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+24-07-2025 17:39:31 - Objects.Logger - INFO - Navigation: Option 'BibTex' ausgewählt
+24-07-2025 17:40:45 - Objects.Logger - INFO - Content der Option 'BibTex - Zitieren' wurde geladen.
+24-07-2025 17:40:45 - Objects.Logger - INFO - Option 'Zitieren' ausgewählt
+24-07-2025 17:40:46 - Objects.Logger - INFO - Content der Option 'BibTex - Verwalten' wurde geladen.
+24-07-2025 17:40:46 - Objects.Logger - INFO - Option 'Verwalten' ausgewählt
+24-07-2025 17:40:48 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 17:40:48 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 17:40:48 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 17:40:50 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 17:40:50 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 17:40:50 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 17:40:51 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 17:40:51 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 17:40:51 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 17:43:35 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 17:43:55 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 17:43:55 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 17:43:55 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 17:43:55 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 17:44:09 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 17:44:09 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 17:44:09 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 17:44:10 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 17:44:10 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 17:44:12 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 17:44:12 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 17:44:12 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 17:44:13 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 17:44:13 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 17:44:14 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 17:44:14 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 17:44:15 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 17:44:15 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 17:44:15 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 17:44:16 - Objects.Logger - INFO - Content der Option 'Statistik' wurde geladen.
+24-07-2025 17:44:16 - Objects.Logger - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 17:44:18 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 17:44:18 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 17:44:18 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 17:44:19 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 17:44:19 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 17:44:19 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 17:44:21 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 17:44:21 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 17:44:21 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 17:44:23 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 17:44:23 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 17:44:23 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 17:44:24 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 17:44:24 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 17:44:25 - Objects.Logger - INFO - Content der Option 'Export - PDF' wurde geladen.
+24-07-2025 17:44:25 - Objects.Logger - INFO - Option 'PDF' ausgewählt
+24-07-2025 17:44:25 - Objects.Logger - INFO - Navigation: Option 'Export' ausgewählt
+24-07-2025 17:44:26 - Objects.Logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+24-07-2025 17:44:26 - Objects.Logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+24-07-2025 17:44:26 - Objects.Logger - INFO - Navigation: Option 'BibTex' ausgewählt
+24-07-2025 17:44:28 - Objects.Logger - INFO - Content der Option 'BibTex - Zitieren' wurde geladen.
+24-07-2025 17:44:28 - Objects.Logger - INFO - Option 'Zitieren' ausgewählt
+24-07-2025 17:44:29 - Objects.Logger - INFO - Content der Option 'BibTex - Verwalten' wurde geladen.
+24-07-2025 17:44:29 - Objects.Logger - INFO - Option 'Verwalten' ausgewählt
+24-07-2025 17:44:30 - Objects.Logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+24-07-2025 17:44:30 - Objects.Logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+24-07-2025 17:44:31 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 17:44:31 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 17:48:22 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 17:48:23 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 17:48:23 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 17:48:23 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 17:48:31 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 17:48:31 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 17:48:31 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 17:48:33 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 17:48:33 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 18:04:22 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 18:04:23 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 18:04:23 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 18:04:23 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 18:27:50 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 18:27:51 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 18:27:51 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 18:27:51 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 18:27:53 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 18:27:53 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 18:27:53 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 18:27:54 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 18:27:54 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 18:30:59 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 18:30:59 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 18:30:59 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 18:30:59 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 18:31:01 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 18:31:01 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 18:31:01 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 18:31:02 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 18:31:02 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 18:31:03 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 18:31:03 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 18:31:05 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 18:31:05 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 18:31:16 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 18:31:16 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 18:31:16 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 18:31:16 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 18:31:18 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 18:31:18 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 18:31:18 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 18:31:18 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 18:31:20 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 18:31:20 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 18:31:20 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 18:31:20 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 18:31:22 - Objects.Logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+24-07-2025 18:31:22 - Objects.Logger - INFO - Option 'Zeitstrahl' ausgewählt
+24-07-2025 18:31:40 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 18:31:40 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 18:31:42 - Objects.Logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+24-07-2025 18:31:42 - Objects.Logger - INFO - Option 'Zeitstrahl' ausgewählt
+24-07-2025 18:31:43 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 18:31:43 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 18:31:44 - Objects.Logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+24-07-2025 18:31:44 - Objects.Logger - INFO - Option 'Zeitstrahl' ausgewählt
+24-07-2025 18:31:48 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 18:31:48 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 18:31:49 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 18:31:49 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 18:31:50 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 18:31:50 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 18:31:51 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 18:31:51 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 18:31:54 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 18:31:54 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 18:31:55 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 18:31:55 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 18:31:56 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 18:31:56 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 18:32:05 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 18:32:05 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 18:32:30 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 18:32:30 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 18:32:31 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 18:32:31 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 18:32:33 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 18:32:33 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 18:34:51 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 18:34:51 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 18:34:51 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 18:34:51 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 18:34:53 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 18:34:53 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 18:34:53 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 18:34:53 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 18:34:53 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 18:35:07 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 18:35:08 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 18:35:08 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 18:35:08 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 18:35:09 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 18:35:09 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 18:35:09 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 18:35:10 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 18:35:10 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 18:35:10 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 18:35:10 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 18:35:46 - Objects.Logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+24-07-2025 18:35:46 - Objects.Logger - INFO - Option 'Zeitstrahl' ausgewählt
+24-07-2025 18:35:47 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 18:35:47 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 18:36:18 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 18:36:19 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 18:36:19 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 18:36:19 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 18:36:21 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 18:36:21 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 18:36:21 - Objects.Logger - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 18:36:23 - Objects.Logger - INFO - Content der Option 'Import - XML-Import' wurde geladen.
+24-07-2025 18:36:23 - Objects.Logger - INFO - Option 'XML-Import' ausgewählt
+24-07-2025 18:36:23 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 18:36:23 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 18:36:25 - Objects.Logger - INFO - Content der Option 'Import - XML-Import' wurde geladen.
+24-07-2025 18:36:25 - Objects.Logger - INFO - Option 'XML-Import' ausgewählt
+24-07-2025 18:41:49 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 18:41:50 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 18:41:50 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 18:41:50 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 18:41:51 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 18:41:51 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 18:41:51 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 18:41:52 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 18:41:52 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 18:48:40 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 18:48:40 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Test'.
+24-07-2025 18:55:00 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 18:55:00 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior'.
+24-07-2025 18:55:00 - Objects.Logger - INFO - Konvertiere Roman-Objekt 'Octavia maior' zu Dictionary
+24-07-2025 18:55:00 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 18:55:00 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Lade römische Persönlichkeiten aus JSON-Datei: ./Datenbank/Romans.json
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Octavia maior 
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Octavia maior 
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Octavia minor 
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 5 Einträge für Octavia minor 
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Antonia maior
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 3 Einträge für Antonia maior
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+24-07-2025 19:23:07 - Objects.Logger - WARNING - Konnte Anzahl der Kinder nicht parsen: Mehrere Kinder, vondenen nur drei überlebten und namentlich bekannt sind. 
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 3 Einträge für Domitia Lepida
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Domitia Lepida
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Claudia Livia Iulia = Livilla
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 3 Einträge für Scribonia 
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Scribonia 
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Livia Drusilla
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Livia Drusilla
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 3 Einträge für Iulia
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Vipsania Iulia
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Vipsania Iulia
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Vipsania Agrippina
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Agrippina maior
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 4 Einträge für Agrippina maior
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 3 Einträge für Agrippina minor
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Iulia Drusilla
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+24-07-2025 19:23:07 - Objects.Logger - WARNING - Konnte Anzahl der Kinder nicht parsen: Keine Kinder
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Iulia Livilla
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Iunia Claudilla (oder Iunia Claudia)
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Orestilla / Cornelia(Livia) Orestina
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Lollia Paulina
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Aemilia Lepida 
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Plautia Urgulanilla
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 4 Einträge für Plautia Urgulanilla
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Antonia
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Valeria Messalina
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Valeria Messalina
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Claudia Antonia
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Octavia Claudia
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 3 Einträge für Poppaea Sabina
+24-07-2025 19:23:07 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Poppaea Sabina
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+24-07-2025 19:23:07 - Objects.Logger - INFO - Erfolgreich 36 römische Persönlichkeiten geladen.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Lade römische Persönlichkeiten aus JSON-Datei: ./Datenbank/Romans.json
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Octavia maior 
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Octavia maior 
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Octavia minor 
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 5 Einträge für Octavia minor 
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Antonia maior
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 3 Einträge für Antonia maior
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+24-07-2025 19:23:49 - Objects.Logger - WARNING - Konnte Anzahl der Kinder nicht parsen: Mehrere Kinder, vondenen nur drei überlebten und namentlich bekannt sind. 
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 3 Einträge für Domitia Lepida
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Domitia Lepida
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Claudia Livia Iulia = Livilla
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 3 Einträge für Scribonia 
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Scribonia 
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Livia Drusilla
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Livia Drusilla
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 3 Einträge für Iulia
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Vipsania Iulia
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Vipsania Iulia
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Vipsania Agrippina
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Agrippina maior
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 4 Einträge für Agrippina maior
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 3 Einträge für Agrippina minor
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Iulia Drusilla
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+24-07-2025 19:23:49 - Objects.Logger - WARNING - Konnte Anzahl der Kinder nicht parsen: Keine Kinder
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Iulia Livilla
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Iunia Claudilla (oder Iunia Claudia)
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Orestilla / Cornelia(Livia) Orestina
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Lollia Paulina
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Aemilia Lepida 
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Plautia Urgulanilla
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 4 Einträge für Plautia Urgulanilla
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Antonia
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Valeria Messalina
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Valeria Messalina
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Claudia Antonia
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Octavia Claudia
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 3 Einträge für Poppaea Sabina
+24-07-2025 19:23:49 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Poppaea Sabina
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+24-07-2025 19:23:49 - Objects.Logger - INFO - Erfolgreich 36 römische Persönlichkeiten geladen.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Lade römische Persönlichkeiten aus JSON-Datei: ./Datenbank/Romans.json
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Octavia maior 
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Octavia maior 
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Octavia minor 
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 5 Einträge für Octavia minor 
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Antonia maior
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 3 Einträge für Antonia maior
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+24-07-2025 19:26:39 - Objects.Logger - WARNING - Konnte Anzahl der Kinder nicht parsen: Mehrere Kinder, vondenen nur drei überlebten und namentlich bekannt sind. 
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 3 Einträge für Domitia Lepida
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Domitia Lepida
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Claudia Livia Iulia = Livilla
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 3 Einträge für Scribonia 
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Scribonia 
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Livia Drusilla
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Livia Drusilla
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 3 Einträge für Iulia
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Vipsania Iulia
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Vipsania Iulia
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Vipsania Agrippina
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Agrippina maior
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 4 Einträge für Agrippina maior
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 3 Einträge für Agrippina minor
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Iulia Drusilla
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+24-07-2025 19:26:39 - Objects.Logger - WARNING - Konnte Anzahl der Kinder nicht parsen: Keine Kinder
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Iulia Livilla
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Iunia Claudilla (oder Iunia Claudia)
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Orestilla / Cornelia(Livia) Orestina
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Lollia Paulina
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Aemilia Lepida 
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Plautia Urgulanilla
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 4 Einträge für Plautia Urgulanilla
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Antonia
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Valeria Messalina
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Valeria Messalina
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 2 Einträge für Claudia Antonia
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 1 Einträge für Octavia Claudia
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Männerliste von 5 auf 3 Einträge für Poppaea Sabina
+24-07-2025 19:26:39 - Objects.Logger - INFO - Kürze Kinderliste von 6 auf 2 Einträge für Poppaea Sabina
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+24-07-2025 19:26:39 - Objects.Logger - INFO - Erfolgreich 36 römische Persönlichkeiten geladen.
+24-07-2025 19:34:44 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 19:34:45 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 19:34:45 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 19:34:45 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 19:34:47 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 19:34:47 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 19:34:47 - Objects.Logger - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 19:34:49 - Objects.Logger - INFO - Content der Option 'Import - XML-Import' wurde geladen.
+24-07-2025 19:34:49 - Objects.Logger - INFO - Option 'XML-Import' ausgewählt
+24-07-2025 19:34:50 - Objects.Logger - INFO - Content der Option 'Export - PDF' wurde geladen.
+24-07-2025 19:34:50 - Objects.Logger - INFO - Option 'PDF' ausgewählt
+24-07-2025 19:34:50 - Objects.Logger - INFO - Navigation: Option 'Export' ausgewählt
+24-07-2025 19:34:52 - Objects.Logger - INFO - Content der Option 'Export - XML' wurde geladen.
+24-07-2025 19:34:52 - Objects.Logger - INFO - Option 'XML' ausgewählt
+24-07-2025 19:34:58 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 19:35:06 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 19:35:07 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 19:35:07 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 19:35:07 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 19:35:09 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 19:35:09 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 19:35:09 - Objects.Logger - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 19:35:11 - Objects.Logger - INFO - Content der Option 'Export - PDF' wurde geladen.
+24-07-2025 19:35:11 - Objects.Logger - INFO - Option 'PDF' ausgewählt
+24-07-2025 19:35:11 - Objects.Logger - INFO - Navigation: Option 'Export' ausgewählt
+24-07-2025 19:35:15 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 19:35:15 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 19:35:15 - Objects.Logger - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 19:35:16 - Objects.Logger - INFO - Content der Option 'Import - JSON-Import' wurde geladen.
+24-07-2025 19:35:16 - Objects.Logger - INFO - Option 'JSON-Import' ausgewählt
+24-07-2025 19:35:19 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 19:35:19 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 19:35:20 - Objects.Logger - INFO - Content der Option 'Import - JSON-Import' wurde geladen.
+24-07-2025 19:35:20 - Objects.Logger - INFO - Option 'JSON-Import' ausgewählt
+24-07-2025 19:35:21 - Objects.Logger - INFO - Content der Option 'Import - JSON-Import' wurde geladen.
+24-07-2025 19:35:21 - Objects.Logger - INFO - Option 'JSON-Import' ausgewählt
+24-07-2025 19:35:22 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 19:35:22 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 19:35:23 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 19:35:23 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 19:35:23 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 19:35:23 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 19:35:26 - Objects.Logger - INFO - Content der Option 'Import - JSON-Import' wurde geladen.
+24-07-2025 19:35:26 - Objects.Logger - INFO - Option 'JSON-Import' ausgewählt
+24-07-2025 19:37:06 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 19:37:06 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 19:37:06 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 19:37:06 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 19:37:12 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 19:37:12 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 19:37:12 - Objects.Logger - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 19:37:13 - Objects.Logger - INFO - Content der Option 'Import - JSON-Import' wurde geladen.
+24-07-2025 19:37:13 - Objects.Logger - INFO - Option 'JSON-Import' ausgewählt
+24-07-2025 19:37:15 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 19:37:15 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 19:37:15 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 19:37:18 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 19:37:18 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 19:37:25 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 19:37:25 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 19:37:25 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:22:24 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+24-07-2025 20:22:25 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 20:22:25 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 20:22:25 - Objects.Logger - INFO - Anwendung gestartet
+24-07-2025 20:22:38 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:22:38 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:22:38 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:22:39 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 20:22:39 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 20:22:39 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:22:39 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:22:39 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:22:55 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 20:22:55 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 20:22:56 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 20:22:56 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 20:22:57 - Objects.Logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+24-07-2025 20:22:57 - Objects.Logger - INFO - Option 'Zeitstrahl' ausgewählt
+24-07-2025 20:23:05 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 20:23:05 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 20:23:05 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 20:23:05 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 20:23:06 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:23:06 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:23:07 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 20:23:07 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 20:23:07 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 20:23:09 - Objects.Logger - INFO - Content der Option 'Statistik' wurde geladen.
+24-07-2025 20:23:09 - Objects.Logger - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 20:23:10 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 20:23:10 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 20:23:10 - Objects.Logger - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 20:23:11 - Objects.Logger - INFO - Content der Option 'Import - JSON-Import' wurde geladen.
+24-07-2025 20:23:11 - Objects.Logger - INFO - Option 'JSON-Import' ausgewählt
+24-07-2025 20:23:13 - Objects.Logger - INFO - Content der Option 'Import - Datenbank-Import' wurde geladen.
+24-07-2025 20:23:13 - Objects.Logger - INFO - Option 'Datenbank-Import' ausgewählt
+24-07-2025 20:23:14 - Objects.Logger - INFO - Content der Option 'Export - PDF' wurde geladen.
+24-07-2025 20:23:14 - Objects.Logger - INFO - Option 'PDF' ausgewählt
+24-07-2025 20:23:14 - Objects.Logger - INFO - Navigation: Option 'Export' ausgewählt
+24-07-2025 20:23:15 - Objects.Logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+24-07-2025 20:23:15 - Objects.Logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+24-07-2025 20:23:15 - Objects.Logger - INFO - Navigation: Option 'BibTex' ausgewählt
+24-07-2025 20:23:16 - Objects.Logger - INFO - Content der Option 'BibTex - Zitieren' wurde geladen.
+24-07-2025 20:23:16 - Objects.Logger - INFO - Option 'Zitieren' ausgewählt
+24-07-2025 20:23:16 - Objects.Logger - INFO - Content der Option 'BibTex - Verwalten' wurde geladen.
+24-07-2025 20:23:16 - Objects.Logger - INFO - Option 'Verwalten' ausgewählt
+24-07-2025 20:23:17 - Objects.Logger - INFO - Content der Option 'BibTex - Zitieren' wurde geladen.
+24-07-2025 20:23:17 - Objects.Logger - INFO - Option 'Zitieren' ausgewählt
+24-07-2025 20:23:18 - Objects.Logger - INFO - Content der Option 'BibTex - Zitieren' wurde geladen.
+24-07-2025 20:23:18 - Objects.Logger - INFO - Option 'Zitieren' ausgewählt
+24-07-2025 20:23:18 - Objects.Logger - INFO - Content der Option 'BibTex - Verwalten' wurde geladen.
+24-07-2025 20:23:18 - Objects.Logger - INFO - Option 'Verwalten' ausgewählt
+24-07-2025 20:23:19 - Objects.Logger - INFO - Content der Option 'Hilfe' wurde geladen.
+24-07-2025 20:23:19 - Objects.Logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+24-07-2025 20:23:20 - Objects.Logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+24-07-2025 20:23:20 - Objects.Logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+24-07-2025 20:23:20 - Objects.Logger - INFO - Navigation: Option 'BibTex' ausgewählt
+24-07-2025 20:23:26 - Objects.Logger - INFO - Content der Option 'Hilfe' wurde geladen.
+24-07-2025 20:23:26 - Objects.Logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+24-07-2025 20:23:27 - Objects.Logger - INFO - Content der Option 'Impressum' wurde geladen.
+24-07-2025 20:23:27 - Objects.Logger - INFO - Navigation: Option 'Impressum' ausgewählt
+24-07-2025 20:23:28 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 20:23:28 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 20:23:32 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:23:32 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:23:32 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:23:32 - Objects.Logger - INFO - Content der Option 'Statistik' wurde geladen.
+24-07-2025 20:23:32 - Objects.Logger - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 20:23:33 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 20:23:33 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 20:23:33 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 20:23:33 - Objects.Logger - INFO - Content der Option 'Statistik' wurde geladen.
+24-07-2025 20:23:33 - Objects.Logger - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 20:23:34 - Objects.Logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+24-07-2025 20:23:34 - Objects.Logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+24-07-2025 20:23:34 - Objects.Logger - INFO - Navigation: Option 'BibTex' ausgewählt
+24-07-2025 20:23:35 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 20:23:35 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 20:23:35 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 20:23:35 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 20:23:35 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 20:23:35 - Objects.Logger - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 20:23:42 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 20:23:42 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 20:23:42 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 20:23:44 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:23:44 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:23:44 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:23:48 - Objects.Logger - INFO - Content der Option 'Statistik' wurde geladen.
+24-07-2025 20:23:48 - Objects.Logger - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 20:23:50 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 20:23:50 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 20:23:50 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 20:23:58 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:23:58 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:23:58 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:24:02 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:24:02 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:24:03 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 20:24:03 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 20:24:10 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 20:24:10 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 20:24:10 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:24:10 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:24:10 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:24:11 - Objects.Logger - INFO - Content der Option 'Statistik' wurde geladen.
+24-07-2025 20:24:11 - Objects.Logger - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 20:24:13 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 20:24:13 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 20:24:13 - Objects.Logger - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 20:24:14 - Objects.Logger - INFO - Content der Option 'Export - PDF' wurde geladen.
+24-07-2025 20:24:14 - Objects.Logger - INFO - Option 'PDF' ausgewählt
+24-07-2025 20:24:14 - Objects.Logger - INFO - Navigation: Option 'Export' ausgewählt
+24-07-2025 20:24:14 - Objects.Logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+24-07-2025 20:24:14 - Objects.Logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+24-07-2025 20:24:14 - Objects.Logger - INFO - Navigation: Option 'BibTex' ausgewählt
+24-07-2025 20:24:18 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 20:24:18 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 20:24:30 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:24:30 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:24:30 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:24:33 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 20:24:33 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 20:24:33 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 20:24:35 - Objects.Logger - INFO - Content der Option 'Statistik' wurde geladen.
+24-07-2025 20:24:35 - Objects.Logger - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 20:24:37 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 20:24:37 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 20:24:37 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 20:24:40 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:24:40 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:24:40 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:24:44 - Objects.Logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+24-07-2025 20:24:44 - Objects.Logger - INFO - Option 'Zeitstrahl' ausgewählt
+24-07-2025 20:24:45 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 20:24:45 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 20:24:51 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 20:24:51 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 20:24:52 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:24:52 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:24:54 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 20:24:54 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 20:25:03 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:25:03 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:25:03 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:25:04 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 20:25:04 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 20:25:16 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 20:25:16 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 20:25:18 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:25:18 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:25:19 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 20:25:19 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 20:25:24 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:25:24 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:25:24 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:25:25 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 20:25:25 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 20:25:28 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 20:25:28 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 20:25:28 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 20:25:30 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 20:25:30 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 20:25:30 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 20:25:31 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:25:31 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:25:31 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:25:31 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 20:25:31 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 20:26:00 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:26:00 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:26:00 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:26:02 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 20:26:02 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 20:26:15 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 20:26:15 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 20:26:15 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 20:26:18 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:26:18 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:26:18 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:26:23 - Objects.Logger - INFO - Content der Option 'Statistik' wurde geladen.
+24-07-2025 20:26:23 - Objects.Logger - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 20:26:24 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 20:26:24 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 20:26:24 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 20:26:26 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 20:26:26 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 20:26:26 - Objects.Logger - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 20:26:48 - Objects.Logger - INFO - Content der Option 'Export - PDF' wurde geladen.
+24-07-2025 20:26:48 - Objects.Logger - INFO - Option 'PDF' ausgewählt
+24-07-2025 20:26:48 - Objects.Logger - INFO - Navigation: Option 'Export' ausgewählt
+24-07-2025 20:26:57 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 20:26:57 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 20:26:57 - Objects.Logger - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 20:27:13 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:27:13 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:27:13 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:27:26 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 20:27:26 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 20:27:35 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:27:35 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:27:35 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:27:42 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 20:27:42 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 20:27:43 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 20:27:43 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 20:27:47 - Objects.Logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+24-07-2025 20:27:47 - Objects.Logger - INFO - Option 'Zeitstrahl' ausgewählt
+24-07-2025 20:27:50 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:27:50 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:27:52 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 20:27:52 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 20:27:53 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:27:53 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:28:03 - Objects.Logger - INFO - Content der Option 'Impressum' wurde geladen.
+24-07-2025 20:28:03 - Objects.Logger - INFO - Navigation: Option 'Impressum' ausgewählt
+24-07-2025 20:28:05 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 20:28:05 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 20:28:32 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:28:32 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:28:32 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:28:34 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+24-07-2025 20:28:34 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+24-07-2025 20:28:35 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+24-07-2025 20:28:35 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+24-07-2025 20:28:36 - Objects.Logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+24-07-2025 20:28:36 - Objects.Logger - INFO - Option 'Zeitstrahl' ausgewählt
+24-07-2025 20:28:37 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 20:28:37 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 20:28:45 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:28:45 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:28:45 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:28:46 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 20:28:47 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 20:28:48 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:28:48 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:28:48 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:28:49 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 20:28:49 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 20:28:49 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 20:28:50 - Objects.Logger - INFO - Content der Option 'Statistik' wurde geladen.
+24-07-2025 20:28:50 - Objects.Logger - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 20:28:51 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+24-07-2025 20:28:51 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+24-07-2025 20:28:51 - Objects.Logger - INFO - Navigation: Option 'Import' ausgewählt
+24-07-2025 20:28:53 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 20:28:53 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 20:29:03 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:29:03 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:29:03 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+24-07-2025 20:29:04 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+24-07-2025 20:29:04 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+24-07-2025 20:29:06 - Objects.Logger - INFO - Content der Option 'Statistik' wurde geladen.
+24-07-2025 20:29:06 - Objects.Logger - INFO - Navigation: Option 'Statistik' ausgewählt
+24-07-2025 20:29:07 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+24-07-2025 20:29:07 - Objects.Logger - INFO - Option 'Person' ausgewählt
+24-07-2025 20:29:07 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+24-07-2025 20:29:10 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+24-07-2025 20:29:10 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+24-07-2025 20:29:10 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+25-07-2025 07:22:40 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+25-07-2025 07:22:41 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+25-07-2025 07:22:41 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+25-07-2025 07:22:41 - Objects.Logger - INFO - Anwendung gestartet
+25-07-2025 07:22:45 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+25-07-2025 07:22:45 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+25-07-2025 07:22:45 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+25-07-2025 07:22:46 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+25-07-2025 07:22:46 - Objects.Logger - INFO - Option 'Person' ausgewählt
+25-07-2025 07:22:46 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+25-07-2025 07:22:47 - Objects.Logger - INFO - Content der Option 'Statistik' wurde geladen.
+25-07-2025 07:22:47 - Objects.Logger - INFO - Navigation: Option 'Statistik' ausgewählt
+25-07-2025 07:22:47 - Objects.Logger - INFO - Content der Option 'Export - PDF' wurde geladen.
+25-07-2025 07:22:47 - Objects.Logger - INFO - Option 'PDF' ausgewählt
+25-07-2025 07:22:47 - Objects.Logger - INFO - Navigation: Option 'Export' ausgewählt
+25-07-2025 07:22:48 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+25-07-2025 07:22:48 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+25-07-2025 07:22:48 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+25-07-2025 07:22:49 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+25-07-2025 07:22:49 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+25-07-2025 07:22:49 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+25-07-2025 07:22:49 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+25-07-2025 07:22:50 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+25-07-2025 07:22:50 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+25-07-2025 07:22:51 - Objects.Logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+25-07-2025 07:22:51 - Objects.Logger - INFO - Option 'Tabelle' ausgewählt
+25-07-2025 07:22:53 - Objects.Logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+25-07-2025 07:22:53 - Objects.Logger - INFO - Option 'Zeitstrahl' ausgewählt
+25-07-2025 07:22:54 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+25-07-2025 07:22:54 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+25-07-2025 07:22:55 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+25-07-2025 07:22:55 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+25-07-2025 07:22:56 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+25-07-2025 07:22:56 - Objects.Logger - INFO - Option 'Person' ausgewählt
+25-07-2025 07:22:56 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+25-07-2025 07:22:57 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+25-07-2025 07:22:57 - Objects.Logger - INFO - Option 'Person' ausgewählt
+25-07-2025 07:22:57 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+25-07-2025 07:22:57 - Objects.Logger - INFO - Content der Option 'Statistik' wurde geladen.
+25-07-2025 07:22:57 - Objects.Logger - INFO - Navigation: Option 'Statistik' ausgewählt
+25-07-2025 07:22:58 - Objects.Logger - INFO - Content der Option 'Import - CSV-Import' wurde geladen.
+25-07-2025 07:22:58 - Objects.Logger - INFO - Option 'CSV-Import' ausgewählt
+25-07-2025 07:22:58 - Objects.Logger - INFO - Navigation: Option 'Import' ausgewählt
+25-07-2025 07:23:01 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+25-07-2025 07:23:01 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+25-07-2025 07:23:01 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+25-07-2025 07:23:24 - Objects.Logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+25-07-2025 07:23:24 - Objects.Logger - INFO - Option 'Karte' ausgewählt
+25-07-2025 07:23:25 - Objects.Logger - INFO - Content der Option 'Erstellung - Person' wurde geladen.
+25-07-2025 07:23:25 - Objects.Logger - INFO - Option 'Person' ausgewählt
+25-07-2025 07:23:25 - Objects.Logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+25-07-2025 07:24:19 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+25-07-2025 07:24:19 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+25-07-2025 07:24:19 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+25-07-2025 07:24:19 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+25-07-2025 07:24:21 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+25-07-2025 07:24:21 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+25-07-2025 07:24:21 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+25-07-2025 07:24:22 - Objects.Logger - INFO - Content der Option 'Statistik' wurde geladen.
+25-07-2025 07:24:22 - Objects.Logger - INFO - Navigation: Option 'Statistik' ausgewählt
+25-07-2025 07:24:23 - Objects.Logger - INFO - Content der Option 'Impressum' wurde geladen.
+25-07-2025 07:24:23 - Objects.Logger - INFO - Navigation: Option 'Impressum' ausgewählt
+25-07-2025 07:24:24 - Objects.Logger - INFO - Content der Option 'Hilfe' wurde geladen.
+25-07-2025 07:24:24 - Objects.Logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+25-07-2025 07:24:25 - Objects.Logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+25-07-2025 07:24:25 - Objects.Logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+25-07-2025 07:24:25 - Objects.Logger - INFO - Navigation: Option 'BibTex' ausgewählt
+25-07-2025 07:30:18 - Objects.Logger - INFO - Logger erfolgreich initialisiert
+Manuelle Log-Prüfung: Objects.Logger ist bereit.
+25-07-2025 07:30:20 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+25-07-2025 07:30:20 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
+25-07-2025 07:30:20 - Objects.Logger - INFO - Anwendung gestartet
+25-07-2025 07:30:21 - Objects.Logger - INFO - Content der Option 'Ansicht - Liste' wurde geladen.
+25-07-2025 07:30:21 - Objects.Logger - INFO - Option 'Liste' ausgewählt
+25-07-2025 07:30:21 - Objects.Logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+25-07-2025 07:30:23 - Objects.Logger - INFO - Content der Option 'Startseite' wurde geladen.
+25-07-2025 07:30:23 - Objects.Logger - INFO - Navigation: Option 'Startseite' ausgewählt
