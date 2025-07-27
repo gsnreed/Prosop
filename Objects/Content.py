@@ -12,13 +12,12 @@ if parent_dir not in sys.path:
     sys.path.insert(0, parent_dir)
 
 # Absolute Importe
-from Objects.Config import AppColors, AppConfig
-from Objects.Frames import *
+from Objects.Config import AppColors
 
 class BaseContentFrame(tk.Frame):
     """Basisklasse für alle Content-Frames"""
     
-    def __init__(self, parent: ContentFrame) -> None:
+    def __init__(self, parent) -> None:
         super().__init__(parent, bg=AppColors.CONTENT_FRAME)
         self._CreateUi()
     
@@ -146,7 +145,7 @@ class AnsichtTabelleFrame(BaseContentFrame):
     def _CreateUi(self) -> None:
         header = tk.Label(
             self, 
-            text="Tabellenansicht",
+            text="Tabellarische Ansicht",
             font=('Helvetica', 16, 'bold'),
             bg=AppColors.CONTENT_FRAME,
             fg=AppColors.KU_COLOR
@@ -421,7 +420,7 @@ class ImportJsonFrame(BaseContentFrame):
 
 # Default Frame für noch nicht implementierte Inhalte
 class DefaultContentFrame(BaseContentFrame):
-    def __init__(self, parent: ContentFrame, title: str) -> None:
+    def __init__(self, parent, title: str) -> None:
         self.title = title
         super().__init__(parent)
     
@@ -439,7 +438,7 @@ class DefaultContentFrame(BaseContentFrame):
 class ContentManager:
     """Verwaltet die verschiedenen Content-Frames"""
     
-    def __init__(self, parent: ContentFrame) -> None:
+    def __init__(self, parent) -> None:
         self.parent = parent
         self.current_frame = None
         

@@ -14,7 +14,6 @@ if parent_dir not in sys.path:
 from Objects.Config import AppConfig, AppColors
 from Objects.Logger import logger
 from Objects.Content import ContentManager
-from Main import *
 
 # --- UI-Komponenten ---
 class TopFrame(tk.Frame):
@@ -22,7 +21,7 @@ class TopFrame(tk.Frame):
     Oberer Rahmen der Anwendung mit Logo, Titel und Uhr.
     """
     
-    def __init__(self, parent: MainApp) -> None:
+    def __init__(self, parent) -> None:
         """Initialisiere den oberen Rahmen"""
         super().__init__(parent, bg=AppColors.TOP_FRAME)
         
@@ -76,7 +75,7 @@ class SubMenuFrame(tk.Frame):
     Rahmen für Submenü-Optionen, erscheint rechts neben dem Navigation Frame.
     """
     
-    def __init__(self, parent: MainApp) -> None:
+    def __init__(self, parent) -> None:
         super().__init__(parent, bg=AppColors.SUBMENU_FRAME)
         self.parent = parent
         self.selected_submenu_item = None
@@ -190,7 +189,7 @@ class NavigationFrame(tk.Frame):
     Seitenleiste mit Navigationsoptionen.
     """
     
-    def __init__(self, parent: MainApp, content_updater: MainApp) -> None:
+    def __init__(self, parent, content_updater) -> None:
         super().__init__(parent, bg=AppColors.SIDEBAR_FRAME)
         self.content_updater = content_updater
         self.nav_labels = {}
@@ -298,7 +297,7 @@ class ContentFrame(tk.Frame):
     Hauptinhaltsfläche für den ausgewählten Navigationsbereich.
     """
     
-    def __init__(self, parent: MainApp) -> None:
+    def __init__(self, parent) -> None:
         """Initialisiere den Inhaltsrahmen"""
         super().__init__(parent, bg=AppColors.CONTENT_FRAME)
         self.content_manager = ContentManager(self)
