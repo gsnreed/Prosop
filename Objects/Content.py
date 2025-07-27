@@ -407,17 +407,6 @@ class ErstellungOrtFrame(BaseContentFrame):
         # Formular mit spezifischen Feldern für Orte
         # (ähnlich wie bei ErstellungPersonFrame)
 
-class ImportJsonFrame(BaseContentFrame):
-    def _CreateUi(self) -> None:
-        header = tk.Label(
-            self, 
-            text="Neue Datenbank im Json-Format importieren",
-            font=('Helvetica', 16, 'bold'),
-            bg=AppColors.CONTENT_FRAME,
-            fg=AppColors.KU_COLOR
-        )
-        header.pack(pady=(20, 10), padx=20, anchor='w')
-
 # Default Frame für noch nicht implementierte Inhalte
 class DefaultContentFrame(BaseContentFrame):
     def __init__(self, parent, title: str) -> None:
@@ -461,17 +450,6 @@ class ContentManager:
             'Erstellung - Ort': ErstellungOrtFrame,
             'Erstellung - Ereignis': DefaultContentFrame,  # Noch zu implementieren
             'Erstellung - Quelle': DefaultContentFrame,    # Noch zu implementieren
-            
-            # Export Submenu
-            'Export - PDF': DefaultContentFrame,
-            'Export - CSV': DefaultContentFrame,
-            'Export - Excel': DefaultContentFrame,
-            'Export - XML': DefaultContentFrame,
-            
-            # Import Submenu
-            'Import - CSV-Import': DefaultContentFrame,
-            'Import - JSON-Import': ImportJsonFrame,
-            'Import - Datenbank-Import': DefaultContentFrame,
             
             # BibTex Submenu
             'BibTex - Literatur hinzufügen': DefaultContentFrame,

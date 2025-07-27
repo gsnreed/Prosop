@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import filedialog, messagebox
 import os
 import sys
 
@@ -11,6 +12,7 @@ if current_dir not in sys.path:
 from Objects.Config import AppConfig, AppColors
 from Objects.Frames import TopFrame, NavigationFrame, SubMenuFrame, ContentFrame
 from Objects.Logger import logger
+from Objects.Romans import Roman, load_romans_from_json, save_romans_to_json
 
 class MainApp(tk.Tk):
     """
@@ -19,7 +21,12 @@ class MainApp(tk.Tk):
     
     def __init__(self) -> None:
         super().__init__()
-        
+
+        # Dateiverwaltungsattribute hinzufügen
+        self.current_file = None # Pfad zur aktuell geöffneten Datei
+        self.file_modified = False  # Zeigt an, ob ungespeicherte Änderungen vorliegen
+        self.romans = []    # Liste für alle Römereinträge
+
         # --- Fensterkonfiguration ---
         self.title(AppConfig.APP_TITLE)
         self.geometry(AppConfig.WINDOW_SIZE)
@@ -28,6 +35,9 @@ class MainApp(tk.Tk):
         
         # Icon einrichten
         self._SetupIcon()
+
+        # Menüleiste einrichten
+        self._SetupMenuBar()
         
         # --- Grid-Layout für Hauptfenster ---
         self._ConfigureMainGrid()
@@ -41,6 +51,49 @@ class MainApp(tk.Tk):
         
         # Anwendungsstart protokollieren
         logger.info("Anwendung gestartet")
+
+    def _SetupMenuBar(self):
+        # Hauptmenüleiste erstellen
+        menubar = tk.Menu(self)
+        self.config(menu=menubar)
+        
+        # Dropdown-Menü "Datei" erstellen
+        file_menu = tk.Menu(menubar, tearoff=0)
+        file_menu.add_command(label="Neu", command=self._OnFileNew, accelerator="Ctrl+N")
+        file_menu.add_command(label="Öffnen", command=self._OnFileOpen, accelerator="Ctrl+O")
+        file_menu.add_command(label="Speichern", command=self._OnFileSave, accelerator="Ctrl+S")
+        file_menu.add_command(label="Speichern unter", command=self._OnFileSaveAs, accelerator="Ctrl+Shift+S")
+        file_menu.add_separator()
+        file_menu.add_command(label="Beenden", command=self._OnExit)
+        menubar.add_cascade(label="Datei", menu=file_menu)
+
+        # Tastenkombinationen registrieren
+        self.bind("<Control-s>", lambda event: self._OnFileSave())
+        self.bind("<Control-S>", lambda event: self._OnFileSaveAs())  # Ctrl+Shift+S
+        self.bind("<Control-o>", lambda event: self._OnFileOpen())
+        self.bind("<Control-n>", lambda event: self._OnFileNew())
+        
+        # Dropdown-Menü "Bearbeiten" mit Untermenüs erstellen
+        edit_menu = tk.Menu(menubar, tearoff=0)
+        edit_menu.add_command(label="Rückgängig", command=self._OnEditUndo)
+        edit_menu.add_command(label="Wiederherstellen", command=self._OnEditRedo)
+        edit_menu.add_separator()
+        
+        # Untermenü für "Format" erstellen
+        format_menu = tk.Menu(edit_menu, tearoff=0)
+        format_menu.add_command(label="Fett", command=self._OnFormatBold)
+        format_menu.add_command(label="Kursiv", command=self._OnFormatItalic)
+        format_menu.add_command(label="Unterstrichen", command=self._OnFormatUnderline)
+        edit_menu.add_cascade(label="Format", menu=format_menu)
+        
+        menubar.add_cascade(label="Bearbeiten", menu=edit_menu)
+        
+        # Dropdown-Menü "Hilfe" erstellen
+        help_menu = tk.Menu(menubar, tearoff=0)
+        help_menu.add_command(label="Dokumentation", command=self._OnHelpDocs)
+        help_menu.add_command(label="Über", command=self._OnHelpAbout)
+        menubar.add_cascade(label="Hilfe", menu=help_menu)
+
     
     def _SelectInitialNavigation(self) -> None:
         """Wählt das erste Navigationselement aus"""
@@ -99,6 +152,179 @@ class MainApp(tk.Tk):
         # Verstecke das Submenü nicht, damit es sichtbar bleibt
         # Aktualisiere nur den Inhalt
         self.content_frame.UpdateContent(f"{main_option} - {submenu_option}")
+
+    def _OnFileNew(self):
+        logger.info("Datei -> Neu ausgewählt")
+
+        if self.file_modified:
+            if not self._CheckUnsavedChanges():
+                return
+            
+        self.romans = []
+        self.current_file = None
+        self.file_modified = False
+
+        self.title(AppConfig.APP_TITLE)
+
+        self.content_frame.UpdateContent('Neue Datei erstellt')
+    
+    def _CheckUnsavedChanges(self):
+        """Prüft auf ungespeicherte Änderungen"""
+        if not self.file_modified:
+            return True
+        
+        response = messagebox.askokcancel(
+            'Ungespeicherte Änderungen',
+            'Es gibt ungespeicherte Ändeurngen. Möchten Sie diese speichern?'
+        )
+
+        if response is None:    # Cancel
+            return False
+        elif response:          # Yes
+            return self._OnFileSave()
+        else:
+            return True     # No
+    
+    def _OnFileOpen(self):
+        logger.info("Datei -> Öffnen ausgewählt")
+        
+        if self.file_modified:
+            if not self._CheckUnsavedChanges():
+                return
+            
+        file_path = filedialog.askopenfilename(
+            defaultextension='.json',
+            filetypes=[
+                ('JSON-Dateien', '*.json'),
+                ('Excel-Dateien', '*.xlsx')
+            ],
+            title='Datenbank öffnen'
+        )
+
+        if file_path:
+            self._LoadFile(file_path)
+        
+    def _OnFileSave(self):
+        """Speichert die aktuelle Datei oder ruft 'Speichern unter' auf, wenn noch keine Datei existiert"""
+        logger.info("Datei -> Speichern ausgewählt")
+
+        if self.current_file:
+            self._SaveToFile(self.current_file)
+        else:
+            self._OnFileSaveAs()
+
+    def _OnFileSaveAs(self):
+        """Öffnet einen Dialog zum Speichern unter einem neuen Namen"""
+        logger.info("Datei -> Speichern unter ausgewählt")
+        file_path = filedialog.asksaveasfilename(
+            defaultextension='.json',
+            filetypes=[
+                ('Json-Dateien', '*.json'),
+                ('Excel-Dateien', '*.xlsx')
+            ],
+            title='Datei speichern unter'
+        )
+
+        if file_path:
+            self._SaveToFile(file_path)
+    
+    def _SaveToFile(self, file_path):
+        """Speicher die aktuellen Daten in die angegebene Datei"""
+        try:
+            # Speicherlogik
+            success = save_romans_to_json(self.romans, file_path)
+
+            if not success:
+                raise Exception('Fehler beim Speichern der Daten')
+
+            # Dateiinfos aktualisieren
+            self.current_file = file_path
+            self.file_modified = False
+
+            # Titel aktualisieren
+            file_name = os.path.basename(file_path).split('.')[0]
+            self.title(f"{AppConfig.APP_TITLE} - {file_name}")
+            logger.info(f'Datei erfolgreich gespeichert: {file_path}')
+        
+        except Exception as e:
+            messagebox.showerror("Fehler beim Speichern", f"Die Datei konnte nicht gespeichert werden:\n{str(e)}")
+            logger.error(f"Fehler beim Speichern der Datei {file_path}: {e}")
+
+        
+    def _OnEditUndo(self):
+        logger.info("Bearbeiten -> Rückgängig ausgewählt")
+        # Implementiere Funktionalität hier
+        
+    def _OnEditRedo(self):
+        logger.info("Bearbeiten -> Wiederherstellen ausgewählt")
+        # Implementiere Funktionalität hier
+        
+    def _OnFormatBold(self):
+        logger.info("Bearbeiten -> Format -> Fett ausgewählt")
+        # Implementiere Funktionalität hier
+        
+    def _OnFormatItalic(self):
+        logger.info("Bearbeiten -> Format -> Kursiv ausgewählt")
+        # Implementiere Funktionalität hier
+        
+    def _OnFormatUnderline(self):
+        logger.info("Bearbeiten -> Format -> Unterstrichen ausgewählt")
+        # Implementiere Funktionalität hier
+        
+    def _OnHelpDocs(self):
+        logger.info("Hilfe -> Dokumentation ausgewählt")
+        # Implementiere Funktionalität hier
+        
+    def _OnHelpAbout(self):
+        logger.info("Hilfe -> Über ausgewählt")
+        # Implementiere Funktionalität hier
+
+    def _OnExit(self):
+        logger.info("Anwendung wird beendet")
+
+        if self.file_modified:
+            if not self._CheckUnsavedChanges():
+                return  # Beenden abbrechen
+
+        self.quit()      # Beendet die Ereignisschleife
+        self.destroy()   # Zerstört alle Widgets und gibt Ressourcen frei
+
+    def _LoadFile(self, file_path):
+        """Lädt den Inhalt der Datei"""
+        try:
+            # Römer aus Datei laden
+            loaded_romans = load_romans_from_json(file_path)
+
+            if loaded_romans is None or not isinstance(loaded_romans, list):
+                raise Exception('Ungültiges Dateiformat')
+            
+            self.romans = loaded_romans
+
+            # Dateiinfos aktualisieren
+            self.current_file = file_path
+            self.file_modified = False
+
+            # Titel aktualisieren
+            file_name = os.path.basename(file_path).split('.')[0]
+            self.title(f"{AppConfig.APP_TITLE} - {file_name}")
+            logger.info(f'Datei erfolgreich geladen: {file_path}')
+        
+        except Exception as e:
+            messagebox.showerror("Fehler beim Öffnen", f"Die Datei konnte nicht geöffnet werden:\n{str(e)}")
+            logger.error(f"Fehler beim Laden der Datei {file_path}: {e}")
+        
+    def SetModified(self, modified=True):
+        """Setzt den Änderungsstatus und aktualisiert die UI entsprechend"""
+        self.file_modified = modified
+        
+        # Titel anpassen
+        if self.current_file:
+            file_name = os.path.basename(self.current_file).split('.')[0]
+            marker = "*" if modified else ""
+            self.title(f"{AppConfig.APP_TITLE} - {marker}{file_name}")
+        else:
+            self.title(f"{AppConfig.APP_TITLE}{' *' if modified else ''}")
+            
 
 if __name__ == '__main__':
     # Anwendung erstellen und starten

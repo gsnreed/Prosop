@@ -14,8 +14,8 @@ class AppConfig:
     # Anwendungstexte
     MAIN_TITLE = 'Prosopographie der Julisch-Claudischen Kaiserzeit'
     NAVIGATION_TITLE = 'Navigation'
-    NAV_OPTIONS = ['Startseite', 'Ansicht', 'Erstellung', 'Statistik', 
-                  'Import', 'Export', 'BibTex', 'Hilfe', 'Impressum']
+    NAV_OPTIONS = ['Startseite', 'Ansicht', 'Erstellung', 'Statistik',
+                    'BibTex', 'Hilfe', 'Impressum']
 
 class AppColors:
     """Farbschema der Anwendung"""

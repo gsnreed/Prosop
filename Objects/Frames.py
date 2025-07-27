@@ -99,8 +99,6 @@ class SubMenuFrame(tk.Frame):
         self.submenus = {
             'Ansicht': ['Liste', 'Karte', 'Tabelle', 'Zeitstrahl'],
             'Erstellung': ['Person', 'Ort', 'Ereignis', 'Quelle'],
-            'Export': ['PDF', 'CSV', 'Excel', 'JSON'],
-            'Import': ['CSV-Import', 'JSON-Import', 'Datenbank-Import'],
             'BibTex': ['Literatur hinzufügen', 'Zitieren', 'Verwalten']
         }
     
@@ -236,7 +234,7 @@ class NavigationFrame(tk.Frame):
                 padx=15,  # Reduziert von 20 auf 15 für konsistenteres Aussehen
                 pady=5,
                 cursor="hand2",
-                anchor=tk.w
+                anchor='w'
             )
             label.pack(fill=tk.X, pady=2)
             
