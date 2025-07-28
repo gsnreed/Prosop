@@ -13,6 +13,7 @@ from Objects.Config import AppConfig, AppColors
 from Objects.Frames import TopFrame, NavigationFrame, SubMenuFrame, ContentFrame
 from Objects.Logger import logger
 from Objects.Romans import Roman, load_romans_from_json, save_romans_to_json
+from Objects.Command import *
 
 class MainApp(tk.Tk):
     """
@@ -27,6 +28,8 @@ class MainApp(tk.Tk):
         self.file_modified = False  # Zeigt an, ob ungespeicherte Änderungen vorliegen
         self.romans = []    # Liste für alle Römereinträge
 
+        self.command_manager = CommandManager()
+
         # --- Fensterkonfiguration ---
         self.title(AppConfig.APP_TITLE)
         self.geometry(AppConfig.WINDOW_SIZE)
@@ -38,6 +41,7 @@ class MainApp(tk.Tk):
 
         # Menüleiste einrichten
         self._SetupMenuBar()
+        self._UpdateEditMenuState()
         
         # --- Grid-Layout für Hauptfenster ---
         self._ConfigureMainGrid()
@@ -75,9 +79,14 @@ class MainApp(tk.Tk):
         
         # Dropdown-Menü "Bearbeiten" mit Untermenüs erstellen
         edit_menu = tk.Menu(menubar, tearoff=0)
-        edit_menu.add_command(label="Rückgängig", command=self._OnEditUndo)
-        edit_menu.add_command(label="Wiederherstellen", command=self._OnEditRedo)
+        self.undo_menu_index = 0  # Erstes Element
+        self.redo_menu_index = 1  # Zweites Element
+        edit_menu.add_command(label="Rückgängig", command=self._OnEditUndo, accelerator='Ctrl+Z')
+        edit_menu.add_command(label="Wiederherstellen", command=self._OnEditRedo, accelerator='Ctrl+Y')
         edit_menu.add_separator()
+
+        self.bind("<Control-z>", lambda event: self._OnEditUndo())
+        self.bind("<Control-y>", lambda event: self._OnEditRedo())
         
         # Untermenü für "Format" erstellen
         format_menu = tk.Menu(edit_menu, tearoff=0)
@@ -85,7 +94,7 @@ class MainApp(tk.Tk):
         format_menu.add_command(label="Kursiv", command=self._OnFormatItalic)
         format_menu.add_command(label="Unterstrichen", command=self._OnFormatUnderline)
         edit_menu.add_cascade(label="Format", menu=format_menu)
-        
+
         menubar.add_cascade(label="Bearbeiten", menu=edit_menu)
         
         # Dropdown-Menü "Hilfe" erstellen
@@ -93,6 +102,8 @@ class MainApp(tk.Tk):
         help_menu.add_command(label="Dokumentation", command=self._OnHelpDocs)
         help_menu.add_command(label="Über", command=self._OnHelpAbout)
         menubar.add_cascade(label="Hilfe", menu=help_menu)
+
+        self.edit_menu = edit_menu
 
     
     def _SelectInitialNavigation(self) -> None:
@@ -164,9 +175,10 @@ class MainApp(tk.Tk):
         self.current_file = None
         self.file_modified = False
 
-        self.title(AppConfig.APP_TITLE)
+        self.command_manager.clear()
 
-        self.content_frame.UpdateContent('Neue Datei erstellt')
+        self.title(AppConfig.APP_TITLE)
+        self._UpdateEditMenuState()
     
     def _CheckUnsavedChanges(self):
         """Prüft auf ungespeicherte Änderungen"""
@@ -253,12 +265,43 @@ class MainApp(tk.Tk):
         
     def _OnEditUndo(self):
         logger.info("Bearbeiten -> Rückgängig ausgewählt")
-        # Implementiere Funktionalität hier
+        
+        if self.command_manager.undo():
+            # UI aktualisieren
+            self.SetModified(True)
+            self.content_frame.UpdateContent(self.content_frame.current_option)
+            self._UpdateEditMenuState()
+        else:
+            # Optional: Benutzer informieren, dass nichts zum Rückgängigmachen vorhanden ist
+            messagebox.showinfo("Information", "Nichts zum Rückgängigmachen vorhanden.")
         
     def _OnEditRedo(self):
         logger.info("Bearbeiten -> Wiederherstellen ausgewählt")
-        # Implementiere Funktionalität hier
         
+        if self.command_manager.redo():
+            # UI aktualisieren
+            self.SetModified(True)
+            self.content_frame.UpdateContent(self.content_frame.current_option)
+            self._UpdateEditMenuState()
+        else:
+            # Optional: Benutzer informieren, dass nichts zum Wiederherstellen vorhanden ist
+            messagebox.showinfo("Information", "Nichts zum Wiederherstellen vorhanden.")
+        
+    def _UpdateEditMenuState(self):
+        """Aktualisiert den Zustand der Bearbeiten-Menüeinträge"""
+        try:
+            if self.command_manager.can_undo():
+                self.edit_menu.entryconfig(self.undo_menu_index, state=tk.NORMAL)
+            else:
+                self.edit_menu.entryconfig(self.undo_menu_index, state=tk.DISABLED)
+                
+            if self.command_manager.can_redo():
+                self.edit_menu.entryconfig(self.redo_menu_index, state=tk.NORMAL)
+            else:
+                self.edit_menu.entryconfig(self.redo_menu_index, state=tk.DISABLED)
+        except Exception as e:
+            logger.error(f"Fehler beim Aktualisieren des Menüstatus: {e}")
+
     def _OnFormatBold(self):
         logger.info("Bearbeiten -> Format -> Fett ausgewählt")
         # Implementiere Funktionalität hier
@@ -292,11 +335,21 @@ class MainApp(tk.Tk):
     def _LoadFile(self, file_path):
         """Lädt den Inhalt der Datei"""
         try:
-            # Römer aus Datei laden
-            loaded_romans = load_romans_from_json(file_path)
-
+            # Dateierweiterung prüfen
+            ext = os.path.splitext(file_path)[1].lower()
+            
+            if ext == '.json':
+                loaded_romans = load_romans_from_json(file_path)
+            elif ext == '.xlsx':
+                # Excel-Unterstützung hier hinzufügen
+                messagebox.showerror("Fehler", "Excel-Unterstützung noch nicht implementiert.")
+                return
+            else:
+                messagebox.showerror("Fehler", f"Nicht unterstütztes Dateiformat: {ext}")
+                return
+                
             if loaded_romans is None or not isinstance(loaded_romans, list):
-                raise Exception('Ungültiges Dateiformat')
+                raise Exception('Ungültiges Dateiformat oder keine Romans gefunden')
             
             self.romans = loaded_romans
 
@@ -304,9 +357,12 @@ class MainApp(tk.Tk):
             self.current_file = file_path
             self.file_modified = False
 
+            self.command_manager.clear()
+
             # Titel aktualisieren
             file_name = os.path.basename(file_path).split('.')[0]
             self.title(f"{AppConfig.APP_TITLE} - {file_name}")
+            self._UpdateEditMenuState()
             logger.info(f'Datei erfolgreich geladen: {file_path}')
         
         except Exception as e:
@@ -324,7 +380,39 @@ class MainApp(tk.Tk):
             self.title(f"{AppConfig.APP_TITLE} - {marker}{file_name}")
         else:
             self.title(f"{AppConfig.APP_TITLE}{' *' if modified else ''}")
-            
+
+    def AddRoman(self, roman):
+        """Fügt einen neuen Roman zur Liste hinzu und markiert Änderungen"""
+        if isinstance(roman, Roman):
+            command = AddRomanCommand(self.romans, roman)
+            self.command_manager.execute_command(command)
+            self.SetModified(True)
+            self._UpdateEditMenuState()
+            logger.info(f"Roman '{roman['Name']}' hinzugefügt")
+        else:
+            logger.error("Versuch, ein Nicht-Roman-Objekt hinzuzufügen")
+
+    def RemoveRoman(self, index):
+        """Entfernt einen Roman aus der Liste"""
+        if 0 <= index < len(self.romans):
+            command = RemoveRomanCommand(self.romans, index)
+            self.command_manager.execute_command(command)
+            self.SetModified(True)
+            self._UpdateEditMenuState()
+            logger.info(f"Roman an Position {index} entfernt")
+        else:
+            logger.error(f"Ungültiger Index beim Entfernen: {index}")
+
+    def EditRomanProperty(self, roman, property_name, new_value):
+        """Bearbeitet eine Eigenschaft eines Romans"""
+        if isinstance(roman, Roman) and property_name:
+            command = EditRomanCommand(roman, property_name, new_value)
+            self.command_manager.execute_command(command)
+            self.SetModified(True)
+            self._UpdateEditMenuState()
+            logger.info(f"Eigenschaft '{property_name}' von Roman '{roman['Name']}' bearbeitet")
+        else:
+            logger.error("Ungültige Parameter für Roman-Bearbeitung")            
 
 if __name__ == '__main__':
     # Anwendung erstellen und starten
