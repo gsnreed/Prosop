@@ -2,6 +2,13 @@
     "Römer": [
         {
             "Name": "Octavia maior ",
+            "Männer": [
+                "Verheiratet mit Sex. Appuleius"
+            ],
+            "Kinder": [
+                "cos. Ord. 29 v. Chr.: Sex. Appuleius / Sex. Appuleius ",
+                "cos. Ord. 20 v. Chr.: M. Appuleius / Sex. Appuleius"
+            ],
             "Geburtsdatum": "vor 70 v. Chr. ",
             "Sterbedatum": "",
             "Todesursache": "",
@@ -9,18 +16,7 @@
             "Vorfahren": "",
             "Verlobung": "",
             "Häufigkeit Heirat": "1x Verheiratet",
-            "Männer": [
-                "Verheiratet mit Sex. Appuleius"
-            ],
             "Anzahl Kinder": "2 Kinder",
-            "Kinder": [
-                "cos. Ord. 29 v. Chr.: Sex. Appuleius / Sex. Appuleius ",
-                "cos. Ord. 20 v. Chr.: M. Appuleius / Sex. Appuleius",
-                "",
-                "",
-                "",
-                ""
-            ],
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -49,6 +45,17 @@
         },
         {
             "Name": "Octavia minor ",
+            "Männer": [
+                "vor dem Jahr 54 v. Chr. mit C. Claudius Marcellus vermählt",
+                "40 v. Chr.: Heirat mit Marcus AntoniusSandte ihr den Scheidungsbrief 32 v. Chr. "
+            ],
+            "Kinder": [
+                "Claudia Marcella maior / C. Claudius Marcellus ",
+                "M. Claudius Marcellus / C. Claudius Marcellus",
+                "Claudia Marcellaminor / C. Claudius Marcellus",
+                "39 v. Chr.: Antonia maior /Marcus Antonius ",
+                "35 v. Chr.: Antonia minor/ Marcus Antonius"
+            ],
             "Geburtsdatum": "um 70 v. Chr. ",
             "Sterbedatum": "11 v. Chr. ",
             "Todesursache": "",
@@ -56,22 +63,7 @@
             "Vorfahren": "über die jüngere Tochter wurde O. zur Ahnin von drei Kaisern: Großmutter des Claudius, Urgroßmutter des Caligula und zur Ururgroßmutter des Nero",
             "Verlobung": "",
             "Häufigkeit Heirat": "2x Verheiratet",
-            "Männer": [
-                "vor dem Jahr 54 v. Chr. mit C. Claudius Marcellus vermählt",
-                "40 v. Chr.: Heirat mit Marcus AntoniusSandte ihr den Scheidungsbrief 32 v. Chr. ",
-                "",
-                "",
-                ""
-            ],
             "Anzahl Kinder": "5 Kinder ",
-            "Kinder": [
-                "Claudia Marcella maior / C. Claudius Marcellus ",
-                "M. Claudius Marcellus / C. Claudius Marcellus",
-                "Claudia Marcellaminor / C. Claudius Marcellus",
-                "39 v. Chr.: Antonia maior /Marcus Antonius ",
-                "35 v. Chr.: Antonia minor/ Marcus Antonius",
-                ""
-            ],
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -100,6 +92,14 @@
         },
         {
             "Name": "Antonia maior",
+            "Männer": [
+                "cos. 16 v. Chr.(?): Heirat mit L. Domitius Ahenobarbus"
+            ],
+            "Kinder": [
+                "cos. 32 v. Chr.: Cn.Domitius Ahenobarbus (Vater Neros) / L. D. Ahenobarbus",
+                "Domitia / L. D. Ahenobarbus ",
+                "Domitia Lepida (Mutter Messalinas) /L. D. Ahenobarbus"
+            ],
             "Geburtsdatum": "39 v. Chr. ",
             "Sterbedatum": "",
             "Todesursache": "",
@@ -107,22 +107,7 @@
             "Vorfahren": "",
             "Verlobung": "37 v. Chr. wurde sie mit L. Domitius Ahenobarbus verlobt",
             "Häufigkeit Heirat": "1x Verheiratet",
-            "Männer": [
-                "cos. 16 v. Chr.(?): Heirat mit L. Domitius Ahenobarbus",
-                "",
-                "",
-                "",
-                ""
-            ],
             "Anzahl Kinder": "3 Kinder",
-            "Kinder": [
-                "cos. 32 v. Chr.: Cn.Domitius Ahenobarbus (Vater Neros) / L. D. Ahenobarbus",
-                "Domitia / L. D. Ahenobarbus ",
-                "Domitia Lepida (Mutter Messalinas) /L. D. Ahenobarbus",
-                "",
-                "",
-                ""
-            ],
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -151,13 +136,6 @@
         },
         {
             "Name": "Antonia minor",
-            "Geburtsdatum": "31. Januar 36 v. Chr. ",
-            "Sterbedatum": "1. Mai 37 n. Chr. ",
-            "Todesursache": "Selbstmord?",
-            "Familie": "Tochter des Triumvirn Marcus Antonius und der Octavia minor, Ehefrau des Drusus (d. Ältere),Mutter des Claudius,Großmutter des Caligula. ",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "1x verheiratetseit September 9 v. Chr. Witwe, nachdem ihr Mann gestorben war, univira",
             "Männer": [
                 "ca. 16 v. Chr.: Heirat mit Nero Claudius Drusus d. Älteren",
                 "",
@@ -165,7 +143,6 @@
                 "",
                 ""
             ],
-            "Anzahl Kinder": "Mehrere Kinder, vondenen nur drei überlebten und namentlich bekannt sind. ",
             "Kinder": [
                 "Germanicus / Drusus d. Ä.  ",
                 "(Claudia) Livia Iulia [Livilla]/ Drusus d. Ä.",
@@ -174,6 +151,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "31. Januar 36 v. Chr. ",
+            "Sterbedatum": "1. Mai 37 n. Chr. ",
+            "Todesursache": "Selbstmord?",
+            "Familie": "Tochter des Triumvirn Marcus Antonius und der Octavia minor, Ehefrau des Drusus (d. Ältere),Mutter des Claudius,Großmutter des Caligula. ",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "1x verheiratetseit September 9 v. Chr. Witwe, nachdem ihr Mann gestorben war, univira",
+            "Anzahl Kinder": "Mehrere Kinder, vondenen nur drei überlebten und namentlich bekannt sind. ",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -202,6 +187,15 @@
         },
         {
             "Name": "Domitia Lepida",
+            "Männer": [
+                "M. Valerius Messalla Barbatus",
+                "Faustus Cornelius Sulla",
+                "C. Appius Iunius Silanus"
+            ],
+            "Kinder": [
+                "Valeria Messalina /M. Valerius Messalla Barbatus ",
+                "Faustus Cornelius Sulla Felix / F. Cornelius Sulla"
+            ],
             "Geburtsdatum": "",
             "Sterbedatum": "54 n. Chr. (?)",
             "Todesursache": "Agrippina war verant-wortlich; Hingerichtet",
@@ -209,22 +203,7 @@
             "Vorfahren": "Enkelin der Octavia und Großnichte des Augustus",
             "Verlobung": "",
             "Häufigkeit Heirat": "3x Verheiratet",
-            "Männer": [
-                "M. Valerius Messalla Barbatus",
-                "Faustus Cornelius Sulla",
-                "C. Appius Iunius Silanus",
-                "",
-                ""
-            ],
             "Anzahl Kinder": "2 Kinder",
-            "Kinder": [
-                "Valeria Messalina /M. Valerius Messalla Barbatus ",
-                "Faustus Cornelius Sulla Felix / F. Cornelius Sulla",
-                "",
-                "",
-                "",
-                ""
-            ],
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -253,21 +232,10 @@
         },
         {
             "Name": "Claudia Livia Iulia = Livilla",
-            "Geburtsdatum": "",
-            "Sterbedatum": "31 n. Chr. ",
-            "Todesursache": "Hungertod",
-            "Familie": "Tochter des Drusus d. Älterenund Antonia minor,Enkelin der Livia und des Augustus",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "2x Verheiratet",
             "Männer": [
                 "1 v. Chr. Heirat mit C. Caesar",
-                "4 n. Chr.: Heirat mit Drusus dem Jüngeren",
-                "",
-                "",
-                ""
+                "4 n. Chr.: Heirat mit Drusus dem Jüngeren"
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -276,6 +244,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "",
+            "Sterbedatum": "31 n. Chr. ",
+            "Todesursache": "Hungertod",
+            "Familie": "Tochter des Drusus d. Älterenund Antonia minor,Enkelin der Livia und des Augustus",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "2x Verheiratet",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -304,13 +280,6 @@
         },
         {
             "Name": "Servillia ",
-            "Geburtsdatum": "",
-            "Sterbedatum": "",
-            "Todesursache": "",
-            "Familie": "Tochter des P. Servilius Isauricus",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "",
             "Männer": [
                 "",
                 "",
@@ -318,7 +287,6 @@
                 "",
                 ""
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -327,6 +295,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "",
+            "Sterbedatum": "",
+            "Todesursache": "",
+            "Familie": "Tochter des P. Servilius Isauricus",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -355,13 +331,6 @@
         },
         {
             "Name": "Clodia",
-            "Geburtsdatum": "",
-            "Sterbedatum": "",
-            "Todesursache": "",
-            "Familie": "Tochter des P. Clodius Pulcherund der Fulvia; Stieftochter des M. Antonius ",
-            "Vorfahren": "",
-            "Verlobung": "43 v. Chr.: als 10-jährigemit Octavian verlobt; dieser löste die Ehe im Jahr 41 v. Chr. aus politischen Gründen",
-            "Häufigkeit Heirat": "",
             "Männer": [
                 "43-41 v. Chr.: Heirat mit Octavian",
                 "",
@@ -369,7 +338,6 @@
                 "",
                 ""
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -378,6 +346,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "",
+            "Sterbedatum": "",
+            "Todesursache": "",
+            "Familie": "Tochter des P. Clodius Pulcherund der Fulvia; Stieftochter des M. Antonius ",
+            "Vorfahren": "",
+            "Verlobung": "43 v. Chr.: als 10-jährigemit Octavian verlobt; dieser löste die Ehe im Jahr 41 v. Chr. aus politischen Gründen",
+            "Häufigkeit Heirat": "",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -406,6 +382,15 @@
         },
         {
             "Name": "Scribonia ",
+            "Männer": [
+                "cos. 56 v. Chr.: Cn. CorneliusLentulus Marcellinus ",
+                "P. Cornelius Scipio",
+                "Winter 40/39 v. Chr. - Ende 39 v. Chr.: Augustus"
+            ],
+            "Kinder": [
+                "P. Cornelius Scipio / Cn. Cornelius Lentulus Marcellinus ",
+                "Ende 39 v. Chr. : Iulia / Augustus "
+            ],
             "Geburtsdatum": "ca. 66 v. Chr. ",
             "Sterbedatum": "nach 16 n. Chr. ",
             "Todesursache": "Sie begleitet ihre Tochter Iulia im Jahr  2 v. Chr. in die Verbannung ",
@@ -413,22 +398,7 @@
             "Vorfahren": "",
             "Verlobung": "",
             "Häufigkeit Heirat": "3x Verheiratet",
-            "Männer": [
-                "cos. 56 v. Chr.: Cn. CorneliusLentulus Marcellinus ",
-                "P. Cornelius Scipio",
-                "Winter 40/39 v. Chr. - Ende 39 v. Chr.: Augustus",
-                "",
-                ""
-            ],
             "Anzahl Kinder": "2 Kinder",
-            "Kinder": [
-                "P. Cornelius Scipio / Cn. Cornelius Lentulus Marcellinus ",
-                "Ende 39 v. Chr. : Iulia / Augustus ",
-                "",
-                "",
-                "",
-                ""
-            ],
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -457,6 +427,14 @@
         },
         {
             "Name": "Livia Drusilla",
+            "Männer": [
+                "43 v. Chr.: Heirat mit TiberiusClaudius Nero (RE Claudius Nr. 254)",
+                "17. Jan. 38 v. Chr.: Heiratmit Octavian"
+            ],
+            "Kinder": [
+                "16. Nov. 42 v. Chr.: Geburt des Tiberius /  Claudius Nero",
+                "zwischen 18. März und 13. April (11. April (?)) 38 v. Chr.:Geburt des Drusus"
+            ],
             "Geburtsdatum": "30. Jan. 58 v. Chr. (so offiziell, real am 28. Jan.?)",
             "Sterbedatum": "29 n. Chr.",
             "Todesursache": "natürlicher Tod ",
@@ -464,18 +442,7 @@
             "Vorfahren": "",
             "Verlobung": "",
             "Häufigkeit Heirat": "2x Verheiratet",
-            "Männer": [
-                "43 v. Chr.: Heirat mit TiberiusClaudius Nero (RE Claudius Nr. 254)",
-                "17. Jan. 38 v. Chr.: Heiratmit Octavian",
-                "",
-                "",
-                ""
-            ],
             "Anzahl Kinder": "2 Kinder",
-            "Kinder": [
-                "16. Nov. 42 v. Chr.: Geburt des Tiberius /  Claudius Nero",
-                "zwischen 18. März und 13. April (11. April (?)) 38 v. Chr.:Geburt des Drusus"
-            ],
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -504,19 +471,11 @@
         },
         {
             "Name": "Iulia",
-            "Geburtsdatum": "Ende 39 v. Chr. ",
-            "Sterbedatum": "2. H. 14 n. Chr. ",
-            "Todesursache": "Ende 2 v. Chr.: Scheidung v. Tiberius und Verbannung auf die Insel Pandateria3 n. Chr.: Übersiedlung nach RhegiumGestorben in Rhegium an Hunger und Auszehrung;",
-            "Familie": "Tochter Octavians (Augustus) und Scribonia",
-            "Vorfahren": "",
-            "Verlobung": "1x VerlobtSept./Oct. 37 v. Chr.: mit M. Antonius Antyllus; Sohn des TriumvirnMarcus Antonius. ",
-            "Häufigkeit Heirat": "3 x Verheiratet",
             "Männer": [
                 "25 v. Chr.: M. Marcellus (Cousin); Tod im August 23 v. Chr. ",
                 "21 v. Chr.: M. Agrippa (41 Jahre alt) ",
                 "12 v. Chr.: Verlobung mit Tiberius 11 v. Chr.: Heirat mit Tiberius"
             ],
-            "Anzahl Kinder": "6 Kinder",
             "Kinder": [
                 "20 v. Chr.: C. Caesar / Agrippa",
                 "19 v. Chr.(?):Vipsania Iulia /Agrippa",
@@ -525,6 +484,14 @@
                 "12 v. Chr.: Agrippa postumus /Agrippa",
                 "10 v. Chr.: Ein Sohn von Tiberius aber bald nach der Geburt gestorben."
             ],
+            "Geburtsdatum": "Ende 39 v. Chr. ",
+            "Sterbedatum": "2. H. 14 n. Chr. ",
+            "Todesursache": "Ende 2 v. Chr.: Scheidung v. Tiberius und Verbannung auf die Insel Pandateria3 n. Chr.: Übersiedlung nach RhegiumGestorben in Rhegium an Hunger und Auszehrung;",
+            "Familie": "Tochter Octavians (Augustus) und Scribonia",
+            "Vorfahren": "",
+            "Verlobung": "1x VerlobtSept./Oct. 37 v. Chr.: mit M. Antonius Antyllus; Sohn des TriumvirnMarcus Antonius. ",
+            "Häufigkeit Heirat": "3 x Verheiratet",
+            "Anzahl Kinder": "6 Kinder",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -553,6 +520,13 @@
         },
         {
             "Name": "Vipsania Iulia",
+            "Männer": [
+                "5/4 v. Chr.: Vermählung mit L. Aemilius Lepidus"
+            ],
+            "Kinder": [
+                "3 v. Chr.: Aemilia Lepida / L. Aemilius Lepidus",
+                "Gebar in der Verbannungein Kind, das Augustus aufzuziehen verbot. -> Wer war der Vater?)"
+            ],
             "Geburtsdatum": "19 v. Chr. ",
             "Sterbedatum": "28 n. Chr. ",
             "Todesursache": "Tod im Exil ",
@@ -560,14 +534,7 @@
             "Vorfahren": "",
             "Verlobung": "",
             "Häufigkeit Heirat": "1x Verheiratet",
-            "Männer": [
-                "5/4 v. Chr.: Vermählung mit L. Aemilius Lepidus"
-            ],
             "Anzahl Kinder": "2 Kinder",
-            "Kinder": [
-                "3 v. Chr.: Aemilia Lepida / L. Aemilius Lepidus",
-                "Gebar in der Verbannungein Kind, das Augustus aufzuziehen verbot. -> Wer war der Vater?)"
-            ],
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -596,21 +563,10 @@
         },
         {
             "Name": "Vipsania Agrippina",
-            "Geburtsdatum": "ca. 33 v. Chr. ",
-            "Sterbedatum": "20 n. Chr.",
-            "Todesursache": "",
-            "Familie": "Tochter des Agrippa und der Caecilia Attica",
-            "Vorfahren": "",
-            "Verlobung": "33/32 v. Chr. mit Tiberius",
-            "Häufigkeit Heirat": "2 x Verheiratet",
             "Männer": [
                 "16 v. Chr.: Heirat mit Tiberius",
-                "Nach der Scheidung 12 v. Chr. von Tiberius: C. Asinius Gallus",
-                "",
-                "",
-                ""
+                "Nach der Scheidung 12 v. Chr. von Tiberius: C. Asinius Gallus"
             ],
-            "Anzahl Kinder": "1 Kind",
             "Kinder": [
                 "7. Oktober 15 oder 14Geburt von Nero Claudius Drusus (Drusus d. Jüngere) / Tiberius",
                 "",
@@ -619,6 +575,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "ca. 33 v. Chr. ",
+            "Sterbedatum": "20 n. Chr.",
+            "Todesursache": "",
+            "Familie": "Tochter des Agrippa und der Caecilia Attica",
+            "Vorfahren": "",
+            "Verlobung": "33/32 v. Chr. mit Tiberius",
+            "Häufigkeit Heirat": "2 x Verheiratet",
+            "Anzahl Kinder": "1 Kind",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -647,6 +611,15 @@
         },
         {
             "Name": "Agrippina maior",
+            "Männer": [
+                "5 n. Chr (?): Heirat mit Germanicus (ihr Cousin)"
+            ],
+            "Kinder": [
+                "31. Aug. 12 n. Chr.: Caligula / Germanicus",
+                "6. Nov. 15/16 n. Chr.: Geburt von Agrippina minor /Germanicus",
+                "2./5. Juni 14 (?) in Gallien: Geburt von Iulia Drusilla / Germanicus",
+                "Ende 17 oder Anf. (Febr.) (?) 18 auf Lesbos: Geburt von Iulia Livilla /Germanicus"
+            ],
             "Geburtsdatum": "14 v. Chr. ",
             "Sterbedatum": "18. Okt. 33 n. Chr. ",
             "Todesursache": "29 n. Chr.: Verbannung nach Pandateria; Selbstmord oder Hungertod ",
@@ -654,22 +627,7 @@
             "Vorfahren": "",
             "Verlobung": "",
             "Häufigkeit Heirat": "1x Verheiratet",
-            "Männer": [
-                "5 n. Chr (?): Heirat mit Germanicus (ihr Cousin)",
-                "",
-                "",
-                "",
-                ""
-            ],
             "Anzahl Kinder": "4 Kinder ",
-            "Kinder": [
-                "31. Aug. 12 n. Chr.: Caligula / Germanicus",
-                "6. Nov. 15/16 n. Chr.: Geburt von Agrippina minor /Germanicus",
-                "2./5. Juni 14 (?) in Gallien: Geburt von Iulia Drusilla / Germanicus",
-                "Ende 17 oder Anf. (Febr.) (?) 18 auf Lesbos: Geburt von Iulia Livilla /Germanicus",
-                "",
-                ""
-            ],
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -698,21 +656,11 @@
         },
         {
             "Name": "Agrippina minor",
-            "Geburtsdatum": "6. Nov. 15 in oppidum Ubiorum (Köln)",
-            "Sterbedatum": "zwischen 19. und 23. März 59 n. Chr. ",
-            "Todesursache": "erste Monate 55 n.Chr.: Verbannung aus dem kaiserlichen Palast;Auf Befehl Neros ermordet",
-            "Familie": "Tochter des Germanicus und derAgrippina der älteren",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "3x Verheiratet",
             "Männer": [
                 "28 n. Chr.: Heirat mit Cn. Domitius Ahenobarbus",
                 "41 n. Chr.: Heirat mit C.Passienus Crispus",
-                "49 n. Chr.: Heirat mit Claudius",
-                "",
-                ""
+                "49 n. Chr.: Heirat mit Claudius"
             ],
-            "Anzahl Kinder": "1 Kind ",
             "Kinder": [
                 "15. Dez. 37 n. Chr.: Nero / D. Ahenobarbus",
                 "",
@@ -721,6 +669,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "6. Nov. 15 in oppidum Ubiorum (Köln)",
+            "Sterbedatum": "zwischen 19. und 23. März 59 n. Chr. ",
+            "Todesursache": "erste Monate 55 n.Chr.: Verbannung aus dem kaiserlichen Palast;Auf Befehl Neros ermordet",
+            "Familie": "Tochter des Germanicus und derAgrippina der älteren",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "3x Verheiratet",
+            "Anzahl Kinder": "1 Kind ",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -749,21 +705,10 @@
         },
         {
             "Name": "Iulia Drusilla",
-            "Geburtsdatum": "2./5. Juni 14 (?) inGallien",
-            "Sterbedatum": "10. Juni  38 n. Chr.",
-            "Todesursache": "Natürlicher Tod",
-            "Familie": "Tochter des Germanicus und Vipsania Agrippina (Agrippina die Ältere)",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "2x Verheiratet",
             "Männer": [
                 "33 n.Chr.: Heirat mit L. Cassius Longinus",
-                "seit 38 n. Chr.: verheiratet mit M. Aemilius Lepidus",
-                "",
-                "",
-                ""
+                "seit 38 n. Chr.: verheiratet mit M. Aemilius Lepidus"
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -772,6 +717,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "2./5. Juni 14 (?) inGallien",
+            "Sterbedatum": "10. Juni  38 n. Chr.",
+            "Todesursache": "Natürlicher Tod",
+            "Familie": "Tochter des Germanicus und Vipsania Agrippina (Agrippina die Ältere)",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "2x Verheiratet",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -800,21 +753,9 @@
         },
         {
             "Name": "Iulia Livilla",
-            "Geburtsdatum": "Ende 17 oder Anf. (Feb?) 18 n. Chr. auf Lesbos",
-            "Sterbedatum": "41/42 n. Chr.",
-            "Todesursache": "39 n. Chr.: Verbannung auf die Pontinischen Inseln;41 n. Chr. restitutiert von Claudius41/42 erneut verbannt nach Pandateria (?) und bald danach getötet",
-            "Familie": "Tochter des Germanicusund der älteren Agrippina",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "1x Verheiratet",
             "Männer": [
-                "33 n. Chr.: Heirat mit M. Vinicius",
-                "",
-                "",
-                "",
-                ""
+                "33 n. Chr.: Heirat mit M. Vinicius"
             ],
-            "Anzahl Kinder": "Keine Kinder",
             "Kinder": [
                 "",
                 "",
@@ -823,6 +764,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "Ende 17 oder Anf. (Feb?) 18 n. Chr. auf Lesbos",
+            "Sterbedatum": "41/42 n. Chr.",
+            "Todesursache": "39 n. Chr.: Verbannung auf die Pontinischen Inseln;41 n. Chr. restitutiert von Claudius41/42 erneut verbannt nach Pandateria (?) und bald danach getötet",
+            "Familie": "Tochter des Germanicusund der älteren Agrippina",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "1x Verheiratet",
+            "Anzahl Kinder": "Keine Kinder",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -851,21 +800,9 @@
         },
         {
             "Name": "Iunia Claudilla (oder Iunia Claudia)",
-            "Geburtsdatum": "",
-            "Sterbedatum": "ca. 37 n. Chr. ",
-            "Todesursache": "Tod im Wochenbett",
-            "Familie": "Tochter von M. Iunius Silanus",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "1x Verheiratet",
             "Männer": [
-                "Juli/Aug. 33 - Ende 36/Anf. 37 n. Chr.Verheiratet mit Caligula",
-                "",
-                "",
-                "",
-                ""
+                "Juli/Aug. 33 - Ende 36/Anf. 37 n. Chr.Verheiratet mit Caligula"
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -874,6 +811,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "",
+            "Sterbedatum": "ca. 37 n. Chr. ",
+            "Todesursache": "Tod im Wochenbett",
+            "Familie": "Tochter von M. Iunius Silanus",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "1x Verheiratet",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -902,21 +847,10 @@
         },
         {
             "Name": "Orestilla / Cornelia(Livia) Orestina",
-            "Geburtsdatum": "",
-            "Sterbedatum": "",
-            "Todesursache": "40 n. Chr. verbannt",
-            "Familie": "",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "2x Verheiratet ",
             "Männer": [
                 "C. Calpurnius Piso",
-                "Ende 37 oder Anf. 38 n. Chr.: Heirat mit Caligula; Vorher seineGeliebte",
-                "",
-                "",
-                ""
+                "Ende 37 oder Anf. 38 n. Chr.: Heirat mit Caligula; Vorher seineGeliebte"
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -925,6 +859,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "",
+            "Sterbedatum": "",
+            "Todesursache": "40 n. Chr. verbannt",
+            "Familie": "",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "2x Verheiratet ",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -953,21 +895,10 @@
         },
         {
             "Name": "Lollia Paulina",
-            "Geburtsdatum": "",
-            "Sterbedatum": "49 n. Chr.",
-            "Todesursache": "Angeblich durch Intrigen der Agrippina verbannt und getötet",
-            "Familie": "Enkelin des Lollius, cos. von 21 v. Chr",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "2x Verheiratet",
             "Männer": [
                 "P. Memmius Regulus, Statthalter von Achaia, Macedonia und Moesia",
-                "Ende 38 - Ende 39 n. Chr.:Heirat mit Caligula",
-                "",
-                "",
-                ""
+                "Ende 38 - Ende 39 n. Chr.:Heirat mit Caligula"
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -976,6 +907,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "",
+            "Sterbedatum": "49 n. Chr.",
+            "Todesursache": "Angeblich durch Intrigen der Agrippina verbannt und getötet",
+            "Familie": "Enkelin des Lollius, cos. von 21 v. Chr",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "2x Verheiratet",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1004,13 +943,6 @@
         },
         {
             "Name": "Milonia Caesonia",
-            "Geburtsdatum": "zwischen 2 u. 4 Juni einesunbekannten Jahres",
-            "Sterbedatum": "24. Jan. 41 n. Chr. ",
-            "Todesursache": "Ermordung ",
-            "Familie": "",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "",
             "Männer": [
                 "",
                 "",
@@ -1018,7 +950,6 @@
                 "",
                 ""
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -1027,6 +958,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "zwischen 2 u. 4 Juni einesunbekannten Jahres",
+            "Sterbedatum": "24. Jan. 41 n. Chr. ",
+            "Todesursache": "Ermordung ",
+            "Familie": "",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1055,13 +994,6 @@
         },
         {
             "Name": "Iulia Drusilla ",
-            "Geburtsdatum": "40 n. Chr. ",
-            "Sterbedatum": "24. Jan. 41 n. Chr. ",
-            "Todesursache": "Ermordnung",
-            "Familie": "",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "",
             "Männer": [
                 "",
                 "",
@@ -1069,7 +1001,6 @@
                 "",
                 ""
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -1078,6 +1009,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "40 n. Chr. ",
+            "Sterbedatum": "24. Jan. 41 n. Chr. ",
+            "Todesursache": "Ermordnung",
+            "Familie": "",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1106,21 +1045,9 @@
         },
         {
             "Name": "Aemilia Lepida ",
-            "Geburtsdatum": "3 v. Chr. ",
-            "Sterbedatum": "36 n. Chr.",
-            "Todesursache": "Selbstmord",
-            "Familie": "Tochter der Vipsania Iulia und des L. Aemilius Lepidus ",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "1x Verheiratet",
             "Männer": [
-                "Ehe mit Drusus (Sohn des Germanicus)",
-                "",
-                "",
-                "",
-                ""
+                "Ehe mit Drusus (Sohn des Germanicus)"
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -1129,6 +1056,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "3 v. Chr. ",
+            "Sterbedatum": "36 n. Chr.",
+            "Todesursache": "Selbstmord",
+            "Familie": "Tochter der Vipsania Iulia und des L. Aemilius Lepidus ",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "1x Verheiratet",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1157,13 +1092,6 @@
         },
         {
             "Name": "Livia Medullina",
-            "Geburtsdatum": "",
-            "Sterbedatum": "bald nach 8 n. Chr. ",
-            "Todesursache": "",
-            "Familie": "Tochter von Furius; Schwester des Furius Camillus Scribonianus, ",
-            "Vorfahren": "",
-            "Verlobung": "1x Verlobt; 8 n. Chr.:mit Claudius",
-            "Häufigkeit Heirat": "",
             "Männer": [
                 "",
                 "",
@@ -1171,7 +1099,6 @@
                 "",
                 ""
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -1180,6 +1107,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "",
+            "Sterbedatum": "bald nach 8 n. Chr. ",
+            "Todesursache": "",
+            "Familie": "Tochter von Furius; Schwester des Furius Camillus Scribonianus, ",
+            "Vorfahren": "",
+            "Verlobung": "1x Verlobt; 8 n. Chr.:mit Claudius",
+            "Häufigkeit Heirat": "",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1208,6 +1143,15 @@
         },
         {
             "Name": "Plautia Urgulanilla",
+            "Männer": [
+                "zwischen 9 und 10 n. Chr.: Heirat mit Claudius;24 n. Chr.: Scheidung"
+            ],
+            "Kinder": [
+                "Claudia Iulia / ClaudiusIst das Claudia Octavia, die 5 Monate vor der Scheidung geboren wurde aber nicht von Claudius angenommen wurde?)",
+                "Claudius Drusus / Claudius ",
+                "",
+                ""
+            ],
             "Geburtsdatum": "",
             "Sterbedatum": "",
             "Todesursache": "",
@@ -1215,22 +1159,7 @@
             "Vorfahren": "",
             "Verlobung": "",
             "Häufigkeit Heirat": "1x Verheiratet",
-            "Männer": [
-                "zwischen 9 und 10 n. Chr.: Heirat mit Claudius;24 n. Chr.: Scheidung",
-                "",
-                "",
-                "",
-                ""
-            ],
             "Anzahl Kinder": "4 Kinder / (zwei starben früh)",
-            "Kinder": [
-                "Claudia Iulia / ClaudiusIst das Claudia Octavia, die 5 Monate vor der Scheidung geboren wurde aber nicht von Claudius angenommen wurde?)",
-                "Claudius Drusus / Claudius ",
-                "",
-                "",
-                "",
-                ""
-            ],
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1259,13 +1188,6 @@
         },
         {
             "Name": "Aelia Paetina",
-            "Geburtsdatum": "",
-            "Sterbedatum": "",
-            "Todesursache": "",
-            "Familie": "",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "",
             "Männer": [
                 "",
                 "",
@@ -1273,7 +1195,6 @@
                 "",
                 ""
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -1282,6 +1203,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "",
+            "Sterbedatum": "",
+            "Todesursache": "",
+            "Familie": "",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1310,21 +1239,10 @@
         },
         {
             "Name": "Antonia",
-            "Geburtsdatum": "Geburtsdatum unbek-annt",
-            "Sterbedatum": "2 H. 65 oder bald danach",
-            "Todesursache": "Ermordung durch Nero, weil sie dessen Heiratsantrag zurückwies",
-            "Familie": "Tochter des Claudius und der Aelia Paetina",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "2x Verheiratet",
             "Männer": [
                 "41-47: Verheiratet mit Cn. Pompeius Magnus",
-                "47-58 n. Chr.: Ehe mit Faustus Cornelius Sulla Felix",
-                "",
-                "",
-                ""
+                "47-58 n. Chr.: Ehe mit Faustus Cornelius Sulla Felix"
             ],
-            "Anzahl Kinder": "1 Kind",
             "Kinder": [
                 "Sohn, geboren zw. 48 und 54, aber bald nach der Geburt gestorben / Faustus Sulla",
                 "",
@@ -1333,6 +1251,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "Geburtsdatum unbek-annt",
+            "Sterbedatum": "2 H. 65 oder bald danach",
+            "Todesursache": "Ermordung durch Nero, weil sie dessen Heiratsantrag zurückwies",
+            "Familie": "Tochter des Claudius und der Aelia Paetina",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "2x Verheiratet",
+            "Anzahl Kinder": "1 Kind",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1361,6 +1287,14 @@
         },
         {
             "Name": "Valeria Messalina",
+            "Männer": [
+                "ca. 38/39 Heirat mit Claudius",
+                "48 n.Chr.: Heirat mit C. Silius -> aber noch mit Claudius verheiratet"
+            ],
+            "Kinder": [
+                "39/40 n.Chr.: Geburtder Tochter (Claudia) Octavia / Claudius",
+                "12. Febr. 41: Geburt des Sohnes Britannicus / Claudius"
+            ],
             "Geburtsdatum": "Kurz vor 25 n. Chr. ",
             "Sterbedatum": "48 n. Chr. ",
             "Todesursache": "Ermordung; Heirat mit C. Silius; kurz darauf auf Befehl des Claudius in den Gärten des Lucullus erdrosselt. ",
@@ -1368,22 +1302,7 @@
             "Vorfahren": "",
             "Verlobung": "",
             "Häufigkeit Heirat": "2x Verheiratet",
-            "Männer": [
-                "ca. 38/39 Heirat mit Claudius",
-                "48 n.Chr.: Heirat mit C. Silius -> aber noch mit Claudius verheiratet",
-                "",
-                "",
-                ""
-            ],
             "Anzahl Kinder": "2 Kinder",
-            "Kinder": [
-                "39/40 n.Chr.: Geburtder Tochter (Claudia) Octavia / Claudius",
-                "12. Febr. 41: Geburt des Sohnes Britannicus / Claudius",
-                "",
-                "",
-                "",
-                ""
-            ],
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1412,13 +1331,6 @@
         },
         {
             "Name": "Iulia, Tochter des Drusus",
-            "Geburtsdatum": "",
-            "Sterbedatum": "",
-            "Todesursache": "",
-            "Familie": "",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "",
             "Männer": [
                 "",
                 "",
@@ -1426,7 +1338,6 @@
                 "",
                 ""
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -1435,6 +1346,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "",
+            "Sterbedatum": "",
+            "Todesursache": "",
+            "Familie": "",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1463,13 +1382,6 @@
         },
         {
             "Name": "Claudia Octavia",
-            "Geburtsdatum": "",
-            "Sterbedatum": "",
-            "Todesursache": "",
-            "Familie": "Tochter von Claudius und PlautiaUrgulanilla (nicht von C. angenommen)",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "",
             "Männer": [
                 "",
                 "",
@@ -1477,7 +1389,6 @@
                 "",
                 ""
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -1486,6 +1397,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "",
+            "Sterbedatum": "",
+            "Todesursache": "",
+            "Familie": "Tochter von Claudius und PlautiaUrgulanilla (nicht von C. angenommen)",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1514,21 +1433,10 @@
         },
         {
             "Name": "Claudia Antonia",
-            "Geburtsdatum": "ca. 27 n. Chr. ?",
-            "Sterbedatum": "2. H. 65 oder bald danach",
-            "Todesursache": "Von Nero getötet, weil siedessen Heiratsantrag zurückwies",
-            "Familie": "älteste Tochter des Claudius und der Aelia Paetina",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "2x Verheiratet",
             "Männer": [
                 "41- 47 n. Chr.: Verheiratet mitGnaeus Pompeius Magnus",
-                "47 - 58 n. Chr.: Faustus Cornelius Sulla Felix",
-                "",
-                "",
-                ""
+                "47 - 58 n. Chr.: Faustus Cornelius Sulla Felix"
             ],
-            "Anzahl Kinder": "1 Kind ",
             "Kinder": [
                 "Sohn, der zwischen 48 und 54 geboren wurde, aber nach der Geburt bald verstarb / Faustus Cornelius Sulla Felix ",
                 "",
@@ -1537,6 +1445,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "ca. 27 n. Chr. ?",
+            "Sterbedatum": "2. H. 65 oder bald danach",
+            "Todesursache": "Von Nero getötet, weil siedessen Heiratsantrag zurückwies",
+            "Familie": "älteste Tochter des Claudius und der Aelia Paetina",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "2x Verheiratet",
+            "Anzahl Kinder": "1 Kind ",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1565,21 +1481,9 @@
         },
         {
             "Name": "Octavia Claudia",
-            "Geburtsdatum": "ca. 39/40 n.Chr.",
-            "Sterbedatum": "9. Juni 62 n. Chr. ",
-            "Todesursache": "62 n. Chr.: Verbannung nach Campanien, später nach Pandateria. Ermordung auf der InselPandateria",
-            "Familie": "Tochter des Claudius und der Valeria Messalina",
-            "Vorfahren": "",
-            "Verlobung": "2x Verlobt 1x mit L. Iunius Silanus29. Aug. 41; 48 Lösung der Verlobung mit ihm2te Verlobung mit Nero 49 n. Chr.; Wechsel in eine andere familia, die den Fentilnamen Octavia führte. ",
-            "Häufigkeit Heirat": "1x Verheiratet",
             "Männer": [
-                "53 n. Chr. : Heirat mit Nero",
-                "",
-                "",
-                "",
-                ""
+                "53 n. Chr. : Heirat mit Nero"
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -1588,6 +1492,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "ca. 39/40 n.Chr.",
+            "Sterbedatum": "9. Juni 62 n. Chr. ",
+            "Todesursache": "62 n. Chr.: Verbannung nach Campanien, später nach Pandateria. Ermordung auf der InselPandateria",
+            "Familie": "Tochter des Claudius und der Valeria Messalina",
+            "Vorfahren": "",
+            "Verlobung": "2x Verlobt 1x mit L. Iunius Silanus29. Aug. 41; 48 Lösung der Verlobung mit ihm2te Verlobung mit Nero 49 n. Chr.; Wechsel in eine andere familia, die den Fentilnamen Octavia führte. ",
+            "Häufigkeit Heirat": "1x Verheiratet",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1616,6 +1528,15 @@
         },
         {
             "Name": "Poppaea Sabina",
+            "Männer": [
+                "ca. 47-51 n. Chr.: Ehe mit Rufius Crispinus",
+                "58 n. Chr.: Ehe mit M. Salvius Otho",
+                "62 n. Chr.: Heirat mit Nero"
+            ],
+            "Kinder": [
+                "Ein Sohn aus der Ehe mit Rufius Crispinus: Rufius Crispinus, später von Nero getötet",
+                "21. Jan. 63: Geburt derTochter Claudia / Nero"
+            ],
             "Geburtsdatum": "zwischen 30 und 32 (?) n. Chr. ",
             "Sterbedatum": "Frühsommer 65 n. Chr.",
             "Todesursache": "Natürlicher Tod??",
@@ -1623,22 +1544,7 @@
             "Vorfahren": "",
             "Verlobung": "",
             "Häufigkeit Heirat": "3x Verheiratet",
-            "Männer": [
-                "ca. 47-51 n. Chr.: Ehe mit Rufius Crispinus",
-                "58 n. Chr.: Ehe mit M. Salvius Otho",
-                "62 n. Chr.: Heirat mit Nero",
-                "",
-                ""
-            ],
             "Anzahl Kinder": "2 Kinder",
-            "Kinder": [
-                "Ein Sohn aus der Ehe mit Rufius Crispinus: Rufius Crispinus, später von Nero getötet",
-                "21. Jan. 63: Geburt derTochter Claudia / Nero",
-                "",
-                "",
-                "",
-                ""
-            ],
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1667,13 +1573,6 @@
         },
         {
             "Name": "Claudia Augusta",
-            "Geburtsdatum": "21. Jan. 63 n. Chr. ",
-            "Sterbedatum": "April/Mai 63 n. Chr. ",
-            "Todesursache": "natürlicher Tod?",
-            "Familie": "Tochter des Nero und der P. Sabina",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "",
             "Männer": [
                 "",
                 "",
@@ -1681,7 +1580,6 @@
                 "",
                 ""
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -1690,6 +1588,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "21. Jan. 63 n. Chr. ",
+            "Sterbedatum": "April/Mai 63 n. Chr. ",
+            "Todesursache": "natürlicher Tod?",
+            "Familie": "Tochter des Nero und der P. Sabina",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1718,13 +1624,6 @@
         },
         {
             "Name": "Statilia Messalina",
-            "Geburtsdatum": "zwischen 30 und 40n. Chr.",
-            "Sterbedatum": "nach 70 n. Chr. ",
-            "Todesursache": "natürlicher Tod? Bei Neros Ermordung auch ermordet?",
-            "Familie": "Tochter des T. Statilius Taurus ",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "5x Verheiratet; 3 Ehen mit unbekannten Gatten ",
             "Männer": [
                 "",
                 "",
@@ -1732,7 +1631,6 @@
                 "63/64 n. Chr.: Ehe mit M. Iulius Atticus Vestinus; 65: Vestinus in seinem Konsulatsjahr zum Selbstmord gezwungen",
                 "1. H. 66 n. Chr.: Heiratmit Nero"
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -1741,6 +1639,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "zwischen 30 und 40n. Chr.",
+            "Sterbedatum": "nach 70 n. Chr. ",
+            "Todesursache": "natürlicher Tod? Bei Neros Ermordung auch ermordet?",
+            "Familie": "Tochter des T. Statilius Taurus ",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "5x Verheiratet; 3 Ehen mit unbekannten Gatten ",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1769,13 +1675,6 @@
         },
         {
             "Name": "Claudia Acte",
-            "Geburtsdatum": "",
-            "Sterbedatum": "",
-            "Todesursache": "",
-            "Familie": "",
-            "Vorfahren": "",
-            "Verlobung": "",
-            "Häufigkeit Heirat": "",
             "Männer": [
                 "",
                 "",
@@ -1783,7 +1682,6 @@
                 "",
                 ""
             ],
-            "Anzahl Kinder": "",
             "Kinder": [
                 "",
                 "",
@@ -1792,6 +1690,14 @@
                 "",
                 ""
             ],
+            "Geburtsdatum": "300",
+            "Sterbedatum": "",
+            "Todesursache": "",
+            "Familie": "",
+            "Vorfahren": "",
+            "Verlobung": "",
+            "Häufigkeit Heirat": "",
+            "Anzahl Kinder": "",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",

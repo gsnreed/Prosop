@@ -14,6 +14,7 @@ from Objects.Frames import TopFrame, NavigationFrame, SubMenuFrame, ContentFrame
 from Objects.Logger import logger
 from Objects.Romans import Roman, load_romans_from_json, save_romans_to_json
 from Objects.Command import *
+from Objects.LoadingScreen import LoadingScreen
 
 class MainApp(tk.Tk):
     """
@@ -242,11 +243,18 @@ class MainApp(tk.Tk):
     
     def _SaveToFile(self, file_path):
         """Speicher die aktuellen Daten in die angegebene Datei"""
+        from Objects.LoadingScreen import LoadingScreen
+        
         try:
+            # Ladebildschirm anzeigen
+            loading_screen = LoadingScreen(self, f"Speichere Datei {os.path.basename(file_path)}...")
+            self.update()  # UI aktualisieren
+            
             # Speicherlogik
             success = save_romans_to_json(self.romans, file_path)
 
             if not success:
+                loading_screen.finish()
                 raise Exception('Fehler beim Speichern der Daten')
 
             # Dateiinfos aktualisieren
@@ -256,9 +264,17 @@ class MainApp(tk.Tk):
             # Titel aktualisieren
             file_name = os.path.basename(file_path).split('.')[0]
             self.title(f"{AppConfig.APP_TITLE} - {file_name}")
+            
+            # Ladebildschirm schließen
+            loading_screen.finish()
+            
             logger.info(f'Datei erfolgreich gespeichert: {file_path}')
         
         except Exception as e:
+            try:
+                loading_screen.finish()
+            except:
+                pass
             messagebox.showerror("Fehler beim Speichern", f"Die Datei konnte nicht gespeichert werden:\n{str(e)}")
             logger.error(f"Fehler beim Speichern der Datei {file_path}: {e}")
 
@@ -271,9 +287,6 @@ class MainApp(tk.Tk):
             self.SetModified(True)
             self.content_frame.UpdateContent(self.content_frame.current_option)
             self._UpdateEditMenuState()
-        else:
-            # Optional: Benutzer informieren, dass nichts zum Rückgängigmachen vorhanden ist
-            messagebox.showinfo("Information", "Nichts zum Rückgängigmachen vorhanden.")
         
     def _OnEditRedo(self):
         logger.info("Bearbeiten -> Wiederherstellen ausgewählt")
@@ -283,9 +296,6 @@ class MainApp(tk.Tk):
             self.SetModified(True)
             self.content_frame.UpdateContent(self.content_frame.current_option)
             self._UpdateEditMenuState()
-        else:
-            # Optional: Benutzer informieren, dass nichts zum Wiederherstellen vorhanden ist
-            messagebox.showinfo("Information", "Nichts zum Wiederherstellen vorhanden.")
         
     def _UpdateEditMenuState(self):
         """Aktualisiert den Zustand der Bearbeiten-Menüeinträge"""
@@ -333,8 +343,22 @@ class MainApp(tk.Tk):
         self.destroy()   # Zerstört alle Widgets und gibt Ressourcen frei
 
     def _LoadFile(self, file_path):
-        """Lädt den Inhalt der Datei"""
+        """Lädt den Inhalt der Datei mit Ladebildschirm"""
+        # Aktuelle Navigation speichern
+        current_navigation = None
+        if hasattr(self.navigation_frame, 'selected_option'):
+            current_navigation = self.navigation_frame.selected_option
+        
+        # Aktuelles Submenü speichern, falls vorhanden
+        current_submenu_item = None
+        if hasattr(self.submenu_frame, 'selected_submenu_item'):
+            current_submenu_item = self.submenu_frame.selected_submenu_item
+        
         try:
+            # Ladebildschirm anzeigen
+            loading_screen = LoadingScreen(self, f"Lade Datei {os.path.basename(file_path)}...")
+            self.update_idletasks()  # UI aktualisieren
+            
             # Dateierweiterung prüfen
             ext = os.path.splitext(file_path)[1].lower()
             
@@ -342,13 +366,16 @@ class MainApp(tk.Tk):
                 loaded_romans = load_romans_from_json(file_path)
             elif ext == '.xlsx':
                 # Excel-Unterstützung hier hinzufügen
+                loading_screen.finish()
                 messagebox.showerror("Fehler", "Excel-Unterstützung noch nicht implementiert.")
                 return
             else:
+                loading_screen.finish()
                 messagebox.showerror("Fehler", f"Nicht unterstütztes Dateiformat: {ext}")
                 return
-                
+                    
             if loaded_romans is None or not isinstance(loaded_romans, list):
+                loading_screen.finish()
                 raise Exception('Ungültiges Dateiformat oder keine Romans gefunden')
             
             self.romans = loaded_romans
@@ -362,12 +389,48 @@ class MainApp(tk.Tk):
             # Titel aktualisieren
             file_name = os.path.basename(file_path).split('.')[0]
             self.title(f"{AppConfig.APP_TITLE} - {file_name}")
+            
+            # Menüs aktualisieren
             self._UpdateEditMenuState()
+            
+            # Schließen des Ladebildschirms
+            loading_screen.finish()
+            
+            # Zur vorherigen Ansicht zurückkehren
+            if current_navigation:
+                self.navigation_frame.OnSelect(current_navigation)
+                
+                # Wenn ein Submenü-Item aktiv war, dieses wiederherstellen
+                if current_navigation in self.navigation_frame.options_with_submenu and current_submenu_item:
+                    # Warte kurz, bis die Navigation verarbeitet wurde
+                    self.after(100, lambda: self.submenu_frame.OnSubMenuSelect(current_navigation, current_submenu_item))
+            
             logger.info(f'Datei erfolgreich geladen: {file_path}')
         
         except Exception as e:
+            try:
+                # Sicherstellen, dass der Ladebildschirm geschlossen wird
+                loading_screen.finish()
+            except:
+                pass
             messagebox.showerror("Fehler beim Öffnen", f"Die Datei konnte nicht geöffnet werden:\n{str(e)}")
             logger.error(f"Fehler beim Laden der Datei {file_path}: {e}")
+    
+    def _UpdateCurrentView(self):
+        """Aktualisiert die aktuelle Ansicht"""
+        # Aktuelle Navigation ermitteln
+        current_nav = None
+        if hasattr(self.navigation_frame, 'selected_option'):
+            current_nav = self.navigation_frame.selected_option
+        
+        # Falls keine aktuelle Navigation vorhanden, erste Option nehmen
+        if not current_nav and len(AppConfig.NAV_OPTIONS) > 0:
+            current_nav = AppConfig.NAV_OPTIONS[0]
+        
+        # Inhalte aktualisieren
+        if current_nav:
+            # Simuliere eine Auswahl des aktuellen Elements
+            self.navigation_frame.OnSelect(current_nav)
         
     def SetModified(self, modified=True):
         """Setzt den Änderungsstatus und aktualisiert die UI entsprechend"""

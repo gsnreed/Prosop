@@ -97,8 +97,7 @@ class SubMenuFrame(tk.Frame):
         
         # Definiere verfügbare Submenüs
         self.submenus = {
-            'Ansicht': ['Liste', 'Karte', 'Tabelle', 'Zeitstrahl'],
-            'Erstellung': ['Person', 'Ort', 'Ereignis', 'Quelle'],
+            'Ansicht': ['Tabelle', 'Karte', 'Zeitstrahl'],
             'BibTex': ['Literatur hinzufügen', 'Zitieren', 'Verwalten']
         }
     
@@ -194,7 +193,7 @@ class NavigationFrame(tk.Frame):
         self.selected_option = None
         
         # Definiere, welche Optionen Submenus haben
-        self.options_with_submenu = ['Ansicht', 'Erstellung', 'Export', 'Import', 'BibTex']
+        self.options_with_submenu = ['Ansicht', 'BibTex']
         
         self._CreateHeader()
         self._CreateNavigationOptions()
@@ -299,9 +298,11 @@ class ContentFrame(tk.Frame):
         """Initialisiere den Inhaltsrahmen"""
         super().__init__(parent, bg=AppColors.CONTENT_FRAME)
         self.content_manager = ContentManager(self)
+        self.current_option = None  # Attribut für die aktuelle Option hinzufügen
     
     def UpdateContent(self, option: str) -> None:
         """Aktualisiert den Inhalt basierend auf der ausgewählten Navigation."""
+        self.current_option = option  # Aktualisiere das Attribut
         self.content_manager.ShowContent(option)
 
         # Ereignis protokollieren
