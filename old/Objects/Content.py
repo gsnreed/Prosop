@@ -52,7 +52,7 @@ class ContentManager:
             'Ansicht - Zeitstrahl': AnsichtZeitstrahlFrame,
             
             # Erstellung Submenu
-            'Erstellung': AnsichtTabelleFrame,
+            'Erstellung': ErstellungFrame,
             
             # BibTex Submenu
             'BibTex - Literatur hinzufügen': DefaultContentFrame,
@@ -153,7 +153,7 @@ class DefaultContentFrame(BaseContentFrame):
         label.pack(padx=50, pady=50)
 
 # Tabellenansicht für Römer
-class AnsichtTabelleFrame(BaseContentFrame):
+class ErstellungFrame(BaseContentFrame):
     def __init__(self, parent) -> None:
         self.app = self._find_main_app(parent)
         self.current_roman = None
@@ -1250,101 +1250,3 @@ class AnsichtTabelleFrame(BaseContentFrame):
     def UpdateData(self, data=None) -> None:
         """Aktualisiert die Daten im Frame"""
         self._load_data()
-
-class ErstellungFrame(BaseContentFrame):
-    """Content-Frame für die direkte Erstellung ohne Submenü"""
-    
-    def _CreateUi(self) -> None:
-        header = tk.Label(
-            self, 
-            text="Erstellung",
-            font=('Helvetica', 16, 'bold'),
-            bg=AppColors.CONTENT_FRAME,
-            fg=AppColors.KU_COLOR
-        )
-        header.pack(pady=(20, 10), padx=20, anchor='w')
-        
-        # Notebook für Tabs
-        notebook = ttk.Notebook(self)
-        notebook.pack(fill="both", expand=True, padx=10, pady=10)
-        
-        # Tabs für die verschiedenen Erstellungsoptionen
-        person_tab = tk.Frame(notebook, bg=AppColors.CONTENT_FRAME)
-        ort_tab = tk.Frame(notebook, bg=AppColors.CONTENT_FRAME)
-        ereignis_tab = tk.Frame(notebook, bg=AppColors.CONTENT_FRAME)
-        quelle_tab = tk.Frame(notebook, bg=AppColors.CONTENT_FRAME)
-        
-        notebook.add(person_tab, text="Person")
-        notebook.add(ort_tab, text="Ort")
-        notebook.add(ereignis_tab, text="Ereignis")
-        notebook.add(quelle_tab, text="Quelle")
-        
-        # Person Tab Inhalte
-        self._create_person_tab_content(person_tab)
-        self._create_ort_tab_content(ort_tab)
-        self._create_ereignis_tab_content(ereignis_tab)
-        self._create_quelle_tab_content(quelle_tab)
-    
-    def _create_person_tab_content(self, tab):
-        # Kopieren Sie die Inhalte aus ErstellungPersonFrame
-        header = tk.Label(
-            tab, 
-            text="Neue Person erstellen",
-            font=('Helvetica', 14, 'bold'),
-            bg=AppColors.CONTENT_FRAME,
-            fg=AppColors.KU_COLOR
-        )
-        header.pack(pady=(10, 5), padx=10, anchor='w')
-        
-        # Hier den Formular-Inhalt der Person-Erstellung einfügen
-        form_frame = tk.Frame(tab, bg=AppColors.CONTENT_FRAME)
-        form_frame.pack(fill="both", expand=True, padx=10, pady=5)
-        
-        # Erstellung der Eingabefelder...
-        # (Fügen Sie hier die Implementierung der Person-Erstellung ein)
-    
-    def _create_ort_tab_content(self, tab):
-        # Kopieren Sie die Inhalte aus ErstellungOrtFrame
-        header = tk.Label(
-            tab, 
-            text="Neuen Ort erstellen",
-            font=('Helvetica', 14, 'bold'),
-            bg=AppColors.CONTENT_FRAME,
-            fg=AppColors.KU_COLOR
-        )
-        header.pack(pady=(10, 5), padx=10, anchor='w')
-        
-        # Hier den Formular-Inhalt der Ort-Erstellung einfügen
-        # (Fügen Sie hier die Implementierung der Ort-Erstellung ein)
-    
-    def _create_ereignis_tab_content(self, tab):
-        # Einfacher Platzhalter für Ereignis-Tab
-        tk.Label(
-            tab, 
-            text="Neues Ereignis erstellen",
-            font=('Helvetica', 14, 'bold'),
-            bg=AppColors.CONTENT_FRAME,
-            fg=AppColors.KU_COLOR
-        ).pack(pady=(10, 5), padx=10, anchor='w')
-        
-        tk.Label(
-            tab,
-            text="Diese Funktion ist noch nicht implementiert.",
-            bg=AppColors.CONTENT_FRAME
-        ).pack(pady=20)
-    
-    def _create_quelle_tab_content(self, tab):
-        # Einfacher Platzhalter für Quelle-Tab
-        tk.Label(
-            tab, 
-            text="Neue Quelle erstellen",
-            font=('Helvetica', 14, 'bold'),
-            bg=AppColors.CONTENT_FRAME,
-            fg=AppColors.KU_COLOR
-        ).pack(pady=(10, 5), padx=10, anchor='w')
-        
-        tk.Label(
-            tab,
-            text="Diese Funktion ist noch nicht implementiert.",
-            bg=AppColors.CONTENT_FRAME
-        ).pack(pady=20)

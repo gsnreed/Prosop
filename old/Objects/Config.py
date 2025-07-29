@@ -27,3 +27,7 @@ class AppColors:
     CONTENT_FRAME = "#ffffff"
     KU_COLOR = '#232F66'
     HOVER = "#D9A7FC"
+
+class Fonts:
+    """Schriftgrößen/-arten"""
+    LOADING_SCREEN = ("Helvetica", 12)
