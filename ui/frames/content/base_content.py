@@ -14,9 +14,9 @@ class BaseContentFrame(tk.Frame):
     
     def __init__(self, parent) -> None:
         super().__init__(parent, bg=AppColors.CONTENT_FRAME)
-        self._CreateUi()
+        self.CreateUi()
     
-    def _CreateUi(self) -> None:
+    def CreateUi(self) -> None:
         """Erstellt die UI-Komponenten (von Unterklassen zu überschreiben)"""
         pass
     

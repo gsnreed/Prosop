@@ -65,3 +65,7 @@ class ContentManager:
         # Bei Bedarf Daten aktualisieren
         if hasattr(self.__current_frame, 'UpdateData'):
             self.__current_frame.UpdateData()
+
+    @property
+    def parent(self):
+        return self.__parent
