@@ -155,19 +155,3 @@ class FileManager:
                                f"Die Datei konnte nicht gespeichert werden:\n{str(e)}")
             logger.error(f"Fehler beim Speichern der Datei {file_path}: {e}")
             return False
-
-    def ExportToFormat(self, file_path: str, format_type: str) -> bool:
-        """
-        Daten exportieren
-        
-        Args:
-            file_path: Pfad
-            format_type: Format ('csv', 'xlsx', ...)
-            
-        Returns:
-            bool: True wenn erfolgreich
-        """
-        # This is a stub method for future expansion
-        logger.info(f"Export to {format_type} not yet implemented")
-        messagebox.showinfo("Info", f"Export to {format_type} is not yet implemented.")
-        return False

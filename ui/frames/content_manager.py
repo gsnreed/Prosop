@@ -8,6 +8,7 @@ if project_root not in sys.path:
 
 from ui.frames.content.start import StartseiteFrame
 from ui.frames.content.default import DefaultContentFrame
+from ui.frames.content.create import CreateFrame
 
 class ContentManager:
     """Verwaltet die verschiedenen Content-Frames"""
@@ -30,7 +31,7 @@ class ContentManager:
             'Ansicht - Zeitstrahl': DefaultContentFrame,
             
             # Erstellung Submenu
-            'Erstellung': DefaultContentFrame,
+            'Erstellung': CreateFrame,
             
             # BibTex Submenu
             'BibTex - Literatur hinzufügen': DefaultContentFrame,

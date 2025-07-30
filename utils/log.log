@@ -336,3 +336,1222 @@
 30-07-2025 01:47:12 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
 30-07-2025 01:47:13 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
 30-07-2025 01:47:13 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 09:39:55 - utils.logger - INFO - Menüleiste eingerichtet.
+30-07-2025 09:39:56 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+30-07-2025 09:39:56 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 09:39:56 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 09:39:56 - utils.logger - INFO - Anwendung gestartet
+30-07-2025 09:40:17 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:40:17 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:40:17 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 09:40:17 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 09:40:17 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 09:40:18 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 09:40:18 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 09:40:18 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 09:40:18 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 09:40:18 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 09:40:18 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 09:40:18 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 09:40:19 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:40:19 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:40:19 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 09:40:31 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 09:40:31 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 09:40:32 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:40:32 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:40:32 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 09:40:40 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 09:40:40 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 09:40:41 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 09:40:41 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 09:40:43 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 09:40:43 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 09:40:43 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 09:40:44 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 09:40:44 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 09:40:44 - utils.logger - INFO - Content der Option 'Impressum' wurde geladen.
+30-07-2025 09:40:44 - utils.logger - INFO - Navigation: Option 'Impressum' ausgewählt
+30-07-2025 09:40:45 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:40:45 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:40:45 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 09:41:53 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 09:41:53 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 09:41:53 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:41:53 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:41:53 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 09:41:54 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 09:41:54 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 09:41:54 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:41:54 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:41:54 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 09:41:57 - utils.logger - INFO - Datei -> Öffnen ausgewählt
+30-07-2025 09:44:08 - utils.logger - INFO - Menüleiste eingerichtet.
+30-07-2025 09:44:09 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+30-07-2025 09:44:09 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 09:44:09 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 09:44:09 - utils.logger - INFO - Anwendung gestartet
+30-07-2025 09:44:15 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:44:15 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:44:15 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 09:44:18 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 09:44:18 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 09:44:18 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:44:18 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:44:18 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 09:44:19 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 09:44:19 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 09:44:23 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:44:23 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:44:23 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 09:44:24 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 09:44:24 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 09:44:24 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 09:44:24 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 09:44:25 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 09:44:25 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 09:44:25 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 09:44:25 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 09:44:25 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 09:44:26 - utils.logger - INFO - Content der Option 'Impressum' wurde geladen.
+30-07-2025 09:44:26 - utils.logger - INFO - Navigation: Option 'Impressum' ausgewählt
+30-07-2025 09:44:26 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 09:44:26 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 09:44:26 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 09:44:26 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 09:44:27 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 09:44:27 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 09:44:27 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 09:44:27 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 09:44:27 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 09:44:28 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 09:44:28 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 09:44:28 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 09:44:28 - utils.logger - INFO - Content der Option 'BibTex - Zitieren' wurde geladen.
+30-07-2025 09:44:28 - utils.logger - INFO - Option 'Zitieren' ausgewählt
+30-07-2025 09:44:29 - utils.logger - INFO - Content der Option 'BibTex - Verwalten' wurde geladen.
+30-07-2025 09:44:29 - utils.logger - INFO - Option 'Verwalten' ausgewählt
+30-07-2025 09:44:29 - utils.logger - INFO - Content der Option 'BibTex - Zitieren' wurde geladen.
+30-07-2025 09:44:29 - utils.logger - INFO - Option 'Zitieren' ausgewählt
+30-07-2025 09:44:30 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 09:44:30 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 09:44:30 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 09:44:30 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 09:44:31 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 09:44:31 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 09:44:31 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:44:31 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:44:31 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 09:44:32 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 09:44:32 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 09:44:32 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:44:32 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:44:32 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 09:44:33 - utils.logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+30-07-2025 09:44:33 - utils.logger - INFO - Option 'Karte' ausgewählt
+30-07-2025 09:44:34 - utils.logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+30-07-2025 09:44:34 - utils.logger - INFO - Option 'Zeitstrahl' ausgewählt
+30-07-2025 09:44:34 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:44:34 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:44:36 - utils.logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+30-07-2025 09:44:36 - utils.logger - INFO - Option 'Karte' ausgewählt
+30-07-2025 09:44:36 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 09:44:36 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 09:45:07 - utils.logger - INFO - Menüleiste eingerichtet.
+30-07-2025 09:45:07 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+30-07-2025 09:45:07 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 09:45:07 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 09:45:07 - utils.logger - INFO - Anwendung gestartet
+30-07-2025 09:45:12 - utils.logger - INFO - Content der Option 'Test' wurde geladen.
+30-07-2025 09:45:12 - utils.logger - INFO - Navigation: Option 'Test' ausgewählt
+30-07-2025 09:45:18 - utils.logger - INFO - Content der Option 'Impressum' wurde geladen.
+30-07-2025 09:45:18 - utils.logger - INFO - Navigation: Option 'Impressum' ausgewählt
+30-07-2025 09:45:18 - utils.logger - INFO - Content der Option 'Test' wurde geladen.
+30-07-2025 09:45:18 - utils.logger - INFO - Navigation: Option 'Test' ausgewählt
+30-07-2025 09:45:19 - utils.logger - INFO - Content der Option 'Impressum' wurde geladen.
+30-07-2025 09:45:19 - utils.logger - INFO - Navigation: Option 'Impressum' ausgewählt
+30-07-2025 09:45:20 - utils.logger - INFO - Content der Option 'Test' wurde geladen.
+30-07-2025 09:45:20 - utils.logger - INFO - Navigation: Option 'Test' ausgewählt
+30-07-2025 09:45:21 - utils.logger - INFO - Content der Option 'Impressum' wurde geladen.
+30-07-2025 09:45:21 - utils.logger - INFO - Navigation: Option 'Impressum' ausgewählt
+30-07-2025 09:45:22 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 09:45:22 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 09:45:23 - utils.logger - INFO - Content der Option 'Impressum' wurde geladen.
+30-07-2025 09:45:23 - utils.logger - INFO - Navigation: Option 'Impressum' ausgewählt
+30-07-2025 09:45:30 - utils.logger - INFO - Content der Option 'Test' wurde geladen.
+30-07-2025 09:45:30 - utils.logger - INFO - Navigation: Option 'Test' ausgewählt
+30-07-2025 09:45:31 - utils.logger - INFO - Content der Option 'Impressum' wurde geladen.
+30-07-2025 09:45:31 - utils.logger - INFO - Navigation: Option 'Impressum' ausgewählt
+30-07-2025 09:45:31 - utils.logger - INFO - Content der Option 'Test' wurde geladen.
+30-07-2025 09:45:31 - utils.logger - INFO - Navigation: Option 'Test' ausgewählt
+30-07-2025 09:45:32 - utils.logger - INFO - Content der Option 'Impressum' wurde geladen.
+30-07-2025 09:45:32 - utils.logger - INFO - Navigation: Option 'Impressum' ausgewählt
+30-07-2025 09:45:32 - utils.logger - INFO - Content der Option 'Test' wurde geladen.
+30-07-2025 09:45:32 - utils.logger - INFO - Navigation: Option 'Test' ausgewählt
+30-07-2025 09:45:33 - utils.logger - INFO - Content der Option 'Impressum' wurde geladen.
+30-07-2025 09:45:33 - utils.logger - INFO - Navigation: Option 'Impressum' ausgewählt
+30-07-2025 09:45:33 - utils.logger - INFO - Content der Option 'Test' wurde geladen.
+30-07-2025 09:45:33 - utils.logger - INFO - Navigation: Option 'Test' ausgewählt
+30-07-2025 09:45:33 - utils.logger - INFO - Content der Option 'Impressum' wurde geladen.
+30-07-2025 09:45:33 - utils.logger - INFO - Navigation: Option 'Impressum' ausgewählt
+30-07-2025 09:45:35 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 09:45:35 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 09:45:35 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 09:45:35 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 09:45:35 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 09:45:35 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 09:45:35 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 09:45:36 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:45:36 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:45:36 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 09:45:37 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 09:45:37 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 09:45:37 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:45:37 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:45:37 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 09:45:38 - utils.logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+30-07-2025 09:45:38 - utils.logger - INFO - Option 'Karte' ausgewählt
+30-07-2025 09:45:38 - utils.logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+30-07-2025 09:45:38 - utils.logger - INFO - Option 'Zeitstrahl' ausgewählt
+30-07-2025 09:45:39 - utils.logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+30-07-2025 09:45:39 - utils.logger - INFO - Option 'Karte' ausgewählt
+30-07-2025 09:45:39 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:45:39 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:45:41 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 09:45:41 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 09:45:43 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:45:43 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:45:43 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 09:45:46 - utils.logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+30-07-2025 09:45:46 - utils.logger - INFO - Option 'Karte' ausgewählt
+30-07-2025 09:45:46 - utils.logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+30-07-2025 09:45:46 - utils.logger - INFO - Option 'Zeitstrahl' ausgewählt
+30-07-2025 09:45:47 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:45:47 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:45:51 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 09:45:51 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 09:45:52 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 09:45:52 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 09:45:53 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:45:53 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:45:53 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 09:45:53 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 09:45:53 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 09:45:54 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 09:45:54 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 09:45:55 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 09:45:55 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 09:45:56 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 09:45:56 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 09:45:56 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 09:45:56 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 09:45:56 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 09:45:56 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 09:45:56 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 09:45:56 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 09:45:57 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 09:45:57 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 09:45:57 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 09:45:57 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 09:46:10 - utils.logger - INFO - Datei -> Speichern ausgewählt
+30-07-2025 09:46:10 - utils.logger - INFO - Datei -> Speichern unter ausgewählt
+30-07-2025 09:46:23 - utils.logger - INFO - Speichere 0 römische Persönlichkeiten in JSON-Datei: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/test.json
+30-07-2025 09:46:23 - utils.logger - INFO - Römische Persönlichkeiten erfolgreich gespeichert.
+30-07-2025 09:46:23 - utils.logger - INFO - Datei erfolgreich gespeichert: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/test.json
+30-07-2025 09:47:13 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Nero'.
+30-07-2025 09:47:13 - utils.logger - INFO - Menüleiste eingerichtet.
+30-07-2025 09:47:13 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+30-07-2025 09:47:13 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 09:47:13 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 09:47:13 - utils.logger - INFO - Anwendung gestartet
+30-07-2025 09:47:22 - utils.logger - INFO - Datei -> Speichern ausgewählt
+30-07-2025 09:47:22 - utils.logger - INFO - Datei -> Speichern unter ausgewählt
+30-07-2025 09:47:32 - utils.logger - INFO - Speichere 1 römische Persönlichkeiten in JSON-Datei: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/test.json
+30-07-2025 09:47:32 - utils.logger - INFO - Konvertiere Roman-Objekt 'Nero' zu Dictionary
+30-07-2025 09:47:32 - utils.logger - INFO - Römische Persönlichkeiten erfolgreich gespeichert.
+30-07-2025 09:47:32 - utils.logger - INFO - Datei erfolgreich gespeichert: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/test.json
+30-07-2025 09:47:47 - utils.logger - INFO - Datei -> Öffnen ausgewählt
+30-07-2025 09:47:49 - utils.logger - INFO - Lade römische Persönlichkeiten aus JSON-Datei: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+30-07-2025 09:47:49 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+30-07-2025 09:47:49 - utils.logger - INFO - Erfolgreich 36 römische Persönlichkeiten geladen.
+30-07-2025 09:47:49 - utils.logger - INFO - Command-History gelöscht
+30-07-2025 09:47:49 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 09:47:49 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 09:47:49 - utils.logger - INFO - Datei erfolgreich geladen: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+30-07-2025 09:47:57 - utils.logger - INFO - Datei -> Öffnen ausgewählt
+30-07-2025 09:47:58 - utils.logger - INFO - Lade römische Persönlichkeiten aus JSON-Datei: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/test.json
+30-07-2025 09:47:58 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 09:47:58 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Nero'.
+30-07-2025 09:47:58 - utils.logger - INFO - Erfolgreich 1 römische Persönlichkeiten geladen.
+30-07-2025 09:47:58 - utils.logger - INFO - Command-History gelöscht
+30-07-2025 09:47:59 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 09:47:59 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 09:47:59 - utils.logger - INFO - Datei erfolgreich geladen: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/test.json
+30-07-2025 09:48:26 - utils.logger - INFO - Content der Option 'Impressum' wurde geladen.
+30-07-2025 09:48:26 - utils.logger - INFO - Navigation: Option 'Impressum' ausgewählt
+30-07-2025 09:48:26 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 09:48:26 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 09:48:27 - utils.logger - INFO - Content der Option 'Impressum' wurde geladen.
+30-07-2025 09:48:27 - utils.logger - INFO - Navigation: Option 'Impressum' ausgewählt
+30-07-2025 09:48:28 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 09:48:28 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 09:48:28 - utils.logger - INFO - Content der Option 'Impressum' wurde geladen.
+30-07-2025 09:48:28 - utils.logger - INFO - Navigation: Option 'Impressum' ausgewählt
+30-07-2025 09:48:29 - utils.logger - INFO - Content der Option 'Test' wurde geladen.
+30-07-2025 09:48:29 - utils.logger - INFO - Navigation: Option 'Test' ausgewählt
+30-07-2025 09:48:29 - utils.logger - INFO - Content der Option 'Impressum' wurde geladen.
+30-07-2025 09:48:29 - utils.logger - INFO - Navigation: Option 'Impressum' ausgewählt
+30-07-2025 09:54:41 - utils.logger - INFO - Content der Option 'Test' wurde geladen.
+30-07-2025 09:54:41 - utils.logger - INFO - Navigation: Option 'Test' ausgewählt
+30-07-2025 09:54:42 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 09:54:42 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 09:54:43 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 09:54:43 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 09:54:43 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 09:54:43 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 09:54:43 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 09:54:44 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 09:54:44 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 09:54:44 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 09:54:45 - utils.logger - INFO - Content der Option 'BibTex - Zitieren' wurde geladen.
+30-07-2025 09:54:45 - utils.logger - INFO - Option 'Zitieren' ausgewählt
+30-07-2025 09:54:45 - utils.logger - INFO - Content der Option 'BibTex - Verwalten' wurde geladen.
+30-07-2025 09:54:45 - utils.logger - INFO - Option 'Verwalten' ausgewählt
+30-07-2025 09:54:45 - utils.logger - INFO - Content der Option 'BibTex - Zitieren' wurde geladen.
+30-07-2025 09:54:45 - utils.logger - INFO - Option 'Zitieren' ausgewählt
+30-07-2025 09:54:46 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 09:54:46 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 09:54:47 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 09:54:47 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 09:54:47 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 09:54:47 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 09:54:47 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 09:54:48 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 09:54:48 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 09:54:48 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 09:54:48 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 09:54:48 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 09:54:48 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 09:54:49 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:54:49 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:54:49 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 09:54:50 - utils.logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+30-07-2025 09:54:50 - utils.logger - INFO - Option 'Karte' ausgewählt
+30-07-2025 09:54:51 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 09:54:51 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 09:54:51 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 09:54:51 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 09:54:51 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 09:54:52 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 09:54:52 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 09:54:52 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 09:54:52 - utils.logger - INFO - Content der Option 'BibTex - Zitieren' wurde geladen.
+30-07-2025 09:54:52 - utils.logger - INFO - Option 'Zitieren' ausgewählt
+30-07-2025 09:54:53 - utils.logger - INFO - Content der Option 'BibTex - Verwalten' wurde geladen.
+30-07-2025 09:54:53 - utils.logger - INFO - Option 'Verwalten' ausgewählt
+30-07-2025 09:54:53 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 09:54:53 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 09:54:54 - utils.logger - INFO - Content der Option 'BibTex - Zitieren' wurde geladen.
+30-07-2025 09:54:54 - utils.logger - INFO - Option 'Zitieren' ausgewählt
+30-07-2025 09:54:55 - utils.logger - INFO - Content der Option 'BibTex - Verwalten' wurde geladen.
+30-07-2025 09:54:55 - utils.logger - INFO - Option 'Verwalten' ausgewählt
+30-07-2025 09:54:55 - utils.logger - INFO - Content der Option 'BibTex - Zitieren' wurde geladen.
+30-07-2025 09:54:55 - utils.logger - INFO - Option 'Zitieren' ausgewählt
+30-07-2025 09:54:56 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 09:54:56 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 09:54:57 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 09:54:57 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 09:54:57 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 09:54:57 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 09:54:57 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 09:54:58 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 09:54:58 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 09:54:59 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 09:54:59 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 10:01:29 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Nero'.
+30-07-2025 10:01:29 - utils.logger - INFO - Menüleiste eingerichtet.
+30-07-2025 10:01:29 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+30-07-2025 10:01:29 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 10:01:29 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 10:01:29 - utils.logger - INFO - Anwendung gestartet
+30-07-2025 10:01:34 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 10:01:34 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 10:01:34 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 10:01:35 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 10:01:35 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 10:01:35 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 10:01:35 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 10:01:35 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 10:01:37 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 10:01:37 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 10:01:37 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 10:01:37 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 10:01:37 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 10:01:38 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 10:01:38 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 10:01:38 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 10:01:38 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 10:01:39 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 10:01:39 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 10:01:39 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 10:01:39 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 10:01:39 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 10:01:39 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 10:01:39 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 10:01:39 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 10:01:40 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 10:01:40 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 10:01:40 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 10:01:40 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 10:01:40 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 10:01:41 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 10:01:41 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 10:01:41 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 10:01:41 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 10:01:41 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 10:01:42 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 10:01:42 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 10:01:42 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 10:01:42 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 10:01:43 - utils.logger - INFO - Content der Option 'Impressum' wurde geladen.
+30-07-2025 10:01:43 - utils.logger - INFO - Navigation: Option 'Impressum' ausgewählt
+30-07-2025 10:03:34 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 10:03:34 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 10:03:34 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 10:08:03 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Nero'.
+30-07-2025 10:08:03 - utils.logger - INFO - Menüleiste eingerichtet.
+30-07-2025 10:08:04 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+30-07-2025 10:08:04 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 10:08:04 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 10:08:04 - utils.logger - INFO - Anwendung gestartet
+30-07-2025 10:08:16 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 10:08:16 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 10:08:16 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 10:08:17 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 10:08:17 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 10:08:17 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 10:08:17 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 10:08:17 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 10:08:18 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 10:08:18 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 10:08:18 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 10:08:18 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 10:08:18 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 10:08:19 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 10:08:19 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 10:08:20 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 10:08:20 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 10:08:20 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 10:08:20 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 10:08:20 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 10:08:21 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 10:08:21 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 10:08:23 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 10:08:23 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 10:08:23 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 10:08:24 - utils.logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+30-07-2025 10:08:24 - utils.logger - INFO - Option 'Karte' ausgewählt
+30-07-2025 10:08:25 - utils.logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+30-07-2025 10:08:25 - utils.logger - INFO - Option 'Zeitstrahl' ausgewählt
+30-07-2025 10:08:25 - utils.logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+30-07-2025 10:08:25 - utils.logger - INFO - Option 'Karte' ausgewählt
+30-07-2025 10:08:27 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 10:08:27 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 10:08:27 - utils.logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+30-07-2025 10:08:27 - utils.logger - INFO - Option 'Karte' ausgewählt
+30-07-2025 10:08:28 - utils.logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+30-07-2025 10:08:28 - utils.logger - INFO - Option 'Zeitstrahl' ausgewählt
+30-07-2025 10:08:29 - utils.logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+30-07-2025 10:08:29 - utils.logger - INFO - Option 'Karte' ausgewählt
+30-07-2025 10:08:32 - utils.logger - INFO - Datei -> Neu ausgewählt
+30-07-2025 10:08:32 - utils.logger - INFO - Command-History gelöscht
+30-07-2025 10:08:37 - utils.logger - INFO - Anwendung wird beendet
+30-07-2025 17:28:26 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Nero'.
+30-07-2025 17:28:26 - utils.logger - INFO - Menüleiste eingerichtet.
+30-07-2025 17:28:27 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+30-07-2025 17:28:27 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 17:28:27 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 17:28:27 - utils.logger - INFO - Anwendung gestartet
+30-07-2025 17:29:04 - utils.logger - INFO - Menüleiste eingerichtet.
+30-07-2025 17:29:04 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+30-07-2025 17:29:04 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 17:29:04 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 17:29:04 - utils.logger - INFO - Anwendung gestartet
+30-07-2025 17:36:38 - utils.logger - INFO - Menüleiste eingerichtet.
+30-07-2025 17:36:38 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+30-07-2025 17:36:38 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 17:36:38 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 17:36:38 - utils.logger - INFO - Anwendung gestartet
+30-07-2025 17:36:42 - utils.logger - INFO - Datei -> Öffnen ausgewählt
+30-07-2025 17:36:50 - utils.logger - INFO - Lade römische Persönlichkeiten aus JSON-Datei: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+30-07-2025 17:36:50 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:36:50 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+30-07-2025 17:36:50 - utils.logger - INFO - Erfolgreich 36 römische Persönlichkeiten geladen.
+30-07-2025 17:36:50 - utils.logger - INFO - Command-History gelöscht
+30-07-2025 17:36:50 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 17:36:50 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 17:36:50 - utils.logger - INFO - Datei erfolgreich geladen: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+30-07-2025 17:37:54 - utils.logger - INFO - Menüleiste eingerichtet.
+30-07-2025 17:37:54 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+30-07-2025 17:37:54 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 17:37:54 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 17:37:54 - utils.logger - INFO - Anwendung gestartet
+30-07-2025 17:38:01 - utils.logger - INFO - Datei -> Öffnen ausgewählt
+30-07-2025 17:38:09 - utils.logger - INFO - Lade römische Persönlichkeiten aus JSON-Datei: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+30-07-2025 17:38:09 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:38:09 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+30-07-2025 17:38:09 - utils.logger - INFO - Erfolgreich 36 römische Persönlichkeiten geladen.
+30-07-2025 17:38:09 - utils.logger - INFO - Command-History gelöscht
+30-07-2025 17:38:09 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 17:38:09 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 17:38:09 - utils.logger - INFO - Datei erfolgreich geladen: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+30-07-2025 17:54:02 - utils.logger - INFO - Menüleiste eingerichtet.
+30-07-2025 17:54:03 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+30-07-2025 17:54:03 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 17:54:03 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 17:54:03 - utils.logger - INFO - Anwendung gestartet
+30-07-2025 17:54:06 - utils.logger - INFO - Datei -> Öffnen ausgewählt
+30-07-2025 17:54:14 - utils.logger - INFO - Lade römische Persönlichkeiten aus JSON-Datei: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+30-07-2025 17:54:14 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:54:14 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+30-07-2025 17:54:14 - utils.logger - INFO - Erfolgreich 36 römische Persönlichkeiten geladen.
+30-07-2025 17:54:14 - utils.logger - INFO - Command-History gelöscht
+30-07-2025 17:54:14 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 17:54:14 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 17:54:14 - utils.logger - INFO - Datei erfolgreich geladen: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+30-07-2025 17:54:17 - utils.logger - INFO - Datei -> Speichern ausgewählt
+30-07-2025 17:54:18 - utils.logger - INFO - Backup erstellt: C:/Users/z0047r5a/source/repos/Prosop/Datenbank\backups\Romans_backup_20250730_175418.json
+30-07-2025 17:54:18 - utils.logger - INFO - Speichere 36 römische Persönlichkeiten in JSON-Datei: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Octavia maior ' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Octavia minor ' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Antonia maior' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Antonia minor' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Domitia Lepida' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Claudia Livia Iulia = Livilla' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Servillia ' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Clodia' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Scribonia ' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Livia Drusilla' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Iulia' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Vipsania Iulia' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Vipsania Agrippina' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Agrippina maior' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Agrippina minor' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Iulia Drusilla' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Iulia Livilla' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Iunia Claudilla (oder Iunia Claudia)' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Orestilla / Cornelia(Livia) Orestina' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Lollia Paulina' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Milonia Caesonia' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Iulia Drusilla ' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Aemilia Lepida ' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Livia Medullina' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Plautia Urgulanilla' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Aelia Paetina' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Antonia' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Valeria Messalina' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Iulia, Tochter des Drusus' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Claudia Octavia' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Claudia Antonia' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Octavia Claudia' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Poppaea Sabina' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Claudia Augusta' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Statilia Messalina' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Konvertiere Roman-Objekt 'Claudia Acte' zu Dictionary
+30-07-2025 17:54:18 - utils.logger - INFO - Römische Persönlichkeiten erfolgreich gespeichert.
+30-07-2025 17:54:18 - utils.logger - INFO - Datei erfolgreich gespeichert: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+30-07-2025 17:55:11 - utils.logger - INFO - Menüleiste eingerichtet.
+30-07-2025 17:55:12 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+30-07-2025 17:55:12 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 17:55:12 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 17:55:12 - utils.logger - INFO - Anwendung gestartet
+30-07-2025 17:55:15 - utils.logger - INFO - Datei -> Öffnen ausgewählt
+30-07-2025 17:55:18 - utils.logger - INFO - Lade römische Persönlichkeiten aus JSON-Datei: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+30-07-2025 17:55:18 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 17:55:18 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+30-07-2025 17:55:18 - utils.logger - INFO - Erfolgreich 36 römische Persönlichkeiten geladen.
+30-07-2025 17:55:18 - utils.logger - INFO - Command-History gelöscht
+30-07-2025 17:55:18 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 17:55:18 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 17:55:18 - utils.logger - INFO - Datei erfolgreich geladen: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+30-07-2025 18:03:23 - utils.logger - INFO - Menüleiste eingerichtet.
+30-07-2025 18:03:23 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+30-07-2025 18:03:23 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 18:03:23 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 18:03:23 - utils.logger - INFO - Anwendung gestartet
+30-07-2025 18:03:27 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 18:03:27 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 18:03:27 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 18:03:28 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:03:28 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:03:28 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 18:03:28 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 18:03:28 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 18:03:28 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 18:03:28 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 18:03:29 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 18:03:29 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 18:03:29 - utils.logger - INFO - Content der Option 'Impressum' wurde geladen.
+30-07-2025 18:03:29 - utils.logger - INFO - Navigation: Option 'Impressum' ausgewählt
+30-07-2025 18:03:29 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 18:03:29 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 18:03:30 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 18:03:30 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 18:03:30 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 18:03:30 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 18:03:30 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 18:03:30 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:03:30 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:03:31 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 18:03:31 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 18:03:31 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 18:03:31 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 18:03:31 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 18:03:32 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 18:03:32 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 18:03:32 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 18:03:32 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 18:03:32 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 18:03:33 - utils.logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+30-07-2025 18:03:33 - utils.logger - INFO - Option 'Karte' ausgewählt
+30-07-2025 18:03:33 - utils.logger - INFO - Content der Option 'Ansicht - Zeitstrahl' wurde geladen.
+30-07-2025 18:03:33 - utils.logger - INFO - Option 'Zeitstrahl' ausgewählt
+30-07-2025 18:03:33 - utils.logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+30-07-2025 18:03:34 - utils.logger - INFO - Option 'Karte' ausgewählt
+30-07-2025 18:03:34 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 18:03:34 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 18:04:28 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:04:28 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:04:29 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 18:04:29 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 18:04:29 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 18:04:29 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 18:04:29 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 18:04:30 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 18:04:30 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 18:04:30 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:04:30 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:04:30 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 18:04:30 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 18:51:03 - utils.logger - INFO - Menüleiste eingerichtet.
+30-07-2025 18:51:04 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+30-07-2025 18:51:04 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 18:51:04 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 18:51:04 - utils.logger - INFO - Anwendung gestartet
+30-07-2025 18:51:06 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:51:06 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:52:05 - utils.logger - INFO - Menüleiste eingerichtet.
+30-07-2025 18:52:05 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+30-07-2025 18:52:05 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 18:52:05 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 18:52:05 - utils.logger - INFO - Anwendung gestartet
+30-07-2025 18:52:07 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:52:07 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:52:17 - utils.logger - INFO - Datei -> Öffnen ausgewählt
+30-07-2025 18:52:19 - utils.logger - INFO - Lade römische Persönlichkeiten aus JSON-Datei: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+30-07-2025 18:52:19 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:19 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+30-07-2025 18:52:19 - utils.logger - INFO - Erfolgreich 36 römische Persönlichkeiten geladen.
+30-07-2025 18:52:19 - utils.logger - INFO - Command-History gelöscht
+30-07-2025 18:52:19 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:52:19 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:52:19 - utils.logger - INFO - Datei erfolgreich geladen: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+30-07-2025 18:52:21 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:52:21 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:52:22 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 18:52:22 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 18:52:22 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 18:52:22 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:52:22 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:52:23 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:52:23 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:52:23 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:52:23 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:52:25 - utils.logger - INFO - Datei -> Öffnen ausgewählt
+30-07-2025 18:52:27 - utils.logger - INFO - Lade römische Persönlichkeiten aus JSON-Datei: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior '.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor '.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia '.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia '.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla '.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida '.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+30-07-2025 18:52:27 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+30-07-2025 18:52:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+30-07-2025 18:52:27 - utils.logger - INFO - Erfolgreich 36 römische Persönlichkeiten geladen.
+30-07-2025 18:52:27 - utils.logger - INFO - Command-History gelöscht
+30-07-2025 18:52:27 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:52:27 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:52:27 - utils.logger - INFO - Datei erfolgreich geladen: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+30-07-2025 18:52:31 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 18:52:31 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 18:52:31 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 18:52:32 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 18:52:32 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 18:52:33 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:52:33 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:53:21 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:53:21 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:53:22 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:53:22 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:53:22 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:53:22 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:53:36 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 18:53:36 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 18:54:08 - utils.logger - INFO - Menüleiste eingerichtet.
+30-07-2025 18:54:08 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+30-07-2025 18:54:08 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 18:54:08 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 18:54:08 - utils.logger - INFO - Anwendung gestartet
+30-07-2025 18:54:10 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:54:10 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:54:11 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 18:54:11 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 18:54:12 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:54:12 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:54:13 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 18:54:13 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 18:54:13 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 18:54:14 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 18:54:14 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 18:54:14 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:54:14 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:54:49 - utils.logger - INFO - Menüleiste eingerichtet.
+30-07-2025 18:54:50 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+30-07-2025 18:54:50 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 18:54:50 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 18:54:50 - utils.logger - INFO - Anwendung gestartet
+30-07-2025 18:54:55 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 18:54:55 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 18:54:55 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 18:54:56 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:54:56 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:54:57 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 18:54:57 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 18:54:57 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 18:54:57 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 18:54:57 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 18:54:58 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 18:54:58 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 18:54:59 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 18:54:59 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 18:54:59 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 18:54:59 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 18:54:59 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 18:54:59 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 18:54:59 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 18:54:59 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 18:55:00 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 18:55:00 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 18:55:01 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 18:55:01 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 18:55:01 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 18:55:02 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+30-07-2025 18:55:02 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+30-07-2025 18:55:03 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 18:55:03 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 18:55:03 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 18:55:04 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+30-07-2025 18:55:04 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+30-07-2025 18:55:05 - utils.logger - INFO - Content der Option 'BibTex - Literatur hinzufügen' wurde geladen.
+30-07-2025 18:55:05 - utils.logger - INFO - Option 'Literatur hinzufügen' ausgewählt
+30-07-2025 18:55:05 - utils.logger - INFO - Navigation: Option 'BibTex' ausgewählt
+30-07-2025 18:55:05 - utils.logger - INFO - Content der Option 'Impressum' wurde geladen.
+30-07-2025 18:55:05 - utils.logger - INFO - Navigation: Option 'Impressum' ausgewählt
+30-07-2025 18:55:06 - utils.logger - INFO - Content der Option 'Hilfe' wurde geladen.
+30-07-2025 18:55:06 - utils.logger - INFO - Navigation: Option 'Hilfe' ausgewählt
+30-07-2025 18:56:00 - utils.logger - INFO - Content der Option 'Statistik' wurde geladen.
+30-07-2025 18:56:00 - utils.logger - INFO - Navigation: Option 'Statistik' ausgewählt
+30-07-2025 18:56:01 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 18:56:01 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 18:56:01 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+30-07-2025 18:56:05 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 18:56:05 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+30-07-2025 18:56:06 - utils.logger - INFO - Content der Option 'Ansicht - Karte' wurde geladen.
+30-07-2025 18:56:06 - utils.logger - INFO - Option 'Karte' ausgewählt
+30-07-2025 18:56:07 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+30-07-2025 18:56:07 - utils.logger - INFO - Option 'Tabelle' ausgewählt
