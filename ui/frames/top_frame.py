@@ -34,7 +34,7 @@ class TopFrame(tk.Frame):
         """Erstellt und platziert das Universitätslogo"""
         self.uni_logo = tk.PhotoImage(file=AppConfig.UNIVERSITY_LOGO).subsample(15)
         logo_label = tk.Label(self, image=self.uni_logo, bg=AppColors.TOP_FRAME)
-        logo_label.grid(row=0, column=0, padx=20, pady=10, sticky='w')
+        logo_label.grid(row=0, column=0, padx=20, pady=10, sticky=tk.W)
     
     def _CreateTitle(self) -> None:
         """Erstellt und platziert den Anwendungstitel"""
@@ -45,7 +45,7 @@ class TopFrame(tk.Frame):
             fg=AppColors.KU_COLOR,
             text=AppConfig.MAIN_TITLE
         )
-        self.title_label.grid(row=0, column=1, padx=20, pady=10, sticky='nsew')
+        self.title_label.grid(row=0, column=1, padx=20, pady=10, sticky=tk.NSEW)
     
     def _CreateClock(self) -> None:
         """Erstellt und platziert die Uhr"""
@@ -55,7 +55,7 @@ class TopFrame(tk.Frame):
             bg=AppColors.TOP_FRAME,
             fg=AppColors.KU_COLOR
         )
-        self.time_label.grid(row=0, column=2, padx=20, pady=10, sticky='e')
+        self.time_label.grid(row=0, column=2, padx=20, pady=10, sticky=tk.E)
         self.UpdateClock()
     
     def UpdateClock(self) -> None:

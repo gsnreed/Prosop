@@ -62,7 +62,7 @@ class NavigationFrame(tk.Frame):
                 padx=15,  # Reduziert von 20 auf 15 für konsistenteres Aussehen
                 pady=5,
                 cursor="hand2",
-                anchor='w'
+                anchor=tk.W
             )
             label.pack(fill=tk.X, pady=2)
             

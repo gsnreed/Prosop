@@ -15,6 +15,7 @@ class DefaultContentFrame(BaseContentFrame):
     def __init__(self, parent, title: str) -> None:
         self.title = title
         super().__init__(parent)
+        self.CreateUi()
     
     def CreateUi(self) -> None:
         label = tk.Label(

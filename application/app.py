@@ -121,18 +121,18 @@ class MainApp(tk.Tk):
         """Erstellt alle UI-Komponenten der Anwendung"""
         # Oberen Rahmen erstellen
         self.__top_frame = TopFrame(self)
-        self.__top_frame.grid(row=0, column=0, columnspan=3, sticky='nsew')
+        self.__top_frame.grid(row=0, column=0, columnspan=3, sticky=tk.NSEW)
 
         # Navigationsrahmen erstellen und mit dem Inhaltsrahmen verbinden
         self.__navigation_frame = NavigationFrame(self, self)
-        self.__navigation_frame.grid(row=1, column=0, sticky='nsew')
+        self.__navigation_frame.grid(row=1, column=0, sticky=tk.NSEW)
 
         # Submenü-Rahmen erstellen (nicht direkt anzeigen)
         self.__submenu_frame = SubMenuFrame(self)
         
         # Inhaltsrahmen erstellen
         self.__content_frame = ContentFrame(self)
-        self.__content_frame.grid(row=1, column=2, sticky='nsew', padx=(5, 5), pady=(5, 5))
+        self.__content_frame.grid(row=1, column=2, sticky=tk.NSEW, padx=(5, 5), pady=(5, 5))
     
     def ConfigureMainGrid(self) -> None:
         """Konfiguriert das Grid-Layout des Hauptfensters"""
@@ -195,6 +195,7 @@ class MainApp(tk.Tk):
             self.__command_manager.Clear()      # Befehle löschen
             self.title(AppConfig.APP_TITLE)     # Titel anpassen
             self.__menu_manager.UpdateEditMenuState()   # Rücksetzen/Wiederholen aktualisieren
+            self.__content_frame.UpdateContent(self.__content_frame.current_option)
     
     def OnFileOpen(self) -> None:
         logger.info("Datei -> Öffnen ausgewählt")
@@ -211,6 +212,7 @@ class MainApp(tk.Tk):
 
             if file_path:
                 self.__file_manager.LoadFile(file_path)
+                self.__content_frame.UpdateContent(self.__content_frame.current_option)
     
     def OnFileSave(self) -> bool:
         """Speichert die aktuelle Datei oder ruft 'Speichern unter' auf, wenn noch keine Datei existiert"""

@@ -29,11 +29,11 @@ class SubMenuFrame(tk.Frame):
             fg=AppColors.KU_COLOR,
             text="Unterkategorien"
         )
-        self.submenu_header.pack(side='top', fill='x', padx=10, pady=(10,5))
+        self.submenu_header.pack(side=tk.TOP, fill=tk.X, padx=10, pady=(10,5))
         
         # Frame für Submenü-Optionen
         self.options_frame = tk.Frame(self, bg=AppColors.SUBMENU_FRAME)
-        self.options_frame.pack(fill='both', expand=True, padx=5)
+        self.options_frame.pack(fill=tk.BOTH, expand=True, padx=5)
         
         # Definiere verfügbare Submenüs
         self.submenus = AppConfig.SUBMENUS
@@ -64,9 +64,9 @@ class SubMenuFrame(tk.Frame):
                     padx=15,
                     pady=4,
                     cursor="hand2",
-                    anchor='w'  # Linksbündiger Text
+                    anchor=tk.W  # Linksbündiger Text
                 )
-                label.pack(fill='x', pady=1)
+                label.pack(fill=tk.X, pady=1)
                 
                 # Event-Binding für das Label
                 label.bind("<Enter>", lambda e, l=label: self.OnSubMenuHover(l, True))

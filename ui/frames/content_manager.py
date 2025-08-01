@@ -1,5 +1,6 @@
 import sys
 import os
+import tkinter as tk
 
 # Zwei Ebenen nach oben (von /ui/dialogs/ zu Projekt-Root /Prosop/)
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -60,7 +61,7 @@ class ContentManager:
             self.__current_frame = DefaultContentFrame(self.__parent, option)
         
         # Zeige den Frame an
-        self.__current_frame.pack(fill='both', expand=True)
+        self.__current_frame.pack(fill=tk.BOTH, expand=True)
         
         # Bei Bedarf Daten aktualisieren
         if hasattr(self.__current_frame, 'UpdateData'):
@@ -69,3 +70,7 @@ class ContentManager:
     @property
     def parent(self):
         return self.__parent
+    
+    @property
+    def current_frame(self):
+        return self.__current_frame

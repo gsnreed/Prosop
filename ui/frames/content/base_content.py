@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import ttk
 import sys
 import os
 
@@ -14,7 +15,6 @@ class BaseContentFrame(tk.Frame):
     
     def __init__(self, parent) -> None:
         super().__init__(parent, bg=AppColors.CONTENT_FRAME)
-        self.CreateUi()
     
     def CreateUi(self) -> None:
         """Erstellt die UI-Komponenten (von Unterklassen zu überschreiben)"""
