@@ -137,18 +137,21 @@ class EditRomanCommand(Command):
         self.property_name = property_name
         self.new_value = new_value
         self.old_value = None  # wird bei execute gespeichert
+        self.property_existed = False  # Flag
         
     def execute(self) -> None:
-        # Speichere den alten Wert für undo
-        self.old_value = self.roman.get(self.property_name, None)
-        # Setze den neuen Wert
+        self.property_existed = self.property_name in self.roman.properties
+        if self.property_existed:
+            self.old_value = self.roman.properties[self.property_name]
+        else:
+            self.old_value = None
+            
         self.roman.properties[self.property_name] = self.new_value
         
     def undo(self) -> None:
-        if self.old_value is not None:
+        if self.property_existed:
             self.roman.properties[self.property_name] = self.old_value
         else:
-            # Wenn es den Wert vorher nicht gab, lösche ihn
             if self.property_name in self.roman.properties:
                 del self.roman.properties[self.property_name]
                 

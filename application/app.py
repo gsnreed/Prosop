@@ -108,6 +108,10 @@ class MainApp(tk.Tk):
     def content_frame(self):
         return self.__content_frame
     
+    @property
+    def menu_manager(self):
+        return self.__menu_manager
+    
     def SetupWindow(self) -> None:
         """Fenster Konfiguration"""
         self.title(AppConfig.APP_TITLE)

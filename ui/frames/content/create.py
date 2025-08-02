@@ -8,6 +8,7 @@ project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
+from data.commands import EditRomanCommand
 from utils.config import AppColors, Fonts
 from ui.frames.content.base_content import BaseContentFrame
 from utils.logger import logger
@@ -33,9 +34,9 @@ class CreateFrame(BaseContentFrame):
     
     def CreateUi(self) -> None:
         # Hauptcontainer
-        self.rowconfigure(0, weight = 10)
+        self.rowconfigure(0, weight = 0)
         self.rowconfigure(1, weight = 0)
-        self.rowconfigure(2, weight = 0)
+        self.rowconfigure(2, weight = 10)
         self.columnconfigure(0, weight=1)
 
         # Tabellenansicht
@@ -78,7 +79,8 @@ class CreateFrame(BaseContentFrame):
             columns=columns,
             show='headings',
             yscrollcommand=y_scrollbar.set,
-            style=style_name
+            style=style_name,
+            selectmode=tk.BROWSE
         )
 
         # Scrollbars mit Treeview verbinden
@@ -101,8 +103,31 @@ class CreateFrame(BaseContentFrame):
         
         self.tree.pack(fill=tk.BOTH, expand=True)
 
+        buttons_frame = tk.Frame(top_frame, bg=AppColors.CONTENT_FRAME)
+        buttons_frame.pack(fill=tk.X, pady=(10, 0))
+
+        # Create button
+        self.create_button = ttk.Button(
+            buttons_frame, 
+            text="Neuen Römer erstellen", 
+            command=self.CreateNewRoman
+        )
+        self.create_button.pack(side=tk.LEFT, padx=(10, 5))
+
+        # Delete button
+        self.delete_button = ttk.Button(
+            buttons_frame, 
+            text="Ausgewählten Römer löschen", 
+            command=self.DeleteSelectedRoman,
+            state=tk.DISABLED  # Initially disabled
+        )
+        self.delete_button.pack(side=tk.LEFT, padx=5)
+
         # Event-Binding für Auswahl
         self.tree.bind('<<TreeviewSelect>>', self.OnSelect)
+        self.tree.bind('<ButtonRelease-1>', self.OnTreeClick)
+        self.tree.bind('<Shift-Button-1>', lambda e: "break")
+        self.tree.bind('<Shift-ButtonRelease-1>', lambda e: "break")
 
         # Trennstrich
         seperator = ttk.Separator(self, orient=tk.HORIZONTAL)
@@ -262,6 +287,29 @@ class CreateFrame(BaseContentFrame):
             relief=tk.SOLID
         )
         frequency_entry.grid(row=0, column=1, sticky=tk.EW, padx=5, pady=5)
+
+        # Verlobung
+        engagement_label = tk.Label(
+            form_frame,
+            text='Verlobung:',
+            font=Fonts.SUBMENU,
+            bg=AppColors.CONTENT_FRAME,
+            fg=AppColors.KU_COLOR,
+            anchor=tk.W
+        )
+        engagement_label.grid(row=1, column=0, sticky=tk.W, padx=10, pady=5)
+        
+        self.engagement_var = tk.StringVar()
+        frequency_entry = tk.Entry(
+            form_frame, 
+            textvariable=self.engagement_var, 
+            width=40, 
+            font=Fonts.STANDARD, 
+            fg=AppColors.KU_COLOR, 
+            bd=1, 
+            relief=tk.SOLID
+        )
+        frequency_entry.grid(row=1, column=1, sticky=tk.EW, padx=5, pady=5)
         
         # Überschrift für Ehepartner
         partner_label = tk.Label(
@@ -272,11 +320,11 @@ class CreateFrame(BaseContentFrame):
             fg=AppColors.KU_COLOR,
             anchor=tk.W
         )
-        partner_label.grid(row=1, column=0, columnspan=2, sticky=tk.W, padx=10, pady=(15, 5))
+        partner_label.grid(row=2, column=0, columnspan=2, sticky=tk.W, padx=10, pady=(15, 5))
         
         # Container für die Ehepartner-Einträge
         self.marriage_container = tk.Frame(form_frame, bg=AppColors.CONTENT_FRAME)
-        self.marriage_container.grid(row=2, column=0, columnspan=2, sticky=tk.NSEW, padx=10)
+        self.marriage_container.grid(row=3, column=0, columnspan=2, sticky=tk.NSEW, padx=10)
         
         self.marriage_entries = []
         self.marriage_frames = []
@@ -285,7 +333,7 @@ class CreateFrame(BaseContentFrame):
         self.AddDynamicField(self.marriage_entries, self.marriage_frames, self.marriage_container)
         
         # Button-Bereich am unteren Rand
-        buttons_row = 3
+        buttons_row = 4
         
         # 'Feld hinzufügen'-Button (links) - KORRIGIERT
         add_button = ttk.Button(
@@ -487,19 +535,24 @@ class CreateFrame(BaseContentFrame):
     def OnSelect(self, event):
         """Behandelt die Auswahl in der Tabelle"""
         selection = self.tree.selection()
-
+    
         if selection:
             item = self.tree.item(selection[0])
             values = item['values']
-
+            
             self.__current_roman = None
             for roman in self.__app.romans:
                 if roman.get('Name', '') == values[0]:
                     self.__current_roman = roman
                     break
             
-            if self.__current_roman != None:
+            if self.__current_roman is not None:
                 self.DisplayRoman()
+        else:
+            self.__current_roman = None
+            self.ClearDetails()
+        
+        self.UpdateButtonStates()
     
     def DisplayRoman(self):
         """Zeigt die Daten des ausgewählten Romans in den Detail-Tabs an"""
@@ -519,6 +572,7 @@ class CreateFrame(BaseContentFrame):
             
             # Marriage Tab: Frequenz setzen
             self.marriage_frequency_var.set(self.__current_roman.get('Häufigkeit Heirat', ''))
+            self.engagement_var.set(self.__current_roman.get('Verlobung', ''))
             
             # Marriage Tab: Entferne alle zusätzlichen Felder und behalte nur das erste
             if len(self.marriage_entries) > 1:
@@ -631,4 +685,193 @@ class CreateFrame(BaseContentFrame):
                 roman.get('Anzahl Kinder', '')
             ))
     
-    
+    def SaveRomanTab(self, tab_name):
+        """Speichert die Änderungen eines Tabs für den aktuellen Römer mit Command-Pattern"""
+        if not self.__current_roman or not self.__app:
+            return
+        
+        # Command-Manager aus der App holen
+        command_manager = self.__app.command_manager
+        
+        match(tab_name):
+            case 'basic':
+                 # Grunddaten speichern
+                for field_name, entry in self.basic_entries.items():
+                    new_value = entry.get()
+                    old_value = self.__current_roman.get(field_name, '')
+                    
+                    if new_value != old_value:
+                        # Erstelle und führe EditRomanCommand aus
+                        command = EditRomanCommand(self.__current_roman, field_name, new_value)
+                        command_manager.ExecuteCommand(command)
+            case 'marriage':
+                # Häufigkeit der Heirat speichern
+                new_frequency = self.marriage_frequency_var.get()
+                new_engagement = self.engagement_var.get()
+                old_frequency = self.__current_roman.get('Häufigkeit Heirat', '')
+                old_engagement = self.__current_roman.get('Verlobung', '')
+                
+                if new_frequency != old_frequency:
+                    command = EditRomanCommand(self.__current_roman, 'Häufigkeit Heirat', new_frequency)
+                    command_manager.ExecuteCommand(command)
+
+                if new_engagement != old_engagement:
+                    command = EditRomanCommand(self.__current_roman, 'Verlobung', new_engagement)
+                    command_manager.ExecuteCommand(command)
+                
+                # Ehemänner speichern
+                husbands = []
+                for entry in self.marriage_entries:
+                    husbands.append(entry.get())
+                
+                old_husbands = self.__current_roman.get('Männer', [])
+                if husbands != old_husbands:
+                    command = EditRomanCommand(self.__current_roman, 'Männer', husbands)
+                    command_manager.ExecuteCommand(command)
+           
+            case 'children':
+                # Anzahl der Kinder speichern
+                new_count = self.children_count_var.get()
+                old_count = self.__current_roman.get('Anzahl Kinder', '')
+                
+                if new_count != old_count:
+                    command = EditRomanCommand(self.__current_roman, 'Anzahl Kinder', new_count)
+                    command_manager.ExecuteCommand(command)
+                
+                # Kinder speichern
+                children = []
+                for entry in self.children_entries:
+                    children.append(entry.get())
+                
+                old_children = self.__current_roman.get('Kinder', [])
+                if children != old_children:
+                    command = EditRomanCommand(self.__current_roman, 'Kinder', children)
+                    command_manager.ExecuteCommand(command)
+        
+            case 'family':
+                # Familie speichern (falls implementiert)
+                new_family = self.family_entry.get() if hasattr(self, 'family_entry') else ''
+                old_family = self.__current_roman.get('Familie', '')
+                
+                if new_family != old_family:
+                    command = EditRomanCommand(self.__current_roman, 'Familie', new_family)
+                    command_manager.ExecuteCommand(command)
+        
+        # Nach dem Speichern die Tabelle aktualisieren
+        self.UpdateTableRow()
+        self.LoadTableData()
+        self.__app.file_modified = True
+        self.__app.menu_manager.UpdateEditMenuState()
+        
+        # Bestätigungsmeldung anzeigen
+        logger.info(f"Änderungen am Tab '{tab_name}' für Römer '{self.__current_roman.get('Name', '')}' gespeichert")
+
+    def UpdateTableRow(self):
+        """Aktualisiert die ausgewählte Zeile in der Tabelle"""
+        selection = self.tree.selection()
+        if not selection:
+            return
+            
+        # Aktualisiere die Werte in der Tabelle
+        item_id = selection[0]
+        self.tree.item(item_id, values=(
+            self.__current_roman.get('Name', ''),
+            self.__current_roman.get('Geburtsdatum', ''),
+            self.__current_roman.get('Sterbedatum', ''),
+            self.__current_roman.get('Todesursache', ''),
+            self.__current_roman.get('Familie', ''),
+            self.__current_roman.get('Häufigkeit Heirat', ''),
+            self.__current_roman.get('Anzahl Kinder', '')
+        ))
+
+    def CreateFamilyTab(self):
+        """Erstellt die Familie-Registerkarte"""
+        for widget in self.tab_family.winfo_children():
+            widget.destroy()
+            
+        form_frame = tk.Frame(self.tab_family, bg=AppColors.CONTENT_FRAME)
+        form_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=(5, 10))
+        
+        # Familie-Label
+        family_label = tk.Label(
+            form_frame,
+            text='Familie:',
+            font=Fonts.SUBMENU,
+            bg=AppColors.CONTENT_FRAME,
+            fg=AppColors.KU_COLOR,
+            anchor=tk.W
+        )
+        family_label.grid(row=0, column=0, sticky=tk.W, padx=10, pady=5)
+        
+        # Familie-Eingabefeld
+        self.family_entry = tk.Entry(
+            form_frame, 
+            width=40, 
+            font=Fonts.STANDARD, 
+            fg=AppColors.KU_COLOR, 
+            bd=1, 
+            relief=tk.SOLID
+        )
+        self.family_entry.grid(row=0, column=1, sticky=tk.EW, padx=5, pady=5)
+        
+        # Wenn ein Roman ausgewählt ist, Wert setzen
+        if self.__current_roman:
+            self.family_entry.delete(0, tk.END)
+            self.family_entry.insert(0, self.__current_roman.get('Familie', ''))
+        
+        # Speicher-Button
+        save_frame = tk.Frame(form_frame, bg=AppColors.CONTENT_FRAME)
+        save_frame.grid(row=1, column=1, sticky=tk.SE, pady=10)
+        
+        save_button = ttk.Button(save_frame, text='Änderungen speichern', command=lambda: self.SaveRomanTab('family'))
+        save_button.pack(side=tk.RIGHT, padx=5)
+        
+        # Form-Frame dehnbar machen
+        form_frame.columnconfigure(1, weight=1)
+
+    def OnTreeClick(self, event):
+        """An- und Abwahl von Optionen der Tabelle"""
+        region = self.tree.identify("region", event.x, event.y)
+        if region == "cell" or region == "tree":
+            item_id = self.tree.identify_row(event.y)
+            if item_id:
+                if item_id in self.tree.selection() and len(self.tree.selection()) == 1:
+                    if hasattr(self, '_last_clicked_item') and self._last_clicked_item == item_id:
+                        self.tree.selection_remove(item_id)
+                        self.__current_roman = None
+                        self.ClearDetails()
+                        self.UpdateButtonStates()
+                    
+                    self._last_clicked_item = item_id
+
+    def ClearDetails(self):
+        """Löscht Detailfelder"""
+        # Basic tab
+        for entry in self.basic_entries.values():
+            entry.delete(0, tk.END)
+        
+        # Marriage tab
+        self.marriage_frequency_var.set("")
+        self.engagement_var.set("")
+        for entry in self.marriage_entries:
+            entry.delete(0, tk.END)
+        
+        # Children tab
+        self.children_count_var.set("")
+        for entry in self.children_entries:
+            entry.delete(0, tk.END)
+
+    def UpdateButtonStates(self):
+        """Aktivieren/Deaktivieren der Buttons"""
+        if self.__current_roman:
+            self.create_button.config(state=tk.DISABLED)
+            self.delete_button.config(state=tk.NORMAL)
+        else:
+            self.create_button.config(state=tk.NORMAL)
+            self.delete_button.config(state=tk.DISABLED)
+
+    def CreateNewRoman(self):
+        pass
+
+    def DeleteSelectedRoman(self):
+        pass
