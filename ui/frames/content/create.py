@@ -13,6 +13,9 @@ from ui.frames.content.base_content import BaseContentFrame
 from utils.logger import logger
 
 class CreateFrame(BaseContentFrame):
+    # Statische Variable
+    last_selected_tab = 0
+
     def __init__(self, parent):
         super().__init__(parent)
         self.__current_roman = None
@@ -142,17 +145,23 @@ class CreateFrame(BaseContentFrame):
         # Inhalt der Tabs erstellen
         self.CreateBasicTab()
         self.CreateMarriageTab()
-        #self.CreateChildrenTab()
+        self.CreateChildrenTab()
         #self.CreateFamilyTab()
         #self.CreateSpecialTab()
         #self.CreateHonorsTab()
         #self.CreateSourcesTab()
+
+        self.notebook.bind('<<NotebookTabChanged>>', self.OnTabChanged)
+        self.notebook.select(CreateFrame.last_selected_tab)
 
         # Zunächst leere Felder
         #self.ClearDetails()
         
         # Tabelle mit Daten füllen
         #self.LoadData()
+    
+    def OnTabChanged(self, event):
+        CreateFrame.last_selected_tab = self.notebook.index('current')
 
     def ConfigureTreeviewStyle(self, style_name):
         style = ttk.Style()
@@ -224,14 +233,14 @@ class CreateFrame(BaseContentFrame):
         form_frame.columnconfigure(1, weight=1)
     
     def CreateMarriageTab(self):
-        """Erstellt die Ehen-Registerkarte im gleichen Layout wie BasicTab"""
+        """Erstellt die Ehen-Registerkarte"""
         for widget in self.tab_marriage.winfo_children():
             widget.destroy()
-            
+                
         form_frame = tk.Frame(self.tab_marriage, bg=AppColors.CONTENT_FRAME)
         form_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=(5, 10))
         
-        # Häufigkeit Heirat (entspricht einem Feld im BasicTab)
+        # Häufigkeit Heirat
         frequency_label = tk.Label(
             form_frame,
             text='Häufigkeit Heirat:',
@@ -266,30 +275,24 @@ class CreateFrame(BaseContentFrame):
         partner_label.grid(row=1, column=0, columnspan=2, sticky=tk.W, padx=10, pady=(15, 5))
         
         # Container für die Ehepartner-Einträge
-        partners_container = tk.Frame(form_frame, bg=AppColors.CONTENT_FRAME)
-        partners_container.grid(row=2, column=0, columnspan=2, sticky=tk.NSEW, padx=10)
-        
-        # Speichere den Container für spätere Verwendung
-        self.entries_frame = partners_container
+        self.marriage_container = tk.Frame(form_frame, bg=AppColors.CONTENT_FRAME)
+        self.marriage_container.grid(row=2, column=0, columnspan=2, sticky=tk.NSEW, padx=10)
         
         self.marriage_entries = []
         self.marriage_frames = []
         
         # Erstes Ehepartner-Feld hinzufügen
-        self.AddMarriageField()
-        
-        # Bestehende Ehepartner laden (wenn vorhanden)
-        if self.__current_roman is not None:
-            husbands = self.__current_roman.get('Männer', [])
-            for i in range(1, len(husbands)):
-                if husbands[i] != '':
-                    self.AddMarriageField()
+        self.AddDynamicField(self.marriage_entries, self.marriage_frames, self.marriage_container)
         
         # Button-Bereich am unteren Rand
         buttons_row = 3
         
-        # 'Feld hinzufügen'-Button (links)
-        add_button = ttk.Button(form_frame, text='Feld hinzufügen', command=self.AddMarriageField)
+        # 'Feld hinzufügen'-Button (links) - KORRIGIERT
+        add_button = ttk.Button(
+            form_frame, 
+            text='Ehemann hinzufügen', 
+            command=lambda: self.AddDynamicField(self.marriage_entries, self.marriage_frames, self.marriage_container)
+        )
         add_button.grid(row=buttons_row, column=0, sticky=tk.W, padx=10, pady=10)
         
         # Speicher-Button (rechts)
@@ -301,17 +304,18 @@ class CreateFrame(BaseContentFrame):
         
         # Form-Frame dehnbar machen
         form_frame.columnconfigure(1, weight=1)
-        form_frame.rowconfigure(2, weight=1)  # Der Container für die Ehepartner soll sich ausdehnen
+        form_frame.rowconfigure(2, weight=1)
 
-    def AddMarriageField(self):
-        """Fügt ein weiteres Feld für Ehepartner hinzu im Grid-Layout"""
+    def AddDynamicField(self, entries_list, frames_list, container):
+        """Fügt ein weiteres Feld für Ehepartner oder Kinder hinzu"""
         # Der Index ist die aktuelle Anzahl der Einträge
-        i = len(self.marriage_entries)
+        i = len(entries_list)
         
-        entry_frame = tk.Frame(self.entries_frame, bg=AppColors.CONTENT_FRAME)
+        # Erstelle den Frame mit dem Container als Parent
+        entry_frame = tk.Frame(container, bg=AppColors.CONTENT_FRAME)
         entry_frame.pack(fill=tk.X, pady=2)
         
-        # Index-Label - Wir verwenden i+1 für die Anzeige (1-basiert)
+        # Index-Label
         label = tk.Label(
             entry_frame, 
             text=f'{i+1}:', 
@@ -334,7 +338,7 @@ class CreateFrame(BaseContentFrame):
         entry.pack(side=tk.LEFT, fill=tk.X, expand=True)
         
         # X-Button zum Löschen (für alle außer dem ersten Feld)
-        if i > 0:  # Nur für Felder ab dem zweiten anzeigen
+        if i > 0:
             delete_button = tk.Button(
                 entry_frame,
                 text="✕",
@@ -349,30 +353,35 @@ class CreateFrame(BaseContentFrame):
             delete_button.pack(side=tk.RIGHT, padx=(5, 0))
             
             # Speichere den aktuellen Index für den Delete-Handler
-            current_index = i  # Wichtig: Aktuelle Position speichern
-            delete_button.configure(command=lambda frame=entry_frame, idx=current_index: self.DeleteMarriageField(frame, idx))
+            current_index = i
+            delete_button.configure(
+                command=lambda frame=entry_frame, idx=current_index: 
+                    self.DeleteDynamicField(frame, idx, entries_list, frames_list, container)
+            )
         
         # Füge das neue Feld zu den Listen hinzu
-        self.marriage_entries.append(entry)
-        self.marriage_frames.append(entry_frame)
+        entries_list.append(entry)
+        frames_list.append(entry_frame)
+        
+        return entry
 
-    def DeleteMarriageField(self, frame, index):
-        """Löscht ein Ehepartner-Feld"""
+    def DeleteDynamicField(self, frame, index, entries_list, frames_list, container):
+        """Löscht ein dynamisches Feld"""
         # Frame aus der Oberfläche entfernen
         frame.destroy()
         
         # Einträge aus den Listen entfernen
-        if 0 <= index < len(self.marriage_entries):
-            del self.marriage_entries[index]
-            del self.marriage_frames[index]
+        if 0 <= index < len(entries_list):
+            del entries_list[index]
+            del frames_list[index]
         
-        # KRITISCH: Alle Buttons neu erstellen, um ihre Indizes zu aktualisieren
-        self.RecreateDeleteButtons()
+        # Alle Buttons neu erstellen, um ihre Indizes zu aktualisieren
+        self.RecreateDeleteButtons(entries_list, frames_list, container)
         
-    def RecreateDeleteButtons(self):
+    def RecreateDeleteButtons(self, entries_list, frames_list, container):
         """Aktualisiert alle Löschen-Buttons mit korrekten Indizes"""
         # Zuerst Indizes der Labels aktualisieren
-        for i, frame in enumerate(self.marriage_frames):
+        for i, frame in enumerate(frames_list):
             # Label aktualisieren
             for child in frame.winfo_children():
                 if isinstance(child, tk.Label) and child.cget("width") == 2:
@@ -396,7 +405,84 @@ class CreateFrame(BaseContentFrame):
                     cursor="hand2"
                 )
                 delete_button.pack(side=tk.RIGHT, padx=(5, 0))
-                delete_button.configure(command=lambda f=frame, idx=i: self.DeleteMarriageField(f, idx))
+                delete_button.configure(
+                    command=lambda f=frame, idx=i: 
+                        self.DeleteDynamicField(f, idx, entries_list, frames_list, container)
+                )
+
+    def CreateChildrenTab(self):
+        """Erstellt die Kinder-Registerkarte"""
+        for widget in self.tab_children.winfo_children():
+            widget.destroy()
+                
+        form_frame = tk.Frame(self.tab_children, bg=AppColors.CONTENT_FRAME)
+        form_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=(5, 10))
+        
+        # Anzahl Kinder
+        frequency_label = tk.Label(
+            form_frame,
+            text='Anzahl Kinder:',
+            font=Fonts.SUBMENU,
+            bg=AppColors.CONTENT_FRAME,
+            fg=AppColors.KU_COLOR,
+            anchor=tk.W
+        )
+        frequency_label.grid(row=0, column=0, sticky=tk.W, padx=10, pady=5)
+        
+        self.children_count_var = tk.StringVar()
+        count_entry = tk.Entry(
+            form_frame, 
+            textvariable=self.children_count_var, 
+            width=40, 
+            font=Fonts.STANDARD, 
+            fg=AppColors.KU_COLOR, 
+            bd=1, 
+            relief=tk.SOLID
+        )
+        count_entry.grid(row=0, column=1, sticky=tk.EW, padx=5, pady=5)
+        
+        # Überschrift für Kinder
+        children_label = tk.Label(
+            form_frame,
+            text='Kinder:',
+            font=Fonts.SUBMENU,
+            bg=AppColors.CONTENT_FRAME,
+            fg=AppColors.KU_COLOR,
+            anchor=tk.W
+        )
+        children_label.grid(row=1, column=0, columnspan=2, sticky=tk.W, padx=10, pady=(15, 5))
+        
+        # Container für die Kinder-Einträge
+        self.children_container = tk.Frame(form_frame, bg=AppColors.CONTENT_FRAME)
+        self.children_container.grid(row=2, column=0, columnspan=2, sticky=tk.NSEW, padx=10)
+        
+        self.children_entries = []
+        self.children_frames = []
+        
+        # Erstes Kind-Feld hinzufügen
+        self.AddDynamicField(self.children_entries, self.children_frames, self.children_container)
+        
+        # Button-Bereich am unteren Rand
+        buttons_row = 3
+        
+        # 'Feld hinzufügen'-Button (links) - KORRIGIERT
+        add_button = ttk.Button(
+            form_frame, 
+            text='Kind hinzufügen', 
+            command=lambda: self.AddDynamicField(self.children_entries, self.children_frames, self.children_container)
+        )
+        add_button.grid(row=buttons_row, column=0, sticky=tk.W, padx=10, pady=10)
+        
+        # Speicher-Button (rechts)
+        save_frame = tk.Frame(form_frame, bg=AppColors.CONTENT_FRAME)
+        save_frame.grid(row=buttons_row, column=1, sticky=tk.SE, pady=10)
+        
+        save_button = ttk.Button(save_frame, text='Änderungen speichern', command=lambda: self.SaveRomanTab('children'))
+        save_button.pack(side=tk.RIGHT, padx=5)
+        
+        # Form-Frame dehnbar machen
+        form_frame.columnconfigure(1, weight=1)
+        form_frame.rowconfigure(2, weight=1)
 
     def OnSelect(self, event):
         """Behandelt die Auswahl in der Tabelle"""
@@ -436,7 +522,7 @@ class CreateFrame(BaseContentFrame):
             
             # Marriage Tab: Entferne alle zusätzlichen Felder und behalte nur das erste
             if len(self.marriage_entries) > 1:
-                for i in range(len(self.marriage_entries) - 1, 0, -1):  # Rückwärts, erstes Feld behalten
+                for i in range(len(self.marriage_entries) - 1, 0, -1):
                     self.marriage_frames[i].destroy()
                 
                 # Nur das erste Feld behalten, Rest entfernen
@@ -451,12 +537,39 @@ class CreateFrame(BaseContentFrame):
                 if len(husbands) > 0:
                     self.marriage_entries[0].insert(0, husbands[0] if husbands[0] else '')
                 
-                # Zusätzliche Felder für weitere Ehemänner hinzufügen (nur wenn nicht leer)
+                # Zusätzliche Felder für weitere Ehemänner hinzufügen
                 for i in range(1, len(husbands)):
                     if husbands[i]:  # Nur nicht-leere Einträge
-                        self.AddMarriageField()  # Neues Feld hinzufügen
+                        self.AddDynamicField(self.marriage_entries, self.marriage_frames, self.marriage_container)
                         self.marriage_entries[-1].delete(0, tk.END)
                         self.marriage_entries[-1].insert(0, husbands[i])
+            
+            # Children Tab: Frequenz setzen
+            self.children_count_var.set(self.__current_roman.get('Anzahl Kinder', ''))
+            
+            # Children Tab: Entferne alle zusätzlichen Felder und behalte nur das erste
+            if len(self.children_entries) > 1:
+                for i in range(len(self.children_entries) - 1, 0, -1):
+                    self.children_frames[i].destroy()
+                
+                # Nur das erste Feld behalten, Rest entfernen
+                self.children_entries = [self.children_entries[0]]
+                self.children_frames = [self.children_frames[0]]
+            
+            # Children Tab: Kinder-Felder erstellen für nicht-leere Einträge
+            children = self.__current_roman.get('Kinder', [])
+            if children:
+                # Erstes Feld füllen
+                self.children_entries[0].delete(0, tk.END)
+                if len(children) > 0:
+                    self.children_entries[0].insert(0, children[0] if children[0] else '')
+                
+                # Zusätzliche Felder für weitere Kinder hinzufügen
+                for i in range(1, len(children)):
+                    if children[i]:  # Nur nicht-leere Einträge
+                        self.AddDynamicField(self.children_entries, self.children_frames, self.children_container)
+                        self.children_entries[-1].delete(0, tk.END)
+                        self.children_entries[-1].insert(0, children[i])
 
     def FilterTable(self, event):
         """Filtert die Tabelle nach dem Suchbegriff und durchsucht alle Felder"""
@@ -517,3 +630,5 @@ class CreateFrame(BaseContentFrame):
                 roman.get('Häufigkeit Heirat', ''),
                 roman.get('Anzahl Kinder', '')
             ))
+    
+    
