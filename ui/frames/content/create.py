@@ -689,6 +689,14 @@ class CreateFrame(BaseContentFrame):
         """Speichert die Änderungen eines Tabs für den aktuellen Römer mit Command-Pattern"""
         if not self.__current_roman or not self.__app:
             return
+
+        self.ResetErrorHighlighting()
+
+        if tab_name == 'basic':
+            name_value = self.basic_entries['Name'].get().strip()
+            if not name_value:
+                self.basic_entries['Name'].config(bg='#ffcccc')
+                return
         
         # Command-Manager aus der App holen
         command_manager = self.__app.command_manager
@@ -765,6 +773,11 @@ class CreateFrame(BaseContentFrame):
         
         # Bestätigungsmeldung anzeigen
         logger.info(f"Änderungen am Tab '{tab_name}' für Römer '{self.__current_roman.get('Name', '')}' gespeichert")
+
+    def ResetErrorHighlighting(self):
+        """Rotes Highlighten reseten"""
+        for entry in self.basic_entries.values():
+            entry.config(bg=AppColors.CONTENT_FRAME)
 
     def UpdateTableRow(self):
         """Aktualisiert die ausgewählte Zeile in der Tabelle"""
