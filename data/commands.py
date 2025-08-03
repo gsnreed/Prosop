@@ -76,26 +76,45 @@ class RemoveRomanCommand(Command):
 class EditRomanCommand(Command):
     """Command zum Bearbeiten eines Romans"""
     
-    def __init__(self, roman: Roman, property_name: str, new_value: Any):
+    def __init__(self, roman: Roman, properties: dict):
         self.__roman = roman
-        self.__property_name = property_name
-        self.__new_value = new_value
-        self.__old_value = None  # wird bei execute gespeichert
+        self.__new_properties = properties
+        self.__old_properties = None  # wird bei execute gespeichert
         
     def Execute(self) -> None:
         # Speichere den alten Wert für undo
-        self.__old_value = self.__roman.get(self.__property_name, None)
+        self.__old_properties = self.__roman.properties.copy()
         # Setze den neuen Wert
-        self.__roman.properties[self.__property_name] = self.__new_value
+        self.__roman.properties= self.__new_properties
         
     def Undo(self) -> None:
-        if self.__old_value is not None:
-            self.__roman.properties[self.__property_name] = self.__old_value
-        else:
-            # Wenn es den Wert vorher nicht gab, lösche ihn
-            if self.__property_name in self.__roman.properties:
-                del self.__roman.properties[self.__property_name]
+        if self.__old_properties is not None:
+            self.__roman.properties = self.__old_properties
                 
     @property
     def description(self) -> str:
-        return f"Roman bearbeiten: {self.__roman['Name']} - {self.__property_name}"
+        return f"Roman bearbeiten: {self.__roman['Name']}"
+    
+class ReplaceRomanCommand(Command):
+    """Command zum Ersetzen eines Romans durch eine neue Version"""
+    
+    def __init__(self, old_roman: Roman, new_roman: Roman):
+        self.__old_roman = old_roman
+        self.__new_roman = new_roman
+        self.__old_properties = None
+        
+    def Execute(self) -> None:
+        # Speichere die alten Eigenschaften
+        self.__old_properties = self.__old_roman.properties.copy()
+        
+        # Ersetze die Eigenschaften des alten Römers mit denen des neuen
+        self.__old_roman.properties = self.__new_roman.properties.copy()
+        
+    def Undo(self) -> None:
+        if self.__old_properties is not None:
+            # Stelle die alten Eigenschaften wieder her
+            self.__old_roman.properties = self.__old_properties
+                
+    @property
+    def description(self) -> str:
+        return f"Roman ersetzen: {self.__old_roman['Name']}"

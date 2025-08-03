@@ -37,6 +37,11 @@ class Roman:
         logger.debug(f"Lese alle Eigenschaften aus Roman-Objekt '{self.__properties['Name']}'.")
         return self.__properties
     
+    @properties.setter
+    def properties(self, value):
+        logger.debug(f"Überschreibe alle Eigenschaften aus Roman-Objekt '{self.__properties['Name']}'.")
+        self.__properties = value
+    
     def __delitem__(self, item: str) -> None:
         logger.info(f"Lösche Eigenschaft '{item}' aus Roman-Objekt '{self.__properties['Name']}'.")
         del self.__properties[item]

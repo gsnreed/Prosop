@@ -37,10 +37,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "in einer Inschrift aus Pergamonwird O. als Schwester des Augustusund Mutter des Sex. Appuleiusgeehrt (DNP, 1095)",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -84,10 +81,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -128,28 +122,18 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
             "Name": "Antonia minor",
             "Männer": [
-                "ca. 16 v. Chr.: Heirat mit Nero Claudius Drusus d. Älteren",
-                "",
-                "",
-                "",
-                ""
+                "ca. 16 v. Chr.: Heirat mit Nero Claudius Drusus d. Älteren"
             ],
             "Kinder": [
                 "Germanicus / Drusus d. Ä.  ",
                 "(Claudia) Livia Iulia [Livilla]/ Drusus d. Ä.",
-                "Claudius (Kaiser)/ Drusus d. Ä. ",
-                "",
-                "",
-                ""
+                "Claudius (Kaiser)/ Drusus d. Ä. "
             ],
             "Geburtsdatum": "31. Januar 36 v. Chr. ",
             "Sterbedatum": "1. Mai 37 n. Chr. ",
@@ -179,10 +163,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -224,10 +205,20 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": [
+                    {
+                        "Autor": "ii",
+                        "Werk": "i"
+                    },
+                    {
+                        "Autor": "o",
+                        "Werk": "p"
+                    },
+                    {
+                        "Autor": "8",
+                        "Werk": "9"
+                    }
+                ]
             }
         },
         {
@@ -237,11 +228,6 @@
                 "4 n. Chr.: Heirat mit Drusus dem Jüngeren"
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "",
@@ -272,27 +258,15 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
             "Name": "Servillia ",
             "Männer": [
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "",
@@ -323,27 +297,15 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
             "Name": "Clodia",
             "Männer": [
-                "43-41 v. Chr.: Heirat mit Octavian",
-                "",
-                "",
-                "",
-                ""
+                "43-41 v. Chr.: Heirat mit Octavian"
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "",
@@ -374,10 +336,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -463,10 +422,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -512,10 +468,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -555,10 +508,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -568,12 +518,7 @@
                 "Nach der Scheidung 12 v. Chr. von Tiberius: C. Asinius Gallus"
             ],
             "Kinder": [
-                "7. Oktober 15 oder 14Geburt von Nero Claudius Drusus (Drusus d. Jüngere) / Tiberius",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "7. Oktober 15 oder 14Geburt von Nero Claudius Drusus (Drusus d. Jüngere) / Tiberius"
             ],
             "Geburtsdatum": "ca. 33 v. Chr. ",
             "Sterbedatum": "20 n. Chr.",
@@ -603,10 +548,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -648,10 +590,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -662,12 +601,7 @@
                 "49 n. Chr.: Heirat mit Claudius"
             ],
             "Kinder": [
-                "15. Dez. 37 n. Chr.: Nero / D. Ahenobarbus",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "15. Dez. 37 n. Chr.: Nero / D. Ahenobarbus"
             ],
             "Geburtsdatum": "6. Nov. 15 in oppidum Ubiorum (Köln)",
             "Sterbedatum": "zwischen 19. und 23. März 59 n. Chr. ",
@@ -697,10 +631,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "seit 13. Okt. 54: Auf Goldmünzen im Nominativ genannt, Nero im Dativ",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -710,11 +641,6 @@
                 "seit 38 n. Chr.: verheiratet mit M. Aemilius Lepidus"
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "2./5. Juni 14 (?) inGallien",
@@ -745,10 +671,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -757,11 +680,6 @@
                 "33 n. Chr.: Heirat mit M. Vinicius"
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "Ende 17 oder Anf. (Feb?) 18 n. Chr. auf Lesbos",
@@ -792,10 +710,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -804,11 +719,6 @@
                 "Juli/Aug. 33 - Ende 36/Anf. 37 n. Chr.Verheiratet mit Caligula"
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "",
@@ -839,10 +749,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -852,11 +759,6 @@
                 "Ende 37 oder Anf. 38 n. Chr.: Heirat mit Caligula; Vorher seineGeliebte"
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "",
@@ -887,10 +789,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -900,11 +799,6 @@
                 "Ende 38 - Ende 39 n. Chr.:Heirat mit Caligula"
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "",
@@ -935,27 +829,15 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
             "Name": "Milonia Caesonia",
             "Männer": [
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "zwischen 2 u. 4 Juni einesunbekannten Jahres",
@@ -986,27 +868,15 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
             "Name": "Iulia Drusilla ",
             "Männer": [
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "40 n. Chr. ",
@@ -1037,10 +907,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -1049,11 +916,6 @@
                 "Ehe mit Drusus (Sohn des Germanicus)"
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "3 v. Chr. ",
@@ -1084,27 +946,15 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
             "Name": "Livia Medullina",
             "Männer": [
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "",
@@ -1135,10 +985,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -1148,9 +995,7 @@
             ],
             "Kinder": [
                 "Claudia Iulia / ClaudiusIst das Claudia Octavia, die 5 Monate vor der Scheidung geboren wurde aber nicht von Claudius angenommen wurde?)",
-                "Claudius Drusus / Claudius ",
-                "",
-                ""
+                "Claudius Drusus / Claudius "
             ],
             "Geburtsdatum": "",
             "Sterbedatum": "",
@@ -1180,27 +1025,15 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
             "Name": "Aelia Paetina",
             "Männer": [
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "",
@@ -1231,10 +1064,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -1244,12 +1074,7 @@
                 "47-58 n. Chr.: Ehe mit Faustus Cornelius Sulla Felix"
             ],
             "Kinder": [
-                "Sohn, geboren zw. 48 und 54, aber bald nach der Geburt gestorben / Faustus Sulla",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "Sohn, geboren zw. 48 und 54, aber bald nach der Geburt gestorben / Faustus Sulla"
             ],
             "Geburtsdatum": "Geburtsdatum unbek-annt",
             "Sterbedatum": "2 H. 65 oder bald danach",
@@ -1279,10 +1104,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -1323,27 +1145,15 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
             "Name": "Iulia, Tochter des Drusus",
             "Männer": [
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "",
@@ -1374,27 +1184,15 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
             "Name": "Claudia Octavia",
             "Männer": [
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "",
@@ -1425,10 +1223,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -1438,12 +1233,7 @@
                 "47 - 58 n. Chr.: Faustus Cornelius Sulla Felix"
             ],
             "Kinder": [
-                "Sohn, der zwischen 48 und 54 geboren wurde, aber nach der Geburt bald verstarb / Faustus Cornelius Sulla Felix ",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "Sohn, der zwischen 48 und 54 geboren wurde, aber nach der Geburt bald verstarb / Faustus Cornelius Sulla Felix "
             ],
             "Geburtsdatum": "ca. 27 n. Chr. ?",
             "Sterbedatum": "2. H. 65 oder bald danach",
@@ -1473,10 +1263,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -1485,11 +1272,6 @@
                 "53 n. Chr. : Heirat mit Nero"
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "ca. 39/40 n.Chr.",
@@ -1520,10 +1302,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "Gesicherte Bildnisse nur auf Münzen von Alexandria, Korinth und Sinope",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
@@ -1565,27 +1344,15 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
             "Name": "Claudia Augusta",
             "Männer": [
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "21. Jan. 63 n. Chr. ",
@@ -1616,27 +1383,17 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
             "Name": "Statilia Messalina",
             "Männer": [
                 "",
-                "",
-                "",
                 "63/64 n. Chr.: Ehe mit M. Iulius Atticus Vestinus; 65: Vestinus in seinem Konsulatsjahr zum Selbstmord gezwungen",
                 "1. H. 66 n. Chr.: Heiratmit Nero"
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "zwischen 30 und 40n. Chr.",
@@ -1667,27 +1424,15 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         },
         {
             "Name": "Claudia Acte",
             "Männer": [
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Kinder": [
-                "",
-                "",
-                "",
-                "",
-                "",
                 ""
             ],
             "Geburtsdatum": "300",
@@ -1718,10 +1463,7 @@
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": "",
-                "Literarische Quellen": {
-                    "Autor": "",
-                    "Werk": ""
-                }
+                "Literarische Quellen": []
             }
         }
     ]
