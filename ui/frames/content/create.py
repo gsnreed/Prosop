@@ -10,7 +10,7 @@ if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
 from data.commands import EditRomanCommand
-from utils.config import AppColors, Fonts
+from utils.config import AppColors, Fonts, UIConstants, Icons, Messages
 from ui.frames.content.base_content import BaseContentFrame
 from data.models.roman import Roman
 from utils.logger import logger
@@ -18,626 +18,893 @@ from utils.logger import logger
 class CreateFrame(BaseContentFrame):
     # Statische Variable
     last_selected_tab = 0
-
+    
     def __init__(self, parent):
         super().__init__(parent)
         self.__current_roman = None
-        self.__app = self.FindMainApp(parent)
+        self.__app = self.master.master
+        self.sort_column = None
+        self.sort_reverse = False
         self.CreateUi()
 
-    def FindMainApp(self, widget):
-        """Rekursive Suche nach der Main-App in der obersten Ebene"""
-        ret = None
-        if hasattr(widget, 'romans'):
-            ret = widget
-        elif widget.master:
-            ret = self.FindMainApp(widget.master)
-        return ret
-    
-    def CreateUi(self) -> None:
-        # Hauptcontainer
-        self.rowconfigure(0, weight = 10)
-        self.rowconfigure(1, weight = 0)
-        self.rowconfigure(2, weight = 0)
-        self.columnconfigure(0, weight=1)
+    def CreateUi(self):
+        # Hauptcontainer Layout
+        self.grid_rowconfigure(0, weight=1)
+        self.grid_columnconfigure(0, weight=1)
+        
+        # Hauptcontainer für bessere Trennung
+        main_container = tk.Frame(self, bg=AppColors.BACKGROUND)
+        main_container.grid(row=0, column=0, sticky=tk.NSEW)
+        main_container.rowconfigure(0, weight=1)
+        main_container.rowconfigure(1, weight=1)
+        main_container.columnconfigure(0, weight=1)
 
-        # Tabellenansicht
-        top_frame = tk.Frame(self, bg = AppColors.CONTENT_FRAME)
-        top_frame.grid(row=0, column = 0, sticky=tk.NSEW, padx = 10, pady=(10, 5))
-
-        # Header mit Suchfeld
-        header_frame = tk.Frame(top_frame, bg=AppColors.CONTENT_FRAME)
-        header_frame.pack(fill=tk.X, pady=(0, 10))
-
-        header_label = tk.Label(header_frame, text='Editieren von Römern', font=Fonts.HEADER, bg = AppColors.CONTENT_FRAME, fg=AppColors.KU_COLOR)
-        header_label.pack(side=tk.LEFT, padx = 10)
-
-        # Suchfeld
-        search_frame = tk.Frame(header_frame, bg = AppColors.CONTENT_FRAME)
-        search_frame.pack(side=tk.RIGHT, padx=10)
-
-        search_label = tk.Label(search_frame, bg=AppColors.CONTENT_FRAME, fg=AppColors.KU_COLOR, font=Fonts.STANDARD_BOLD, text='Suche')
-        search_label.pack(side=tk.LEFT, padx=(0, 5))
+        # ========== OBERER BEREICH: Tabelle ==========
+        top_container = tk.Frame(main_container, bg=AppColors.BACKGROUND)
+        top_container.grid(row=0, column=0, sticky=tk.NSEW, padx=UIConstants.PADDING_LARGE, pady=(UIConstants.PADDING_LARGE, UIConstants.PADDING_SMALL))
+        
+        # Rahmen mit Schatten-Effekt
+        top_frame = tk.Frame(top_container, bg=AppColors.CONTENT_FRAME, relief=tk.RAISED, bd=1)
+        top_frame.pack(fill=tk.BOTH, expand=True)
+        
+        # Header-Bereich
+        header_frame = tk.Frame(top_frame, bg=AppColors.KU_COLOR, height=60)
+        header_frame.pack(fill=tk.X)
+        header_frame.pack_propagate(False)
+        
+        # Header-Inhalt Container
+        header_content = tk.Frame(header_frame, bg=AppColors.KU_COLOR)
+        header_content.pack(fill=tk.BOTH, expand=True, padx=UIConstants.PADDING_XLARGE, pady=UIConstants.PADDING_MEDIUM)
+        
+        # Titel mit Icon
+        title_frame = tk.Frame(header_content, bg=AppColors.KU_COLOR)
+        title_frame.pack(side=tk.LEFT, fill=tk.Y)
+        
+        header_label = tk.Label(
+            title_frame, 
+            text=f'{Icons.SCROLL} Römerverwaltung', 
+            font=Fonts.HEADER_LARGE, 
+            bg=AppColors.KU_COLOR, 
+            fg=AppColors.BUTTON_PRIMARY_FG
+        )
+        header_label.pack(side=tk.LEFT)
+        
+        # Suchbereich mit modernem Design
+        search_container = tk.Frame(header_content, bg=AppColors.KU_COLOR)
+        search_container.pack(side=tk.RIGHT, fill=tk.Y)
+        
+        search_frame = tk.Frame(search_container, bg=AppColors.SEARCH_BG, relief=tk.RIDGE, bd=1)
+        search_frame.pack(fill=tk.Y)
+        
+        # Such-Icon
+        search_icon = tk.Label(
+            search_frame, 
+            text=Icons.SEARCH, 
+            bg=AppColors.SEARCH_BG, 
+            fg=AppColors.SEARCH_FG,
+            font=Fonts.ICON
+        )
+        search_icon.pack(side=tk.LEFT, padx=(UIConstants.PADDING_MEDIUM, UIConstants.PADDING_SMALL))
         
         self.search_var = tk.StringVar()
-        seacrh_entry = tk.Entry(search_frame, textvariable=self.search_var, width=30, font=Fonts.STANDARD, fg = AppColors.KU_COLOR, bd=1, relief=tk.SOLID)
-        seacrh_entry.pack(side=tk.LEFT, padx=(0, 10))
-        seacrh_entry.bind('<KeyRelease>', self.FilterTable)
+        search_entry = tk.Entry(
+            search_frame, 
+            textvariable=self.search_var, 
+            width=35,
+            font=Fonts.INPUT, 
+            fg=AppColors.SEARCH_FG,
+            bg=AppColors.SEARCH_BG,
+            bd=0,
+            insertbackground=AppColors.SEARCH_FG
+        )
+        search_entry.pack(side=tk.LEFT, fill=tk.Y, pady=8, padx=(0, UIConstants.PADDING_MEDIUM))
+        search_entry.bind('<KeyRelease>', self.FilterTable)
+        
+        # Placeholder-Text
+        self.AddPlaceholder(search_entry, Messages.SEARCH_PLACEHOLDER)
+        
+        # Tabellen-Container
+        table_container = tk.Frame(top_frame, bg=AppColors.CONTENT_FRAME)
+        table_container.pack(fill=tk.BOTH, expand=True, padx=UIConstants.PADDING_LARGE, pady=(UIConstants.PADDING_MEDIUM, UIConstants.PADDING_SMALL))
+        
+        # Tabelle mit modernem Stil
+        self.CreateStyledTable(table_container)
+        
+        # Button-Bereich
+        button_container = tk.Frame(top_frame, bg=AppColors.CONTENT_FRAME)
+        button_container.pack(fill=tk.X, padx=UIConstants.PADDING_LARGE, pady=(UIConstants.PADDING_SMALL, UIConstants.PADDING_LARGE))
+        
+        self.CreateActionButtons(button_container)
+        
+        # ========== UNTERER BEREICH: Details ==========
+        bottom_container = tk.Frame(main_container, bg=AppColors.BACKGROUND)
+        bottom_container.grid(row=1, column=0, sticky=tk.NSEW, 
+                            padx=UIConstants.PADDING_LARGE, 
+                            pady=(UIConstants.PADDING_SMALL, UIConstants.PADDING_LARGE))
 
-        # Tabelle
-        table_frame = tk.Frame(top_frame, bg=AppColors.CONTENT_FRAME)
+        # Rahmen mit Schatten-Effekt
+        middle_frame = tk.Frame(bottom_container, bg=AppColors.CONTENT_FRAME, relief=tk.RAISED, bd=1)
+        middle_frame.pack(fill=tk.BOTH, expand=True)
+
+        # Layout für middle_frame konfigurieren
+        middle_frame.grid_rowconfigure(1, weight=1)  # Notebook-Bereich expandiert
+        middle_frame.grid_columnconfigure(0, weight=1)
+
+        # Detail-Header (Row 0)
+        detail_header_frame = tk.Frame(middle_frame, bg=AppColors.DETAIL_HEADER_BG, height=50)
+        detail_header_frame.grid(row=0, column=0, sticky=tk.EW)
+        detail_header_frame.grid_propagate(False)
+
+        detail_header_content = tk.Frame(detail_header_frame, bg=AppColors.DETAIL_HEADER_BG)
+        detail_header_content.pack(fill=tk.BOTH, expand=True, padx=UIConstants.PADDING_XLARGE, pady=UIConstants.PADDING_MEDIUM)
+
+        detail_label = tk.Label(
+            detail_header_content,
+            text=f'{Icons.DOCUMENT} Detailansicht',
+            font=Fonts.SUBHEADER,
+            bg=AppColors.DETAIL_HEADER_BG,
+            fg=AppColors.DETAIL_HEADER_FG
+        )
+        detail_label.pack(side=tk.LEFT)
+
+        # Status-Indikator
+        self.status_label = tk.Label(
+            detail_header_content,
+            text=Messages.NO_SELECTION,
+            font=Fonts.STANDARD_ITALIC,
+            bg=AppColors.DETAIL_HEADER_BG,
+            fg=AppColors.STATUS_FG
+        )
+        self.status_label.pack(side=tk.RIGHT)
+
+        # Notebook Container (Row 1) - dieser expandiert
+        notebook_container = tk.Frame(middle_frame, bg=AppColors.CONTENT_FRAME)
+        notebook_container.grid(row=1, column=0, sticky=tk.NSEW, 
+                            padx=UIConstants.PADDING_LARGE, 
+                            pady=UIConstants.PADDING_MEDIUM)
+
+        self.CreateStyledNotebook(notebook_container)
+
+        # Speichern-Button Container (Row 2) - bleibt immer unten
+        save_container = tk.Frame(middle_frame, bg=AppColors.CONTENT_FRAME)
+        save_container.grid(row=2, column=0, sticky=tk.EW, 
+                        padx=UIConstants.PADDING_LARGE, 
+                        pady=(0, UIConstants.PADDING_LARGE))
+
+        self.save_button = self.CreateStyledButton(
+            save_container,
+            text=f"{Icons.SAVE} Änderungen speichern",
+            command=self.SaveChanges,
+            style='Success'
+        )
+        self.save_button.pack(side=tk.RIGHT)
+
+        # Anfangszustand
+        self.ClearDetails()
+        self.UpdateButtonStates()
+
+    def CreateStyledTable(self, parent):
+        """Erstellt eine moderne Tabelle mit verbessertem Design"""
+        # Tabellen-Frame
+        table_frame = tk.Frame(parent, bg=AppColors.TABLE_BG)
         table_frame.pack(fill=tk.BOTH, expand=True)
-
-        y_scrollbar = ttk.Scrollbar(table_frame)
-        y_scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
-
-        # Style konfigurieren
+        
+        # Scrollbar mit modernem Stil
+        scrollbar_frame = tk.Frame(table_frame, bg=AppColors.TABLE_BG, width=12)
+        scrollbar_frame.pack(side=tk.RIGHT, fill=tk.Y)
+        
+        y_scrollbar = ttk.Scrollbar(scrollbar_frame, style='Vertical.TScrollbar')
+        y_scrollbar.pack(side=tk.RIGHT, fill=tk.Y, padx=(2, 0))
+        
+        # Treeview-Stil konfigurieren
+        style = ttk.Style()
         style_name = 'CustomTreeview.Treeview'
-        style = self.ConfigureTreeviewStyle(style_name)
-
+        
+        style.configure(style_name,
+            background=AppColors.TABLE_BG,
+            foreground=AppColors.TABLE_FG,
+            fieldbackground=AppColors.TABLE_BG,
+            borderwidth=0,
+            font=Fonts.TABLE
+        )
+        
+        style.configure(f'{style_name}.Heading',
+            background=AppColors.TABLE_HEADER_BG,
+            foreground=AppColors.KU_COLOR,
+            borderwidth=0,
+            font=Fonts.TABLE_HEADER
+        )
+        
+        style.map(style_name,
+            background=[('selected', AppColors.TABLE_SELECTED_BG)],
+            foreground=[('selected', AppColors.TABLE_SELECTED_FG)]
+        )
+        
+        # Spalten definieren
         columns = ('Name', 'Geburt', 'Tod', 'Todesursache', 'Familie', 'Ehemänner', 'Kinder')
+        column_widths = {
+            'Name': 200,
+            'Geburt': 100,
+            'Tod': 100,
+            'Todesursache': 150,
+            'Familie': 120,
+            'Ehemänner': 100,
+            'Kinder': 80
+        }
+        
         self.tree = ttk.Treeview(
             table_frame,
             columns=columns,
-            show='headings',
+            show='tree headings',
             yscrollcommand=y_scrollbar.set,
             style=style_name,
-            selectmode=tk.BROWSE
+            selectmode=tk.BROWSE,
+            height=10
         )
-
-        # Scrollbars mit Treeview verbinden
-        y_scrollbar.config(command=self.tree.yview)
-
-        # Spaltenüberschriften definieren
-        for column in columns:
-            self.tree.heading(column, text=column)
-            self.tree.column(column, width=100, anchor=tk.CENTER)
         
+        # Icon-Spalte ausblenden
+        self.tree.column('#0', width=0, stretch=False)
+        
+        # Spalten konfigurieren
+        for col in columns:
+            self.tree.heading(col, text=col, command=lambda c=col: self.SortColumn(c))
+            self.tree.column(col, width=column_widths.get(col, 100), minwidth=50)
+        
+        # Scrollbar verbinden
+        y_scrollbar.config(command=self.tree.yview)
+        
+        # Daten laden
+        self.LoadTableData()
+        
+        # Events
+        self.tree.bind('<<TreeviewSelect>>', self.OnSelect)
+        self.tree.bind('<Double-Button-1>', self.OnDoubleClick)
+        
+        self.tree.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+    def CreateActionButtons(self, parent):
+        """Erstellt moderne Action-Buttons"""
+        # Linke Button-Gruppe
+        left_buttons = tk.Frame(parent, bg=AppColors.CONTENT_FRAME)
+        left_buttons.pack(side=tk.LEFT)
+        
+        self.create_button = self.CreateStyledButton(
+            left_buttons,
+            text=f"{Icons.ADD} Neuen Römer erstellen",
+            command=self.CreateNewRoman,
+            style='Primary'
+        )
+        self.create_button.pack(side=tk.LEFT, padx=(0, UIConstants.PADDING_SMALL))
+        
+        self.delete_button = self.CreateStyledButton(
+            left_buttons,
+            text=f"{Icons.DELETE} Löschen",
+            command=self.DeleteSelectedRoman,
+            style='Danger',
+            state=tk.DISABLED
+        )
+        self.delete_button.pack(side=tk.LEFT, padx=UIConstants.PADDING_SMALL)
+        
+        # Rechte Button-Gruppe
+        right_buttons = tk.Frame(parent, bg=AppColors.CONTENT_FRAME)
+        right_buttons.pack(side=tk.RIGHT)
+        
+        self.export_button = self.CreateStyledButton(
+            right_buttons,
+            text=f"{Icons.EXPORT} Exportieren",
+            command=self.ExportData,
+            style='Secondary'
+        )
+        self.export_button.pack(side=tk.LEFT, padx=UIConstants.PADDING_SMALL)
+
+    def CreateStyledButton(self, parent, text, command, style='Primary', **kwargs):
+        """Erstellt einen modernen Button mit verschiedenen Stilen"""
+        button_styles = {
+            'Primary': {
+                'bg': AppColors.BUTTON_PRIMARY_BG,
+                'fg': AppColors.BUTTON_PRIMARY_FG,
+                'activebackground': AppColors.BUTTON_PRIMARY_HOVER,
+                'font': Fonts.BUTTON
+            },
+            'Secondary': {
+                'bg': AppColors.BUTTON_SECONDARY_BG,
+                'fg': AppColors.BUTTON_SECONDARY_FG,
+                'activebackground': AppColors.BUTTON_SECONDARY_HOVER,
+                'font': Fonts.BUTTON
+            },
+            'Success': {
+                'bg': AppColors.BUTTON_SUCCESS_BG,
+                'fg': AppColors.BUTTON_SUCCESS_FG,
+                'activebackground': AppColors.BUTTON_SUCCESS_HOVER,
+                'font': Fonts.BUTTON
+            },
+            'Danger': {
+                'bg': AppColors.BUTTON_DANGER_BG,
+                'fg': AppColors.BUTTON_DANGER_FG,
+                'activebackground': AppColors.BUTTON_DANGER_HOVER,
+                'font': Fonts.BUTTON
+            }
+        }
+        
+        style_config = button_styles.get(style, button_styles['Primary'])
+        
+        button = tk.Button(
+            parent,
+            text=text,
+            command=command,
+            relief=tk.RIDGE,
+            bd=0,
+            padx=UIConstants.PADDING_XLARGE,
+            pady=8,
+            cursor='hand2',
+            **style_config,
+            **kwargs
+        )
+        
+        # Hover-Effekte
+        def on_enter(e):
+            if button['state'] != tk.DISABLED:
+                button['background'] = style_config['activebackground']
+        
+        def on_leave(e):
+            if button['state'] != tk.DISABLED:
+                button['background'] = style_config['bg']
+        
+        button.bind('<Enter>', on_enter)
+        button.bind('<Leave>', on_leave)
+        
+        return button
+
+    def CreateStyledNotebook(self, parent):
+        """Erstellt ein modernes Notebook mit verbessertem Design"""
+        # Notebook-Stil
+        style = ttk.Style()
+        style.configure('Modern.TNotebook', 
+            background=AppColors.CONTENT_FRAME,
+            borderwidth=0
+        )
+        style.configure('Modern.TNotebook.Tab',
+            padding=[UIConstants.PADDING_XLARGE, UIConstants.PADDING_MEDIUM],
+            font=Fonts.TAB
+        )
+        
+        self.notebook = ttk.Notebook(parent, style='Modern.TNotebook')
+        self.notebook.pack(fill=tk.BOTH, expand=True)
+        
+        # Tabs mit Icons
+        tab_config = [
+            ('tab_basic', f'{Icons.PERSON} Grunddaten'),
+            ('tab_marriage', f'{Icons.MARRIAGE} Ehen'),
+            ('tab_children', f'{Icons.CHILD} Kinder'),
+            ('tab_family', f'{Icons.FAMILY} Familie'),
+            ('tab_special', f'{Icons.STAR} Besonderheiten'),
+            ('tab_honors', f'{Icons.TROPHY} Ehrungen'),
+            ('tab_sources', f'{Icons.BOOK} Quellen'),
+            ('tab_literary_sources', f'{Icons.FILE} Literarische Quellen')
+        ]
+        
+        for tab_name, title in tab_config:
+            tab = tk.Frame(self.notebook, bg=AppColors.TAB_BG)
+            self.notebook.add(tab, text=title)
+            setattr(self, tab_name, tab)
+        
+        # Tab-Inhalte erstellen
+        self.CreateTabContents()
+        
+        # Events
+        self.notebook.bind('<<NotebookTabChanged>>', self.OnTabChanged)
+
+    # Hilfsmethoden
+    def AddPlaceholder(self, entry, placeholder_text):
+        """Fügt Placeholder-Text zu einem Entry-Widget hinzu"""
+        entry.insert(0, placeholder_text)
+        entry['fg'] = AppColors.SEARCH_PLACEHOLDER
+        
+        def on_focus_in(event):
+            if entry.get() == placeholder_text:
+                entry.delete(0, tk.END)
+                entry['fg'] = AppColors.SEARCH_FG
+        
+        def on_focus_out(event):
+            if entry.get() == '':
+                entry.insert(0, placeholder_text)
+                entry['fg'] = AppColors.SEARCH_PLACEHOLDER
+        
+        entry.bind('<FocusIn>', on_focus_in)
+        entry.bind('<FocusOut>', on_focus_out)
+
+    def LoadTableData(self):
+        """Lädt Daten in die Tabelle"""
         for roman in self.__app.romans:
             self.tree.insert('', tk.END, values=(
-                roman['Name'], 
-                roman['Geburtsdatum'], 
-                roman['Sterbedatum'], 
-                roman['Todesursache'], 
-                roman['Familie'],
-                roman['Häufigkeit Heirat'], 
-                roman['Anzahl Kinder']))
-        
-        self.tree.pack(fill=tk.BOTH, expand=True)
+                roman.get('Name', ''), 
+                roman.get('Geburtsdatum', ''), 
+                roman.get('Sterbedatum', ''), 
+                roman.get('Todesursache', ''), 
+                roman.get('Familie', ''),
+                roman.get('Häufigkeit Heirat', ''), 
+                roman.get('Anzahl Kinder', '')
+            ))
 
-        buttons_frame = tk.Frame(top_frame, bg=AppColors.CONTENT_FRAME)
-        buttons_frame.pack(fill=tk.X, pady=(10, 0))
+    def CreateTabContents(self):
+        """Erstellt die Inhalte für alle Tabs mit Scrollbar"""
+        # Dictionaries für Eingabefelder
+        self.basic_fields = {}
+        self.marriage_fields = {}
+        self.children_fields = {}
+        self.family_fields = {}
+        self.special_fields = {}
+        self.honors_fields = {}
+        self.sources_fields = {}
+        self.literary_fields = {}
+        
+        # Für jeden Tab einen scrollbaren Bereich erstellen
+        tabs = [
+            (self.tab_basic, self.CreateBasicDataContent),
+            (self.tab_marriage, self.CreateMarriageContent),
+            (self.tab_children, self.CreateChildrenContent),
+            (self.tab_family, self.CreateFamilyContent),
+            (self.tab_special, self.CreateSpecialContent),
+            (self.tab_honors, self.CreateHonorsContent),
+            (self.tab_sources, self.CreateSourcesContent),
+            (self.tab_literary_sources, self.CreateLiterarySourcesContent)
+        ]
+        
+        for tab, content_creator in tabs:
+            # Scrollbarer Bereich für jeden Tab
+            self.CreateScrollableTab(tab)
+            # Inhalt erstellen
+            content_creator(tab.content_frame)
+            self.BindMouseWheelToWidget(tab.content_frame, tab.canvas)
 
-        # Create button
-        self.create_button = ttk.Button(
-            buttons_frame, 
-            text="Neuen Römer erstellen", 
-            command=self.CreateNewRoman
-        )
-        self.create_button.pack(side=tk.LEFT, padx=(10, 5))
-
-        # Delete button
-        self.delete_button = ttk.Button(
-            buttons_frame, 
-            text="Ausgewählten Römer löschen", 
-            command=self.DeleteSelectedRoman,
-            state=tk.DISABLED  # Initially disabled
-        )
-        self.delete_button.pack(side=tk.LEFT, padx=5)
-
-        # Event-Binding für Auswahl
-        self.tree.bind('<<TreeviewSelect>>', self.OnSelect)
-        self.tree.bind('<ButtonRelease-1>', self.OnTreeClick)
-        self.tree.bind('<Shift-Button-1>', lambda e: "break")
-        self.tree.bind('<Shift-ButtonRelease-1>', lambda e: "break")
-
-        # Trennstrich
-        seperator = ttk.Separator(self, orient=tk.HORIZONTAL)
-        seperator.grid(row=1, column=0, sticky=tk.EW, padx=10)
-
-        # Detailansicht
-        bottom_frame = tk.Frame(self, bg=AppColors.CONTENT_FRAME)
-        bottom_frame.grid(row=2, column=0, sticky=tk.NSEW, padx=10, pady=(5, 10))
-
-        # Header für Detailansicht
-        detail_header = tk.Label(
-            bottom_frame,
-            text='Details',
-            font=Fonts.HEADER,
-            bg=AppColors.CONTENT_FRAME,
-            fg=AppColors.KU_COLOR
-        )
-        detail_header.pack(anchor=tk.W, padx=10)
-
-        self.notebook = ttk.Notebook(bottom_frame)
-        self.notebook.pack(fill=tk.BOTH, expand=True, padx=10, pady=(5, 10))
-
-        # Registerkarten erstellen
-        self.tab_basic = tk.Frame(self.notebook, bg=AppColors.CONTENT_FRAME)
-        self.tab_marriage = tk.Frame(self.notebook, bg=AppColors.CONTENT_FRAME)
-        self.tab_children = tk.Frame(self.notebook, bg=AppColors.CONTENT_FRAME)
-        self.tab_family = tk.Frame(self.notebook, bg=AppColors.CONTENT_FRAME)
-        self.tab_special = tk.Frame(self.notebook, bg=AppColors.CONTENT_FRAME)
-        self.tab_honors = tk.Frame(self.notebook, bg=AppColors.CONTENT_FRAME)
-        self.tab_sources = tk.Frame(self.notebook, bg=AppColors.CONTENT_FRAME)
-        self.tab_literary_sources = tk.Frame(self.notebook, bg=AppColors.CONTENT_FRAME)
-
-        self.notebook.add(self.tab_basic, text='Grunddaten')
-        self.notebook.add(self.tab_marriage, text='Ehen')
-        self.notebook.add(self.tab_children, text='Kinder')
-        self.notebook.add(self.tab_family, text='Familie')
-        self.notebook.add(self.tab_special, text='Besonderheiten')
-        self.notebook.add(self.tab_honors, text='Ehrungen')
-        self.notebook.add(self.tab_sources, text='Quellen')
-        self.notebook.add(self.tab_literary_sources, text='Literarische Quellen')
-
-        # Inhalt der Tabs erstellen
-        self.CreateBasicTab()
-        self.CreateMarriageTab()
-        self.CreateChildrenTab()
-        self.CreateFamilyTab()
-        self.CreateSpecialTab()
-        self.CreateHonorsTab()
-        self.CreateSourcesTab()
-        self.CreateLiterarySourcesTab()
-
-        self.notebook.bind('<<NotebookTabChanged>>', self.OnTabChanged)
-        self.notebook.select(CreateFrame.last_selected_tab)
-
-        # Zunächst leere Felder
-        self.ClearDetails()
-        
-        # Tabelle mit Daten füllen
-        #self.LoadData()
-    
-    def OnTabChanged(self, event):
-        CreateFrame.last_selected_tab = self.notebook.index('current')
-
-    def ConfigureTreeviewStyle(self, style_name):
-        style = ttk.Style()
-        
-        # Grundlegende Treeview-Konfiguration
-        style.configure('Treeview',
-                        background=AppColors.CONTENT_FRAME,
-                        foreground=AppColors.KU_COLOR,
-                        rowheight=25,
-                        fieldbackground=AppColors.CONTENT_FRAME)
-        
-        # Überschriften anpassen
-        style.configure('Treeview.Heading',
-                        background=AppColors.CONTENT_FRAME,
-                        foreground=AppColors.KU_COLOR,
-                        relief=tk.FLAT,
-                        font=Fonts.STANDARD)
-        
-        # Ausgewählte Zeilen anpassen
-        style.map('Treeview',
-            background=[('selected', AppColors.HIGHLIGHT)],
-            foreground=[('selected', AppColors.KU_COLOR)])
-        
-        style.map('Treeview.Heading',
-          background=[('active', AppColors.HIGHLIGHT)],
-          foreground=[('active', AppColors.KU_COLOR)])
-
-        style.configure(style_name, 
-                        font=Fonts.SUBMENU,  # Schriftart für Zellen
-                        rowheight=30)        # Höhere Zeilen
-        
-        return style
-    
-    def CreateBasicTab(self):
-        """Erstellt die Grunddaten-Registerkarte"""
-        for widget in self.tab_basic.winfo_children():
-            widget.destroy()
-        form_frame = tk.Frame(self.tab_basic, bg=AppColors.CONTENT_FRAME)
-        form_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=(5, 10))
-
-        # Formularfelder für Grunddaten
-        fields = ['Name', 'Geburtsdatum', 'Sterbedatum', 'Todesursache']
-
-        self.basic_entries = {}
-        
-        for i, field_key in enumerate(fields):
-            label = tk.Label(
-                form_frame,
-                text=f'{field_key}:',
-                font=Fonts.SUBMENU,
-                bg=AppColors.CONTENT_FRAME,
-                fg=AppColors.KU_COLOR,
-                anchor=tk.W
-            )
-            label.grid(row=i, column=0, sticky=tk.W, padx=10, pady=5)
-            entry = tk.Entry(form_frame, width=40, font=Fonts.STANDARD, fg = AppColors.KU_COLOR, bd=1, relief=tk.SOLID)
-            entry.grid(row=i, column=1, sticky=tk.EW, padx=5, pady=5)
-            
-            self.basic_entries[field_key] = entry
-        
-        # Speicher-Button
-        save_frame = tk.Frame(form_frame, bg=AppColors.CONTENT_FRAME)
-        save_frame.grid(row=len(fields), column=0, columnspan=2, sticky=tk.SE, pady=10)
-        
-        save_button = ttk.Button(save_frame, text='Änderungen speichern', command=lambda: self.SaveRomanTab('basic'))
-        save_button.pack(side=tk.RIGHT, padx=5)
-        
-        # Form-Frame dehnbar machen
-        form_frame.columnconfigure(1, weight=1)
-    
-    def CreateMarriageTab(self):
-        """Erstellt die Ehen-Registerkarte"""
-        for widget in self.tab_marriage.winfo_children():
-            widget.destroy()
-                
-        # Hauptcontainer mit Scrollbar
-        container = tk.Frame(self.tab_marriage, bg=AppColors.CONTENT_FRAME)
-        container.pack(fill=tk.BOTH, expand=True)
-        
-        # Scrollbar erstellen
-        y_scrollbar = ttk.Scrollbar(container)
-        y_scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
-        
-        # Canvas für scrollbaren Inhalt
-        canvas = tk.Canvas(container, bg=AppColors.CONTENT_FRAME, yscrollcommand=y_scrollbar.set, highlightthickness=0)
-        canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=10, pady=(5, 10))
-        
-        # Scrollbar mit Canvas verbinden
-        y_scrollbar.config(command=canvas.yview)
-        
-        # Frame für den eigentlichen Inhalt
-        form_frame = tk.Frame(canvas, bg=AppColors.CONTENT_FRAME)
-        
-        # Frame im Canvas platzieren
-        canvas_window = canvas.create_window((0, 0), window=form_frame, anchor=tk.NW)
-        
-        # Häufigkeit Heirat
-        frequency_label = tk.Label(
-            form_frame,
-            text='Häufigkeit Heirat:',
-            font=Fonts.SUBMENU,
-            bg=AppColors.CONTENT_FRAME,
-            fg=AppColors.KU_COLOR,
-            anchor=tk.W
-        )
-        frequency_label.grid(row=0, column=0, sticky=tk.W, padx=10, pady=5)
-        
-        self.marriage_frequency_var = tk.StringVar()
-        frequency_entry = tk.Entry(
-            form_frame, 
-            textvariable=self.marriage_frequency_var, 
-            width=40, 
-            font=Fonts.STANDARD, 
-            fg=AppColors.KU_COLOR, 
-            bd=1, 
-            relief=tk.SOLID
-        )
-        frequency_entry.grid(row=0, column=1, sticky=tk.EW, padx=5, pady=5)
-
-        # Verlobung
-        engagement_label = tk.Label(
-            form_frame,
-            text='Verlobung:',
-            font=Fonts.SUBMENU,
-            bg=AppColors.CONTENT_FRAME,
-            fg=AppColors.KU_COLOR,
-            anchor=tk.W
-        )
-        engagement_label.grid(row=1, column=0, sticky=tk.W, padx=10, pady=5)
-        
-        self.engagement_var = tk.StringVar()
-        frequency_entry = tk.Entry(
-            form_frame, 
-            textvariable=self.engagement_var, 
-            width=40, 
-            font=Fonts.STANDARD, 
-            fg=AppColors.KU_COLOR, 
-            bd=1, 
-            relief=tk.SOLID
-        )
-        frequency_entry.grid(row=1, column=1, sticky=tk.EW, padx=5, pady=5)
-        
-        # Überschrift für Ehepartner
-        partner_label = tk.Label(
-            form_frame,
-            text='Ehepartner:',
-            font=Fonts.SUBMENU,
-            bg=AppColors.CONTENT_FRAME,
-            fg=AppColors.KU_COLOR,
-            anchor=tk.W
-        )
-        partner_label.grid(row=2, column=0, columnspan=2, sticky=tk.W, padx=10, pady=(15, 5))
-        
-        # Container für die Ehepartner-Einträge
-        self.marriage_container = tk.Frame(form_frame, bg=AppColors.CONTENT_FRAME)
-        self.marriage_container.grid(row=3, column=0, columnspan=2, sticky=tk.NSEW, padx=10)
-        
-        self.marriage_entries = []
-        self.marriage_frames = []
-        
-        # Erstes Ehepartner-Feld hinzufügen
-        self.AddDynamicField(self.marriage_entries, self.marriage_frames, self.marriage_container)
-        
-        # Button-Bereich am unteren Rand
-        buttons_row = 4
-        
-        # 'Feld hinzufügen'-Button (links) - KORRIGIERT
-        add_button = ttk.Button(
-            form_frame, 
-            text='Ehemann hinzufügen', 
-            command=lambda: self.AddDynamicField(self.marriage_entries, self.marriage_frames, self.marriage_container)
-        )
-        add_button.grid(row=buttons_row, column=0, sticky=tk.W, padx=10, pady=10)
-        
-        # Speicher-Button (rechts)
-        save_frame = tk.Frame(form_frame, bg=AppColors.CONTENT_FRAME)
-        save_frame.grid(row=buttons_row, column=1, sticky=tk.SE, pady=10)
-        
-        save_button = ttk.Button(save_frame, text='Änderungen speichern', command=lambda: self.SaveRomanTab('marriage'))
-        save_button.pack(side=tk.RIGHT, padx=5)
-        
-        # Form-Frame dehnbar machen
-        form_frame.columnconfigure(1, weight=1)
-        form_frame.rowconfigure(2, weight=1)
-
-        def update_scrollregion(event):
-            canvas.configure(scrollregion=canvas.bbox("all"))
-            # Stellt sicher, dass der Frame die volle Breite des Canvas einnimmt
-            canvas.itemconfig(canvas_window, width=canvas.winfo_width())
-        
-        # Wenn sich die Größe des form_frame ändert, aktualisiere die Scrollregion
-        form_frame.bind("<Configure>", update_scrollregion)
-        
-        # Mausrad-Binding für Scrolling - WICHTIG: Nur für diesen Canvas!
+    def BindMouseWheelToWidget(self, widget, canvas):
+        """Bindet Mausrad-Events an ein Widget und alle seine Kinder"""
         def on_mousewheel(event):
-            # Nur scrollen, wenn der Mauszeiger über dem Canvas ist
-            canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+            # Windows/MacOS
+            if event.delta:
+                canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+            # Linux
+            else:
+                if event.num == 4:
+                    canvas.yview_scroll(-1, "units")
+                elif event.num == 5:
+                    canvas.yview_scroll(1, "units")
+            return "break"
+        
+        # Binde Events an das Widget
+        widget.bind("<MouseWheel>", on_mousewheel)  # Windows/MacOS
+        widget.bind("<Button-4>", on_mousewheel)    # Linux
+        widget.bind("<Button-5>", on_mousewheel)    # Linux
+        
+        # Rekursiv für alle Kinder
+        for child in widget.winfo_children():
+            self.BindMouseWheelToWidget(child, canvas)
 
-        # Mausrad-Binding nur für diesen Canvas hinzufügen
-        canvas.bind("<MouseWheel>", on_mousewheel)
+    def CreateMarriageContent(self, parent):
+        pass
 
-        # Auch für alle Kinder des Canvas (damit es auch funktioniert, wenn man über Widgets scrollt)
-        def bind_mousewheel_to_children(widget):
-            widget.bind("<MouseWheel>", on_mousewheel)
-            for child in widget.winfo_children():
-                bind_mousewheel_to_children(child)
+    def CreateChildrenContent(self, parent):
+        pass
 
-        bind_mousewheel_to_children(form_frame)
-        
-        # Wenn sich die Größe des Canvas ändert, aktualisiere die Breite des inneren Frames
-        def on_canvas_configure(event):
-            canvas.itemconfig(canvas_window, width=event.width)
-        
-        canvas.bind("<Configure>", on_canvas_configure)
-        bind_mousewheel_to_children(form_frame)
+    def CreateFamilyContent(self, parent):
+        pass
 
-    def AddDynamicField(self, entries_list, frames_list, container):
-        """Fügt ein weiteres Feld für Ehepartner oder Kinder hinzu"""
-        # Der Index ist die aktuelle Anzahl der Einträge
-        i = len(entries_list)
+    def CreateSpecialContent(self, parent):
+        pass
+
+    def CreateHonorsContent(self, parent):
+        pass
+
+    def CreateSourcesContent(self, parent):
+        pass
+
+    def CreateLiterarySourcesContent(self, parent):
+        pass
+
+    def CreateBasicDataContent(self, parent):
+        """Erstellt den Inhalt für den Grunddaten-Tab"""
+        # Container mit Padding
+        container = tk.Frame(parent, bg=AppColors.TAB_BG)
+        container.pack(fill=tk.BOTH, expand=True, padx=20, pady=20)
+
+        # Titel
+        title_frame = tk.Frame(container, bg=AppColors.TAB_BG)
+        title_frame.pack(fill=tk.X, pady=(0, 20))
+
+        tk.Label(title_frame, text=f"{Icons.PERSON} Persönliche Informationen", 
+             font=Fonts.HEADER_MEDIUM, bg=AppColors.TAB_BG, 
+             fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
         
-        # Erstelle den Frame mit dem Container als Parent
-        entry_frame = tk.Frame(container, bg=AppColors.CONTENT_FRAME)
-        entry_frame.pack(fill=tk.X, pady=2)
+        # Formularfelder
+        fields = [
+            ('Name', 'Name', 'entry'),
+            ('Geburtsdatum', 'Geburtsdatum', 'entry'),
+            ('Geburtsort', 'Geburtsort', 'entry'),
+            ('Sterbedatum', 'Sterbedatum', 'entry'),
+            ('Sterbeort', 'Sterbeort', 'entry'),
+            ('Todesursache', 'Todesursache', 'entry'),
+            ('Bemerkungen', 'Bemerkungen', 'text')
+        ]
         
-        # Index-Label
-        label = tk.Label(
-            entry_frame, 
-            text=f'{i+1}:', 
-            width=2, 
-            bg=AppColors.CONTENT_FRAME, 
-            fg=AppColors.KU_COLOR,
-            font=Fonts.STANDARD
-        )
-        label.pack(side=tk.LEFT, padx=(0, 5))
-        
-        # Eingabefeld
-        entry = tk.Entry(
-            entry_frame, 
-            width=40, 
-            font=Fonts.STANDARD, 
-            fg=AppColors.KU_COLOR, 
-            bd=1, 
-            relief=tk.SOLID
-        )
-        entry.pack(side=tk.LEFT, fill=tk.X, expand=True)
-        
-        # X-Button zum Löschen (für alle außer dem ersten Feld)
-        if i > 0:
-            delete_button = tk.Button(
-                entry_frame,
-                text="✕",
-                font=("Arial", 8, "bold"),
-                fg=AppColors.KU_COLOR,
-                bg=AppColors.CONTENT_FRAME,
-                bd=1,
-                padx=5,
-                relief=tk.SOLID,
-                cursor="hand2"
-            )
-            delete_button.pack(side=tk.RIGHT, padx=(5, 0))
+        for field_data in fields:
+            field_key = field_data[0]
+            field_label = field_data[1]
+            field_type = field_data[2]
             
-            # Speichere den aktuellen Index für den Delete-Handler
-            current_index = i
-            delete_button.configure(
-                command=lambda frame=entry_frame, idx=current_index: 
-                    self.DeleteDynamicField(frame, idx, entries_list, frames_list, container)
-            )
-        
-        # Füge das neue Feld zu den Listen hinzu
-        entries_list.append(entry)
-        frames_list.append(entry_frame)
-        
-        return entry
+            row_frame = tk.Frame(container, bg=AppColors.TAB_BG)
+            row_frame.pack(fill=tk.X, pady=8)
+            
+            # Label
+            label = tk.Label(row_frame, text=f"{field_label}:", 
+                            font=Fonts.STANDARD, bg=AppColors.TAB_BG, 
+                            fg=AppColors.KU_COLOR, width=20, anchor=tk.W)
+            label.pack(side=tk.LEFT, padx=(0, 10))
+            
+            # Widget basierend auf Typ
+            if field_type == 'entry':
+                widget = tk.Entry(row_frame, font=Fonts.INPUT, 
+                                bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG, 
+                                width=40, relief=tk.RIDGE, bd=2)
+                widget.pack(side=tk.LEFT, fill=tk.X, expand=True)
+                
+            elif field_type == 'combo':
+                widget = ttk.Combobox(row_frame, font=Fonts.INPUT, 
+                                    values=field_data[3], width=38, state='readonly')
+                widget.pack(side=tk.LEFT, fill=tk.X, expand=True)
+                
+            elif field_type == 'text':
+                text_frame = tk.Frame(container, bg=AppColors.TAB_BG)
+                text_frame.pack(fill=tk.BOTH, expand=True, pady=8)
+                
+                widget = tk.Text(text_frame, font=Fonts.INPUT, 
+                            bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG,
+                            height=4, relief=tk.RIDGE, bd=2)
+                widget.pack(fill=tk.BOTH, expand=True, pady=(5, 0))
+            
+            # Speichere Referenz
+            self.basic_fields[field_key] = widget
 
-    def DeleteDynamicField(self, frame, index, entries_list, frames_list, container):
-        """Löscht ein dynamisches Feld"""
-        # Frame aus der Oberfläche entfernen
+    def CreateMarriageContent(self, parent):
+        """Erstellt den Inhalt für den Ehen-Tab"""
+        container = tk.Frame(parent, bg=AppColors.TAB_BG)
+        container.pack(fill=tk.BOTH, expand=True, padx=20, pady=20)
+        
+        # Titel
+        title_frame = tk.Frame(container, bg=AppColors.TAB_BG)
+        title_frame.pack(fill=tk.X, pady=(0, 20))
+
+        tk.Label(title_frame, text=f"{Icons.MARRIAGE} Eheschließungen", 
+             font=Fonts.HEADER_MEDIUM, bg=AppColors.TAB_BG, 
+             fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
+        
+        # Button zum Hinzufügen
+        add_button = self.CreateStyledButton(
+            title_frame,
+            text=f"{Icons.ADD} Ehe hinzufügen",
+            command=lambda: self.AddMarriageEntry(marriages_container),
+            style='Primary'
+        )
+        add_button.pack(side=tk.RIGHT)
+        
+        # Container für Ehen
+        marriages_container = tk.Frame(container, bg=AppColors.TAB_BG)
+        marriages_container.pack(fill=tk.BOTH, expand=True)
+        
+        self.marriages_container = marriages_container
+        self.marriage_entries = []
+
+    def AddMarriageEntry(self, parent):
+        """Fügt einen neuen Ehe-Eintrag hinzu"""
+        marriage_frame = tk.Frame(parent, bg=AppColors.TAB_BG, relief=tk.RAISED, bd=1)
+        marriage_frame.pack(fill=tk.X, pady=10)
+        
+        inner_frame = tk.Frame(marriage_frame, bg=AppColors.TAB_BG)
+        inner_frame.pack(fill=tk.BOTH, expand=True, padx=15, pady=15)
+        
+        # Header mit Nummer und Löschen-Button
+        header_frame = tk.Frame(inner_frame, bg=AppColors.TAB_BG)
+        header_frame.pack(fill=tk.X, pady=(0, 10))
+        
+        tk.Label(header_frame, text=f"Ehe #{len(self.marriage_entries) + 1}", 
+                font=Fonts.SUBHEADER, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
+        
+        delete_button = tk.Button(header_frame, text=Icons.DELETE, 
+                                font=Fonts.ICON, bg=AppColors.BUTTON_DANGER_BG,
+                                fg=AppColors.BUTTON_DANGER_FG, bd=0,
+                                command=lambda: self.RemoveMarriageEntry(marriage_frame))
+        delete_button.pack(side=tk.RIGHT)
+        
+        # Felder
+        fields = {}
+        field_configs = [
+            ('Partner', 'Ehepartner'),
+            ('Heiratsdatum', 'Heiratsdatum'),
+            ('Heiratsort', 'Heiratsort'),
+            ('Scheidungsdatum', 'Scheidungsdatum'),
+        ]
+        
+        for field_key, field_label in field_configs:
+            row = tk.Frame(inner_frame, bg=AppColors.TAB_BG)
+            row.pack(fill=tk.X, pady=5)
+            
+            tk.Label(row, text=f"{field_label}:", font=Fonts.STANDARD,
+                    bg=AppColors.TAB_BG, fg=AppColors.KU_COLOR,
+                    width=15, anchor=tk.W).pack(side=tk.LEFT)
+            
+            entry = tk.Entry(row, font=Fonts.INPUT, bg=AppColors.INPUT_BG,
+                            fg=AppColors.INPUT_FG, width=30, relief=tk.RIDGE, bd=2)
+            entry.pack(side=tk.LEFT, fill=tk.X, expand=True)
+            
+            fields[field_key] = entry
+        
+        text_frame = tk.Frame(inner_frame, bg=AppColors.TAB_BG)
+        text_frame.pack(fill=tk.BOTH, expand=True, pady=8)
+                
+        tk.Label(text_frame, text=f"Bemerkungen:", 
+                font=Fonts.STANDARD, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR, anchor=tk.W).pack(anchor=tk.W)
+                
+        widget = tk.Text(text_frame, font=Fonts.INPUT, 
+                    bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG,
+                    height=4, relief=tk.RIDGE, bd=2)
+        widget.pack(fill=tk.BOTH, expand=True, pady=(5, 0))
+        
+        self.marriage_entries.append({'frame': marriage_frame, 'fields': fields})
+
+    def RemoveMarriageEntry(self, frame):
+        """Entfernt einen Ehe-Eintrag"""
+        # Finde und entferne aus Liste
+        for i, entry in enumerate(self.marriage_entries):
+            if entry['frame'] == frame:
+                self.marriage_entries.pop(i)
+                break
+        
+        # Entferne Frame
         frame.destroy()
         
-        # Einträge aus den Listen entfernen
-        if 0 <= index < len(entries_list):
-            del entries_list[index]
-            del frames_list[index]
-        
-        # Alle Buttons neu erstellen, um ihre Indizes zu aktualisieren
-        self.RecreateDeleteButtons(entries_list, frames_list, container)
-        
-    def RecreateDeleteButtons(self, entries_list, frames_list, container):
-        """Aktualisiert alle Löschen-Buttons mit korrekten Indizes"""
-        # Zuerst Indizes der Labels aktualisieren
-        for i, frame in enumerate(frames_list):
-            # Label aktualisieren
-            for child in frame.winfo_children():
-                if isinstance(child, tk.Label) and child.cget("width") == 2:
-                    child.config(text=f'{i+1}:')
-                
-                # Alte Buttons entfernen
-                if isinstance(child, tk.Button) and child.cget("text") == "✕":
-                    child.destroy()
-            
-            # Neuen Button erstellen (außer für das erste Feld)
-            if i > 0:
-                delete_button = tk.Button(
-                    frame,
-                    text="✕",
-                    font=("Arial", 8, "bold"),
-                    fg=AppColors.KU_COLOR,
-                    bg=AppColors.CONTENT_FRAME,
-                    bd=1,
-                    padx=5,
-                    relief=tk.SOLID,
-                    cursor="hand2"
-                )
-                delete_button.pack(side=tk.RIGHT, padx=(5, 0))
-                delete_button.configure(
-                    command=lambda f=frame, idx=i: 
-                        self.DeleteDynamicField(f, idx, entries_list, frames_list, container)
-                )
+        # Nummerierung aktualisieren
+        self.UpdateMarriageNumbers()
 
-    def CreateChildrenTab(self):
-        """Erstellt die Kinder-Registerkarte"""
-        for widget in self.tab_children.winfo_children():
-            widget.destroy()
-                
-        # Hauptcontainer mit Scrollbar
-        container = tk.Frame(self.tab_children, bg=AppColors.CONTENT_FRAME)
-        container.pack(fill=tk.BOTH, expand=True)
-        
-        # Scrollbar erstellen
-        y_scrollbar = ttk.Scrollbar(container)
-        y_scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
-        
-        # Canvas für scrollbaren Inhalt
-        canvas = tk.Canvas(container, bg=AppColors.CONTENT_FRAME, yscrollcommand=y_scrollbar.set, highlightthickness=0)
-        canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=10, pady=(5, 10))
-        
-        # Scrollbar mit Canvas verbinden
-        y_scrollbar.config(command=canvas.yview)
-        
-        # Frame für den eigentlichen Inhalt
-        form_frame = tk.Frame(canvas, bg=AppColors.CONTENT_FRAME)
-        
-        # Frame im Canvas platzieren - HIER WIRD canvas_window DEFINIERT
-        canvas_window = canvas.create_window((0, 0), window=form_frame, anchor=tk.NW)
-        
-        # Anzahl Kinder
-        frequency_label = tk.Label(
-            form_frame,
-            text='Anzahl Kinder:',
-            font=Fonts.SUBMENU,
-            bg=AppColors.CONTENT_FRAME,
-            fg=AppColors.KU_COLOR,
-            anchor=tk.W
-        )
-        frequency_label.grid(row=0, column=0, sticky=tk.W, padx=10, pady=5)
-        
-        self.children_count_var = tk.StringVar()
-        count_entry = tk.Entry(
-            form_frame, 
-            textvariable=self.children_count_var, 
-            width=40, 
-            font=Fonts.STANDARD, 
-            fg=AppColors.KU_COLOR, 
-            bd=1, 
-            relief=tk.SOLID
-        )
-        count_entry.grid(row=0, column=1, sticky=tk.EW, padx=5, pady=5)
-        
-        # Überschrift für Kinder
-        children_label = tk.Label(
-            form_frame,
-            text='Kinder:',
-            font=Fonts.SUBMENU,
-            bg=AppColors.CONTENT_FRAME,
-            fg=AppColors.KU_COLOR,
-            anchor=tk.W
-        )
-        children_label.grid(row=1, column=0, columnspan=2, sticky=tk.W, padx=10, pady=(15, 5))
-        
-        # Container für die Kinder-Einträge
-        self.children_container = tk.Frame(form_frame, bg=AppColors.CONTENT_FRAME)
-        self.children_container.grid(row=2, column=0, columnspan=2, sticky=tk.NSEW, padx=10)
-        
-        self.children_entries = []
-        self.children_frames = []
-        
-        # Erstes Kind-Feld hinzufügen
-        self.AddDynamicField(self.children_entries, self.children_frames, self.children_container)
-        
-        # Button-Bereich am unteren Rand
-        buttons_row = 3
-        
-        # 'Feld hinzufügen'-Button (links) - KORRIGIERT
-        add_button = ttk.Button(
-            form_frame, 
-            text='Kind hinzufügen', 
-            command=lambda: self.AddDynamicField(self.children_entries, self.children_frames, self.children_container)
-        )
-        add_button.grid(row=buttons_row, column=0, sticky=tk.W, padx=10, pady=10)
-        
-        # Speicher-Button (rechts)
-        save_frame = tk.Frame(form_frame, bg=AppColors.CONTENT_FRAME)
-        save_frame.grid(row=buttons_row, column=1, sticky=tk.SE, pady=10)
-        
-        save_button = ttk.Button(save_frame, text='Änderungen speichern', command=lambda: self.SaveRomanTab('children'))
-        save_button.pack(side=tk.RIGHT, padx=5)
-        
-        # Form-Frame dehnbar machen
-        form_frame.columnconfigure(1, weight=1)
-        form_frame.rowconfigure(2, weight=1)
-
-        def update_scrollregion(event):
-            canvas.configure(scrollregion=canvas.bbox("all"))
-            # Stellt sicher, dass der Frame die volle Breite des Canvas einnimmt
-            canvas.itemconfig(canvas_window, width=canvas.winfo_width())
-        
-        # Wenn sich die Größe des form_frame ändert, aktualisiere die Scrollregion
-        form_frame.bind("<Configure>", update_scrollregion)
-        
-        # Mausrad-Binding für Scrolling - WICHTIG: Nur für diesen Canvas!
-        def on_mousewheel(event):
-            # Nur scrollen, wenn der Mauszeiger über dem Canvas ist
-            canvas.yview_scroll(int(-1*(event.delta/120)), "units")
-
-        # Mausrad-Binding nur für diesen Canvas hinzufügen
-        canvas.bind("<MouseWheel>", on_mousewheel)
-
-        # Auch für alle Kinder des Canvas (damit es auch funktioniert, wenn man über Widgets scrollt)
-        def bind_mousewheel_to_children(widget):
-            widget.bind("<MouseWheel>", on_mousewheel)
-            for child in widget.winfo_children():
-                bind_mousewheel_to_children(child)
-
-        bind_mousewheel_to_children(form_frame)
-        
-        # Wenn sich die Größe des Canvas ändert, aktualisiere die Breite des inneren Frames
-        def on_canvas_configure(event):
-            canvas.itemconfig(canvas_window, width=event.width)
-        
-        canvas.bind("<Configure>", on_canvas_configure)
-
-    def OnSelect(self, event):
-        """Behandelt die Auswahl in der Tabelle"""
-        selection = self.tree.selection()
+    def UpdateMarriageNumbers(self):
+        """Aktualisiert die Nummerierung der Ehen"""
+        for i, entry in enumerate(self.marriage_entries):
+            # Finde das Label im Header
+            header_frame = entry['frame'].winfo_children()[0].winfo_children()[0]
+            for widget in header_frame.winfo_children():
+                if isinstance(widget, tk.Label):
+                    widget.config(text=f"Ehe #{i + 1}")
+                    break
     
+    def CreateChildrenContent(self, parent):
+        """Erstellt den Inhalt für den Kinder-Tab"""
+        container = tk.Frame(parent, bg=AppColors.TAB_BG)
+        container.pack(fill=tk.BOTH, expand=True, padx=20, pady=20)
+        
+        # Titel
+        title_frame = tk.Frame(container, bg=AppColors.TAB_BG)
+        title_frame.pack(fill=tk.X, pady=(0, 20))
+        
+        tk.Label(title_frame, text=f"{Icons.CHILD} Kinder", 
+                font=Fonts.HEADER_MEDIUM, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
+        
+        # Statistik
+        stats_frame = tk.Frame(container, bg=AppColors.HIGHLIGHT, relief=tk.RIDGE, bd=1)
+        stats_frame.pack(fill=tk.X, pady=(0, 20))
+        
+        stats_inner = tk.Frame(stats_frame, bg=AppColors.HIGHLIGHT)
+        stats_inner.pack(padx=15, pady=10)
+        
+        self.children_count_label = tk.Label(stats_inner, 
+                                        text="Anzahl Kinder: 0", 
+                                        font=Fonts.STANDARD_BOLD,
+                                        bg=AppColors.HIGHLIGHT, 
+                                        fg=AppColors.KU_COLOR)
+        self.children_count_label.pack()
+        
+        # Button zum Hinzufügen
+        add_button = self.CreateStyledButton(
+            container,
+            text=f"{Icons.ADD} Kind hinzufügen",
+            command=lambda: self.AddChildEntry(children_container),
+            style='Primary'
+        )
+        add_button.pack(anchor=tk.W, pady=(0, 10))
+        
+        # Container für Kinder
+        children_container = tk.Frame(container, bg=AppColors.TAB_BG)
+        children_container.pack(fill=tk.BOTH, expand=True)
+        
+        self.children_container = children_container
+        self.children_entries = []
+
+    def AddChildEntry(self, parent):
+        """Fügt einen neuen Kind-Eintrag hinzu"""
+        child_frame = tk.Frame(parent, bg=AppColors.TAB_BG, relief=tk.RAISED, bd=1)
+        child_frame.pack(fill=tk.X, pady=5)
+        
+        inner_frame = tk.Frame(child_frame, bg=AppColors.TAB_BG)
+        inner_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+        
+        # Container für die erste Zeile (Name, Geschlecht, Geburtsjahr, Löschen)
+        first_row = tk.Frame(inner_frame, bg=AppColors.TAB_BG)
+        first_row.pack(fill=tk.X)
+        
+        # Felder
+        fields = {}
+        
+        # Name
+        tk.Label(first_row, text="Name:", font=Fonts.STANDARD,
+                bg=AppColors.TAB_BG, fg=AppColors.KU_COLOR).pack(side=tk.LEFT, padx=(0, 5))
+        
+        name_entry = tk.Entry(first_row, font=Fonts.INPUT, bg=AppColors.INPUT_BG,
+                            fg=AppColors.INPUT_FG, width=25, relief=tk.RIDGE, bd=2)
+        name_entry.pack(side=tk.LEFT, padx=(0, 15))
+        fields['Name'] = name_entry
+        
+        # Geschlecht
+        tk.Label(first_row, text="Geschlecht:", font=Fonts.STANDARD,
+                bg=AppColors.TAB_BG, fg=AppColors.KU_COLOR).pack(side=tk.LEFT, padx=(0, 5))
+        
+        gender_combo = ttk.Combobox(first_row, font=Fonts.INPUT,
+                                values=['Männlich', 'Weiblich', 'Unbekannt'],
+                                width=12, state='readonly')
+        gender_combo.pack(side=tk.LEFT, padx=(0, 15))
+        fields['Geschlecht'] = gender_combo
+        
+        # Geburtsjahr
+        tk.Label(first_row, text="Geburtsjahr:", font=Fonts.STANDARD,
+                bg=AppColors.TAB_BG, fg=AppColors.KU_COLOR).pack(side=tk.LEFT, padx=(0, 5))
+        
+        birth_entry = tk.Entry(first_row, font=Fonts.INPUT, bg=AppColors.INPUT_BG,
+                            fg=AppColors.INPUT_FG, width=25, relief=tk.RIDGE, bd=2)
+        birth_entry.pack(side=tk.LEFT, padx=(0, 15))
+        fields['Geburtsjahr'] = birth_entry
+        
+        # Löschen-Button
+        delete_button = tk.Button(first_row, text=Icons.DELETE,
+                                font=Fonts.ICON, bg=AppColors.BUTTON_DANGER_BG,
+                                fg=AppColors.BUTTON_DANGER_FG, bd=0,
+                                command=lambda: self.RemoveChildEntry(child_frame))
+        delete_button.pack(side=tk.RIGHT)
+        
+        # Container für die zweite Zeile (Bemerkung)
+        second_row = tk.Frame(inner_frame, bg=AppColors.TAB_BG)
+        second_row.pack(fill=tk.BOTH, expand=True, pady=(10, 0))
+        
+        # Bemerkung
+        tk.Label(second_row, text="Bemerkung:", font=Fonts.STANDARD,
+                bg=AppColors.TAB_BG, fg=AppColors.KU_COLOR).pack(anchor=tk.W, padx=(0, 5))
+        
+        note = tk.Text(second_row, font=Fonts.INPUT, 
+                    bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG,
+                    height=3, relief=tk.RIDGE, bd=2)
+        note.pack(fill=tk.BOTH, expand=True, pady=(5, 0))
+        fields['Bemerkungen'] = note
+        
+        self.children_entries.append({'frame': child_frame, 'fields': fields})
+        self.UpdateChildrenCount()
+
+        if hasattr(self.tab_children, 'canvas'):
+            self.BindMouseWheelToWidget(child_frame, self.tab_children.canvas)
+
+    def RemoveChildEntry(self, frame):
+        """Entfernt einen Kind-Eintrag"""
+        for i, entry in enumerate(self.children_entries):
+            if entry['frame'] == frame:
+                self.children_entries.pop(i)
+                break
+        
+        frame.destroy()
+        self.UpdateChildrenCount()
+
+    def UpdateChildrenCount(self):
+        """Aktualisiert die Anzahl der Kinder"""
+        count = len(self.children_entries)
+        self.children_count_label.config(text=f"Anzahl Kinder: {count}")
+
+    def CreateScrollableTab(self, tab):
+        """Erstellt einen scrollbaren Bereich innerhalb eines Tabs"""
+        # Container für Canvas und Scrollbar
+        scroll_container = tk.Frame(tab, bg=AppColors.TAB_BG)
+        scroll_container.pack(fill=tk.BOTH, expand=True, padx=UIConstants.PADDING_LARGE, 
+                            pady=UIConstants.PADDING_LARGE)
+        
+        # Canvas
+        canvas = tk.Canvas(scroll_container, bg=AppColors.TAB_BG, highlightthickness=0)
+        canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        
+        # Scrollbar
+        scrollbar = ttk.Scrollbar(scroll_container, orient=tk.VERTICAL, command=canvas.yview)
+        scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+        
+        # Canvas mit Scrollbar verbinden
+        canvas.configure(yscrollcommand=scrollbar.set)
+        
+        # Frame für den Inhalt
+        content_frame = tk.Frame(canvas, bg=AppColors.TAB_BG)
+        canvas_window = canvas.create_window(0, 0, anchor=tk.NW, window=content_frame)
+        
+        # Events
+        def configure_scroll_region(event=None):
+            canvas.configure(scrollregion=canvas.bbox("all"))
+        
+        def configure_canvas_width(event=None):
+            canvas_width = event.width
+            canvas.itemconfig(canvas_window, width=canvas_width)
+        
+        # Scrollbar nur anzeigen wenn nötig
+        def check_scrollbar_visibility(event=None):
+            canvas.update_idletasks()
+            if content_frame.winfo_reqheight() <= canvas.winfo_height():
+                scrollbar.pack_forget()
+            else:
+                scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+        
+        content_frame.bind('<Configure>', lambda e: [configure_scroll_region(e), check_scrollbar_visibility(e)])
+        canvas.bind('<Configure>', configure_canvas_width)
+        
+        # Mausrad-Unterstützung
+        def on_mousewheel(event):
+            # Windows/MacOS
+            if event.delta:
+                canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+            # Linux
+            else:
+                if event.num == 4:
+                    canvas.yview_scroll(-1, "units")
+                elif event.num == 5:
+                    canvas.yview_scroll(1, "units")
+        
+        # Bind mousewheel to canvas and all its children
+        def bind_mousewheel(widget):
+            widget.bind("<MouseWheel>", on_mousewheel)  # Windows/MacOS
+            widget.bind("<Button-4>", on_mousewheel)    # Linux
+            widget.bind("<Button-5>", on_mousewheel)    # Linux
+        
+        bind_mousewheel(canvas)
+        bind_mousewheel(content_frame)
+        
+        # Speichere Referenzen für späteren Zugriff
+        tab.canvas = canvas
+        tab.scrollbar = scrollbar
+        tab.content_frame = content_frame
+
+    def UpdateButtonStates(self):
+        """Aktualisiert die Button-Zustände"""
+        pass
+
+    def FilterTable(self, event=None):
+        """Filtert die Tabelle basierend auf der Sucheingabe"""
+        search_term = self.search_var.get().lower()
+        
+        # Placeholder-Text ignorieren
+        if search_term == Messages.SEARCH_PLACEHOLDER.lower():
+            return
+        
+        # Alle Items löschen
+        for item in self.tree.get_children():
+            self.tree.delete(item)
+        
+        # Gefilterte Items wieder einfügen
+        for roman in self.__app.romans:
+            values = [
+                str(roman.get('Name', '')),
+                str(roman.get('Geburtsdatum', '')),
+                str(roman.get('Sterbedatum', '')),
+                str(roman.get('Todesursache', '')),
+                str(roman.get('Familie', '')),
+                str(roman.get('Häufigkeit Heirat', '')),
+                str(roman.get('Anzahl Kinder', ''))
+            ]
+                
+            if any(search_term in value.lower() for value in values):
+                self.tree.insert('', tk.END, values=values)
+
+    def OnSelect(self, event=None):
+        """Wird aufgerufen, wenn ein Item in der Tabelle ausgewählt wird"""
+        selection = self.tree.selection()
         if selection:
             item = self.tree.item(selection[0])
             values = item['values']
@@ -650,839 +917,108 @@ class CreateFrame(BaseContentFrame):
             
             if self.__current_roman is not None:
                 self.DisplayRoman()
+
+            self.delete_button.config(state=tk.NORMAL)
+            self.status_label.config(text=f"{Icons.INFO} {self.__current_roman['Name']} ausgewählt")
         else:
             self.__current_roman = None
             self.ClearDetails()
-        
-        self.UpdateButtonStates()
-    
-    def DisplayRoman(self):
-        """Zeigt die Daten des ausgewählten Romans in den Detail-Tabs an"""
-        if self.__current_roman:
-            # Basic Tab: Alle Felder mit einem Durchgang füllen
-            field_mapping = ['Name', 'Geburtsdatum', 'Sterbedatum', 'Todesursache']
-            
-            for data_field in field_mapping:
-                if data_field in self.basic_entries:
-                    self.basic_entries[data_field].delete(0, tk.END)
-                    self.basic_entries[data_field].insert(0, self.__current_roman.get(data_field, ''))
-            
-            # Marriage Tab: Frequenz setzen
-            self.marriage_frequency_var.set(self.__current_roman.get('Häufigkeit Heirat', ''))
-            self.engagement_var.set(self.__current_roman.get('Verlobung', ''))
-            
-            # Marriage Tab: Entferne alle zusätzlichen Felder und behalte nur das erste
-            if len(self.marriage_entries) > 1:
-                for i in range(len(self.marriage_entries) - 1, 0, -1):
-                    self.marriage_frames[i].destroy()
-                
-                # Nur das erste Feld behalten, Rest entfernen
-                self.marriage_entries = [self.marriage_entries[0]]
-                self.marriage_frames = [self.marriage_frames[0]]
-            
-            # Marriage Tab: Ehemänner-Felder erstellen für nicht-leere Einträge
-            husbands = self.__current_roman.get('Männer', [])
-            if husbands:
-                # Erstes Feld füllen
-                self.marriage_entries[0].delete(0, tk.END)
-                if len(husbands) > 0:
-                    self.marriage_entries[0].insert(0, husbands[0] if husbands[0] else '')
-                
-                # Zusätzliche Felder für weitere Ehemänner hinzufügen
-                for i in range(1, len(husbands)):
-                    if husbands[i]:  # Nur nicht-leere Einträge
-                        self.AddDynamicField(self.marriage_entries, self.marriage_frames, self.marriage_container)
-                        self.marriage_entries[-1].delete(0, tk.END)
-                        self.marriage_entries[-1].insert(0, husbands[i])
-            
-            # Children Tab: Frequenz setzen
-            self.children_count_var.set(self.__current_roman.get('Anzahl Kinder', ''))
-            
-            # Children Tab: Entferne alle zusätzlichen Felder und behalte nur das erste
-            if len(self.children_entries) > 1:
-                for i in range(len(self.children_entries) - 1, 0, -1):
-                    self.children_frames[i].destroy()
-                
-                # Nur das erste Feld behalten, Rest entfernen
-                self.children_entries = [self.children_entries[0]]
-                self.children_frames = [self.children_frames[0]]
-            
-            # Children Tab: Kinder-Felder erstellen für nicht-leere Einträge
-            children = self.__current_roman.get('Kinder', [])
-            if children:
-                # Erstes Feld füllen
-                self.children_entries[0].delete(0, tk.END)
-                if len(children) > 0:
-                    self.children_entries[0].insert(0, children[0] if children[0] else '')
-                
-                # Zusätzliche Felder für weitere Kinder hinzufügen
-                for i in range(1, len(children)):
-                    if children[i]:  # Nur nicht-leere Einträge
-                        self.AddDynamicField(self.children_entries, self.children_frames, self.children_container)
-                        self.children_entries[-1].delete(0, tk.END)
-                        self.children_entries[-1].insert(0, children[i])
-            
-            # Familien Tab
-            fields = ["Familie", "Vorfahren", "Verlobung"]
-            
-            for field in fields:
-                if field in self.family_entries:
-                    self.family_entries[field].delete(0, tk.END)
-                    self.family_entries[field].insert(0, self.__current_roman.get(field, ''))
-            
-            # Special Tab
-            fields = ["Auftreten", "Kleidung", "Schmuck"]
-            for field in fields:
-                if field in self.special_entries:
-                    self.special_entries[field].delete(0, tk.END)
-                    self.special_entries[field].insert(0, self.__current_roman.get('Individuelle Besonderheiten', {}).get(field, ''))
-            
-            fields = ["Öffentlich", "Privat"]
-            for field in fields:
-                if field in self.inszenierung_entries:
-                    self.inszenierung_entries[field].delete(0, tk.END)
-                    self.inszenierung_entries[field].insert(0, self.__current_roman.get('Inszenierung', {}).get(field, ''))
 
-            # Honors Tab
-            fields = ["Augusta-Titel", "Carpentum-Recht", "Weitere"]
-            for field in fields:
-                if field in self.honors_entries:
-                    self.honors_entries[field].delete(0, tk.END)
-                    self.honors_entries[field].insert(0, self.__current_roman.get('Ehrungen', {}).get(field, ''))
-            
-            # Sources Tab
-            fields = ["Divinisierung", "Bestattung", "Archäologische Quellen", "Münzen", "Inschriften"]
-            for field in fields:
-                if field in self.sources_entries:
-                    self.sources_entries[field].delete(0, tk.END)
-                    self.sources_entries[field].insert(0, self.__current_roman.get('Quellen', {}).get(field, ''))
-            
-            # Literary Sources Tab
-            if hasattr(self, 'literary_entries') and hasattr(self, 'literary_frames'):
-                # Entferne alle zusätzlichen Felder und behalte nur das erste
-                if len(self.literary_entries) > 1:
-                    for i in range(len(self.literary_entries) - 1, 0, -1):
-                        self.literary_frames[i].destroy()
-                    
-                    # Nur das erste Feld behalten, Rest entfernen
-                    self.literary_entries = [self.literary_entries[0]]
-                    self.literary_frames = [self.literary_frames[0]]
-                
-                # Literarische Quellen aus dem Roman-Objekt holen
-                literary_sources = self.__current_roman.get('Quellen', {}).get('Literarische Quellen', [])
-                
-                if literary_sources:
-                    # Erstes Feld füllen
-                    author_entry, work_entry = self.literary_entries[0]
-                    author_entry.delete(0, tk.END)
-                    work_entry.delete(0, tk.END)
-                    
-                    if isinstance(literary_sources, list) and len(literary_sources) > 0:
-                        if isinstance(literary_sources[0], dict):
-                            author_entry.insert(0, literary_sources[0].get('Autor', ''))
-                            work_entry.insert(0, literary_sources[0].get('Werk', ''))
-                        elif isinstance(literary_sources[0], str):
-                            author_entry.insert(0, literary_sources[0])
-                    
-                    # Zusätzliche Felder für weitere Quellen hinzufügen
-                    for i in range(1, len(literary_sources)):
-                        if isinstance(literary_sources[i], dict):
-                            author = literary_sources[i].get('Autor', '')
-                            work = literary_sources[i].get('Werk', '')
-                            if author or work:  # Nur nicht-leere Einträge
-                                self.AddLiteraryField(author, work)
-                        elif isinstance(literary_sources[i], str):
-                            self.AddLiteraryField(literary_sources[i], '')
+            self.delete_button.config(state=tk.DISABLED)
+            self.status_label.config(text=Messages.NO_SELECTION)
 
-    def FilterTable(self, event):
-        """Filtert die Tabelle nach dem Suchbegriff und durchsucht alle Felder"""
-        search_term = self.search_var.get().lower()
+    def OnDoubleClick(self, event=None):
+        """Wird bei Doppelklick auf ein Tabellen-Item aufgerufen"""
+        selection = self.tree.selection()
+        if selection:
+            # Zum ersten Tab wechseln
+            self.notebook.select(0)
+
+    def OnTabChanged(self, event=None):
+        """Wird aufgerufen, wenn ein Tab gewechselt wird"""
+        if hasattr(self.__class__, 'last_selected_tab'):
+            self.__class__.last_selected_tab = self.notebook.index(self.notebook.select())
+
+    def SortColumn(self, col):
+        """Sortiert die Tabelle alphabetisch nach der angeklickten Spalte"""
+        # Alle aktuellen Daten aus der Tabelle holen
+        data = []
+        for child in self.tree.get_children():
+            data.append((child, self.tree.item(child)['values']))
         
-        # Alle Einträge entfernen
+        # Bestimme Sortierrichtung
+        if self.sort_column == col:
+            # Gleiche Spalte wieder geklickt - Richtung umkehren
+            self.sort_reverse = not self.sort_reverse
+        else:
+            # Neue Spalte - aufsteigend sortieren
+            self.sort_column = col
+            self.sort_reverse = False
+        
+        # Spaltenindex finden
+        col_index = self.tree['columns'].index(col)
+        
+        # Alphabetisch sortieren
+        def sort_key(item):
+            value = item[1][col_index]
+            # Konvertiere zu String und lowercase für case-insensitive Sortierung
+            return str(value).lower() if value else ''
+        
+        # Sortiere die Daten
+        data.sort(key=sort_key, reverse=self.sort_reverse)
+        
+        # Tabelle neu aufbauen
         for item in self.tree.get_children():
             self.tree.delete(item)
         
-        # Wenn kein Suchbegriff, zeige alle
-        if not search_term:
-            self.LoadTableData()
-            return
+        for item_id, values in data:
+            self.tree.insert('', tk.END, values=values)
         
-        # Gefilterte Daten hinzufügen
-        for roman in self.__app.romans:
-            # Durchsuche alle Werte im Dictionary rekursiv
-            if self.SearchInValues(roman, search_term):
-                self.tree.insert('', 'end', values=(
-                    roman.get('Name', ''),
-                    roman.get('Geburtsdatum', ''),
-                    roman.get('Sterbedatum', ''),
-                    roman.get('Todesursache', ''),
-                    roman.get('Familie', ''),
-                    roman.get('Häufigkeit Heirat', ''),
-                    roman.get('Anzahl Kinder', '')
-                ))
-        
-    def SearchInValues(self, obj, search_term):
-        """Rekursiv alle Werte in einem Objekt durchsuchen"""
-        # Für Dictionary-Objekte
-        if isinstance(obj, dict):
-            for value in obj.values():
-                if self.SearchInValues(value, search_term):
-                    return True
-                    
-        # Für Listen oder Tupel
-        elif isinstance(obj, (list, tuple)):
-            for item in obj:
-                if self.SearchInValues(item, search_term):
-                    return True
-        
-        # Für einfache Werte (Strings, Zahlen, etc.)
-        else:
-            return search_term in str(obj).lower()
-        
-        return False
+        # Visuelles Feedback für Sortierung
+        self.UpdateColumnHeaders(col)
 
-    def LoadTableData(self):
-        """Lädt alle Daten in die Tabelle"""
-        for roman in self.__app.romans:
-            self.tree.insert('', 'end', values=(
-                roman.get('Name', ''),
-                roman.get('Geburtsdatum', ''),
-                roman.get('Sterbedatum', ''),
-                roman.get('Todesursache', ''),
-                roman.get('Familie', ''),
-                roman.get('Häufigkeit Heirat', ''),
-                roman.get('Anzahl Kinder', '')
-            ))
-    
-    def SaveRomanTab(self, tab_name):
-        """Speichert die Änderungen eines Tabs für den aktuellen Römer mit Command-Pattern"""
-        if not self.__current_roman or not self.__app:
-            return
-
-        self.ResetErrorHighlighting()
-
-
-        # Abfrage ob Name vergeben wurde
-        name_value = self.basic_entries['Name'].get().strip()
-        if not name_value:
-            self.basic_entries['Name'].config(bg='#ffcccc')
-            messagebox.showwarning("Fehlender Eintrag für Name!", "Gib einen Namen an.")
-            return
+    def UpdateColumnHeaders(self, sorted_col):
+        """Aktualisiert die Spaltenüberschriften mit Sortier-Indikatoren"""
+        # Sortier-Symbole
+        arrow_up = ' ▲'
+        arrow_down = ' ▼'
         
-        # Command-Manager aus der App holen
-        command_manager = self.__app.command_manager
-        
-        changes_made = False
-
-        new_properties = {
-        "Name": self.basic_entries['Name'].get(),
-        "Männer": [entry.get() for entry in self.marriage_entries],
-        "Kinder": [entry.get() for entry in self.children_entries],
-        "Geburtsdatum": self.basic_entries['Geburtsdatum'].get(),
-        "Sterbedatum": self.basic_entries['Sterbedatum'].get(),
-        "Todesursache": self.basic_entries['Todesursache'].get(),
-        "Familie": self.family_entries['Familie'].get(),
-        "Vorfahren": self.family_entries['Vorfahren'].get(),
-        "Verlobung": self.engagement_var.get(),
-        "Häufigkeit Heirat": self.marriage_frequency_var.get(),
-        "Anzahl Kinder": self.children_count_var.get(),
-        "Individuelle Besonderheiten": {
-            "Auftreten": self.special_entries['Auftreten'].get(),
-            "Kleidung": self.special_entries['Kleidung'].get(),
-            "Schmuck": self.special_entries['Schmuck'].get()
-        },
-        "Inszenierung": {
-            "Öffentlich": self.inszenierung_entries['Öffentlich'].get(),
-            "Privat": self.inszenierung_entries['Privat'].get()
-        },
-        "Ehrungen": {
-            "Augusta-Titel": self.honors_entries['Augusta-Titel'].get(),
-            "Carpentum-Recht": self.honors_entries['Carpentum-Recht'].get(),
-            "Weitere": self.honors_entries['Weitere'].get()
-        },
-        "Quellen": {
-            "Divinisierung": self.sources_entries['Divinisierung'].get(),
-            "Bestattung": self.sources_entries['Bestattung'].get(),
-            "Archäologische Quellen": self.sources_entries['Archäologische Quellen'].get(),
-            "Münzen": self.sources_entries['Münzen'].get(),
-            "Inschriften": self.sources_entries['Inschriften'].get(),
-        }
-        }
-
-        # Literarische Quellen speziell behandeln
-        literary_sources = []
-        for author_entry, work_entry in self.literary_entries:
-            author = author_entry.get()
-            work = work_entry.get()
-            if author or work:  # Nur hinzufügen, wenn mindestens ein Feld nicht leer ist
-                literary_sources.append({
-                    "Autor": author,
-                    "Werk": work
-                })
-
-        # Literarische Quellen zum Quellen-Dictionary hinzufügen
-        new_properties["Quellen"]["Literarische Quellen"] = literary_sources
-        
-        # Konvertiere beide Dictionaries in JSON-Strings und vergleiche diese
-        current_json = json.dumps(self.__current_roman.properties, sort_keys=True)
-        new_json = json.dumps(new_properties, sort_keys=True)
-        
-        if current_json != new_json:
-            command_manager = self.__app.command_manager
-            command = EditRomanCommand(self.__current_roman, new_properties)
-            command_manager.ExecuteCommand(command)
+        for col in self.tree['columns']:
+            # Aktuellen Text ohne Pfeile holen
+            current_text = self.tree.heading(col)['text']
+            clean_text = current_text.replace(arrow_up, '').replace(arrow_down, '')
             
-            # Nach dem Speichern die Tabelle aktualisieren
-            self.UpdateTableRow()
-            self.__app.file_modified = True
-            self.__app.menu_manager.UpdateEditMenuState()
+            # Neuen Text mit Pfeil setzen, wenn dies die sortierte Spalte ist
+            if col == sorted_col:
+                if self.sort_reverse:
+                    new_text = clean_text + arrow_down
+                else:
+                    new_text = clean_text + arrow_up
+            else:
+                new_text = clean_text
             
-            # Bestätigungsmeldung anzeigen
-            logger.info(f"Änderungen am Tab '{tab_name}' für Römer '{self.__current_roman.get('Name', '')}' gespeichert")
-
-    def ResetErrorHighlighting(self):
-        """Rotes Highlighten reseten"""
-        for entry in self.basic_entries.values():
-            entry.config(bg=AppColors.CONTENT_FRAME)
-
-    def UpdateTableRow(self):
-        """Aktualisiert die ausgewählte Zeile in der Tabelle"""
-        selection = self.tree.selection()
-        if not selection:
-            return
-            
-        # Aktualisiere die Werte in der Tabelle
-        item_id = selection[0]
-        self.tree.item(item_id, values=(
-            self.__current_roman.get('Name', ''),
-            self.__current_roman.get('Geburtsdatum', ''),
-            self.__current_roman.get('Sterbedatum', ''),
-            self.__current_roman.get('Todesursache', ''),
-            self.__current_roman.get('Familie', ''),
-            self.__current_roman.get('Häufigkeit Heirat', ''),
-            self.__current_roman.get('Anzahl Kinder', '')
-        ))
-
-    def CreateFamilyTab(self):
-        """Erstellt die Familie-Registerkarte"""
-        for widget in self.tab_family.winfo_children():
-            widget.destroy()
-            
-        form_frame = tk.Frame(self.tab_family, bg=AppColors.CONTENT_FRAME)
-        form_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=(5, 10))
-
-        # Familie und Vorfahren
-        fields = ["Familie", "Vorfahren"]
-        
-        self.family_entries = {}
-
-        for i, label_text in enumerate(fields):
-            label = tk.Label(
-                form_frame,
-                text=f"{label_text}:",
-                font=Fonts.SUBMENU,
-                bg=AppColors.CONTENT_FRAME,
-                fg=AppColors.KU_COLOR,
-                anchor=tk.W
-            )
-            label.grid(row=i, column=0, sticky=tk.W, padx=10, pady=5)
-            
-            entry = tk.Entry(form_frame, width=40, font=Fonts.STANDARD, fg=AppColors.KU_COLOR, bd=1, relief=tk.SOLID)
-            entry.grid(row=i, column=1, sticky=tk.EW, padx=5, pady=5)
-            
-            self.family_entries[label_text] = entry
-        
-        # Speicher-Button
-        save_frame = tk.Frame(form_frame, bg=AppColors.CONTENT_FRAME)
-        save_frame.grid(row=3, column=1, sticky=tk.SE, pady=10)
-        
-        save_button = ttk.Button(save_frame, text='Änderungen speichern', command=lambda: self.SaveRomanTab('family'))
-        save_button.pack(side=tk.RIGHT, padx=5)
-        
-        # Form-Frame dehnbar machen
-        form_frame.columnconfigure(1, weight=1)
-
-    def OnTreeClick(self, event):
-        """An- und Abwahl von Optionen der Tabelle"""
-        region = self.tree.identify("region", event.x, event.y)
-        if region == "cell" or region == "tree":
-            item_id = self.tree.identify_row(event.y)
-            if item_id:
-                if item_id in self.tree.selection() and len(self.tree.selection()) == 1:
-                    if hasattr(self, '_last_clicked_item') and self._last_clicked_item == item_id:
-                        self.tree.selection_remove(item_id)
-                        self.__current_roman = None
-                        self.ClearDetails()
-                        self.UpdateButtonStates()
-                    
-                    self._last_clicked_item = item_id
-
-    def ClearDetails(self):
-        """Löscht Detailfelder"""
-        # Basic tab
-        for entry in self.basic_entries.values():
-            entry.delete(0, tk.END)
-        
-        # Marriage tab
-        self.marriage_frequency_var.set("")
-        self.engagement_var.set("")
-        for entry in self.marriage_entries:
-            entry.delete(0, tk.END)
-        
-        # Children tab
-        self.children_count_var.set("")
-        for entry in self.children_entries:
-            entry.delete(0, tk.END)
-
-        # Familie
-        for entry in self.family_entries.values():
-            entry.delete(0, tk.END)
-        for entry in self.inszenierung_entries.values():
-            entry.delete(0, tk.END)
-
-        # Ehrungen
-        for entry in self.honors_entries.values():
-            entry.delete(0, tk.END)
-
-        # Sources tab
-        for entry in self.sources_entries.values():
-            entry.delete(0, tk.END)
-        
-        # In ClearDetails:
-        # Literary Sources tab
-        if hasattr(self, 'literary_entries') and hasattr(self, 'literary_frames'):
-            # Entferne alle zusätzlichen Felder und behalte nur das erste
-            if len(self.literary_entries) > 1:
-                for i in range(len(self.literary_entries) - 1, 0, -1):
-                    self.literary_frames[i].destroy()
-                
-                # Nur das erste Feld behalten, Rest entfernen
-                self.literary_entries = [self.literary_entries[0]]
-                self.literary_frames = [self.literary_frames[0]]
-            
-            # Erstes Feld leeren
-            if self.literary_entries:
-                author_entry, work_entry = self.literary_entries[0]
-                author_entry.delete(0, tk.END)
-                work_entry.delete(0, tk.END)
-
-    def UpdateButtonStates(self):
-        """Aktivieren/Deaktivieren der Buttons"""
-        if self.__current_roman:
-            self.create_button.config(state=tk.DISABLED)
-            self.delete_button.config(state=tk.NORMAL)
-        else:
-            self.create_button.config(state=tk.NORMAL)
-            self.delete_button.config(state=tk.DISABLED)
+            # Heading aktualisieren
+            self.tree.heading(col, text=new_text)
 
     def CreateNewRoman(self):
-        pass
+        """Erstellt einen neuen Römer"""
+        print(f"{Icons.ADD} Neuen Römer erstellen...")
 
     def DeleteSelectedRoman(self):
+        """Löscht den ausgewählten Römer"""
+        print(f"{Icons.DELETE} Römer löschen...")
+
+    def SaveChanges(self):
+        """Speichert die Änderungen"""
+        print(f"{Icons.SAVE} {Messages.SAVE_SUCCESS}")
+
+    def ExportData(self):
+        """Exportiert die Daten"""
+        print(f"{Icons.EXPORT} Daten exportieren...")
+
+    def ClearDetails(self):
+        """Leert alle Detailfelder"""
         pass
 
-    def CreateSpecialTab(self):
-        """Erstellt die Besonderheiten-Registerkarte"""
-        for widget in self.tab_special.winfo_children():
-            widget.destroy()
-        
-        form_frame = tk.Frame(self.tab_special, bg=AppColors.CONTENT_FRAME)
-        form_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=(5, 10))
-
-        # Überschrift für Besonderheiten
-        header_label = tk.Label(
-            form_frame,
-            text="Individuelle Besonderheiten",
-            font=Fonts.STANDARD_BOLD,
-            bg=AppColors.CONTENT_FRAME,
-            fg=AppColors.KU_COLOR,
-            anchor=tk.W
-        )
-        header_label.grid(row=0, column=0, columnspan=2, sticky=tk.W, padx=10, pady=5)
-        
-        # Besonderheiten-Felder
-        special_fields = ["Auftreten", "Kleidung", "Schmuck"]
-        self.special_entries = {}
-        
-        for i, field_key in enumerate(special_fields):
-            label = tk.Label(
-                form_frame,
-                text=f"{field_key}:",
-                font=Fonts.SUBMENU,
-                bg=AppColors.CONTENT_FRAME,
-                fg=AppColors.KU_COLOR,
-                anchor=tk.W
-            )
-            label.grid(row=i+1, column=0, sticky=tk.W, padx=10, pady=5)
-            
-            entry = tk.Entry(form_frame, width=40, font=Fonts.STANDARD, fg=AppColors.KU_COLOR, bd=1, relief=tk.SOLID)
-            entry.grid(row=i+1, column=1, sticky=tk.EW, padx=5, pady=5)
-            
-            self.special_entries[field_key] = entry
-        
-        # Überschrift für Inszenierung
-        inszenierung_label = tk.Label(
-            form_frame,
-            text="Inszenierung",
-            font=Fonts.STANDARD_BOLD,
-            bg=AppColors.CONTENT_FRAME,
-            fg=AppColors.KU_COLOR,
-            anchor=tk.W
-        )
-        inszenierung_label.grid(row=len(special_fields)+1, column=0, columnspan=2, sticky=tk.W, padx=10, pady=(15, 5))
-        
-        # Inszenierung-Felder
-        inszenierung_fields = ["Öffentlich", "Privat"]
-        self.inszenierung_entries = {}
-        
-        for i, field_key in enumerate(inszenierung_fields):
-            label = tk.Label(
-                form_frame,
-                text=f"{field_key}:",
-                font=Fonts.SUBMENU,
-                bg=AppColors.CONTENT_FRAME,
-                fg=AppColors.KU_COLOR,
-                anchor=tk.W
-            )
-            label.grid(row=len(special_fields)+2+i, column=0, sticky=tk.W, padx=10, pady=5)
-            
-            entry = tk.Entry(form_frame, width=40, font=Fonts.STANDARD, fg=AppColors.KU_COLOR, bd=1, relief=tk.SOLID)
-            entry.grid(row=len(special_fields)+2+i, column=1, sticky=tk.EW, padx=5, pady=5)
-            
-            self.inszenierung_entries[field_key] = entry
-        
-        # Speicher-Button
-        save_frame = tk.Frame(form_frame, bg=AppColors.CONTENT_FRAME)
-        save_frame.grid(row=len(special_fields)+len(inszenierung_fields)+2, column=0, columnspan=2, sticky=tk.SE, pady=10)
-        
-        save_button = ttk.Button(save_frame, text="Änderungen speichern", command=lambda: self.SaveRomanTab("special"))
-        save_button.pack(side=tk.RIGHT, padx=5)
-        
-        # Form-Frame dehnbar machen
-        form_frame.columnconfigure(1, weight=1)
-
-    def CreateHonorsTab(self):
-        """Erstellt die Ehrungen-Registerkarte"""
-        for widget in self.tab_honors.winfo_children():
-            widget.destroy()
-        
-        form_frame = tk.Frame(self.tab_honors, bg=AppColors.CONTENT_FRAME)
-        form_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=(5, 10))
-
-        # Formularfelder für Ehrungen
-        fields = ['Augusta-Titel', 'Carpentum-Recht', 'Weitere']
-
-        self.honors_entries = {}
-        
-        for i, field_key in enumerate(fields):
-            label = tk.Label(
-                form_frame,
-                text=f'{field_key}:',
-                font=Fonts.SUBMENU,
-                bg=AppColors.CONTENT_FRAME,
-                fg=AppColors.KU_COLOR,
-                anchor=tk.W
-            )
-            label.grid(row=i, column=0, sticky=tk.W, padx=10, pady=5)
-            entry = tk.Entry(form_frame, width=40, font=Fonts.STANDARD, fg=AppColors.KU_COLOR, bd=1, relief=tk.SOLID)
-            entry.grid(row=i, column=1, sticky=tk.EW, padx=5, pady=5)
-            
-            self.honors_entries[field_key] = entry
-        
-        # Speicher-Button
-        save_frame = tk.Frame(form_frame, bg=AppColors.CONTENT_FRAME)
-        save_frame.grid(row=len(fields), column=0, columnspan=2, sticky=tk.SE, pady=10)
-        
-        save_button = ttk.Button(save_frame, text='Änderungen speichern', command=lambda: self.SaveRomanTab('honors'))
-        save_button.pack(side=tk.RIGHT, padx=5)
-        
-        # Form-Frame dehnbar machen
-        form_frame.columnconfigure(1, weight=1)
-
-    def CreateSourcesTab(self):
-        """Erstellt die Quellen-Registerkarte"""
-        for widget in self.tab_sources.winfo_children():
-            widget.destroy()
-        
-        form_frame = tk.Frame(self.tab_sources, bg=AppColors.CONTENT_FRAME)
-        form_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=(5, 10))
-
-        # Formularfelder für Quellen
-        fields = ['Divinisierung', 'Bestattung', 'Archäologische Quellen', 'Münzen', 'Inschriften']
-
-        self.sources_entries = {}
-        
-        for i, field_key in enumerate(fields):
-            label = tk.Label(
-                form_frame,
-                text=f'{field_key}:',
-                font=Fonts.SUBMENU,
-                bg=AppColors.CONTENT_FRAME,
-                fg=AppColors.KU_COLOR,
-                anchor=tk.W
-            )
-            label.grid(row=i, column=0, sticky=tk.W, padx=10, pady=5)
-            entry = tk.Entry(form_frame, width=40, font=Fonts.STANDARD, fg=AppColors.KU_COLOR, bd=1, relief=tk.SOLID)
-            entry.grid(row=i, column=1, sticky=tk.EW, padx=5, pady=5)
-            
-            self.sources_entries[field_key] = entry
-        
-        # Speicher-Button
-        save_frame = tk.Frame(form_frame, bg=AppColors.CONTENT_FRAME)
-        save_frame.grid(row=len(fields)+1, column=0, columnspan=2, sticky=tk.SE, pady=10)
-        
-        save_button = ttk.Button(save_frame, text='Änderungen speichern', command=lambda: self.SaveRomanTab('sources'))
-        save_button.pack(side=tk.RIGHT, padx=5)
-        
-        # Form-Frame dehnbar machen
-        form_frame.columnconfigure(1, weight=1)
-
-    def CreateLiterarySourcesTab(self):
-        """Erstellt die Registerkarte für literarische Quellen"""
-        for widget in self.tab_literary_sources.winfo_children():
-            widget.destroy()
-        
-        # Hauptcontainer mit Scrollbar
-        container = tk.Frame(self.tab_literary_sources, bg=AppColors.CONTENT_FRAME)
-        container.pack(fill=tk.BOTH, expand=True)
-        
-        # Scrollbar erstellen
-        y_scrollbar = ttk.Scrollbar(container)
-        y_scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
-        
-        # Canvas für scrollbaren Inhalt
-        canvas = tk.Canvas(container, bg=AppColors.CONTENT_FRAME, yscrollcommand=y_scrollbar.set, highlightthickness=0)
-        canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=10, pady=(5, 10))
-        
-        # Scrollbar mit Canvas verbinden
-        y_scrollbar.config(command=canvas.yview)
-        
-        # Frame für den eigentlichen Inhalt
-        self.form_frame = tk.Frame(canvas, bg=AppColors.CONTENT_FRAME)  # Hier wird self.form_frame gesetzt
-        
-        # Frame im Canvas platzieren
-        canvas_window = canvas.create_window((0, 0), window=self.form_frame, anchor=tk.NW)
-        
-        # Spaltenüberschriften in grid-Struktur
-        header_author = tk.Label(
-            self.form_frame,
-            text="Autor",
-            font=Fonts.STANDARD_BOLD,
-            bg=AppColors.CONTENT_FRAME,
-            fg=AppColors.KU_COLOR,
-            anchor=tk.W
-        )
-        header_author.grid(row=1, column=1, sticky=tk.W, padx=10, pady=(0, 5))
-
-        header_work = tk.Label(
-            self.form_frame,
-            text="Werk",
-            font=Fonts.STANDARD_BOLD,
-            bg=AppColors.CONTENT_FRAME,
-            fg=AppColors.KU_COLOR,
-            anchor=tk.W
-        )
-        header_work.grid(row=1, column=2, sticky=tk.W, padx=10, pady=(0, 5))
-        
-        self.literary_entries = []
-        
-        # Erstes literarisches Quellen-Feld hinzufügen
-        self.AddLiterarySourceField("", "")
-        
-        # Button-Bereich am unteren Rand
-        buttons_row = 100  # Hohe Zahl, um sicherzustellen, dass es am Ende ist
-        
-        # 'Quelle hinzufügen'-Button (links)
-        add_button = ttk.Button(
-            self.form_frame, 
-            text='Quelle hinzufügen', 
-            command=lambda: self.AddLiterarySourceField("", "")
-        )
-        add_button.grid(row=buttons_row, column=1, sticky=tk.W, padx=10, pady=10)
-        
-        # Speicher-Button (rechts)
-        save_button = ttk.Button(
-            self.form_frame, 
-            text='Änderungen speichern', 
-            command=lambda: self.SaveRomanTab('literary_sources')
-        )
-        save_button.grid(row=buttons_row, column=2, sticky=tk.E, padx=10, pady=10)
-        
-        # Konfiguriere den Canvas für das Scrolling
-        def update_scrollregion(event):
-            canvas.configure(scrollregion=canvas.bbox("all"))
-            # Stellt sicher, dass der Frame die volle Breite des Canvas einnimmt
-            canvas.itemconfig(canvas_window, width=canvas.winfo_width())
-        
-        # Wenn sich die Größe des form_frame ändert, aktualisiere die Scrollregion
-        self.form_frame.bind("<Configure>", update_scrollregion)
-        
-        # Mausrad-Binding für Scrolling
-        def on_mousewheel(event):
-            canvas.yview_scroll(int(-1*(event.delta/120)), "units")
-        
-        # Mausrad-Binding hinzufügen
-        canvas.bind("<MouseWheel>", on_mousewheel)
-        
-        # Wenn sich die Größe des Canvas ändert, aktualisiere die Breite des inneren Frames
-        def on_canvas_configure(event):
-            canvas.itemconfig(canvas_window, width=event.width)
-        
-        canvas.bind("<Configure>", on_canvas_configure)
-
-    def AddLiterarySourceField(self, author_value="", work_value=""):
-        """Fügt ein Feld für literarische Quellen direkt im form_frame hinzu"""
-        i = len(self.literary_entries)
-        row_index = i + 2
-
-        # Nummerierung am Rand
-        index_label = tk.Label(
-            self.form_frame,
-            text=f"{i+1}:",
-            width=2,
-            font=Fonts.STANDARD,
-            bg=AppColors.CONTENT_FRAME,
-            fg=AppColors.KU_COLOR,
-            anchor=tk.E
-        )
-        index_label.grid(row=row_index, column=0, sticky="e", padx=(5, 0), pady=2)
-
-        # Autor
-        author_entry = tk.Entry(
-            self.form_frame,
-            font=Fonts.STANDARD,
-            fg=AppColors.KU_COLOR,
-            bd=1,
-            relief=tk.SOLID
-        )
-        author_entry.grid(row=row_index, column=1, sticky="ew", padx=5, pady=2)
-        if author_value:
-            author_entry.insert(0, author_value)
-
-        # Werk
-        work_entry = tk.Entry(
-            self.form_frame,
-            font=Fonts.STANDARD,
-            fg=AppColors.KU_COLOR,
-            bd=1,
-            relief=tk.SOLID
-        )
-        
-        # Wenn es das erste Element ist, verwende columnspan=2, um zwei Spalten zu überspannen
-        if i == 0:
-            work_entry.grid(row=row_index, column=2, columnspan=2, sticky="ew", padx=5, pady=2)
-        else:
-            work_entry.grid(row=row_index, column=2, sticky="ew", padx=5, pady=2)
-            
-            # Delete-Button nur für Elemente nach dem ersten
-            delete_button = tk.Button(
-                self.form_frame,
-                text="✕",
-                font=("Arial", 8, "bold"),
-                fg=AppColors.KU_COLOR,
-                bg=AppColors.CONTENT_FRAME,
-                bd=1,
-                padx=5,
-                relief=tk.SOLID,
-                cursor="hand2"
-            )
-            delete_button.grid(row=row_index, column=3, padx=(5, 0), pady=2)
-
-            # Wichtig: Index im Handler korrekt binden
-            current_index = i
-            delete_button.configure(
-                command=lambda idx=current_index: self.DeleteLiterarySourceField(idx)
-            )
-
-        self.literary_entries.append((index_label, author_entry, work_entry))
-        return (author_entry, work_entry)
-
-    def DeleteLiterarySourceField(self, index):
-        """Entfernt ein literarisches Quellenfeld und reorganisiert die verbleibenden Felder"""
-        if index < 0 or index >= len(self.literary_entries):
-            return
-                
-        # Entferne die Widgets des zu löschenden Eintrags
-        index_label, author_entry, work_entry = self.literary_entries[index]
-        index_label.destroy()
-        author_entry.destroy()
-        work_entry.destroy()
-        
-        # Entferne auch den Delete-Button
-        for widget in self.form_frame.grid_slaves(row=index+2, column=3):
-            if isinstance(widget, tk.Button) and widget["text"] == "✕":
-                widget.destroy()
-        
-        # Entferne den Eintrag aus der Liste
-        self.literary_entries.pop(index)
-        
-        # Positioniere alle Einträge neu und aktualisiere die Nummerierung
-        for i, (label, author, work) in enumerate(self.literary_entries):
-            row_index = i + 2
-            label.configure(text=f"{i+1}:")
-            label.grid(row=row_index, column=0, sticky="e", padx=(5, 0), pady=2)
-            author.grid(row=row_index, column=1, sticky="ew", padx=5, pady=2)
-            
-            # Das erste Element überspannt zwei Spalten
-            if i == 0:
-                work.grid(row=row_index, column=2, columnspan=2, sticky="ew", padx=5, pady=2)
-            else:
-                work.grid(row=row_index, column=2, sticky="ew", padx=5, pady=2)
-            
-            # Lösche alle alten Delete-Buttons in dieser Zeile
-            for widget in self.form_frame.grid_slaves(row=row_index, column=3):
-                if isinstance(widget, tk.Button) and widget["text"] == "✕":
-                    widget.destroy()
-            
-            # Erstelle neue Delete-Buttons (außer für den ersten Eintrag)
-            if i > 0:
-                delete_button = tk.Button(
-                    self.form_frame,
-                    text="✕",
-                    font=("Arial", 8, "bold"),
-                    fg=AppColors.KU_COLOR,
-                    bg=AppColors.CONTENT_FRAME,
-                    bd=1,
-                    padx=5,
-                    relief=tk.SOLID,
-                    cursor="hand2"
-                )
-                delete_button.grid(row=row_index, column=3, padx=(5, 0), pady=2)
-                
-                # Wichtig: Index im Handler korrekt binden
-                current_index = i
-                delete_button.configure(
-                    command=lambda idx=current_index: self.DeleteLiterarySourceField(idx)
-                )
-
-    def RecreateLiteraryDeleteButtons(self):
-        """Aktualisiert alle Löschen-Buttons für literarische Quellen"""
-        # Zuerst Indizes der Labels aktualisieren
-        for i, frame in enumerate(self.literary_frames):
-            # Label aktualisieren
-            for child in frame.winfo_children():
-                if isinstance(child, tk.Label) and child.cget("width") == 2:
-                    child.config(text=f'{i+1}:')
-                
-                # Alte Buttons entfernen
-                if isinstance(child, tk.Button) and child.cget("text") == "✕":
-                    child.destroy()
-            
-            # Neuen Button erstellen (außer für das erste Feld)
-            if i > 0:
-                delete_button = tk.Button(
-                    frame,
-                    text="✕",
-                    font=("Arial", 8, "bold"),
-                    fg=AppColors.KU_COLOR,
-                    bg=AppColors.CONTENT_FRAME,
-                    bd=1,
-                    padx=5,
-                    relief=tk.SOLID,
-                    cursor="hand2"
-                )
-                delete_button.pack(side=tk.RIGHT, padx=(5, 0))
-                delete_button.configure(
-                    command=lambda f=frame, idx=i: 
-                        self.DeleteLiterarySourceField(f, idx)
-                )
+    def DisplayRoman(self):
+        pass
