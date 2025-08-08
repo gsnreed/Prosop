@@ -460,15 +460,27 @@ class CreateFrame(BaseContentFrame):
     def BindMouseWheelToWidget(self, widget, canvas):
         """Bindet Mausrad-Events an ein Widget und alle seine Kinder"""
         def on_mousewheel(event):
-            # Windows/MacOS
-            if event.delta:
-                canvas.yview_scroll(int(-1*(event.delta/120)), "units")
-            # Linux
-            else:
-                if event.num == 4:
-                    canvas.yview_scroll(-1, "units")
-                elif event.num == 5:
-                    canvas.yview_scroll(1, "units")
+            # Finde den Tab zu diesem Canvas
+            tab = None
+            for t in [self.tab_basic, self.tab_marriage, self.tab_children, 
+                    self.tab_family, self.tab_special, self.tab_honors, 
+                    self.tab_sources, self.tab_literary_sources]:
+                if hasattr(t, 'canvas') and t.canvas == canvas:
+                    tab = t
+                    break
+            
+            # Nur scrollen wenn es nötig ist
+            if tab and hasattr(tab, 'scroll_enabled') and tab.scroll_enabled:
+                # Windows/MacOS
+                if event.delta:
+                    canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+                # Linux
+                else:
+                    if event.num == 4:
+                        canvas.yview_scroll(-1, "units")
+                    elif event.num == 5:
+                        canvas.yview_scroll(1, "units")
+            
             return "break"
         
         # Binde Events an das Widget
@@ -652,6 +664,9 @@ class CreateFrame(BaseContentFrame):
         
         self.marriage_entries.append({'frame': marriage_frame, 'fields': fields})
 
+        if hasattr(self.tab_marriage, 'canvas'):
+            self.BindMouseWheelToWidget(marriage_frame, self.tab_marriage.canvas)
+
     def RemoveMarriageEntry(self, frame):
         """Entfernt einen Ehe-Eintrag"""
         # Finde und entferne aus Liste
@@ -808,8 +823,7 @@ class CreateFrame(BaseContentFrame):
         """Erstellt einen scrollbaren Bereich innerhalb eines Tabs"""
         # Container für Canvas und Scrollbar
         scroll_container = tk.Frame(tab, bg=AppColors.TAB_BG)
-        scroll_container.pack(fill=tk.BOTH, expand=True, padx=UIConstants.PADDING_LARGE, 
-                            pady=UIConstants.PADDING_LARGE)
+        scroll_container.pack(fill=tk.BOTH, expand=True)
         
         # Canvas
         canvas = tk.Canvas(scroll_container, bg=AppColors.TAB_BG, highlightthickness=0)
@@ -817,7 +831,6 @@ class CreateFrame(BaseContentFrame):
         
         # Scrollbar
         scrollbar = ttk.Scrollbar(scroll_container, orient=tk.VERTICAL, command=canvas.yview)
-        scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
         
         # Canvas mit Scrollbar verbinden
         canvas.configure(yscrollcommand=scrollbar.set)
@@ -826,50 +839,41 @@ class CreateFrame(BaseContentFrame):
         content_frame = tk.Frame(canvas, bg=AppColors.TAB_BG)
         canvas_window = canvas.create_window(0, 0, anchor=tk.NW, window=content_frame)
         
-        # Events
+        # Funktion zum Prüfen ob Scrolling nötig ist
+        def check_scroll_needed():
+            canvas.update_idletasks()
+            content_height = content_frame.winfo_reqheight()
+            canvas_height = canvas.winfo_height()
+            
+            if content_height > canvas_height:
+                # Scrollbar anzeigen
+                scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+                return True
+            else:
+                # Scrollbar verstecken
+                scrollbar.pack_forget()
+                return False
+        
+        # Events für Canvas-Größenanpassung
         def configure_scroll_region(event=None):
             canvas.configure(scrollregion=canvas.bbox("all"))
+            # Prüfe ob Scrollbar benötigt wird
+            tab.scroll_enabled = check_scroll_needed()
         
         def configure_canvas_width(event=None):
             canvas_width = event.width
             canvas.itemconfig(canvas_window, width=canvas_width)
+            # Prüfe ob Scrollbar benötigt wird
+            tab.scroll_enabled = check_scroll_needed()
         
-        # Scrollbar nur anzeigen wenn nötig
-        def check_scrollbar_visibility(event=None):
-            canvas.update_idletasks()
-            if content_frame.winfo_reqheight() <= canvas.winfo_height():
-                scrollbar.pack_forget()
-            else:
-                scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
-        
-        content_frame.bind('<Configure>', lambda e: [configure_scroll_region(e), check_scrollbar_visibility(e)])
+        content_frame.bind('<Configure>', configure_scroll_region)
         canvas.bind('<Configure>', configure_canvas_width)
         
-        # Mausrad-Unterstützung
-        def on_mousewheel(event):
-            # Windows/MacOS
-            if event.delta:
-                canvas.yview_scroll(int(-1*(event.delta/120)), "units")
-            # Linux
-            else:
-                if event.num == 4:
-                    canvas.yview_scroll(-1, "units")
-                elif event.num == 5:
-                    canvas.yview_scroll(1, "units")
-        
-        # Bind mousewheel to canvas and all its children
-        def bind_mousewheel(widget):
-            widget.bind("<MouseWheel>", on_mousewheel)  # Windows/MacOS
-            widget.bind("<Button-4>", on_mousewheel)    # Linux
-            widget.bind("<Button-5>", on_mousewheel)    # Linux
-        
-        bind_mousewheel(canvas)
-        bind_mousewheel(content_frame)
-        
-        # Speichere Referenzen für späteren Zugriff
+        # Speichere Referenzen
         tab.canvas = canvas
         tab.scrollbar = scrollbar
         tab.content_frame = content_frame
+        tab.scroll_enabled = False  # Initial kein Scrolling
 
     def UpdateButtonStates(self):
         """Aktualisiert die Button-Zustände"""
