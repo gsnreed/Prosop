@@ -1,4 +1,12 @@
 import sys
+import os
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except AttributeError:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
 
 # --- Konstanten und Konfiguration ---
 class AppConfig:
@@ -9,12 +17,10 @@ class AppConfig:
     MIN_WINDOW_SIZE = "1000x600"
     
     # Dateipfade
-    APP_ICON = './Pictures/KULogo.png'
-    UNIVERSITY_LOGO = './Pictures/KU.png'
-    LOG_DIR = './Log'
-    LOG_FILE = './utils/log.log'
-    EXPORT_DIR = './Export'
-    BACKUP_DIR = './Backup'
+    APP_ICON = resource_path('KULogo.png')
+    UNIVERSITY_LOGO = resource_path('KU.png')
+    LOG_DIR = resource_path('Log')
+    LOG_FILE = resource_path('utils/log.log')
     
     # Anwendungstexte
     MAIN_TITLE = 'Prosopographie der Julisch-Claudischen Kaiserzeit'

@@ -1,0 +1,7 @@
+10-08-2025 18:59:37 - utils.logger - INFO - Menüleiste eingerichtet.
+10-08-2025 18:59:37 - utils.logger - CRITICAL - Unbehandelte Ausnahme: couldn't open "Pictures/KU.png": no such file or directory
+10-08-2025 19:01:52 - utils.logger - INFO - Menüleiste eingerichtet.
+10-08-2025 19:01:52 - utils.logger - CRITICAL - Unbehandelte Ausnahme: couldn't open "Pictures/KU.png": no such file or directory
+10-08-2025 19:03:08 - utils.logger - INFO - Menüleiste eingerichtet.
+10-08-2025 19:03:08 - utils.logger - ERROR - Fehler beim Laden des Icons: couldn't open "C:\Users\z0047r5a\AppData\Local\Temp\_MEI194402\Pictures/KULogo.png": no such file or directory
+10-08-2025 19:03:08 - utils.logger - CRITICAL - Unbehandelte Ausnahme: couldn't open "Pictures/KU.png": no such file or directory

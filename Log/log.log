@@ -1,2 +1,5 @@
-02-08-2025 19:15:41 - Objects.Logger - INFO - Logger erfolgreich initialisiert
-Manuelle Log-Prüfung: Objects.Logger ist bereit.
+10-08-2025 19:05:40 - utils.logger - INFO - Menüleiste eingerichtet.
+10-08-2025 19:05:41 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+10-08-2025 19:05:41 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+10-08-2025 19:05:41 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+10-08-2025 19:05:41 - utils.logger - INFO - Anwendung gestartet

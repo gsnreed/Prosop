@@ -19500,3 +19500,62 @@
 10-08-2025 18:21:02 - utils.logger - INFO - Konvertiere Roman-Objekt 'marley' zu Dictionary
 10-08-2025 18:21:02 - utils.logger - INFO - Römische Persönlichkeiten erfolgreich gespeichert.
 10-08-2025 18:21:02 - utils.logger - INFO - Datei erfolgreich gespeichert: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/r.json
+10-08-2025 18:22:36 - utils.logger - INFO - Menüleiste eingerichtet.
+10-08-2025 18:22:36 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+10-08-2025 18:22:36 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+10-08-2025 18:22:36 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+10-08-2025 18:22:36 - utils.logger - INFO - Anwendung gestartet
+10-08-2025 18:22:38 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+10-08-2025 18:22:38 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+10-08-2025 18:22:38 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+10-08-2025 18:22:38 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+10-08-2025 18:22:38 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+10-08-2025 18:22:39 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+10-08-2025 18:22:39 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+10-08-2025 18:22:49 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name ''.
+10-08-2025 18:22:49 - utils.logger - INFO - Befehl ausgeführt: Roman hinzufügen: 
+10-08-2025 18:22:56 - utils.logger - INFO - Befehl ausgeführt: Roman entfernen: 
+10-08-2025 18:26:36 - utils.logger - INFO - Menüleiste eingerichtet.
+10-08-2025 18:26:37 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+10-08-2025 18:26:37 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+10-08-2025 18:26:37 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+10-08-2025 18:26:37 - utils.logger - INFO - Anwendung gestartet
+10-08-2025 18:26:38 - utils.logger - INFO - Content der Option 'Ansicht - Tabelle' wurde geladen.
+10-08-2025 18:26:38 - utils.logger - INFO - Option 'Tabelle' ausgewählt
+10-08-2025 18:26:38 - utils.logger - INFO - Navigation: Option 'Ansicht' ausgewählt
+10-08-2025 18:26:39 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+10-08-2025 18:26:39 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+10-08-2025 18:26:42 - utils.logger - INFO - Datei -> Öffnen ausgewählt
+10-08-2025 18:27:23 - utils.logger - INFO - Lade römische Persönlichkeiten aus JSON-Datei: C:/Users/z0047r5a/Downloads/test.json
+10-08-2025 18:27:23 - utils.logger - ERROR - Fehler beim Parsen der JSON-Datei: Expecting value: line 1 column 1 (char 0)
+10-08-2025 18:27:23 - utils.logger - INFO - Command-History gelöscht
+10-08-2025 18:27:23 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+10-08-2025 18:27:23 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+10-08-2025 18:27:23 - utils.logger - INFO - Datei erfolgreich geladen: C:/Users/z0047r5a/Downloads/test.json
+10-08-2025 18:27:23 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+10-08-2025 18:27:26 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name ''.
+10-08-2025 18:27:26 - utils.logger - INFO - Befehl ausgeführt: Roman hinzufügen: 
+10-08-2025 18:27:34 - utils.logger - INFO - Befehl ausgeführt: Roman bearbeiten: Lisa Behringer
+10-08-2025 18:27:40 - utils.logger - INFO - Datei -> Speichern ausgewählt
+10-08-2025 18:27:40 - utils.logger - INFO - Speichere 1 römische Persönlichkeiten in JSON-Datei: C:/Users/z0047r5a/Downloads/test.json
+10-08-2025 18:27:40 - utils.logger - INFO - Konvertiere Roman-Objekt 'Lisa Behringer' zu Dictionary
+10-08-2025 18:27:40 - utils.logger - INFO - Römische Persönlichkeiten erfolgreich gespeichert.
+10-08-2025 18:27:40 - utils.logger - INFO - Datei erfolgreich gespeichert: C:/Users/z0047r5a/Downloads/test.json
+10-08-2025 18:27:53 - utils.logger - INFO - Befehl ausgeführt: Roman bearbeiten: Lisa Behringer
+10-08-2025 18:41:40 - utils.logger - INFO - Menüleiste eingerichtet.
+10-08-2025 18:41:40 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+10-08-2025 18:41:40 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+10-08-2025 18:41:40 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+10-08-2025 18:41:40 - utils.logger - INFO - Anwendung gestartet
+10-08-2025 18:52:07 - utils.logger - INFO - Menüleiste eingerichtet.
+10-08-2025 18:52:08 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+10-08-2025 18:52:08 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+10-08-2025 18:52:08 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+10-08-2025 18:52:08 - utils.logger - INFO - Anwendung gestartet
+10-08-2025 18:54:36 - utils.logger - INFO - Menüleiste eingerichtet.
+10-08-2025 18:54:36 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+10-08-2025 18:54:36 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+10-08-2025 18:54:36 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+10-08-2025 18:54:36 - utils.logger - INFO - Anwendung gestartet
+10-08-2025 18:54:38 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+10-08-2025 18:54:38 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
