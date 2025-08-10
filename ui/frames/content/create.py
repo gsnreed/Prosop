@@ -1874,4 +1874,275 @@ class CreateFrame(BaseContentFrame):
         pass
 
     def DisplayRoman(self):
-        pass
+        """Zeigt die Daten des ausgewählten Römers in allen Feldern an"""
+        if self.__current_roman is None:
+            return
+        
+        # ========== GRUNDDATEN TAB ==========
+        # Einfache Textfelder
+        basic_fields_mapping = {
+            'Name': 'Name',
+            'Geburtsdatum': 'Geburtsdatum',
+            'Geburtsort': 'Geburtsort',
+            'Sterbedatum': 'Sterbedatum',
+            'Sterbeort': 'Sterbeort',
+            'Todesursache': 'Todesursache',
+            'Bemerkungen': 'Bemerkungen'
+        }
+        
+        for field_key, json_key in basic_fields_mapping.items():
+            if field_key in self.basic_fields:
+                widget = self.basic_fields[field_key]
+                value = self.__current_roman.get(json_key, '')
+                
+                if isinstance(widget, tk.Text):
+                    widget.delete('1.0', tk.END)
+                    widget.insert('1.0', value)
+                else:
+                    widget.delete(0, tk.END)
+                    widget.insert(0, value)
+        
+        # ========== EHEN TAB ==========
+        # Erst alle vorhandenen Ehen-Einträge löschen
+        for entry in self.marriage_entries[:]:
+            entry['frame'].destroy()
+        self.marriage_entries.clear()
+        
+        # Ehen aus den Daten laden
+        ehen = self.__current_roman.get('Ehen', [])
+        for ehe in ehen:
+            self.AddMarriageEntry(self.marriages_container)
+            # Letzten hinzugefügten Eintrag füllen
+            if self.marriage_entries:
+                last_entry = self.marriage_entries[-1]
+                fields = last_entry['fields']
+                
+                if 'Partner' in fields and 'Partner' in ehe:
+                    fields['Partner'].delete(0, tk.END)
+                    fields['Partner'].insert(0, ehe['Partner'])
+                
+                if 'Heiratsdatum' in fields and 'Heiratsdatum' in ehe:
+                    fields['Heiratsdatum'].delete(0, tk.END)
+                    fields['Heiratsdatum'].insert(0, ehe['Heiratsdatum'])
+                
+                if 'Heiratsort' in fields and 'Heiratsort' in ehe:
+                    fields['Heiratsort'].delete(0, tk.END)
+                    fields['Heiratsort'].insert(0, ehe['Heiratsort'])
+        
+        # ========== KINDER TAB ==========
+        # Erst alle vorhandenen Kinder-Einträge löschen
+        for entry in self.children_entries[:]:
+            entry['frame'].destroy()
+        self.children_entries.clear()
+        
+        # Kinder aus den Daten laden
+        kinder = self.__current_roman.get('Kinder', [])
+        for kind in kinder:
+            self.AddChildEntry(self.children_container)
+            # Letzten hinzugefügten Eintrag füllen
+            if self.children_entries:
+                last_entry = self.children_entries[-1]
+                fields = last_entry['fields']
+                
+                if 'Name' in fields and 'Name' in kind:
+                    fields['Name'].delete(0, tk.END)
+                    fields['Name'].insert(0, kind['Name'])
+                
+                if 'Geschlecht' in fields and 'Geschlecht' in kind:
+                    fields['Geschlecht'].set(kind['Geschlecht'])
+                
+                if 'Geburtsjahr' in fields and 'Geburtsjahr' in kind:
+                    fields['Geburtsjahr'].delete(0, tk.END)
+                    fields['Geburtsjahr'].insert(0, kind['Geburtsjahr'])
+                
+                if 'Bemerkungen' in fields and 'Bemerkungen' in kind:
+                    fields['Bemerkungen'].delete('1.0', tk.END)
+                    fields['Bemerkungen'].insert('1.0', kind['Bemerkungen'])
+        
+        # ========== FAMILIE TAB ==========
+        family_fields_mapping = {
+            'Vater': 'Vater',
+            'Mutter': 'Mutter',
+            'Geschwister': 'Geschwister',
+            'Vorfahren': 'Vorfahren',
+            'Bemerkungen': 'Familienbemerkungen'
+        }
+        
+        for field_key, json_key in family_fields_mapping.items():
+            if field_key in self.family_fields:
+                widget = self.family_fields[field_key]
+                value = self.__current_roman.get(json_key, '')
+                
+                if isinstance(widget, tk.Text):
+                    widget.delete('1.0', tk.END)
+                    widget.insert('1.0', value)
+                else:
+                    widget.delete(0, tk.END)
+                    widget.insert(0, value)
+        
+        # ========== BESONDERHEITEN TAB ==========
+        besonderheiten = self.__current_roman.get('Individuelle Besonderheiten', {})
+        
+        # Äußere Erscheinung
+        if 'Auftreten' in self.special_fields:
+            self.special_fields['Auftreten'].delete(0, tk.END)
+            self.special_fields['Auftreten'].insert(0, besonderheiten.get('Auftreten', ''))
+        
+        if 'Kleidung' in self.special_fields:
+            self.special_fields['Kleidung'].delete(0, tk.END)
+            self.special_fields['Kleidung'].insert(0, besonderheiten.get('Kleidung', ''))
+        
+        if 'Schmuck' in self.special_fields:
+            self.special_fields['Schmuck'].delete(0, tk.END)
+            self.special_fields['Schmuck'].insert(0, besonderheiten.get('Schmuck', ''))
+        
+        # Inszenierung
+        inszenierung = besonderheiten.get('Inszenierung', {})
+        
+        if 'Öffentlich' in self.special_fields:
+            self.special_fields['Öffentlich'].delete('1.0', tk.END)
+            self.special_fields['Öffentlich'].insert('1.0', inszenierung.get('Öffentlich', ''))
+            if self.special_fields['Öffentlich'].get('1.0', 'end-1c'):
+                self.special_fields['Öffentlich'].config(fg=AppColors.INPUT_FG)
+        
+        if 'Privat' in self.special_fields:
+            self.special_fields['Privat'].delete('1.0', tk.END)
+            self.special_fields['Privat'].insert('1.0', inszenierung.get('Privat', ''))
+            if self.special_fields['Privat'].get('1.0', 'end-1c'):
+                self.special_fields['Privat'].config(fg=AppColors.INPUT_FG)
+        
+        if 'Bemerkungen' in self.special_fields:
+            self.special_fields['Bemerkungen'].delete('1.0', tk.END)
+            self.special_fields['Bemerkungen'].insert('1.0', besonderheiten.get('Bemerkungen', ''))
+        
+        # ========== EHRUNGEN TAB ==========
+        ehrungen = self.__current_roman.get('Ehrungen', {})
+        
+        # Augusta-Titel
+        augusta_value = ehrungen.get('Augusta-Titel', '')
+        if 'Augusta-Titel-Status' in self.honors_fields:
+            # Extrahiere Status (JA/NEIN) aus dem Text
+            if augusta_value.upper().startswith('JA'):
+                self.honors_fields['Augusta-Titel-Status'].set('Ja')
+            elif augusta_value.upper().startswith('NEIN'):
+                self.honors_fields['Augusta-Titel-Status'].set('Nein')
+            else:
+                self.honors_fields['Augusta-Titel-Status'].set('Unbekannt')
+        
+        if 'Augusta-Titel-Details' in self.honors_fields:
+            # Entferne Placeholder wenn vorhanden
+            self.honors_fields['Augusta-Titel-Details'].delete('1.0', tk.END)
+            # Füge den vollen Text ein
+            self.honors_fields['Augusta-Titel-Details'].insert('1.0', augusta_value)
+            if augusta_value:
+                self.honors_fields['Augusta-Titel-Details'].config(fg=AppColors.INPUT_FG)
+        
+        # Carpentum-Recht
+        carpentum_value = ehrungen.get('Carpentum-Recht', '')
+        if 'Carpentum-Recht-Status' in self.honors_fields:
+            if carpentum_value.upper().startswith('JA'):
+                self.honors_fields['Carpentum-Recht-Status'].set('Ja')
+            elif carpentum_value.upper().startswith('NEIN'):
+                self.honors_fields['Carpentum-Recht-Status'].set('Nein')
+            else:
+                self.honors_fields['Carpentum-Recht-Status'].set('Unbekannt')
+        
+        if 'Carpentum-Recht-Details' in self.honors_fields:
+            self.honors_fields['Carpentum-Recht-Details'].delete('1.0', tk.END)
+            self.honors_fields['Carpentum-Recht-Details'].insert('1.0', carpentum_value)
+            if carpentum_value:
+                self.honors_fields['Carpentum-Recht-Details'].config(fg=AppColors.INPUT_FG)
+        
+        # Weitere Ehrungen
+        if 'Weitere' in self.honors_fields:
+            self.honors_fields['Weitere'].delete('1.0', tk.END)
+            weitere_value = ehrungen.get('Weitere', '')
+            self.honors_fields['Weitere'].insert('1.0', weitere_value)
+            if weitere_value:
+                self.honors_fields['Weitere'].config(fg=AppColors.INPUT_FG)
+        
+        # ========== QUELLEN TAB ==========
+        quellen = self.__current_roman.get('Quellen', {})
+        
+        quellen_fields_mapping = {
+            'Divinisierung': 'Divinisierung',
+            'Bestattung': 'Bestattung',
+            'Archäologische Quellen': 'Archäologische Quellen',
+            'Münzen': 'Münzen',
+            'Inschriften': 'Inschriften'
+        }
+        
+        for field_key, json_key in quellen_fields_mapping.items():
+            if field_key in self.sources_fields:
+                widget = self.sources_fields[field_key]
+                value = quellen.get(json_key, '')
+                
+                # Lösche Placeholder oder vorherigen Inhalt
+                widget.delete('1.0', tk.END)
+                
+                # Füge neuen Wert ein
+                if value:
+                    widget.insert('1.0', value)
+                    widget.config(fg=AppColors.INPUT_FG)
+                else:
+                    # Wenn leer, zeige Placeholder wieder an (nur für bestimmte Felder)
+                    if field_key == 'Divinisierung':
+                        widget.insert('1.0', "z.B.: 17. Jan. 42 n. Chr.: Consecratio durch Claudius: DIVA AUGUSTA")
+                        widget.config(fg=AppColors.SEARCH_PLACEHOLDER)
+                    elif field_key == 'Bestattung':
+                        widget.insert('1.0', "z.B.: Bestattung im Mausoleum Augusti; Caligula hält laudatio funebris für Livia")
+                        widget.config(fg=AppColors.SEARCH_PLACEHOLDER)
+        
+        # ========== LITERARISCHE QUELLEN TAB ==========
+        # Erst alle vorhandenen Einträge löschen
+        for entry in self.literary_sources_entries[:]:
+            entry['frame'].destroy()
+        self.literary_sources_entries.clear()
+        
+        # Literarische Quellen laden
+        lit_quellen = self.__current_roman.get('Literarische Quellen', [])
+        
+        if lit_quellen:
+            for quelle in lit_quellen:
+                self.AddLiterarySourceEntry(self.literary_sources_container)
+                
+                # Letzten hinzugefügten Eintrag füllen
+                if self.literary_sources_entries:
+                    last_entry = self.literary_sources_entries[-1]
+                    fields = last_entry['fields']
+                    
+                    if 'Autor' in fields and 'Autor' in quelle:
+                        fields['Autor'].delete(0, tk.END)
+                        fields['Autor'].insert(0, quelle['Autor'])
+                        fields['Autor'].config(fg=AppColors.INPUT_FG)
+                    
+                    if 'Link' in fields and 'Link' in quelle:
+                        fields['Link'].delete(0, tk.END)
+                        fields['Link'].insert(0, quelle['Link'])
+                        fields['Link'].config(fg=AppColors.INPUT_FG)
+                    
+                    if 'Zitat' in fields and 'Zitat' in quelle:
+                        fields['Zitat'].delete('1.0', tk.END)
+                        fields['Zitat'].insert('1.0', quelle['Zitat'])
+                        fields['Zitat'].config(fg=AppColors.INPUT_FG)
+                    
+                    if 'Notizen' in fields and 'Notizen' in quelle:
+                        fields['Notizen'].delete('1.0', tk.END)
+                        fields['Notizen'].insert('1.0', quelle['Notizen'])
+                        fields['Notizen'].config(fg=AppColors.INPUT_FG)
+        else:
+            # Wenn keine Quellen vorhanden, füge Beispiel-Eintrag hinzu
+            self.AddLiterarySourceEntry(self.literary_sources_container, example=True)
+        
+        # Tab-Auswahl wiederherstellen
+        if hasattr(self.__class__, 'last_selected_tab'):
+            try:
+                self.notebook.select(self.__class__.last_selected_tab)
+            except:
+                self.notebook.select(0)
+        
+        # Scrollbars aktualisieren für alle Tabs
+        for tab in [self.tab_marriage, self.tab_children, self.tab_literary_sources]:
+            if hasattr(tab, 'canvas'):
+                tab.canvas.update_idletasks()
+                tab.scroll_enabled = self.check_scroll_needed(tab)
