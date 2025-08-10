@@ -1391,7 +1391,13 @@
             "Geburtsort": "",
             "Sterbeort": "",
             "Bemerkungen": "",
-            "Ehen": [],
+            "Ehen": [
+                {
+                    "Partner": "Bob",
+                    "Heiratsdatum": "",
+                    "Heiratsort": ""
+                }
+            ],
             "Vater": "",
             "Mutter": "",
             "Geschwister": "",

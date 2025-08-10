@@ -9,7 +9,7 @@ project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-from data.commands import EditRomanCommand
+from data.commands import AddRomanCommand, EditRomanCommand, RemoveRomanCommand
 from utils.config import AppColors, Fonts, UIConstants, Icons, Messages
 from ui.frames.content.base_content import BaseContentFrame
 from data.models.roman import Roman
@@ -165,8 +165,25 @@ class CreateFrame(BaseContentFrame):
         # Speichern-Button Container (Row 2) - bleibt immer unten
         save_container = tk.Frame(middle_frame, bg=AppColors.CONTENT_FRAME)
         save_container.grid(row=2, column=0, sticky=tk.EW, 
-                        padx=UIConstants.PADDING_LARGE, 
-                        pady=(0, UIConstants.PADDING_LARGE))
+                            padx=UIConstants.PADDING_LARGE, 
+                            pady=(0, UIConstants.PADDING_LARGE))
+
+        self.create_button = self.CreateStyledButton(
+            save_container,
+            text=f"{Icons.ADD} Neuen Römer erstellen",
+            command=self.CreateNewRoman,
+            style='Primary'
+        )
+        self.create_button.pack(side=tk.LEFT)
+
+        self.delete_button = self.CreateStyledButton(
+            save_container,
+            text=f"{Icons.DELETE} Löschen",
+            command=self.DeleteSelectedRoman,
+            style='Danger',
+            state=tk.DISABLED
+        )
+        self.delete_button.pack(side=tk.LEFT)
 
         self.save_button = self.CreateStyledButton(
             save_container,
@@ -179,6 +196,7 @@ class CreateFrame(BaseContentFrame):
         # Anfangszustand
         self.ClearDetails()
         self.UpdateButtonStates()
+        self.DisableFields()
 
     def CreateStyledTable(self, parent):
         """Erstellt eine moderne Tabelle mit verbessertem Design"""
@@ -1044,13 +1062,13 @@ class CreateFrame(BaseContentFrame):
                 fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
 
         # Button zum Hinzufügen
-        add_button = self.CreateStyledButton(
+        self.literary_add_button = self.CreateStyledButton(
             title_frame,
             text=f"{Icons.ADD} Quelle hinzufügen",
             command=lambda: self.AddLiterarySourceEntry(sources_container),
             style='Primary'
         )
-        add_button.pack(side=tk.RIGHT)
+        self.literary_add_button.pack(side=tk.RIGHT)
 
         # Info-Text
         info_frame = tk.Frame(container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
@@ -1078,9 +1096,6 @@ class CreateFrame(BaseContentFrame):
 
         self.literary_sources_container = sources_container
         self.literary_sources_entries = []
-
-        # Beispiel-Eintrag hinzufügen
-        self.AddLiterarySourceEntry(sources_container, example=True)
 
     def AddLiterarySourceEntry(self, parent, example=False):
         """Fügt einen neuen Literarische-Quelle-Eintrag hinzu"""
@@ -1247,6 +1262,44 @@ class CreateFrame(BaseContentFrame):
             widget = self.CreateFormField(container, field_key, field_label, field_type)
             self.basic_fields[field_key] = widget
 
+            # Validierung für das Name-Feld
+            if field_key == 'Name':
+                widget.bind('<KeyRelease>', self.ValidateNameField)
+                widget.bind('<FocusOut>', self.ValidateNameField)
+    
+    def ValidateNameField(self, event=None):
+        """Validiert das Name-Feld und ändert die Hintergrundfarbe"""
+        name_widget = self.basic_fields.get('Name')
+        if name_widget:
+            name_value = name_widget.get().strip()
+            if not name_value:
+                # Roter Hintergrund für leeres Feld
+                name_widget.config(bg='#ffcccc')
+            else:
+                # Normale Hintergrundfarbe
+                name_widget.config(bg=AppColors.INPUT_BG)
+
+    def ValidateForm(self):
+        """Validiert das gesamte Formular"""
+        # Prüfe ob Name ausgefüllt ist
+        name_widget = self.basic_fields.get('Name')
+        if name_widget:
+            name_value = name_widget.get().strip()
+            if not name_value:
+                # Markiere das Feld rot
+                name_widget.config(bg='#ffcccc')
+                # Zeige Fehlermeldung
+                messagebox.showerror(
+                    "Pflichtfeld fehlt", 
+                    "Bitte geben Sie einen Namen ein. Dies ist ein Pflichtfeld."
+                )
+                # Wechsle zum Grunddaten-Tab
+                self.notebook.select(0)
+                # Setze Fokus auf das Name-Feld
+                name_widget.focus_set()
+                return False
+        return True
+
     def CreateMarriageContent(self, parent):
         """Erstellt den Inhalt für den Ehen-Tab"""
         container = tk.Frame(parent, bg=AppColors.TAB_BG)
@@ -1261,13 +1314,13 @@ class CreateFrame(BaseContentFrame):
              fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
         
         # Button zum Hinzufügen
-        add_button = self.CreateStyledButton(
+        self.marriage_add_button = self.CreateStyledButton(
             title_frame,
             text=f"{Icons.ADD} Ehe hinzufügen",
             command=lambda: self.AddMarriageEntry(marriages_container),
             style='Primary'
         )
-        add_button.pack(side=tk.RIGHT)
+        self.marriage_add_button.pack(side=tk.RIGHT)
 
         basic_container = tk.Frame(container, bg=AppColors.TAB_BG)
         basic_container.pack(fill=tk.BOTH, expand=tk.TRUE)
@@ -1276,10 +1329,10 @@ class CreateFrame(BaseContentFrame):
                 font=Fonts.STANDARD, bg=AppColors.TAB_BG, 
                 fg=AppColors.KU_COLOR, width=20, anchor=tk.W).pack(side=tk.LEFT, padx=(0, 10))
         
-        widget = tk.Entry(basic_container, font=Fonts.INPUT, 
+        self.marriage_widget = tk.Entry(basic_container, font=Fonts.INPUT, 
                                 bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG, 
                                 width=40, relief=tk.RIDGE, bd=2)
-        widget.pack(side=tk.LEFT, fill=tk.X, expand=True)
+        self.marriage_widget.pack(side=tk.LEFT, fill=tk.X, expand=True)
         
         # Container für Ehen
         marriages_container = tk.Frame(container, bg=AppColors.TAB_BG)
@@ -1407,13 +1460,13 @@ class CreateFrame(BaseContentFrame):
                 fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
         
         # Button zum Hinzufügen
-        add_button = self.CreateStyledButton(
+        self.children_add_button = self.CreateStyledButton(
             title_frame,
             text=f"{Icons.ADD} Kind hinzufügen",
             command=lambda: self.AddChildEntry(children_container),
             style='Primary'
         )
-        add_button.pack(side=tk.RIGHT)
+        self.children_add_button.pack(side=tk.RIGHT)
 
         basic_container = tk.Frame(container, bg=AppColors.TAB_BG)
         basic_container.pack(fill=tk.BOTH, expand=tk.TRUE)
@@ -1422,10 +1475,10 @@ class CreateFrame(BaseContentFrame):
                 font=Fonts.STANDARD, bg=AppColors.TAB_BG, 
                 fg=AppColors.KU_COLOR, width=20, anchor=tk.W).pack(side=tk.LEFT, padx=(0, 10))
         
-        widget = tk.Entry(basic_container, font=Fonts.INPUT, 
+        self.children_widget = tk.Entry(basic_container, font=Fonts.INPUT, 
                                 bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG, 
                                 width=40, relief=tk.RIDGE, bd=2)
-        widget.pack(side=tk.LEFT, fill=tk.X, expand=True)
+        self.children_widget.pack(side=tk.LEFT, fill=tk.X, expand=True)
         
         # Container für Kinder
         children_container = tk.Frame(container, bg=AppColors.TAB_BG)
@@ -1592,10 +1645,6 @@ class CreateFrame(BaseContentFrame):
         tab.content_frame = content_frame
         tab.scroll_enabled = False  # Initial kein Scrolling
 
-    def UpdateButtonStates(self):
-        """Aktualisiert die Button-Zustände"""
-        pass
-
     def FilterTable(self, event=None):
         """Filtert die Tabelle basierend auf der Sucheingabe"""
         search_term = self.search_var.get().lower()
@@ -1634,15 +1683,15 @@ class CreateFrame(BaseContentFrame):
             
             if self.__current_roman is not None:
                 self.DisplayRoman()
-
-            self.delete_button.config(state=tk.NORMAL)
-            self.status_label.config(text=f"{Icons.INFO} {self.__current_roman['Name']} ausgewählt")
+                self.delete_button.config(state=tk.NORMAL)  # Button aktivieren
+                self.status_label.config(text=f"{Icons.INFO} {self.__current_roman['Name']} ausgewählt")
+                self.EnableFields()
         else:
             self.__current_roman = None
             self.ClearDetails()
-
-            self.delete_button.config(state=tk.DISABLED)
+            self.delete_button.config(state=tk.DISABLED)  # Button deaktivieren
             self.status_label.config(text=Messages.NO_SELECTION)
+            self.DisableFields()
 
     def OnDoubleClick(self, event=None):
         """Wird bei Doppelklick auf ein Tabellen-Item aufgerufen"""
@@ -1719,15 +1768,161 @@ class CreateFrame(BaseContentFrame):
 
     def CreateNewRoman(self):
         """Erstellt einen neuen Römer"""
-        print(f"{Icons.ADD} Neuen Römer erstellen...")
+        # Erstelle ein neues Roman-Objekt
+        new_roman = Roman('')
+        
+        # Erstelle ein AddRomanCommand
+        command = AddRomanCommand(self.__app.romans, new_roman)
+        
+        # Führe das Command aus
+        self.__app.command_manager.ExecuteCommand(command)
+        
+        # Aktualisiere die Tabelle
+        self.LoadTableData()
+        
+        # Wähle den neuen Römer aus
+        # Finde das neue Item in der Tabelle
+        for item in self.tree.get_children():
+            if self.tree.item(item)['values'][0] == '':
+                self.tree.selection_set(item)
+                self.tree.see(item)  # Scrolle zum neuen Item
+                break
+        
+        # Trigger OnSelect Event
+        self.OnSelect()
+        
+        # Fokus auf das Name-Feld setzen
+        if 'Name' in self.basic_fields:
+            self.notebook.select(0)  # Wechsle zum ersten Tab
+            name_widget = self.basic_fields['Name']
+            name_widget.focus_set()
+            name_widget.config(bg='#ffcccc')  # Markiere als Pflichtfeld
+
+    def DisableFields(self):
+        """Deaktiviert alle Felder und Buttons in den Tabs"""
+        # Deaktiviere alle Felder in den Tabs
+        for field in self.basic_fields.values():
+            field.config(state=tk.DISABLED)
+        
+        # Deaktiviere Marriage Felder
+        if hasattr(self, 'marriage_widget'):
+            self.marriage_widget.config(state=tk.DISABLED)
+        
+        # Deaktiviere Children Felder  
+        if hasattr(self, 'children_widget'):
+            self.children_widget.config(state=tk.DISABLED)
+        
+        for field in self.family_fields.values():
+            field.config(state=tk.DISABLED)
+        
+        for field in self.special_fields.values():
+            field.config(state=tk.DISABLED)
+        
+        for field in self.honors_fields.values():
+            field.config(state=tk.DISABLED)
+        
+        for field in self.sources_fields.values():
+            field.config(state=tk.DISABLED)
+        
+        # Deaktiviere Buttons
+        if hasattr(self, 'literary_add_button'):
+            self.literary_add_button.config(state=tk.DISABLED)
+        if hasattr(self, 'children_add_button'):
+            self.children_add_button.config(state=tk.DISABLED)
+        if hasattr(self, 'marriage_add_button'):
+            self.marriage_add_button.config(state=tk.DISABLED)
+        
+        # Speichern Button deaktivieren
+        self.save_button.config(state=tk.DISABLED)
+
+    def EnableFields(self):
+        """Aktiviert alle Felder und Buttons in den Tabs"""
+        # Aktiviere alle Felder in den Tabs
+        for field in self.basic_fields.values():
+            field.config(state=tk.NORMAL)
+        
+        # Aktiviere Marriage Felder
+        if hasattr(self, 'marriage_widget'):
+            self.marriage_widget.config(state=tk.NORMAL)
+        
+        # Aktiviere Children Felder
+        if hasattr(self, 'children_widget'):
+            self.children_widget.config(state=tk.NORMAL)
+        
+        for field in self.family_fields.values():
+            field.config(state=tk.NORMAL)
+        
+        for field in self.special_fields.values():
+            field.config(state=tk.NORMAL)
+        
+        for field in self.honors_fields.values():
+            field.config(state=tk.NORMAL)
+        
+        for field in self.sources_fields.values():
+            field.config(state=tk.NORMAL)
+        
+        # Aktiviere Buttons
+        if hasattr(self, 'literary_add_button'):
+            self.literary_add_button.config(state=tk.NORMAL)
+        if hasattr(self, 'children_add_button'):
+            self.children_add_button.config(state=tk.NORMAL)
+        if hasattr(self, 'marriage_add_button'):
+            self.marriage_add_button.config(state=tk.NORMAL)
+        
+        # Speichern Button aktivieren
+        self.save_button.config(state=tk.NORMAL)
+    
+    def UpdateButtonStates(self):
+        """Aktualisiert die Button-Zustände basierend auf dem aktuellen Zustand"""
+        if self.__current_roman is None:
+            self.delete_button.config(state=tk.DISABLED)
+            self.save_button.config(state=tk.DISABLED)
+        else:
+            self.delete_button.config(state=tk.NORMAL)
+            self.save_button.config(state=tk.NORMAL)
 
     def DeleteSelectedRoman(self):
         """Löscht den ausgewählten Römer"""
-        print(f"{Icons.DELETE} Römer löschen...")
+        if self.__current_roman is None:
+            return
+        
+        # Bestätigungsdialog
+        result = messagebox.askyesno(
+            "Römer löschen", 
+            f"Möchten Sie '{self.__current_roman.get('Name', 'Unbenannt')}' wirklich löschen?"
+        )
+        
+        if not result:
+            return
+        
+        # Erstelle ein RemoveRomanCommand
+        command = RemoveRomanCommand(self.__app.romans, self.__app.romans.index(self.__current_roman))
+        
+        # Führe das Command aus
+        self.__app.command_manager.ExecuteCommand(command)
+        
+        # Aktualisiere die Tabelle
+        self.LoadTableData()
+        
+        # Leere die Detailfelder
+        self.ClearDetails()
+        
+        # Setze den aktuellen Römer auf None
+        self.__current_roman = None
+        
+        # Button deaktivieren
+        self.delete_button.config(state=tk.DISABLED)
+        
+        self.__app.menu_manager.UpdateEditMenuState()
+        self.__app.file_modified = True
 
     def SaveChanges(self):
         """Speichert die Änderungen"""
         if self.__current_roman is None:
+            return
+        
+        # Validiere das Formular
+        if not self.ValidateForm():
             return
         
         # Sammle die geänderten Eigenschaften
@@ -1897,6 +2092,15 @@ class CreateFrame(BaseContentFrame):
         
         # Aktualisiere die Tabelle
         self.LoadTableData()
+        # Erfolgs-Feedback
+        self.status_label.config(text=f"{Icons.SUCCESS} Änderungen gespeichert")
+
+        # Zeige Erfolgs-Meldung
+        messagebox.showinfo(
+            "Speichern erfolgreich",
+            f"Die Änderungen für '{properties.get('Name', 'Unbekannt')}' wurden erfolgreich gespeichert."
+        )
+
         self.__app.menu_manager.UpdateEditMenuState()
         self.__app.file_modified = True
 
@@ -1906,12 +2110,68 @@ class CreateFrame(BaseContentFrame):
 
     def ClearDetails(self):
         """Leert alle Detailfelder"""
-        pass
+        # ========== GRUNDDATEN TAB ==========
+        for field in self.basic_fields.values():
+            if isinstance(field, tk.Text):
+                field.delete('1.0', tk.END)
+            else:
+                field.delete(0, tk.END)
+        
+        # ========== EHEN TAB ==========
+        for entry in self.marriage_entries[:]:
+            entry['frame'].destroy()
+        self.marriage_entries.clear()
+        
+        # ========== KINDER TAB ==========
+        for entry in self.children_entries[:]:
+            entry['frame'].destroy()
+        self.children_entries.clear()
+        
+        # ========== FAMILIE TAB ==========
+        for field in self.family_fields.values():
+            if isinstance(field, tk.Text):
+                field.delete('1.0', tk.END)
+            else:
+                field.delete(0, tk.END)
+        
+        # ========== BESONDERHEITEN TAB ==========
+        for field in self.special_fields.values():
+            if isinstance(field, tk.Text):
+                field.delete('1.0', tk.END)
+            else:
+                field.delete(0, tk.END)
+        
+        # ========== EHRUNGEN TAB ==========
+        for field in self.honors_fields.values():
+            if isinstance(field, tk.Text):
+                field.delete('1.0', tk.END)
+            elif isinstance(field, ttk.Combobox):
+                field.set('')
+            else:
+                field.delete(0, tk.END)
+        
+        # ========== QUELLEN TAB ==========
+        for field in self.sources_fields.values():
+            if isinstance(field, tk.Text):
+                field.delete('1.0', tk.END)
+            else:
+                field.delete(0, tk.END)
+        
+        # ========== LITERARISCHE QUELLEN TAB ==========
+        for entry in self.literary_sources_entries[:]:
+            entry['frame'].destroy()
+        self.literary_sources_entries.clear()
+        
+        # Status-Label zurücksetzen
+        self.status_label.config(text=Messages.NO_SELECTION)
 
     def DisplayRoman(self):
         """Zeigt die Daten des ausgewählten Römers in allen Feldern an"""
         if self.__current_roman is None:
             return
+        
+        self.ClearDetails()
+        self.EnableFields()
         
         # ========== GRUNDDATEN TAB ==========
         # Einfache Textfelder
@@ -1936,6 +2196,10 @@ class CreateFrame(BaseContentFrame):
                 else:
                     widget.delete(0, tk.END)
                     widget.insert(0, value)
+
+                # Validiere Name-Feld nach dem Laden
+                if field_key == 'Name':
+                    self.ValidateNameField()
         
         # ========== EHEN TAB ==========
         # Erst alle vorhandenen Ehen-Einträge löschen
