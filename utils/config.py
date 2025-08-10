@@ -304,6 +304,7 @@ class Icons:
     STAR = "⭐"
     TROPHY = "🏆"
     SCROLL = "📜"
+    SCENE = '📸'
 
 class Messages:
     """Standardnachrichten der Anwendung"""

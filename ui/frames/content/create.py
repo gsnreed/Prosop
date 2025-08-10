@@ -492,26 +492,863 @@ class CreateFrame(BaseContentFrame):
         for child in widget.winfo_children():
             self.BindMouseWheelToWidget(child, canvas)
 
-    def CreateMarriageContent(self, parent):
-        pass
-
-    def CreateChildrenContent(self, parent):
-        pass
-
     def CreateFamilyContent(self, parent):
-        pass
+        """Erstellt den Inhalt für den Family-Tab"""
+        container = tk.Frame(parent, bg=AppColors.TAB_BG)
+        container.pack(fill=tk.BOTH, expand=True, padx=20, pady=20)
+
+        # Titel
+        title_frame = tk.Frame(container, bg=AppColors.TAB_BG)
+        title_frame.pack(fill=tk.X, pady=(0, 20))
+
+        tk.Label(title_frame, text=f"{Icons.FAMILY} Familieninformationen", 
+                font=Fonts.HEADER_MEDIUM, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
+
+        # Formularfelder
+        fields = [
+            ('Vater', 'Vater', 'entry'),
+            ('Mutter', 'Mutter', 'entry'),
+            ('Geschwister', 'Geschwister', 'entry'),
+            ('Vorfahren', 'Vorfahren', 'entry'),
+            ('Bemerkungen', 'Bemerkungen', 'text')
+        ]
+
+        self.family_fields = {}
+        for field_key, field_label, field_type in fields:
+            widget = self.CreateFormField(container, field_key, field_label, field_type)
+            self.family_fields[field_key] = widget
+    
+    def CreateFormField(self, parent, field_key, field_label, field_type, values=None):
+        row_frame = tk.Frame(parent, bg=AppColors.TAB_BG)
+        row_frame.pack(fill=tk.X, pady=8)
+
+        label = tk.Label(row_frame, text=f"{field_label}:", 
+                        font=Fonts.STANDARD, bg=AppColors.TAB_BG, 
+                        fg=AppColors.KU_COLOR, width=20, anchor=tk.W)
+        label.pack(side=tk.LEFT, padx=(0, 10))
+
+        if field_type == 'entry':
+            widget = tk.Entry(row_frame, font=Fonts.INPUT, 
+                            bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG, 
+                            width=40, relief=tk.RIDGE, bd=2)
+            widget.pack(side=tk.LEFT, fill=tk.X, expand=True)
+
+        elif field_type == 'combo':
+            widget = ttk.Combobox(row_frame, font=Fonts.INPUT, 
+                                values=values, width=38, state='readonly')
+            widget.pack(side=tk.LEFT, fill=tk.X, expand=True)
+
+        elif field_type == 'text':
+            text_frame = tk.Frame(parent, bg=AppColors.TAB_BG)
+            text_frame.pack(fill=tk.BOTH, expand=True, pady=8)
+                
+            widget = tk.Text(text_frame, font=Fonts.INPUT, 
+                            bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG,
+                            height=4, relief=tk.RIDGE, bd=2)
+            widget.pack(fill=tk.BOTH, expand=True, pady=(5, 0))
+
+        return widget
 
     def CreateSpecialContent(self, parent):
-        pass
+        """Erstellt den Inhalt für den Besonderheiten-Tab"""
+        container = tk.Frame(parent, bg=AppColors.TAB_BG)
+        container.pack(fill=tk.BOTH, expand=True, padx=20, pady=20)
+
+        # Titel
+        title_frame = tk.Frame(container, bg=AppColors.TAB_BG)
+        title_frame.pack(fill=tk.X, pady=(0, 20))
+
+        tk.Label(title_frame, text=f"{Icons.STAR} Individuelle Besonderheiten", 
+                font=Fonts.HEADER_MEDIUM, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
+
+        # Hauptcontainer für alle Sektionen
+        main_container = tk.Frame(container, bg=AppColors.TAB_BG)
+        main_container.pack(fill=tk.BOTH, expand=True)
+
+        # ========== Äußere Erscheinung ==========
+        appearance_section = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
+        appearance_section.pack(fill=tk.X, pady=(0, 15))
+
+        appearance_inner = tk.Frame(appearance_section, bg=AppColors.TAB_BG)
+        appearance_inner.pack(fill=tk.BOTH, expand=True, padx=15, pady=15)
+
+        # Sektion-Titel
+        tk.Label(appearance_inner, text="Äußere Erscheinung", 
+                font=Fonts.SUBHEADER, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(anchor=tk.W, pady=(0, 10))
+
+        # Auftreten
+        auftreten_frame = tk.Frame(appearance_inner, bg=AppColors.TAB_BG)
+        auftreten_frame.pack(fill=tk.X, pady=5)
+
+        tk.Label(auftreten_frame, text="Auftreten:", 
+                font=Fonts.STANDARD, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR, width=15, anchor=tk.W).pack(side=tk.LEFT)
+
+        self.special_fields['Auftreten'] = tk.Entry(auftreten_frame, font=Fonts.INPUT, 
+                                                    bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG, 
+                                                    width=40, relief=tk.RIDGE, bd=2)
+        self.special_fields['Auftreten'].pack(side=tk.LEFT, fill=tk.X, expand=True)
+
+        # Kleidung
+        kleidung_frame = tk.Frame(appearance_inner, bg=AppColors.TAB_BG)
+        kleidung_frame.pack(fill=tk.X, pady=5)
+
+        tk.Label(kleidung_frame, text="Kleidung:", 
+                font=Fonts.STANDARD, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR, width=15, anchor=tk.W).pack(side=tk.LEFT)
+
+        self.special_fields['Kleidung'] = tk.Entry(kleidung_frame, font=Fonts.INPUT, 
+                                                bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG, 
+                                                width=40, relief=tk.RIDGE, bd=2)
+        self.special_fields['Kleidung'].pack(side=tk.LEFT, fill=tk.X, expand=True)
+
+        # Schmuck
+        schmuck_frame = tk.Frame(appearance_inner, bg=AppColors.TAB_BG)
+        schmuck_frame.pack(fill=tk.X, pady=5)
+
+        tk.Label(schmuck_frame, text="Schmuck:", 
+                font=Fonts.STANDARD, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR, width=15, anchor=tk.W).pack(side=tk.LEFT)
+
+        self.special_fields['Schmuck'] = tk.Entry(schmuck_frame, font=Fonts.INPUT, 
+                                                bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG, 
+                                                width=40, relief=tk.RIDGE, bd=2)
+        self.special_fields['Schmuck'].pack(side=tk.LEFT, fill=tk.X, expand=True)
+
+        # ========== Inszenierung ==========
+        staging_section = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
+        staging_section.pack(fill=tk.BOTH, expand=True, pady=(0, 15))
+
+        staging_inner = tk.Frame(staging_section, bg=AppColors.TAB_BG)
+        staging_inner.pack(fill=tk.BOTH, expand=True, padx=15, pady=15)
+
+        # Sektion-Titel
+        tk.Label(staging_inner, text="Inszenierung", 
+                font=Fonts.SUBHEADER, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(anchor=tk.W, pady=(0, 10))
+
+        # Öffentlich
+        public_frame = tk.Frame(staging_inner, bg=AppColors.TAB_BG)
+        public_frame.pack(fill=tk.BOTH, expand=True, pady=5)
+
+        tk.Label(public_frame, text="Öffentlich:", 
+                font=Fonts.STANDARD, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR, width=15, anchor=tk.NW).pack(side=tk.LEFT, pady=(5, 0))
+
+        text_container = tk.Frame(public_frame, bg=AppColors.TAB_BG)
+        text_container.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+        self.special_fields['Öffentlich'] = tk.Text(text_container, font=Fonts.INPUT, 
+                                                bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG,
+                                                height=4, relief=tk.RIDGE, bd=2, wrap=tk.WORD)
+        self.special_fields['Öffentlich'].pack(fill=tk.BOTH, expand=True)
+
+        # Privat
+        private_frame = tk.Frame(staging_inner, bg=AppColors.TAB_BG)
+        private_frame.pack(fill=tk.BOTH, expand=True, pady=5)
+
+        tk.Label(private_frame, text="Privat:", 
+                font=Fonts.STANDARD, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR, width=15, anchor=tk.NW).pack(side=tk.LEFT, pady=(5, 0))
+
+        text_container = tk.Frame(private_frame, bg=AppColors.TAB_BG)
+        text_container.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+        self.special_fields['Privat'] = tk.Text(text_container, font=Fonts.INPUT, 
+                                            bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG,
+                                            height=4, relief=tk.RIDGE, bd=2, wrap=tk.WORD)
+        self.special_fields['Privat'].pack(fill=tk.BOTH, expand=True)
+
+        # ========== Zusätzliche Bemerkungen ==========
+        remarks_section = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
+        remarks_section.pack(fill=tk.BOTH, expand=True)
+
+        remarks_inner = tk.Frame(remarks_section, bg=AppColors.TAB_BG)
+        remarks_inner.pack(fill=tk.BOTH, expand=True, padx=15, pady=15)
+
+        # Sektion-Titel
+        tk.Label(remarks_inner, text="Zusätzliche Bemerkungen", 
+                font=Fonts.SUBHEADER, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(anchor=tk.W, pady=(0, 10))
+
+        # Bemerkungen Text
+        self.special_fields['Bemerkungen'] = tk.Text(remarks_inner, font=Fonts.INPUT, 
+                                                    bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG,
+                                                    height=5, relief=tk.RIDGE, bd=2, wrap=tk.WORD)
+        self.special_fields['Bemerkungen'].pack(fill=tk.BOTH, expand=True)
 
     def CreateHonorsContent(self, parent):
-        pass
+        """Erstellt den Inhalt für den Ehrungen-Tab"""
+        container = tk.Frame(parent, bg=AppColors.TAB_BG)
+        container.pack(fill=tk.BOTH, expand=True, padx=20, pady=20)
+
+        # Titel
+        title_frame = tk.Frame(container, bg=AppColors.TAB_BG)
+        title_frame.pack(fill=tk.X, pady=(0, 20))
+
+        tk.Label(title_frame, text=f"{Icons.TROPHY} Ehrungen und Titel", 
+                font=Fonts.HEADER_MEDIUM, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
+
+        # Hauptcontainer für alle Ehrungen
+        main_container = tk.Frame(container, bg=AppColors.TAB_BG)
+        main_container.pack(fill=tk.BOTH, expand=True)
+
+        # ========== Augusta-Titel ==========
+        augusta_section = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
+        augusta_section.pack(fill=tk.X, pady=(0, 15))
+
+        augusta_inner = tk.Frame(augusta_section, bg=AppColors.TAB_BG)
+        augusta_inner.pack(fill=tk.BOTH, expand=True, padx=15, pady=15)
+
+        # Titel der Sektion
+        tk.Label(augusta_inner, text="Augusta-Titel", 
+                font=Fonts.SUBHEADER, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(anchor=tk.W, pady=(0, 10))
+
+        # Combobox-Zeile
+        augusta_combo_frame = tk.Frame(augusta_inner, bg=AppColors.TAB_BG)
+        augusta_combo_frame.pack(fill=tk.X, pady=5)
+
+        tk.Label(augusta_combo_frame, text="Status:", 
+                font=Fonts.STANDARD, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR, width=15, anchor=tk.W).pack(side=tk.LEFT)
+
+        self.honors_fields['Augusta-Titel-Status'] = ttk.Combobox(
+            augusta_combo_frame, 
+            font=Fonts.INPUT,
+            values=['Ja', 'Nein', 'Unbekannt', 'In Bearbeitung'],
+            width=20,
+            state='readonly'
+        )
+        self.honors_fields['Augusta-Titel-Status'].pack(side=tk.LEFT, padx=(0, 10))
+        self.honors_fields['Augusta-Titel-Status'].set('Unbekannt')
+
+        # Textfeld für Details
+        augusta_text_frame = tk.Frame(augusta_inner, bg=AppColors.TAB_BG)
+        augusta_text_frame.pack(fill=tk.BOTH, expand=True, pady=5)
+
+        tk.Label(augusta_text_frame, text="Details:", 
+                font=Fonts.STANDARD, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR, width=15, anchor=tk.NW).pack(side=tk.LEFT, pady=(5, 0))
+
+        text_container = tk.Frame(augusta_text_frame, bg=AppColors.TAB_BG)
+        text_container.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+        self.honors_fields['Augusta-Titel-Details'] = tk.Text(
+            text_container, 
+            font=Fonts.INPUT, 
+            bg=AppColors.INPUT_BG, 
+            fg=AppColors.INPUT_FG,
+            height=3, 
+            relief=tk.RIDGE, 
+            bd=2, 
+            wrap=tk.WORD
+        )
+        self.honors_fields['Augusta-Titel-Details'].pack(fill=tk.BOTH, expand=True)
+
+        # Placeholder-Text für Beispiel
+        self.honors_fields['Augusta-Titel-Details'].insert('1.0', 
+            "z.B.: 3. oder 4. September 14 n. Chr.: IULIA AUGUSTA")
+        self.honors_fields['Augusta-Titel-Details'].config(fg=AppColors.SEARCH_PLACEHOLDER)
+
+        def clear_placeholder_augusta(event):
+            if self.honors_fields['Augusta-Titel-Details'].get('1.0', 'end-1c').startswith("z.B.:"):
+                self.honors_fields['Augusta-Titel-Details'].delete('1.0', tk.END)
+                self.honors_fields['Augusta-Titel-Details'].config(fg=AppColors.INPUT_FG)
+
+        self.honors_fields['Augusta-Titel-Details'].bind('<FocusIn>', clear_placeholder_augusta)
+
+        # ========== Carpentum-Recht ==========
+        carpentum_section = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
+        carpentum_section.pack(fill=tk.X, pady=(0, 15))
+
+        carpentum_inner = tk.Frame(carpentum_section, bg=AppColors.TAB_BG)
+        carpentum_inner.pack(fill=tk.BOTH, expand=True, padx=15, pady=15)
+
+        # Titel der Sektion
+        tk.Label(carpentum_inner, text="Carpentum-Recht", 
+                font=Fonts.SUBHEADER, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(anchor=tk.W, pady=(0, 10))
+
+        # Combobox-Zeile
+        carpentum_combo_frame = tk.Frame(carpentum_inner, bg=AppColors.TAB_BG)
+        carpentum_combo_frame.pack(fill=tk.X, pady=5)
+
+        tk.Label(carpentum_combo_frame, text="Status:", 
+                font=Fonts.STANDARD, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR, width=15, anchor=tk.W).pack(side=tk.LEFT)
+
+        self.honors_fields['Carpentum-Recht-Status'] = ttk.Combobox(
+            carpentum_combo_frame, 
+            font=Fonts.INPUT,
+            values=['Ja', 'Nein', 'Unbekannt', 'In Bearbeitung'],
+            width=20,
+            state='readonly'
+        )
+        self.honors_fields['Carpentum-Recht-Status'].pack(side=tk.LEFT, padx=(0, 10))
+        self.honors_fields['Carpentum-Recht-Status'].set('Unbekannt')
+
+        # Textfeld für Details
+        carpentum_text_frame = tk.Frame(carpentum_inner, bg=AppColors.TAB_BG)
+        carpentum_text_frame.pack(fill=tk.BOTH, expand=True, pady=5)
+
+        tk.Label(carpentum_text_frame, text="Details:", 
+                font=Fonts.STANDARD, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR, width=15, anchor=tk.NW).pack(side=tk.LEFT, pady=(5, 0))
+
+        text_container = tk.Frame(carpentum_text_frame, bg=AppColors.TAB_BG)
+        text_container.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+        self.honors_fields['Carpentum-Recht-Details'] = tk.Text(
+            text_container, 
+            font=Fonts.INPUT, 
+            bg=AppColors.INPUT_BG, 
+            fg=AppColors.INPUT_FG,
+            height=3, 
+            relief=tk.RIDGE, 
+            bd=2, 
+            wrap=tk.WORD
+        )
+        self.honors_fields['Carpentum-Recht-Details'].pack(fill=tk.BOTH, expand=True)
+
+        # Placeholder-Text für Beispiel
+        self.honors_fields['Carpentum-Recht-Details'].insert('1.0', 
+            "z.B.: 22 n. Chr. Erhalten")
+        self.honors_fields['Carpentum-Recht-Details'].config(fg=AppColors.SEARCH_PLACEHOLDER)
+
+        def clear_placeholder_carpentum(event):
+            if self.honors_fields['Carpentum-Recht-Details'].get('1.0', 'end-1c').startswith("z.B.:"):
+                self.honors_fields['Carpentum-Recht-Details'].delete('1.0', tk.END)
+                self.honors_fields['Carpentum-Recht-Details'].config(fg=AppColors.INPUT_FG)
+
+        self.honors_fields['Carpentum-Recht-Details'].bind('<FocusIn>', clear_placeholder_carpentum)
+
+        # ========== Weitere Ehrungen ==========
+        weitere_section = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
+        weitere_section.pack(fill=tk.BOTH, expand=True)
+
+        weitere_inner = tk.Frame(weitere_section, bg=AppColors.TAB_BG)
+        weitere_inner.pack(fill=tk.BOTH, expand=True, padx=15, pady=15)
+
+        # Titel der Sektion
+        weitere_title_frame = tk.Frame(weitere_inner, bg=AppColors.TAB_BG)
+        weitere_title_frame.pack(fill=tk.X, pady=(0, 10))
+
+        tk.Label(weitere_title_frame, text="Weitere Ehrungen", 
+                font=Fonts.SUBHEADER, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
+
+        # Info-Label
+        info_label = tk.Label(weitere_title_frame, 
+                            text="(Chronologisch auflisten)", 
+                            font=Fonts.STANDARD_ITALIC, 
+                            bg=AppColors.TAB_BG, 
+                            fg=AppColors.STATUS_FG)
+        info_label.pack(side=tk.LEFT, padx=(10, 0))
+
+        # Großes Textfeld für weitere Ehrungen
+        self.honors_fields['Weitere'] = tk.Text(
+            weitere_inner, 
+            font=Fonts.INPUT, 
+            bg=AppColors.INPUT_BG, 
+            fg=AppColors.INPUT_FG,
+            height=8, 
+            relief=tk.RIDGE, 
+            bd=2, 
+            wrap=tk.WORD
+        )
+        self.honors_fields['Weitere'].pack(fill=tk.BOTH, expand=True)
+
+        # Beispiel-Placeholder
+        placeholder_text = """Beispiele:
+    35 v. Chr.: Sacrosanctitas; Befreiung von der tutela mulierum, Statuenrecht
+    9 v. Chr.: ius trium liberorum
+    3. oder 4. September 14 n. Chr.: Sacerdos divi Augusti; Adoption auf Grund von A. Testament
+    22 n. Chr.: vota pro valetudine
+    23 n. Chr.: Beschluss eines Tempels für Tiberius, Iulia Augusta und den Senatus in Asia
+    27 n. Chr.: Vota pro salute Augustae"""
+
+        self.honors_fields['Weitere'].insert('1.0', placeholder_text)
+        self.honors_fields['Weitere'].config(fg=AppColors.SEARCH_PLACEHOLDER)
+
+        def clear_placeholder_weitere(event):
+            if self.honors_fields['Weitere'].get('1.0', 'end-1c').startswith("Beispiele:"):
+                self.honors_fields['Weitere'].delete('1.0', tk.END)
+                self.honors_fields['Weitere'].config(fg=AppColors.INPUT_FG)
+
+        def restore_placeholder_weitere(event):
+            if not self.honors_fields['Weitere'].get('1.0', 'end-1c').strip():
+                self.honors_fields['Weitere'].insert('1.0', placeholder_text)
+                self.honors_fields['Weitere'].config(fg=AppColors.SEARCH_PLACEHOLDER)
+
+        self.honors_fields['Weitere'].bind('<FocusIn>', clear_placeholder_weitere)
+        self.honors_fields['Weitere'].bind('<FocusOut>', restore_placeholder_weitere)
+
+        # ========== Hinweis-Box ==========
+        hint_frame = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
+        hint_frame.pack(fill=tk.X, pady=(15, 0))
+
+        hint_inner = tk.Frame(hint_frame, bg=AppColors.TAB_BG)
+        hint_inner.pack(fill=tk.X, padx=10, pady=10)
+
+        tk.Label(hint_inner, 
+                text=f"{Icons.INFO} Hinweis:", 
+                font=Fonts.STANDARD_BOLD, 
+                bg=AppColors.TAB_BG, 
+                fg=AppColors.TAB_FG).pack(side=tk.LEFT)
+
+        tk.Label(hint_inner, 
+                text="Bitte geben Sie Daten und Ehrungen chronologisch an. Nutzen Sie das Format: 'Jahr: Ehrung/Titel'", 
+                font=Fonts.STANDARD, 
+                bg=AppColors.TAB_BG, 
+                fg=AppColors.TAB_FG,
+                wraplength=600).pack(side=tk.LEFT, padx=(5, 0))
 
     def CreateSourcesContent(self, parent):
-        pass
+        """Erstellt den Inhalt für den Quellen-Tab"""
+        container = tk.Frame(parent, bg=AppColors.TAB_BG)
+        container.pack(fill=tk.BOTH, expand=True, padx=20, pady=20)
+
+        # Titel
+        title_frame = tk.Frame(container, bg=AppColors.TAB_BG)
+        title_frame.pack(fill=tk.X, pady=(0, 20))
+
+        tk.Label(title_frame, text=f"{Icons.BOOK} Historische Quellen", 
+                font=Fonts.HEADER_MEDIUM, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
+
+        # Hauptcontainer für alle Quellen
+        main_container = tk.Frame(container, bg=AppColors.TAB_BG)
+        main_container.pack(fill=tk.BOTH, expand=True)
+
+        # ========== Divinisierung ==========
+        divin_section = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
+        divin_section.pack(fill=tk.X, pady=(0, 15))
+
+        divin_inner = tk.Frame(divin_section, bg=AppColors.TAB_BG)
+        divin_inner.pack(fill=tk.BOTH, expand=True, padx=15, pady=15)
+
+        # Titel der Sektion
+        tk.Label(divin_inner, text="Divinisierung (Vergöttlichung)", 
+                font=Fonts.SUBHEADER, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(anchor=tk.W, pady=(0, 10))
+
+        # Textfeld für Divinisierung
+        self.sources_fields['Divinisierung'] = tk.Text(
+            divin_inner, 
+            font=Fonts.INPUT, 
+            bg=AppColors.INPUT_BG, 
+            fg=AppColors.INPUT_FG,
+            height=3, 
+            relief=tk.RIDGE, 
+            bd=2, 
+            wrap=tk.WORD
+        )
+        self.sources_fields['Divinisierung'].pack(fill=tk.BOTH, expand=True)
+
+        # Placeholder-Text
+        self.sources_fields['Divinisierung'].insert('1.0', 
+            "z.B.: 17. Jan. 42 n. Chr.: Consecratio durch Claudius: DIVA AUGUSTA")
+        self.sources_fields['Divinisierung'].config(fg=AppColors.SEARCH_PLACEHOLDER)
+
+        def clear_placeholder_divin(event):
+            if self.sources_fields['Divinisierung'].get('1.0', 'end-1c').startswith("z.B.:"):
+                self.sources_fields['Divinisierung'].delete('1.0', tk.END)
+                self.sources_fields['Divinisierung'].config(fg=AppColors.INPUT_FG)
+
+        def restore_placeholder_divin(event):
+            if not self.sources_fields['Divinisierung'].get('1.0', 'end-1c').strip():
+                self.sources_fields['Divinisierung'].insert('1.0', 
+                    "z.B.: 17. Jan. 42 n. Chr.: Consecratio durch Claudius: DIVA AUGUSTA")
+                self.sources_fields['Divinisierung'].config(fg=AppColors.SEARCH_PLACEHOLDER)
+
+        self.sources_fields['Divinisierung'].bind('<FocusIn>', clear_placeholder_divin)
+        self.sources_fields['Divinisierung'].bind('<FocusOut>', restore_placeholder_divin)
+
+        # ========== Bestattung ==========
+        bestattung_section = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
+        bestattung_section.pack(fill=tk.X, pady=(0, 15))
+
+        bestattung_inner = tk.Frame(bestattung_section, bg=AppColors.TAB_BG)
+        bestattung_inner.pack(fill=tk.BOTH, expand=True, padx=15, pady=15)
+
+        # Titel der Sektion
+        tk.Label(bestattung_inner, text="Bestattung", 
+                font=Fonts.SUBHEADER, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(anchor=tk.W, pady=(0, 10))
+
+        # Textfeld für Bestattung
+        self.sources_fields['Bestattung'] = tk.Text(
+            bestattung_inner, 
+            font=Fonts.INPUT, 
+            bg=AppColors.INPUT_BG, 
+            fg=AppColors.INPUT_FG,
+            height=3, 
+            relief=tk.RIDGE, 
+            bd=2, 
+            wrap=tk.WORD
+        )
+        self.sources_fields['Bestattung'].pack(fill=tk.BOTH, expand=True)
+
+        # Placeholder-Text
+        placeholder_bestattung = "z.B.: Bestattung im Mausoleum Augusti; Caligula hält laudatio funebris für Livia"
+        self.sources_fields['Bestattung'].insert('1.0', placeholder_bestattung)
+        self.sources_fields['Bestattung'].config(fg=AppColors.SEARCH_PLACEHOLDER)
+
+        def clear_placeholder_bestattung(event):
+            if self.sources_fields['Bestattung'].get('1.0', 'end-1c').startswith("z.B.:"):
+                self.sources_fields['Bestattung'].delete('1.0', tk.END)
+                self.sources_fields['Bestattung'].config(fg=AppColors.INPUT_FG)
+
+        def restore_placeholder_bestattung(event):
+            if not self.sources_fields['Bestattung'].get('1.0', 'end-1c').strip():
+                self.sources_fields['Bestattung'].insert('1.0', placeholder_bestattung)
+                self.sources_fields['Bestattung'].config(fg=AppColors.SEARCH_PLACEHOLDER)
+
+        self.sources_fields['Bestattung'].bind('<FocusIn>', clear_placeholder_bestattung)
+        self.sources_fields['Bestattung'].bind('<FocusOut>', restore_placeholder_bestattung)
+
+        # ========== Archäologische Quellen ==========
+        arch_section = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
+        arch_section.pack(fill=tk.X, pady=(0, 15))
+
+        arch_inner = tk.Frame(arch_section, bg=AppColors.TAB_BG)
+        arch_inner.pack(fill=tk.BOTH, expand=True, padx=15, pady=15)
+
+        # Titel der Sektion mit Icon
+        arch_title_frame = tk.Frame(arch_inner, bg=AppColors.TAB_BG)
+        arch_title_frame.pack(fill=tk.X, pady=(0, 10))
+
+        tk.Label(arch_title_frame, text="🏛️ Archäologische Quellen", 
+                font=Fonts.SUBHEADER, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
+
+        # Textfeld für Archäologische Quellen
+        self.sources_fields['Archäologische Quellen'] = tk.Text(
+            arch_inner, 
+            font=Fonts.INPUT, 
+            bg=AppColors.INPUT_BG, 
+            fg=AppColors.INPUT_FG,
+            height=4, 
+            relief=tk.RIDGE, 
+            bd=2, 
+            wrap=tk.WORD
+        )
+        self.sources_fields['Archäologische Quellen'].pack(fill=tk.BOTH, expand=True)
+
+        # ========== Münzen ==========
+        coins_section = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
+        coins_section.pack(fill=tk.X, pady=(0, 15))
+
+        coins_inner = tk.Frame(coins_section, bg=AppColors.TAB_BG)
+        coins_inner.pack(fill=tk.BOTH, expand=True, padx=15, pady=15)
+
+        # Titel der Sektion mit Icon
+        coins_title_frame = tk.Frame(coins_inner, bg=AppColors.TAB_BG)
+        coins_title_frame.pack(fill=tk.X, pady=(0, 10))
+
+        tk.Label(coins_title_frame, text="🪙 Münzen", 
+                font=Fonts.SUBHEADER, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
+
+        # Info-Label
+        info_label = tk.Label(coins_title_frame, 
+                            text="(Prägeort, Datierung, Beschreibung)", 
+                            font=Fonts.STANDARD_ITALIC, 
+                            bg=AppColors.TAB_BG, 
+                            fg=AppColors.STATUS_FG)
+        info_label.pack(side=tk.LEFT, padx=(10, 0))
+
+        # Textfeld für Münzen
+        self.sources_fields['Münzen'] = tk.Text(
+            coins_inner, 
+            font=Fonts.INPUT, 
+            bg=AppColors.INPUT_BG, 
+            fg=AppColors.INPUT_FG,
+            height=4, 
+            relief=tk.RIDGE, 
+            bd=2, 
+            wrap=tk.WORD
+        )
+        self.sources_fields['Münzen'].pack(fill=tk.BOTH, expand=True)
+
+        # ========== Inschriften ==========
+        inscr_section = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
+        inscr_section.pack(fill=tk.BOTH, expand=True)
+
+        inscr_inner = tk.Frame(inscr_section, bg=AppColors.TAB_BG)
+        inscr_inner.pack(fill=tk.BOTH, expand=True, padx=15, pady=15)
+
+        # Titel der Sektion mit Icon
+        inscr_title_frame = tk.Frame(inscr_inner, bg=AppColors.TAB_BG)
+        inscr_title_frame.pack(fill=tk.X, pady=(0, 10))
+
+        tk.Label(inscr_title_frame, text="📜 Inschriften", 
+                font=Fonts.SUBHEADER, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
+
+        # Info-Label
+        info_label = tk.Label(inscr_title_frame, 
+                            text="(Fundort, Datierung, Text)", 
+                            font=Fonts.STANDARD_ITALIC, 
+                            bg=AppColors.TAB_BG, 
+                            fg=AppColors.STATUS_FG)
+        info_label.pack(side=tk.LEFT, padx=(10, 0))
+
+        # Textfeld für Inschriften
+        self.sources_fields['Inschriften'] = tk.Text(
+            inscr_inner, 
+            font=Fonts.INPUT, 
+            bg=AppColors.INPUT_BG, 
+            fg=AppColors.INPUT_FG,
+            height=5, 
+            relief=tk.RIDGE, 
+            bd=2, 
+            wrap=tk.WORD
+        )
+        self.sources_fields['Inschriften'].pack(fill=tk.BOTH, expand=True)
+
+        # ========== Hinweis-Box ==========
+        hint_frame = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
+        hint_frame.pack(fill=tk.X, pady=(15, 0))
+
+        hint_inner = tk.Frame(hint_frame, bg=AppColors.TAB_BG)
+        hint_inner.pack(fill=tk.X, padx=10, pady=10)
+
+        tk.Label(hint_inner, 
+                text=f"{Icons.INFO} Tipp:", 
+                font=Fonts.STANDARD_BOLD, 
+                bg=AppColors.TAB_BG, 
+                fg=AppColors.TAB_FG).pack(side=tk.LEFT)
+
+        tk.Label(hint_inner, 
+                text="Geben Sie bei Münzen und Inschriften möglichst genaue Referenzen an (z.B. RIC-Nummern, CIL-Nummern)", 
+                font=Fonts.STANDARD, 
+                bg=AppColors.TAB_BG, 
+                fg=AppColors.TAB_FG,
+                wraplength=600).pack(side=tk.LEFT, padx=(5, 0))
 
     def CreateLiterarySourcesContent(self, parent):
-        pass
+        """Erstellt den Inhalt für den Literarische Quellen-Tab"""
+        container = tk.Frame(parent, bg=AppColors.TAB_BG)
+        container.pack(fill=tk.BOTH, expand=True, padx=20, pady=20)
+
+        # Titel
+        title_frame = tk.Frame(container, bg=AppColors.TAB_BG)
+        title_frame.pack(fill=tk.X, pady=(0, 20))
+
+        tk.Label(title_frame, text=f"{Icons.FILE} Literarische Quellen", 
+                font=Fonts.HEADER_MEDIUM, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
+
+        # Button zum Hinzufügen
+        add_button = self.CreateStyledButton(
+            title_frame,
+            text=f"{Icons.ADD} Quelle hinzufügen",
+            command=lambda: self.AddLiterarySourceEntry(sources_container),
+            style='Primary'
+        )
+        add_button.pack(side=tk.RIGHT)
+
+        # Info-Text
+        info_frame = tk.Frame(container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
+        info_frame.pack(fill=tk.X, pady=(0, 15))
+
+        info_inner = tk.Frame(info_frame, bg=AppColors.TAB_BG)
+        info_inner.pack(fill=tk.X, padx=10, pady=10)
+
+        tk.Label(info_inner, 
+                text=f"{Icons.INFO} Hinweis:", 
+                font=Fonts.STANDARD_BOLD, 
+                bg=AppColors.TAB_BG, 
+                fg=AppColors.TAB_FG).pack(side=tk.LEFT)
+
+        tk.Label(info_inner, 
+                text="Fügen Sie hier Verweise auf literarische Quellen, wissenschaftliche Publikationen und Online-Ressourcen hinzu.", 
+                font=Fonts.STANDARD, 
+                bg=AppColors.TAB_BG, 
+                fg=AppColors.TAB_FG,
+                wraplength=600).pack(side=tk.LEFT, padx=(5, 0))
+
+        # Container für Quellen-Einträge
+        sources_container = tk.Frame(container, bg=AppColors.TAB_BG)
+        sources_container.pack(fill=tk.BOTH, expand=True)
+
+        self.literary_sources_container = sources_container
+        self.literary_sources_entries = []
+
+        # Beispiel-Eintrag hinzufügen
+        self.AddLiterarySourceEntry(sources_container, example=True)
+
+    def AddLiterarySourceEntry(self, parent, example=False):
+        """Fügt einen neuen Literarische-Quelle-Eintrag hinzu"""
+        source_frame = tk.Frame(parent, bg=AppColors.TAB_BG, relief=tk.RAISED, bd=1)
+        source_frame.pack(fill=tk.X, pady=10)
+        
+        inner_frame = tk.Frame(source_frame, bg=AppColors.TAB_BG)
+        inner_frame.pack(fill=tk.BOTH, expand=True, padx=15, pady=15)
+        
+        # Header mit Nummer und Löschen-Button
+        header_frame = tk.Frame(inner_frame, bg=AppColors.TAB_BG)
+        header_frame.pack(fill=tk.X, pady=(0, 10))
+        
+        tk.Label(header_frame, text=f"📚 Quelle #{len(self.literary_sources_entries) + 1}", 
+                font=Fonts.SUBHEADER, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
+        
+        delete_button = tk.Button(header_frame, text=Icons.DELETE, 
+                                font=Fonts.ICON, bg=AppColors.BUTTON_DANGER_BG,
+                                fg=AppColors.BUTTON_DANGER_FG, bd=0,
+                                command=lambda: self.RemoveLiterarySourceEntry(source_frame),
+                                cursor='hand2')
+        delete_button.pack(side=tk.RIGHT)
+        
+        # Felder Container
+        fields = {}
+        
+        # Autor/Titel Zeile
+        author_frame = tk.Frame(inner_frame, bg=AppColors.TAB_BG)
+        author_frame.pack(fill=tk.X, pady=5)
+        
+        tk.Label(author_frame, text="Autor/Titel:", font=Fonts.STANDARD,
+                bg=AppColors.TAB_BG, fg=AppColors.KU_COLOR,
+                width=12, anchor=tk.W).pack(side=tk.LEFT)
+        
+        author_entry = tk.Entry(author_frame, font=Fonts.INPUT, bg=AppColors.INPUT_BG,
+                            fg=AppColors.INPUT_FG, relief=tk.RIDGE, bd=2)
+        author_entry.pack(side=tk.LEFT, fill=tk.X, expand=True)
+        fields['Autor'] = author_entry
+        
+        # Link Zeile
+        link_frame = tk.Frame(inner_frame, bg=AppColors.TAB_BG)
+        link_frame.pack(fill=tk.X, pady=5)
+        
+        tk.Label(link_frame, text="🔗 Link/URL:", font=Fonts.STANDARD,
+                bg=AppColors.TAB_BG, fg=AppColors.KU_COLOR,
+                width=12, anchor=tk.W).pack(side=tk.LEFT)
+        
+        link_entry = tk.Entry(link_frame, font=Fonts.INPUT, bg=AppColors.INPUT_BG,
+                            fg=AppColors.INPUT_FG, relief=tk.RIDGE, bd=2)
+        link_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=(0, 5))
+        fields['Link'] = link_entry
+        
+        # Button zum Öffnen des Links
+        open_link_button = tk.Button(link_frame, text="🌐 Öffnen",
+                                font=Fonts.BUTTON_SMALL, bg=AppColors.BUTTON_SECONDARY_BG,
+                                fg=AppColors.BUTTON_SECONDARY_FG, bd=0,
+                                command=lambda: self.OpenLink(link_entry.get()),
+                                cursor='hand2', padx=10)
+        open_link_button.pack(side=tk.LEFT)
+        
+        # Zitat/Auszug Zeile
+        quote_frame = tk.Frame(inner_frame, bg=AppColors.TAB_BG)
+        quote_frame.pack(fill=tk.BOTH, expand=True, pady=5)
+        
+        tk.Label(quote_frame, text="Zitat/Auszug:", font=Fonts.STANDARD,
+                bg=AppColors.TAB_BG, fg=AppColors.KU_COLOR,
+                anchor=tk.NW).pack(anchor=tk.W)
+        
+        quote_text = tk.Text(quote_frame, font=Fonts.INPUT, 
+                        bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG,
+                        height=3, relief=tk.RIDGE, bd=2, wrap=tk.WORD)
+        quote_text.pack(fill=tk.BOTH, expand=True, pady=(5, 0))
+        fields['Zitat'] = quote_text
+        
+        # Notizen Zeile
+        notes_frame = tk.Frame(inner_frame, bg=AppColors.TAB_BG)
+        notes_frame.pack(fill=tk.BOTH, expand=True, pady=5)
+        
+        tk.Label(notes_frame, text="Notizen:", font=Fonts.STANDARD,
+                bg=AppColors.TAB_BG, fg=AppColors.KU_COLOR,
+                anchor=tk.NW).pack(anchor=tk.W)
+        
+        notes_text = tk.Text(notes_frame, font=Fonts.INPUT, 
+                        bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG,
+                        height=2, relief=tk.RIDGE, bd=2, wrap=tk.WORD)
+        notes_text.pack(fill=tk.BOTH, expand=True, pady=(5, 0))
+        fields['Notizen'] = notes_text
+        
+        # Beispieldaten einfügen
+        if example:
+            author_entry.insert(0, "Temporini-Gräfin Vitzthum, H. (1978)")
+            author_entry.config(fg=AppColors.SEARCH_PLACEHOLDER)
+            
+            link_entry.insert(0, "https://example.com/livia-augusta")
+            link_entry.config(fg=AppColors.SEARCH_PLACEHOLDER)
+            
+            quote_text.insert('1.0', "Die Rolle der Livia im augusteischen Principat...")
+            quote_text.config(fg=AppColors.SEARCH_PLACEHOLDER)
+            
+            notes_text.insert('1.0', "Wichtige Quelle für...")
+            notes_text.config(fg=AppColors.SEARCH_PLACEHOLDER)
+            
+            # Clear placeholder on focus
+            def clear_placeholder(widget, is_text=False):
+                def handler(event):
+                    if widget['fg'] == AppColors.SEARCH_PLACEHOLDER:
+                        if is_text:
+                            widget.delete('1.0', tk.END)
+                        else:
+                            widget.delete(0, tk.END)
+                        widget.config(fg=AppColors.INPUT_FG)
+                return handler
+            
+            author_entry.bind('<FocusIn>', clear_placeholder(author_entry))
+            link_entry.bind('<FocusIn>', clear_placeholder(link_entry))
+            quote_text.bind('<FocusIn>', clear_placeholder(quote_text, True))
+            notes_text.bind('<FocusIn>', clear_placeholder(notes_text, True))
+        
+        self.literary_sources_entries.append({'frame': source_frame, 'fields': fields})
+        
+        # Scrollbar-Bindung hinzufügen
+        if hasattr(self.tab_literary_sources, 'canvas'):
+            self.BindMouseWheelToWidget(source_frame, self.tab_literary_sources.canvas)
+
+    def RemoveLiterarySourceEntry(self, frame):
+        """Entfernt einen Literarische-Quelle-Eintrag"""
+        # Finde und entferne aus Liste
+        for i, entry in enumerate(self.literary_sources_entries):
+            if entry['frame'] == frame:
+                self.literary_sources_entries.pop(i)
+                break
+        
+        # Entferne Frame
+        frame.destroy()
+        
+        # Nummerierung aktualisieren
+        self.UpdateLiterarySourceNumbers()
+        
+        # Überprüfe, ob Scrollbar benötigt wird
+        if hasattr(self.tab_literary_sources, 'canvas'):
+            self.tab_literary_sources.scroll_enabled = self.check_scroll_needed(self.tab_literary_sources)
+
+    def UpdateLiterarySourceNumbers(self):
+        """Aktualisiert die Nummerierung der literarischen Quellen"""
+        for i, entry in enumerate(self.literary_sources_entries):
+            # Finde das Label im Header
+            header_frame = entry['frame'].winfo_children()[0].winfo_children()[0]
+            for widget in header_frame.winfo_children():
+                if isinstance(widget, tk.Label) and "Quelle #" in widget.cget("text"):
+                    widget.config(text=f"📚 Quelle #{i + 1}")
+                    break
+
+    def OpenLink(self, url):
+        """Öffnet einen Link im Browser"""
+        import webbrowser
+        if url and not url.startswith(("http://", "https://")):
+            url = "https://" + url
+        
+        if url and url != "https://":
+            try:
+                webbrowser.open(url)
+            except:
+                messagebox.showerror("Fehler", "Der Link konnte nicht geöffnet werden.")
+        else:
+            messagebox.showwarning("Hinweis", "Bitte geben Sie einen gültigen Link ein.")
 
     def CreateBasicDataContent(self, parent):
         """Erstellt den Inhalt für den Grunddaten-Tab"""
@@ -538,42 +1375,8 @@ class CreateFrame(BaseContentFrame):
             ('Bemerkungen', 'Bemerkungen', 'text')
         ]
         
-        for field_data in fields:
-            field_key = field_data[0]
-            field_label = field_data[1]
-            field_type = field_data[2]
-            
-            row_frame = tk.Frame(container, bg=AppColors.TAB_BG)
-            row_frame.pack(fill=tk.X, pady=8)
-            
-            # Label
-            label = tk.Label(row_frame, text=f"{field_label}:", 
-                            font=Fonts.STANDARD, bg=AppColors.TAB_BG, 
-                            fg=AppColors.KU_COLOR, width=20, anchor=tk.W)
-            label.pack(side=tk.LEFT, padx=(0, 10))
-            
-            # Widget basierend auf Typ
-            if field_type == 'entry':
-                widget = tk.Entry(row_frame, font=Fonts.INPUT, 
-                                bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG, 
-                                width=40, relief=tk.RIDGE, bd=2)
-                widget.pack(side=tk.LEFT, fill=tk.X, expand=True)
-                
-            elif field_type == 'combo':
-                widget = ttk.Combobox(row_frame, font=Fonts.INPUT, 
-                                    values=field_data[3], width=38, state='readonly')
-                widget.pack(side=tk.LEFT, fill=tk.X, expand=True)
-                
-            elif field_type == 'text':
-                text_frame = tk.Frame(container, bg=AppColors.TAB_BG)
-                text_frame.pack(fill=tk.BOTH, expand=True, pady=8)
-                
-                widget = tk.Text(text_frame, font=Fonts.INPUT, 
-                            bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG,
-                            height=4, relief=tk.RIDGE, bd=2)
-                widget.pack(fill=tk.BOTH, expand=True, pady=(5, 0))
-            
-            # Speichere Referenz
+        for field_key, field_label, field_type in fields:
+            widget = self.CreateFormField(container, field_key, field_label, field_type)
             self.basic_fields[field_key] = widget
 
     def CreateMarriageContent(self, parent):
@@ -597,6 +1400,18 @@ class CreateFrame(BaseContentFrame):
             style='Primary'
         )
         add_button.pack(side=tk.RIGHT)
+
+        basic_container = tk.Frame(container, bg=AppColors.TAB_BG)
+        basic_container.pack(fill=tk.BOTH, expand=tk.TRUE)
+
+        tk.Label(basic_container, text=f"Anzahl Ehen:", 
+                font=Fonts.STANDARD, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR, width=20, anchor=tk.W).pack(side=tk.LEFT, padx=(0, 10))
+        
+        widget = tk.Entry(basic_container, font=Fonts.INPUT, 
+                                bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG, 
+                                width=40, relief=tk.RIDGE, bd=2)
+        widget.pack(side=tk.LEFT, fill=tk.X, expand=True)
         
         # Container für Ehen
         marriages_container = tk.Frame(container, bg=AppColors.TAB_BG)
@@ -624,7 +1439,8 @@ class CreateFrame(BaseContentFrame):
         delete_button = tk.Button(header_frame, text=Icons.DELETE, 
                                 font=Fonts.ICON, bg=AppColors.BUTTON_DANGER_BG,
                                 fg=AppColors.BUTTON_DANGER_FG, bd=0,
-                                command=lambda: self.RemoveMarriageEntry(marriage_frame))
+                                command=lambda: self.RemoveMarriageEntry(marriage_frame),
+                                cursor='hand2')
         delete_button.pack(side=tk.RIGHT)
         
         # Felder
@@ -633,7 +1449,6 @@ class CreateFrame(BaseContentFrame):
             ('Partner', 'Ehepartner'),
             ('Heiratsdatum', 'Heiratsdatum'),
             ('Heiratsort', 'Heiratsort'),
-            ('Scheidungsdatum', 'Scheidungsdatum'),
         ]
         
         for field_key, field_label in field_configs:
@@ -681,6 +1496,10 @@ class CreateFrame(BaseContentFrame):
         # Nummerierung aktualisieren
         self.UpdateMarriageNumbers()
 
+        # Überprüfe, ob Scrollbar benötigt wird
+        if hasattr(self.tab_marriage, 'canvas'):
+            self.tab_marriage.scroll_enabled = self.check_scroll_needed(self.tab_marriage)
+
     def UpdateMarriageNumbers(self):
         """Aktualisiert die Nummerierung der Ehen"""
         for i, entry in enumerate(self.marriage_entries):
@@ -690,6 +1509,21 @@ class CreateFrame(BaseContentFrame):
                 if isinstance(widget, tk.Label):
                     widget.config(text=f"Ehe #{i + 1}")
                     break
+        
+    def check_scroll_needed(self, tab):
+        """Überprüft, ob ein Scrollbar benötigt wird"""
+        canvas = tab.canvas
+        content_height = tab.content_frame.winfo_reqheight()
+        canvas_height = canvas.winfo_height()
+        
+        if content_height > canvas_height:
+            # Scrollbar anzeigen
+            tab.scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+            return True
+        else:
+            # Scrollbar verstecken
+            tab.scrollbar.pack_forget()
+            return False
     
     def CreateChildrenContent(self, parent):
         """Erstellt den Inhalt für den Kinder-Tab"""
@@ -704,28 +1538,26 @@ class CreateFrame(BaseContentFrame):
                 font=Fonts.HEADER_MEDIUM, bg=AppColors.TAB_BG, 
                 fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
         
-        # Statistik
-        stats_frame = tk.Frame(container, bg=AppColors.HIGHLIGHT, relief=tk.RIDGE, bd=1)
-        stats_frame.pack(fill=tk.X, pady=(0, 20))
-        
-        stats_inner = tk.Frame(stats_frame, bg=AppColors.HIGHLIGHT)
-        stats_inner.pack(padx=15, pady=10)
-        
-        self.children_count_label = tk.Label(stats_inner, 
-                                        text="Anzahl Kinder: 0", 
-                                        font=Fonts.STANDARD_BOLD,
-                                        bg=AppColors.HIGHLIGHT, 
-                                        fg=AppColors.KU_COLOR)
-        self.children_count_label.pack()
-        
         # Button zum Hinzufügen
         add_button = self.CreateStyledButton(
-            container,
+            title_frame,
             text=f"{Icons.ADD} Kind hinzufügen",
             command=lambda: self.AddChildEntry(children_container),
             style='Primary'
         )
-        add_button.pack(anchor=tk.W, pady=(0, 10))
+        add_button.pack(side=tk.RIGHT)
+
+        basic_container = tk.Frame(container, bg=AppColors.TAB_BG)
+        basic_container.pack(fill=tk.BOTH, expand=tk.TRUE)
+
+        tk.Label(basic_container, text=f"Anzahl Kinder:", 
+                font=Fonts.STANDARD, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR, width=20, anchor=tk.W).pack(side=tk.LEFT, padx=(0, 10))
+        
+        widget = tk.Entry(basic_container, font=Fonts.INPUT, 
+                                bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG, 
+                                width=40, relief=tk.RIDGE, bd=2)
+        widget.pack(side=tk.LEFT, fill=tk.X, expand=True)
         
         # Container für Kinder
         children_container = tk.Frame(container, bg=AppColors.TAB_BG)
@@ -737,10 +1569,25 @@ class CreateFrame(BaseContentFrame):
     def AddChildEntry(self, parent):
         """Fügt einen neuen Kind-Eintrag hinzu"""
         child_frame = tk.Frame(parent, bg=AppColors.TAB_BG, relief=tk.RAISED, bd=1)
-        child_frame.pack(fill=tk.X, pady=5)
+        child_frame.pack(fill=tk.X, pady=10)
         
         inner_frame = tk.Frame(child_frame, bg=AppColors.TAB_BG)
-        inner_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+        inner_frame.pack(fill=tk.BOTH, expand=True, padx=15, pady=15)
+
+        header_frame = tk.Frame(inner_frame, bg=AppColors.TAB_BG)
+        header_frame.pack(fill=tk.X, pady=(0, 10))
+
+        tk.Label(header_frame, text=f"Kind #{len(self.children_entries) + 1}", 
+                font=Fonts.SUBHEADER, bg=AppColors.TAB_BG, 
+                fg=AppColors.KU_COLOR).pack(side=tk.LEFT)
+        
+        # Löschen-Button
+        delete_button = tk.Button(header_frame, text=Icons.DELETE,
+                                font=Fonts.ICON, bg=AppColors.BUTTON_DANGER_BG,
+                                fg=AppColors.BUTTON_DANGER_FG, bd=0,
+                                command=lambda: self.RemoveChildEntry(child_frame),
+                                cursor='hand2')
+        delete_button.pack(side=tk.RIGHT)
         
         # Container für die erste Zeile (Name, Geschlecht, Geburtsjahr, Löschen)
         first_row = tk.Frame(inner_frame, bg=AppColors.TAB_BG)
@@ -777,13 +1624,6 @@ class CreateFrame(BaseContentFrame):
         birth_entry.pack(side=tk.LEFT, padx=(0, 15))
         fields['Geburtsjahr'] = birth_entry
         
-        # Löschen-Button
-        delete_button = tk.Button(first_row, text=Icons.DELETE,
-                                font=Fonts.ICON, bg=AppColors.BUTTON_DANGER_BG,
-                                fg=AppColors.BUTTON_DANGER_FG, bd=0,
-                                command=lambda: self.RemoveChildEntry(child_frame))
-        delete_button.pack(side=tk.RIGHT)
-        
         # Container für die zweite Zeile (Bemerkung)
         second_row = tk.Frame(inner_frame, bg=AppColors.TAB_BG)
         second_row.pack(fill=tk.BOTH, expand=True, pady=(10, 0))
@@ -799,7 +1639,7 @@ class CreateFrame(BaseContentFrame):
         fields['Bemerkungen'] = note
         
         self.children_entries.append({'frame': child_frame, 'fields': fields})
-        self.UpdateChildrenCount()
+        self.UpdateChildNumbers()
 
         if hasattr(self.tab_children, 'canvas'):
             self.BindMouseWheelToWidget(child_frame, self.tab_children.canvas)
@@ -812,12 +1652,21 @@ class CreateFrame(BaseContentFrame):
                 break
         
         frame.destroy()
-        self.UpdateChildrenCount()
+        self.UpdateChildNumbers()
 
-    def UpdateChildrenCount(self):
-        """Aktualisiert die Anzahl der Kinder"""
-        count = len(self.children_entries)
-        self.children_count_label.config(text=f"Anzahl Kinder: {count}")
+        # Überprüfe, ob Scrollbar benötigt wird
+        if hasattr(self.tab_children, 'canvas'):
+            self.tab_children.scroll_enabled = self.check_scroll_needed(self.tab_children)
+
+    def UpdateChildNumbers(self):
+        """Aktualisiert die Nummerierung der Ehen"""
+        for i, entry in enumerate(self.children_entries):
+            # Finde das Label im Header
+            header_frame = entry['frame'].winfo_children()[0].winfo_children()[0]
+            for widget in header_frame.winfo_children():
+                if isinstance(widget, tk.Label):
+                    widget.config(text=f"Kind #{i + 1}")
+                    break
 
     def CreateScrollableTab(self, tab):
         """Erstellt einen scrollbaren Bereich innerhalb eines Tabs"""
