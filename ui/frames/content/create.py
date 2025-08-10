@@ -100,9 +100,6 @@ class CreateFrame(BaseContentFrame):
         search_entry.pack(side=tk.LEFT, fill=tk.Y, pady=8, padx=(0, UIConstants.PADDING_MEDIUM))
         search_entry.bind('<KeyRelease>', self.FilterTable)
         
-        # Placeholder-Text
-        self.AddPlaceholder(search_entry, Messages.SEARCH_PLACEHOLDER)
-        
         # Tabellen-Container
         table_container = tk.Frame(top_frame, bg=AppColors.CONTENT_FRAME)
         table_container.pack(fill=tk.BOTH, expand=True, padx=UIConstants.PADDING_LARGE, pady=(UIConstants.PADDING_MEDIUM, UIConstants.PADDING_SMALL))
@@ -394,27 +391,13 @@ class CreateFrame(BaseContentFrame):
         # Events
         self.notebook.bind('<<NotebookTabChanged>>', self.OnTabChanged)
 
-    # Hilfsmethoden
-    def AddPlaceholder(self, entry, placeholder_text):
-        """Fügt Placeholder-Text zu einem Entry-Widget hinzu"""
-        entry.insert(0, placeholder_text)
-        entry['fg'] = AppColors.SEARCH_PLACEHOLDER
-        
-        def on_focus_in(event):
-            if entry.get() == placeholder_text:
-                entry.delete(0, tk.END)
-                entry['fg'] = AppColors.SEARCH_FG
-        
-        def on_focus_out(event):
-            if entry.get() == '':
-                entry.insert(0, placeholder_text)
-                entry['fg'] = AppColors.SEARCH_PLACEHOLDER
-        
-        entry.bind('<FocusIn>', on_focus_in)
-        entry.bind('<FocusOut>', on_focus_out)
-
     def LoadTableData(self):
         """Lädt Daten in die Tabelle"""
+
+        # Alle aktuellen Einträge entfernen
+        for item in self.tree.get_children():
+            self.tree.delete(item)
+
         for roman in self.__app.romans:
             self.tree.insert('', tk.END, values=(
                 roman.get('Name', ''), 
@@ -750,18 +733,6 @@ class CreateFrame(BaseContentFrame):
         )
         self.honors_fields['Augusta-Titel-Details'].pack(fill=tk.BOTH, expand=True)
 
-        # Placeholder-Text für Beispiel
-        self.honors_fields['Augusta-Titel-Details'].insert('1.0', 
-            "z.B.: 3. oder 4. September 14 n. Chr.: IULIA AUGUSTA")
-        self.honors_fields['Augusta-Titel-Details'].config(fg=AppColors.SEARCH_PLACEHOLDER)
-
-        def clear_placeholder_augusta(event):
-            if self.honors_fields['Augusta-Titel-Details'].get('1.0', 'end-1c').startswith("z.B.:"):
-                self.honors_fields['Augusta-Titel-Details'].delete('1.0', tk.END)
-                self.honors_fields['Augusta-Titel-Details'].config(fg=AppColors.INPUT_FG)
-
-        self.honors_fields['Augusta-Titel-Details'].bind('<FocusIn>', clear_placeholder_augusta)
-
         # ========== Carpentum-Recht ==========
         carpentum_section = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
         carpentum_section.pack(fill=tk.X, pady=(0, 15))
@@ -815,17 +786,6 @@ class CreateFrame(BaseContentFrame):
         )
         self.honors_fields['Carpentum-Recht-Details'].pack(fill=tk.BOTH, expand=True)
 
-        # Placeholder-Text für Beispiel
-        self.honors_fields['Carpentum-Recht-Details'].insert('1.0', 
-            "z.B.: 22 n. Chr. Erhalten")
-        self.honors_fields['Carpentum-Recht-Details'].config(fg=AppColors.SEARCH_PLACEHOLDER)
-
-        def clear_placeholder_carpentum(event):
-            if self.honors_fields['Carpentum-Recht-Details'].get('1.0', 'end-1c').startswith("z.B.:"):
-                self.honors_fields['Carpentum-Recht-Details'].delete('1.0', tk.END)
-                self.honors_fields['Carpentum-Recht-Details'].config(fg=AppColors.INPUT_FG)
-
-        self.honors_fields['Carpentum-Recht-Details'].bind('<FocusIn>', clear_placeholder_carpentum)
 
         # ========== Weitere Ehrungen ==========
         weitere_section = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
@@ -862,31 +822,6 @@ class CreateFrame(BaseContentFrame):
             wrap=tk.WORD
         )
         self.honors_fields['Weitere'].pack(fill=tk.BOTH, expand=True)
-
-        # Beispiel-Placeholder
-        placeholder_text = """Beispiele:
-    35 v. Chr.: Sacrosanctitas; Befreiung von der tutela mulierum, Statuenrecht
-    9 v. Chr.: ius trium liberorum
-    3. oder 4. September 14 n. Chr.: Sacerdos divi Augusti; Adoption auf Grund von A. Testament
-    22 n. Chr.: vota pro valetudine
-    23 n. Chr.: Beschluss eines Tempels für Tiberius, Iulia Augusta und den Senatus in Asia
-    27 n. Chr.: Vota pro salute Augustae"""
-
-        self.honors_fields['Weitere'].insert('1.0', placeholder_text)
-        self.honors_fields['Weitere'].config(fg=AppColors.SEARCH_PLACEHOLDER)
-
-        def clear_placeholder_weitere(event):
-            if self.honors_fields['Weitere'].get('1.0', 'end-1c').startswith("Beispiele:"):
-                self.honors_fields['Weitere'].delete('1.0', tk.END)
-                self.honors_fields['Weitere'].config(fg=AppColors.INPUT_FG)
-
-        def restore_placeholder_weitere(event):
-            if not self.honors_fields['Weitere'].get('1.0', 'end-1c').strip():
-                self.honors_fields['Weitere'].insert('1.0', placeholder_text)
-                self.honors_fields['Weitere'].config(fg=AppColors.SEARCH_PLACEHOLDER)
-
-        self.honors_fields['Weitere'].bind('<FocusIn>', clear_placeholder_weitere)
-        self.honors_fields['Weitere'].bind('<FocusOut>', restore_placeholder_weitere)
 
         # ========== Hinweis-Box ==========
         hint_frame = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
@@ -950,25 +885,6 @@ class CreateFrame(BaseContentFrame):
         )
         self.sources_fields['Divinisierung'].pack(fill=tk.BOTH, expand=True)
 
-        # Placeholder-Text
-        self.sources_fields['Divinisierung'].insert('1.0', 
-            "z.B.: 17. Jan. 42 n. Chr.: Consecratio durch Claudius: DIVA AUGUSTA")
-        self.sources_fields['Divinisierung'].config(fg=AppColors.SEARCH_PLACEHOLDER)
-
-        def clear_placeholder_divin(event):
-            if self.sources_fields['Divinisierung'].get('1.0', 'end-1c').startswith("z.B.:"):
-                self.sources_fields['Divinisierung'].delete('1.0', tk.END)
-                self.sources_fields['Divinisierung'].config(fg=AppColors.INPUT_FG)
-
-        def restore_placeholder_divin(event):
-            if not self.sources_fields['Divinisierung'].get('1.0', 'end-1c').strip():
-                self.sources_fields['Divinisierung'].insert('1.0', 
-                    "z.B.: 17. Jan. 42 n. Chr.: Consecratio durch Claudius: DIVA AUGUSTA")
-                self.sources_fields['Divinisierung'].config(fg=AppColors.SEARCH_PLACEHOLDER)
-
-        self.sources_fields['Divinisierung'].bind('<FocusIn>', clear_placeholder_divin)
-        self.sources_fields['Divinisierung'].bind('<FocusOut>', restore_placeholder_divin)
-
         # ========== Bestattung ==========
         bestattung_section = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
         bestattung_section.pack(fill=tk.X, pady=(0, 15))
@@ -993,24 +909,6 @@ class CreateFrame(BaseContentFrame):
             wrap=tk.WORD
         )
         self.sources_fields['Bestattung'].pack(fill=tk.BOTH, expand=True)
-
-        # Placeholder-Text
-        placeholder_bestattung = "z.B.: Bestattung im Mausoleum Augusti; Caligula hält laudatio funebris für Livia"
-        self.sources_fields['Bestattung'].insert('1.0', placeholder_bestattung)
-        self.sources_fields['Bestattung'].config(fg=AppColors.SEARCH_PLACEHOLDER)
-
-        def clear_placeholder_bestattung(event):
-            if self.sources_fields['Bestattung'].get('1.0', 'end-1c').startswith("z.B.:"):
-                self.sources_fields['Bestattung'].delete('1.0', tk.END)
-                self.sources_fields['Bestattung'].config(fg=AppColors.INPUT_FG)
-
-        def restore_placeholder_bestattung(event):
-            if not self.sources_fields['Bestattung'].get('1.0', 'end-1c').strip():
-                self.sources_fields['Bestattung'].insert('1.0', placeholder_bestattung)
-                self.sources_fields['Bestattung'].config(fg=AppColors.SEARCH_PLACEHOLDER)
-
-        self.sources_fields['Bestattung'].bind('<FocusIn>', clear_placeholder_bestattung)
-        self.sources_fields['Bestattung'].bind('<FocusOut>', restore_placeholder_bestattung)
 
         # ========== Archäologische Quellen ==========
         arch_section = tk.Frame(main_container, bg=AppColors.TAB_BG, relief=tk.RIDGE, bd=1)
@@ -1271,37 +1169,7 @@ class CreateFrame(BaseContentFrame):
                         height=2, relief=tk.RIDGE, bd=2, wrap=tk.WORD)
         notes_text.pack(fill=tk.BOTH, expand=True, pady=(5, 0))
         fields['Notizen'] = notes_text
-        
-        # Beispieldaten einfügen
-        if example:
-            author_entry.insert(0, "Temporini-Gräfin Vitzthum, H. (1978)")
-            author_entry.config(fg=AppColors.SEARCH_PLACEHOLDER)
             
-            link_entry.insert(0, "https://example.com/livia-augusta")
-            link_entry.config(fg=AppColors.SEARCH_PLACEHOLDER)
-            
-            quote_text.insert('1.0', "Die Rolle der Livia im augusteischen Principat...")
-            quote_text.config(fg=AppColors.SEARCH_PLACEHOLDER)
-            
-            notes_text.insert('1.0', "Wichtige Quelle für...")
-            notes_text.config(fg=AppColors.SEARCH_PLACEHOLDER)
-            
-            # Clear placeholder on focus
-            def clear_placeholder(widget, is_text=False):
-                def handler(event):
-                    if widget['fg'] == AppColors.SEARCH_PLACEHOLDER:
-                        if is_text:
-                            widget.delete('1.0', tk.END)
-                        else:
-                            widget.delete(0, tk.END)
-                        widget.config(fg=AppColors.INPUT_FG)
-                return handler
-            
-            author_entry.bind('<FocusIn>', clear_placeholder(author_entry))
-            link_entry.bind('<FocusIn>', clear_placeholder(link_entry))
-            quote_text.bind('<FocusIn>', clear_placeholder(quote_text, True))
-            notes_text.bind('<FocusIn>', clear_placeholder(notes_text, True))
-        
         self.literary_sources_entries.append({'frame': source_frame, 'fields': fields})
         
         # Scrollbar-Bindung hinzufügen
@@ -1732,10 +1600,6 @@ class CreateFrame(BaseContentFrame):
         """Filtert die Tabelle basierend auf der Sucheingabe"""
         search_term = self.search_var.get().lower()
         
-        # Placeholder-Text ignorieren
-        if search_term == Messages.SEARCH_PLACEHOLDER.lower():
-            return
-        
         # Alle Items löschen
         for item in self.tree.get_children():
             self.tree.delete(item)
@@ -1863,7 +1727,178 @@ class CreateFrame(BaseContentFrame):
 
     def SaveChanges(self):
         """Speichert die Änderungen"""
-        print(f"{Icons.SAVE} {Messages.SAVE_SUCCESS}")
+        if self.__current_roman is None:
+            return
+        
+        # Sammle die geänderten Eigenschaften
+        properties = self.__current_roman.properties.copy()
+        
+        # ========== GRUNDDATEN TAB ==========
+        basic_fields_mapping = {
+            'Name': 'Name',
+            'Geburtsdatum': 'Geburtsdatum',
+            'Geburtsort': 'Geburtsort',
+            'Sterbedatum': 'Sterbedatum',
+            'Sterbeort': 'Sterbeort',
+            'Todesursache': 'Todesursache',
+            'Bemerkungen': 'Bemerkungen'
+        }
+        
+        for field_key, json_key in basic_fields_mapping.items():
+            if field_key in self.basic_fields:
+                widget = self.basic_fields[field_key]
+                if isinstance(widget, tk.Text):
+                    properties[json_key] = widget.get('1.0', tk.END).strip()
+                else:
+                    properties[json_key] = widget.get().strip()
+        
+        # ========== EHEN TAB ==========
+        ehen = []
+        for entry in self.marriage_entries:
+            ehe = {}
+            fields = entry['fields']
+            
+            if 'Partner' in fields:
+                ehe['Partner'] = fields['Partner'].get().strip()
+            
+            if 'Heiratsdatum' in fields:
+                ehe['Heiratsdatum'] = fields['Heiratsdatum'].get().strip()
+            
+            if 'Heiratsort' in fields:
+                ehe['Heiratsort'] = fields['Heiratsort'].get().strip()
+            
+            ehen.append(ehe)
+        
+        properties['Ehen'] = ehen
+        
+        # ========== KINDER TAB ==========
+        kinder = []
+        for entry in self.children_entries:
+            kind = {}
+            fields = entry['fields']
+            
+            if 'Name' in fields:
+                kind['Name'] = fields['Name'].get().strip()
+            
+            if 'Geschlecht' in fields:
+                kind['Geschlecht'] = fields['Geschlecht'].get().strip()
+            
+            if 'Geburtsjahr' in fields:
+                kind['Geburtsjahr'] = fields['Geburtsjahr'].get().strip()
+            
+            if 'Bemerkungen' in fields:
+                kind['Bemerkungen'] = fields['Bemerkungen'].get('1.0', tk.END).strip()
+            
+            kinder.append(kind)
+        
+        properties['Kinder'] = kinder
+        
+        # ========== FAMILIE TAB ==========
+        family_fields_mapping = {
+            'Vater': 'Vater',
+            'Mutter': 'Mutter',
+            'Geschwister': 'Geschwister',
+            'Vorfahren': 'Vorfahren',
+            'Bemerkungen': 'Familienbemerkungen'
+        }
+        
+        for field_key, json_key in family_fields_mapping.items():
+            if field_key in self.family_fields:
+                widget = self.family_fields[field_key]
+                if isinstance(widget, tk.Text):
+                    properties[json_key] = widget.get('1.0', tk.END).strip()
+                else:
+                    properties[json_key] = widget.get().strip()
+        
+        # ========== BESONDERHEITEN TAB ==========
+        besonderheiten = {}
+        
+        if 'Auftreten' in self.special_fields:
+            besonderheiten['Auftreten'] = self.special_fields['Auftreten'].get().strip()
+        
+        if 'Kleidung' in self.special_fields:
+            besonderheiten['Kleidung'] = self.special_fields['Kleidung'].get().strip()
+        
+        if 'Schmuck' in self.special_fields:
+            besonderheiten['Schmuck'] = self.special_fields['Schmuck'].get().strip()
+        
+        if 'Öffentlich' in self.special_fields:
+            besonderheiten['Öffentlich'] = self.special_fields['Öffentlich'].get('1.0', tk.END).strip()
+        
+        if 'Privat' in self.special_fields:
+            besonderheiten['Privat'] = self.special_fields['Privat'].get('1.0', tk.END).strip()
+        
+        if 'Bemerkungen' in self.special_fields:
+            besonderheiten['Bemerkungen'] = self.special_fields['Bemerkungen'].get('1.0', tk.END).strip()
+        
+        properties['Besonderheiten'] = besonderheiten
+        
+        # ========== EHRUNGEN TAB ==========
+        ehrungen = {}
+        
+        if 'Augusta-Titel-Status' in self.honors_fields:
+            ehrungen['Augusta-Titel'] = self.honors_fields['Augusta-Titel-Status'].get().strip()
+        
+        if 'Carpentum-Recht-Status' in self.honors_fields:
+            ehrungen['Carpentum-Recht'] = self.honors_fields['Carpentum-Recht-Status'].get().strip()
+        
+        if 'Weitere' in self.honors_fields:
+            ehrungen['Weitere'] = self.honors_fields['Weitere'].get('1.0', tk.END).strip()
+        
+        properties['Ehrungen'] = ehrungen
+        
+        # ========== QUELLEN TAB ==========
+        quellen = {}
+        
+        if 'Divinisierung' in self.sources_fields:
+            quellen['Divinisierung'] = self.sources_fields['Divinisierung'].get('1.0', tk.END).strip()
+        
+        if 'Bestattung' in self.sources_fields:
+            quellen['Bestattung'] = self.sources_fields['Bestattung'].get('1.0', tk.END).strip()
+        
+        if 'Archäologische Quellen' in self.sources_fields:
+            quellen['Archäologische Quellen'] = self.sources_fields['Archäologische Quellen'].get('1.0', tk.END).strip()
+        
+        if 'Münzen' in self.sources_fields:
+            quellen['Münzen'] = self.sources_fields['Münzen'].get('1.0', tk.END).strip()
+        
+        if 'Inschriften' in self.sources_fields:
+            quellen['Inschriften'] = self.sources_fields['Inschriften'].get('1.0', tk.END).strip()
+        
+        properties['Quellen'] = quellen
+        
+        # ========== LITERARISCHE QUELLEN TAB ==========
+        literarische_quellen = []
+        for entry in self.literary_sources_entries:
+            quelle = {}
+            fields = entry['fields']
+            
+            if 'Autor' in fields:
+                quelle['Autor'] = fields['Autor'].get().strip()
+            
+            if 'Link' in fields:
+                quelle['Link'] = fields['Link'].get().strip()
+            
+            if 'Zitat' in fields:
+                quelle['Zitat'] = fields['Zitat'].get('1.0', tk.END).strip()
+            
+            if 'Notizen' in fields:
+                quelle['Notizen'] = fields['Notizen'].get('1.0', tk.END).strip()
+            
+            literarische_quellen.append(quelle)
+        
+        properties['Literarische Quellen'] = literarische_quellen
+        
+        # Erstelle ein EditRomanCommand
+        command = EditRomanCommand(self.__current_roman, properties)
+        
+        # Führe das Command aus
+        self.__app.command_manager.ExecuteCommand(command)
+        
+        # Aktualisiere die Tabelle
+        self.LoadTableData()
+        self.__app.menu_manager.UpdateEditMenuState()
+        self.__app.file_modified = True
 
     def ExportData(self):
         """Exportiert die Daten"""
@@ -2030,8 +2065,6 @@ class CreateFrame(BaseContentFrame):
                 self.honors_fields['Augusta-Titel-Status'].set('Unbekannt')
         
         if 'Augusta-Titel-Details' in self.honors_fields:
-            # Entferne Placeholder wenn vorhanden
-            self.honors_fields['Augusta-Titel-Details'].delete('1.0', tk.END)
             # Füge den vollen Text ein
             self.honors_fields['Augusta-Titel-Details'].insert('1.0', augusta_value)
             if augusta_value:
@@ -2077,21 +2110,10 @@ class CreateFrame(BaseContentFrame):
                 widget = self.sources_fields[field_key]
                 value = quellen.get(json_key, '')
                 
-                # Lösche Placeholder oder vorherigen Inhalt
-                widget.delete('1.0', tk.END)
-                
                 # Füge neuen Wert ein
                 if value:
                     widget.insert('1.0', value)
                     widget.config(fg=AppColors.INPUT_FG)
-                else:
-                    # Wenn leer, zeige Placeholder wieder an (nur für bestimmte Felder)
-                    if field_key == 'Divinisierung':
-                        widget.insert('1.0', "z.B.: 17. Jan. 42 n. Chr.: Consecratio durch Claudius: DIVA AUGUSTA")
-                        widget.config(fg=AppColors.SEARCH_PLACEHOLDER)
-                    elif field_key == 'Bestattung':
-                        widget.insert('1.0', "z.B.: Bestattung im Mausoleum Augusti; Caligula hält laudatio funebris für Livia")
-                        widget.config(fg=AppColors.SEARCH_PLACEHOLDER)
         
         # ========== LITERARISCHE QUELLEN TAB ==========
         # Erst alle vorhandenen Einträge löschen
