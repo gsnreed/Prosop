@@ -93,30 +93,6 @@
                     "Geschlecht": "",
                     "Geburtsjahr": "",
                     "Bemerkungen": ""
-                },
-                {
-                    "Name": "",
-                    "Geschlecht": "",
-                    "Geburtsjahr": "",
-                    "Bemerkungen": ""
-                },
-                {
-                    "Name": "",
-                    "Geschlecht": "",
-                    "Geburtsjahr": "",
-                    "Bemerkungen": ""
-                },
-                {
-                    "Name": "",
-                    "Geschlecht": "",
-                    "Geburtsjahr": "",
-                    "Bemerkungen": ""
-                },
-                {
-                    "Name": "",
-                    "Geschlecht": "",
-                    "Geburtsjahr": "",
-                    "Bemerkungen": ""
                 }
             ],
             "Geburtsdatum": "um 70 v. Chr.",
@@ -379,8 +355,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -413,7 +391,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Claudia Livia Iulia = Livilla",
@@ -447,8 +426,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -481,7 +462,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Servillia",
@@ -514,8 +496,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -548,7 +532,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Clodia",
@@ -581,8 +566,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -615,7 +602,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Scribonia",
@@ -656,8 +644,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -690,7 +680,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Livia Drusilla",
@@ -730,8 +721,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Ja",
-                "Carpentum-Recht": "Ja",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": "35 v. Chr.: Sacrosanctitas; Befreiung von der tutela mulierum, Statuenrecht9 v. Chr.: ius trium liberorum3. oder 4. September 14 n. Chr.: Sacerdos divi Augusti; Adotpion auf Grund von A. Testament22 n. Chr.: vota pro valetudine23 n. Chr.: Beschluss eines Tempels für Tiberius, Iulia Augusta und den Senatus in Asia.27 n. Chr.: Vota prosalute Augustae"
             },
             "Quellen": {
@@ -764,7 +757,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Iulia",
@@ -829,8 +823,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -863,7 +859,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Vipsania Iulia",
@@ -902,8 +899,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -936,7 +935,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Vipsania Agrippina",
@@ -970,8 +970,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -1004,7 +1006,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Agrippina maior",
@@ -1044,7 +1047,7 @@
             "Vorfahren": "",
             "Verlobung": "",
             "Häufigkeit Heirat": "1x Verheiratet",
-            "Anzahl Kinder": "4 Kinder ",
+            "Anzahl Kinder": "4 Kinder",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1055,8 +1058,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": "in der Tabula Siarensis mit den Ehrbeschlüssen für Germanicus war sie offenbar genannt (DNP, 297)"
             },
             "Quellen": {
@@ -1089,7 +1094,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Agrippina minor",
@@ -1113,7 +1119,7 @@
             "Vorfahren": "",
             "Verlobung": "",
             "Häufigkeit Heirat": "3x Verheiratet",
-            "Anzahl Kinder": "1 Kind ",
+            "Anzahl Kinder": "1 Kind",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -1124,8 +1130,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Ja",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": "50 n-. Chr.: Gründung der Colonia Claudia Ara Agrippinensium auf Veranlassung Agrippinas;seit 13. Oktober 54 n. Chr.: MATER AUGUSTI, flaminica divi Claudi."
             },
             "Quellen": {
@@ -1158,7 +1166,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Iulia Drusilla",
@@ -1192,8 +1201,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": "37 n. Chr.: Aufnahme in den Treueeid für Caligula; erhält Ehrenrechte der Vestalinnen"
             },
             "Quellen": {
@@ -1226,7 +1237,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Iulia Livilla",
@@ -1259,8 +1271,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": "37 n. Chr.: Aufnahmein den Treueid für Caligula, erhält Ehrenrechte der Vestalinnen"
             },
             "Quellen": {
@@ -1293,7 +1307,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Iunia Claudilla (oder Iunia Claudia)",
@@ -1326,8 +1341,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -1360,7 +1377,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Orestilla / Cornelia(Livia) Orestina",
@@ -1394,8 +1412,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -1412,7 +1432,8 @@
                 {
                     "Partner": "Bob",
                     "Heiratsdatum": "",
-                    "Heiratsort": ""
+                    "Heiratsort": "",
+                    "Bemerkungen": ""
                 }
             ],
             "Vater": "",
@@ -1434,7 +1455,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Lollia Paulina",
@@ -1468,8 +1490,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -1502,7 +1526,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Milonia Caesonia",
@@ -1535,8 +1560,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Nein",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -1569,7 +1596,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Iulia Drusilla",
@@ -1669,8 +1697,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -1703,7 +1733,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Livia Medullina",
@@ -1736,8 +1767,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -1770,7 +1803,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Plautia Urgulanilla",
@@ -1809,8 +1843,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -1843,7 +1879,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Aelia Paetina",
@@ -1876,8 +1913,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -1910,7 +1949,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Antonia",
@@ -1944,8 +1984,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -1978,7 +2020,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Valeria Messalina",
@@ -2018,8 +2061,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -2052,7 +2097,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Iulia, Tochter des Drusus",
@@ -2085,8 +2131,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -2119,7 +2167,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Claudia Octavia",
@@ -2152,8 +2201,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -2186,7 +2237,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Claudia Antonia",
@@ -2209,7 +2261,7 @@
             "Vorfahren": "",
             "Verlobung": "",
             "Häufigkeit Heirat": "2x Verheiratet",
-            "Anzahl Kinder": "1 Kind ",
+            "Anzahl Kinder": "1 Kind",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -2220,8 +2272,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -2254,7 +2308,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Octavia Claudia",
@@ -2287,8 +2342,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -2321,7 +2378,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Poppaea Sabina",
@@ -2362,8 +2420,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Ja",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -2396,7 +2456,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Claudia Augusta",
@@ -2429,8 +2490,10 @@
                 "Privat": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -2463,7 +2526,8 @@
                     "Zitat": "",
                     "Notizen": ""
                 }
-            ]
+            ],
+            "Anzahl Ehen": ""
         },
         {
             "Name": "Statilia Messalina",
@@ -2685,7 +2749,7 @@
             "Literarische Quellen": [
                 {
                     "Autor": "811",
-                    "Link": "812",
+                    "Link": "google.de",
                     "Zitat": "813",
                     "Notizen": "814"
                 },

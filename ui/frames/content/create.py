@@ -1903,6 +1903,8 @@ class CreateFrame(BaseContentFrame):
         if not result:
             return
         
+        self.create_button.config(state=tk.NORMAL)
+        
         # Erstelle ein RemoveRomanCommand
         command = RemoveRomanCommand(self.__app.romans, self.__app.romans.index(self.__current_roman))
         
