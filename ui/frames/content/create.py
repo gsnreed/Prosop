@@ -3,6 +3,7 @@ from tkinter import ttk, messagebox
 import os
 import sys
 import json
+import webbrowser
 
 # Zwei Ebenen nach oben: von ui/frames/content/ → Prosop/
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
@@ -1221,7 +1222,6 @@ class CreateFrame(BaseContentFrame):
 
     def OpenLink(self, url):
         """Öffnet einen Link im Browser"""
-        import webbrowser
         if url and not url.startswith(("http://", "https://")):
             url = "https://" + url
         
@@ -1397,6 +1397,8 @@ class CreateFrame(BaseContentFrame):
                     bg=AppColors.INPUT_BG, fg=AppColors.INPUT_FG,
                     height=4, relief=tk.RIDGE, bd=2)
         widget.pack(fill=tk.BOTH, expand=True, pady=(5, 0))
+
+        fields['Bemerkungen'] = widget
         
         self.marriage_entries.append({'frame': marriage_frame, 'fields': fields})
 
@@ -1776,6 +1778,12 @@ class CreateFrame(BaseContentFrame):
         
         # Führe das Command aus
         self.__app.command_manager.ExecuteCommand(command)
+
+        # Feld sperren
+        self.create_button.config(state=tk.DISABLED)
+
+        # In ersten Tab wechseln
+        self.notebook.select(0)
         
         # Aktualisiere die Tabelle
         self.LoadTableData()
@@ -1918,6 +1926,9 @@ class CreateFrame(BaseContentFrame):
 
     def SaveChanges(self):
         """Speichert die Änderungen"""
+
+        self.create_button.config(state=tk.NORMAL)
+
         if self.__current_roman is None:
             return
         
@@ -1948,6 +1959,7 @@ class CreateFrame(BaseContentFrame):
                     properties[json_key] = widget.get().strip()
         
         # ========== EHEN TAB ==========
+        properties['Anzahl Ehen'] = self.marriage_widget.get().strip()
         ehen = []
         for entry in self.marriage_entries:
             ehe = {}
@@ -1962,11 +1974,15 @@ class CreateFrame(BaseContentFrame):
             if 'Heiratsort' in fields:
                 ehe['Heiratsort'] = fields['Heiratsort'].get().strip()
             
+            if 'Bemerkungen' in fields:
+                ehe['Bemerkungen'] = fields['Bemerkungen'].get('1.0', tk.END).strip()
+            
             ehen.append(ehe)
         
         properties['Ehen'] = ehen
         
         # ========== KINDER TAB ==========
+        properties['Anzahl Kinder'] = self.children_widget.get().strip()
         kinder = []
         for entry in self.children_entries:
             kind = {}
@@ -2032,10 +2048,16 @@ class CreateFrame(BaseContentFrame):
         ehrungen = {}
         
         if 'Augusta-Titel-Status' in self.honors_fields:
-            ehrungen['Augusta-Titel'] = self.honors_fields['Augusta-Titel-Status'].get().strip()
+            ehrungen['Augusta-Titel-Status'] = self.honors_fields['Augusta-Titel-Status'].get().strip()
+        
+        if 'Augusta-Titel-Details' in self.honors_fields:
+            ehrungen['Augusta-Titel-Details'] = self.honors_fields['Augusta-Titel-Details'].get('1.0', tk.END).strip()
         
         if 'Carpentum-Recht-Status' in self.honors_fields:
-            ehrungen['Carpentum-Recht'] = self.honors_fields['Carpentum-Recht-Status'].get().strip()
+            ehrungen['Carpentum-Recht-Status'] = self.honors_fields['Carpentum-Recht-Status'].get().strip()
+
+        if 'Carpentum-Recht-Details' in self.honors_fields:
+            ehrungen['Carpentum-Recht-Details'] = self.honors_fields['Carpentum-Recht-Details'].get('1.0', tk.END).strip()
         
         if 'Weitere' in self.honors_fields:
             ehrungen['Weitere'] = self.honors_fields['Weitere'].get('1.0', tk.END).strip()
@@ -2118,11 +2140,13 @@ class CreateFrame(BaseContentFrame):
                 field.delete(0, tk.END)
         
         # ========== EHEN TAB ==========
+        self.marriage_widget.delete(0, tk.END)
         for entry in self.marriage_entries[:]:
             entry['frame'].destroy()
         self.marriage_entries.clear()
         
         # ========== KINDER TAB ==========
+        self.children_widget.delete(0, tk.END)
         for entry in self.children_entries[:]:
             entry['frame'].destroy()
         self.children_entries.clear()
@@ -2203,6 +2227,8 @@ class CreateFrame(BaseContentFrame):
         
         # ========== EHEN TAB ==========
         # Erst alle vorhandenen Ehen-Einträge löschen
+        self.marriage_widget.delete(0, tk.END)
+        self.marriage_widget.insert(0, self.__current_roman.get('Anzahl Ehen', ''))
         for entry in self.marriage_entries[:]:
             entry['frame'].destroy()
         self.marriage_entries.clear()
@@ -2227,9 +2253,15 @@ class CreateFrame(BaseContentFrame):
                 if 'Heiratsort' in fields and 'Heiratsort' in ehe:
                     fields['Heiratsort'].delete(0, tk.END)
                     fields['Heiratsort'].insert(0, ehe['Heiratsort'])
+
+                if 'Bemerkungen' in fields and 'Bemerkungen' in ehe:    # Textfeld
+                    fields['Bemerkungen'].delete('1.0', tk.END)
+                    fields['Bemerkungen'].insert('1.0', ehe['Bemerkungen'])
         
         # ========== KINDER TAB ==========
         # Erst alle vorhandenen Kinder-Einträge löschen
+        self.children_widget.delete(0, tk.END)
+        self.children_widget.insert(0, self.__current_roman.get('Anzahl Kinder', ''))
         for entry in self.children_entries[:]:
             entry['frame'].destroy()
         self.children_entries.clear()
@@ -2280,7 +2312,7 @@ class CreateFrame(BaseContentFrame):
                     widget.insert(0, value)
         
         # ========== BESONDERHEITEN TAB ==========
-        besonderheiten = self.__current_roman.get('Individuelle Besonderheiten', {})
+        besonderheiten = self.__current_roman.get('Besonderheiten', {})
         
         # Äußere Erscheinung
         if 'Auftreten' in self.special_fields:
@@ -2296,17 +2328,16 @@ class CreateFrame(BaseContentFrame):
             self.special_fields['Schmuck'].insert(0, besonderheiten.get('Schmuck', ''))
         
         # Inszenierung
-        inszenierung = besonderheiten.get('Inszenierung', {})
         
         if 'Öffentlich' in self.special_fields:
             self.special_fields['Öffentlich'].delete('1.0', tk.END)
-            self.special_fields['Öffentlich'].insert('1.0', inszenierung.get('Öffentlich', ''))
+            self.special_fields['Öffentlich'].insert('1.0', besonderheiten.get('Öffentlich', ''))
             if self.special_fields['Öffentlich'].get('1.0', 'end-1c'):
                 self.special_fields['Öffentlich'].config(fg=AppColors.INPUT_FG)
         
         if 'Privat' in self.special_fields:
             self.special_fields['Privat'].delete('1.0', tk.END)
-            self.special_fields['Privat'].insert('1.0', inszenierung.get('Privat', ''))
+            self.special_fields['Privat'].insert('1.0', besonderheiten.get('Privat', ''))
             if self.special_fields['Privat'].get('1.0', 'end-1c'):
                 self.special_fields['Privat'].config(fg=AppColors.INPUT_FG)
         
@@ -2318,36 +2349,38 @@ class CreateFrame(BaseContentFrame):
         ehrungen = self.__current_roman.get('Ehrungen', {})
         
         # Augusta-Titel
-        augusta_value = ehrungen.get('Augusta-Titel', '')
+        augusta_status = ehrungen.get('Augusta-Titel-Status', '')
         if 'Augusta-Titel-Status' in self.honors_fields:
             # Extrahiere Status (JA/NEIN) aus dem Text
-            if augusta_value.upper().startswith('JA'):
+            if augusta_status == 'Ja':
                 self.honors_fields['Augusta-Titel-Status'].set('Ja')
-            elif augusta_value.upper().startswith('NEIN'):
+            elif augusta_status == 'Nein':
                 self.honors_fields['Augusta-Titel-Status'].set('Nein')
             else:
                 self.honors_fields['Augusta-Titel-Status'].set('Unbekannt')
         
+        augusta_details = ehrungen.get('Augusta-Titel-Details', '')
         if 'Augusta-Titel-Details' in self.honors_fields:
             # Füge den vollen Text ein
-            self.honors_fields['Augusta-Titel-Details'].insert('1.0', augusta_value)
-            if augusta_value:
+            self.honors_fields['Augusta-Titel-Details'].insert('1.0', augusta_details)
+            if augusta_details:
                 self.honors_fields['Augusta-Titel-Details'].config(fg=AppColors.INPUT_FG)
         
         # Carpentum-Recht
-        carpentum_value = ehrungen.get('Carpentum-Recht', '')
+        carpentum_status = ehrungen.get('Carpentum-Recht-Status', '')
         if 'Carpentum-Recht-Status' in self.honors_fields:
-            if carpentum_value.upper().startswith('JA'):
+            if carpentum_status == 'Ja':
                 self.honors_fields['Carpentum-Recht-Status'].set('Ja')
-            elif carpentum_value.upper().startswith('NEIN'):
+            elif carpentum_status == 'Nein':
                 self.honors_fields['Carpentum-Recht-Status'].set('Nein')
             else:
                 self.honors_fields['Carpentum-Recht-Status'].set('Unbekannt')
         
+        carpentum_details = ehrungen.get('Carpentum-Recht-Details', '')
         if 'Carpentum-Recht-Details' in self.honors_fields:
             self.honors_fields['Carpentum-Recht-Details'].delete('1.0', tk.END)
-            self.honors_fields['Carpentum-Recht-Details'].insert('1.0', carpentum_value)
-            if carpentum_value:
+            self.honors_fields['Carpentum-Recht-Details'].insert('1.0', carpentum_details)
+            if carpentum_details:
                 self.honors_fields['Carpentum-Recht-Details'].config(fg=AppColors.INPUT_FG)
         
         # Weitere Ehrungen
@@ -2416,9 +2449,6 @@ class CreateFrame(BaseContentFrame):
                         fields['Notizen'].delete('1.0', tk.END)
                         fields['Notizen'].insert('1.0', quelle['Notizen'])
                         fields['Notizen'].config(fg=AppColors.INPUT_FG)
-        else:
-            # Wenn keine Quellen vorhanden, füge Beispiel-Eintrag hinzu
-            self.AddLiterarySourceEntry(self.literary_sources_container, example=True)
         
         # Tab-Auswahl wiederherstellen
         if hasattr(self.__class__, 'last_selected_tab'):

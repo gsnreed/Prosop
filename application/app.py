@@ -257,9 +257,9 @@ class MainApp(tk.Tk):
         """Prüft auf ungespeicherte Änderungen"""
         ret = True
         if self.__file_modified:
-            response = messagebox.askokcancel(
+            response = messagebox.askyesno(
                 'Ungespeicherte Änderungen',
-                'Es gibt ungespeicherte Ändeurngen. Möchten Sie diese speichern?'
+                'Es gibt ungespeicherte Änderungen. Möchten Sie diese speichern?'
             )
 
             if response is None:    # Cancel

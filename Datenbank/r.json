@@ -1,14 +1,16 @@
 {
     "Römer": [
         {
-            "Name": "bob",
+            "Name": "t",
             "Geburtsdatum": "",
             "Geburtsort": "",
             "Sterbedatum": "",
             "Sterbeort": "",
             "Todesursache": "",
             "Bemerkungen": "",
+            "Anzahl Ehen": "",
             "Ehen": [],
+            "Anzahl Kinder": "",
             "Kinder": [],
             "Vater": "",
             "Mutter": "",
@@ -24,8 +26,10 @@
                 "Bemerkungen": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
@@ -35,24 +39,19 @@
                 "Münzen": "",
                 "Inschriften": ""
             },
-            "Literarische Quellen": [
-                {
-                    "Autor": "",
-                    "Link": "",
-                    "Zitat": "",
-                    "Notizen": ""
-                }
-            ]
+            "Literarische Quellen": []
         },
         {
-            "Name": "marley",
+            "Name": "t",
             "Geburtsdatum": "",
             "Geburtsort": "",
             "Sterbedatum": "",
             "Sterbeort": "",
             "Todesursache": "",
             "Bemerkungen": "",
+            "Anzahl Ehen": "",
             "Ehen": [],
+            "Anzahl Kinder": "",
             "Kinder": [],
             "Vater": "",
             "Mutter": "",
@@ -68,25 +67,61 @@
                 "Bemerkungen": ""
             },
             "Ehrungen": {
-                "Augusta-Titel": "Unbekannt",
-                "Carpentum-Recht": "Unbekannt",
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
                 "Weitere": ""
             },
             "Quellen": {
-                "Divinisierung": "treterter",
+                "Divinisierung": "",
                 "Bestattung": "",
                 "Archäologische Quellen": "",
                 "Münzen": "",
                 "Inschriften": ""
             },
-            "Literarische Quellen": [
-                {
-                    "Autor": "",
-                    "Link": "",
-                    "Zitat": "",
-                    "Notizen": ""
-                }
-            ]
+            "Literarische Quellen": []
+        },
+        {
+            "Name": "z",
+            "Geburtsdatum": "",
+            "Geburtsort": "",
+            "Sterbedatum": "",
+            "Sterbeort": "",
+            "Todesursache": "",
+            "Bemerkungen": "",
+            "Anzahl Ehen": "",
+            "Ehen": [],
+            "Anzahl Kinder": "",
+            "Kinder": [],
+            "Vater": "",
+            "Mutter": "",
+            "Geschwister": "",
+            "Vorfahren": "",
+            "Familienbemerkungen": "",
+            "Besonderheiten": {
+                "Auftreten": "",
+                "Kleidung": "",
+                "Schmuck": "",
+                "Öffentlich": "",
+                "Privat": "",
+                "Bemerkungen": ""
+            },
+            "Ehrungen": {
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
+                "Weitere": ""
+            },
+            "Quellen": {
+                "Divinisierung": "",
+                "Bestattung": "",
+                "Archäologische Quellen": "",
+                "Münzen": "",
+                "Inschriften": ""
+            },
+            "Literarische Quellen": []
         }
     ]
 }
