@@ -2,9 +2,7 @@
     "Römer": [
         {
             "Name": "Octavia maior",
-            "Männer": [
-                "Verheiratet mit Sex. Appuleius"
-            ],
+            "Männer": [],
             "Kinder": [
                 {
                     "Name": "",
@@ -22,10 +20,10 @@
             "Geburtsdatum": "vor 70 v. Chr.",
             "Sterbedatum": "",
             "Todesursache": "",
-            "Familie": "Tochter des C. Octavius und der Ancharia;Stiefschwester des Augustus",
+            "Familie": "",
             "Vorfahren": "",
             "Verlobung": "",
-            "Häufigkeit Heirat": "1x Verheiratet",
+            "Häufigkeit Heirat": "",
             "Anzahl Kinder": "2 Kinder",
             "Individuelle Besonderheiten": {
                 "Auftreten": "",
@@ -53,11 +51,18 @@
             "Geburtsort": "",
             "Sterbeort": "",
             "Bemerkungen": "",
-            "Ehen": [],
+            "Ehen": [
+                {
+                    "Partner": "Verheiratet mit Sex. Appuleius",
+                    "Heiratsdatum": "",
+                    "Heiratsort": "",
+                    "Bemerkungen": ""
+                }
+            ],
             "Vater": "",
             "Mutter": "",
             "Geschwister": "",
-            "Familienbemerkungen": "",
+            "Familienbemerkungen": "Tochter des C. Octavius und der Ancharia;Stiefschwester des Augustus",
             "Besonderheiten": {
                 "Auftreten": "",
                 "Kleidung": "",
@@ -74,7 +79,7 @@
                     "Notizen": ""
                 }
             ],
-            "Anzahl Ehen": ""
+            "Anzahl Ehen": "1x Verheiratet"
         },
         {
             "Name": "Octavia minor",

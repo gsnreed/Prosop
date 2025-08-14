@@ -109,10 +109,10 @@ class CreateFrame(BaseContentFrame):
         self.CreateStyledTable(table_container)
         
         # Button-Bereich
-        button_container = tk.Frame(top_frame, bg=AppColors.CONTENT_FRAME)
-        button_container.pack(fill=tk.X, padx=UIConstants.PADDING_LARGE, pady=(UIConstants.PADDING_SMALL, UIConstants.PADDING_LARGE))
+        # button_container = tk.Frame(top_frame, bg=AppColors.CONTENT_FRAME)
+        # button_container.pack(fill=tk.X, padx=UIConstants.PADDING_LARGE, pady=(UIConstants.PADDING_SMALL, UIConstants.PADDING_LARGE))
         
-        self.CreateActionButtons(button_container)
+        # self.CreateActionButtons(button_container)
         
         # ========== UNTERER BEREICH: Details ==========
         bottom_container = tk.Frame(main_container, bg=AppColors.BACKGROUND)

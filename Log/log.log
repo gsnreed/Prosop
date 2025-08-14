@@ -4737,3 +4737,214 @@
 14-08-2025 11:27:57 - utils.logger - INFO - Konvertiere Roman-Objekt 'Teströmer12' zu Dictionary
 14-08-2025 11:27:57 - utils.logger - INFO - Römische Persönlichkeiten erfolgreich gespeichert.
 14-08-2025 11:27:57 - utils.logger - INFO - Datei erfolgreich gespeichert: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+14-08-2025 11:38:49 - utils.logger - INFO - Menüleiste eingerichtet.
+14-08-2025 11:38:49 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+14-08-2025 11:38:49 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+14-08-2025 11:38:49 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+14-08-2025 11:38:49 - utils.logger - INFO - Anwendung gestartet
+14-08-2025 11:38:52 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+14-08-2025 11:38:52 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+14-08-2025 11:38:56 - utils.logger - INFO - Datei -> Öffnen ausgewählt
+14-08-2025 11:38:57 - utils.logger - INFO - Lade römische Persönlichkeiten aus JSON-Datei: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+14-08-2025 11:38:57 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:38:57 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Teströmer12'.
+14-08-2025 11:38:57 - utils.logger - INFO - Erfolgreich 37 römische Persönlichkeiten geladen.
+14-08-2025 11:38:57 - utils.logger - INFO - Command-History gelöscht
+14-08-2025 11:38:57 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+14-08-2025 11:38:57 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+14-08-2025 11:38:57 - utils.logger - INFO - Datei erfolgreich geladen: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+14-08-2025 11:38:58 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+14-08-2025 11:40:41 - utils.logger - INFO - Datei -> Speichern unter ausgewählt
+14-08-2025 11:47:36 - utils.logger - INFO - Menüleiste eingerichtet.
+14-08-2025 11:47:36 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+14-08-2025 11:47:36 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+14-08-2025 11:47:36 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+14-08-2025 11:47:36 - utils.logger - INFO - Anwendung gestartet
+14-08-2025 11:47:39 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+14-08-2025 11:47:39 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+14-08-2025 11:47:40 - utils.logger - INFO - Datei -> Speichern ausgewählt
+14-08-2025 11:47:40 - utils.logger - INFO - Datei -> Speichern unter ausgewählt
+14-08-2025 11:47:43 - utils.logger - INFO - Datei -> Öffnen ausgewählt
+14-08-2025 11:47:45 - utils.logger - INFO - Lade römische Persönlichkeiten aus JSON-Datei: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia maior'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia minor'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia maior'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia minor'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Domitia Lepida'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Livia Iulia = Livilla'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Servillia'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Clodia'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Scribonia'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Drusilla'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Iulia'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Vipsania Agrippina'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina maior'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Agrippina minor'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Livilla'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iunia Claudilla (oder Iunia Claudia)'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Orestilla / Cornelia(Livia) Orestina'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Lollia Paulina'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Milonia Caesonia'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia Drusilla'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aemilia Lepida'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Livia Medullina'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Plautia Urgulanilla'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Aelia Paetina'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Antonia'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Valeria Messalina'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Iulia, Tochter des Drusus'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Octavia'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Antonia'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Octavia Claudia'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Poppaea Sabina'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Augusta'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Statilia Messalina'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Claudia Acte'.
+14-08-2025 11:47:45 - utils.logger - INFO - Konvertiere Dictionary zu Roman-Objekt
+14-08-2025 11:47:45 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name 'Teströmer12'.
+14-08-2025 11:47:45 - utils.logger - INFO - Erfolgreich 37 römische Persönlichkeiten geladen.
+14-08-2025 11:47:45 - utils.logger - INFO - Command-History gelöscht
+14-08-2025 11:47:45 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+14-08-2025 11:47:45 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+14-08-2025 11:47:45 - utils.logger - INFO - Datei erfolgreich geladen: C:/Users/z0047r5a/source/repos/Prosop/Datenbank/Romans.json
+14-08-2025 11:47:45 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+14-08-2025 11:48:22 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name ''.
+14-08-2025 11:48:22 - utils.logger - INFO - Befehl ausgeführt: Roman hinzufügen: 
+14-08-2025 11:48:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name ''.
+14-08-2025 11:48:27 - utils.logger - INFO - Befehl ausgeführt: Roman hinzufügen: 
+14-08-2025 11:48:27 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name ''.
+14-08-2025 11:48:27 - utils.logger - INFO - Befehl ausgeführt: Roman hinzufügen: 
+14-08-2025 11:48:28 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name ''.
+14-08-2025 11:48:28 - utils.logger - INFO - Befehl ausgeführt: Roman hinzufügen: 
+14-08-2025 11:48:28 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name ''.
+14-08-2025 11:48:28 - utils.logger - INFO - Befehl ausgeführt: Roman hinzufügen: 
+14-08-2025 11:48:28 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name ''.
+14-08-2025 11:48:28 - utils.logger - INFO - Befehl ausgeführt: Roman hinzufügen: 
+14-08-2025 11:48:40 - utils.logger - INFO - Menüleiste eingerichtet.
+14-08-2025 11:48:41 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+14-08-2025 11:48:41 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+14-08-2025 11:48:41 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+14-08-2025 11:48:41 - utils.logger - INFO - Anwendung gestartet
+14-08-2025 11:48:43 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+14-08-2025 11:48:43 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+14-08-2025 11:49:49 - utils.logger - INFO - Menüleiste eingerichtet.
+14-08-2025 11:49:49 - utils.logger - INFO - Automatische Auswahl des ersten Elements: Startseite
+14-08-2025 11:49:49 - utils.logger - INFO - Content der Option 'Startseite' wurde geladen.
+14-08-2025 11:49:49 - utils.logger - INFO - Navigation: Option 'Startseite' ausgewählt
+14-08-2025 11:49:49 - utils.logger - INFO - Anwendung gestartet
+14-08-2025 11:49:51 - utils.logger - INFO - Content der Option 'Erstellung' wurde geladen.
+14-08-2025 11:49:51 - utils.logger - INFO - Navigation: Option 'Erstellung' ausgewählt
+14-08-2025 11:50:21 - utils.logger - INFO - Erstelle neues Roman-Objekt mit Name ''.
+14-08-2025 11:50:21 - utils.logger - INFO - Befehl ausgeführt: Roman hinzufügen: 
+14-08-2025 11:50:32 - utils.logger - INFO - Befehl ausgeführt: Roman bearbeiten: test
+14-08-2025 11:50:46 - utils.logger - INFO - Anwendung wird beendet
