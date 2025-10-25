@@ -37,7 +37,7 @@ class TimelineFrame(BaseContentFrame):
         main_container = tk.Frame(self, bg=AppColors.BACKGROUND)
         main_container.grid(row=0, column=0, sticky=tk.NSEW)
         main_container.rowconfigure(0, weight=0)  # Header
-        main_container.rowconfigure(1, weight=0)  # Timeline
+        main_container.rowconfigure(1, weight=1)  # Timeline + Romans
         main_container.columnconfigure(0, weight=1)
 
         # ========== HEADER ==========
@@ -124,34 +124,23 @@ class TimelineFrame(BaseContentFrame):
         end_entry.pack(side=tk.LEFT, padx=(0, UIConstants.PADDING_SMALL))
         end_entry.bind("<KeyRelease>", self.update_range)
         
-        # ========== TIMELINE BEREICH ==========
+        # ========== TIMELINE + ROMANS BEREICH ==========
         timeline_container = tk.Frame(main_container, bg=AppColors.BACKGROUND)
-        timeline_container.grid(row=1, column=0, sticky=tk.EW, padx=20, pady=10)
+        timeline_container.grid(row=1, column=0, sticky=tk.NSEW, padx=20, pady=10)
+        timeline_container.rowconfigure(0, weight=1)
+        timeline_container.columnconfigure(0, weight=1)
         
         timeline_frame = tk.Frame(timeline_container, bg=AppColors.CONTENT_FRAME, relief=tk.RAISED, bd=1)
-        timeline_frame.pack(fill=tk.X)
+        timeline_frame.pack(fill=tk.BOTH, expand=True)
         
-        # Timeline erstellen (kompakter)
+        # Timeline erstellen (erweitert für Römer)
         self.timeline = ModernTimeline(timeline_frame, self.start_year, self.end_year)
-
-        # ========== SPACER FÜR ABSTAND ==========
-        spacer = tk.Frame(main_container, bg=AppColors.BACKGROUND, height=30)
-        spacer.grid(row=2, column=0, sticky=tk.EW)
-        spacer.pack_propagate(False)
-
-        # ========== CONTENT BEREICH (RÖMER) ==========
-        content_container = tk.Frame(main_container, bg=AppColors.BACKGROUND)
-        content_container.grid(row=3, column=0, sticky=tk.NSEW, padx=20, pady=(0, 20))
-        content_container.rowconfigure(0, weight=1)
-        content_container.columnconfigure(0, weight=1)
         
-        # Content Frame
-        content_frame = tk.Frame(content_container, bg=AppColors.CONTENT_FRAME, relief=tk.RAISED, bd=1)
-        content_frame.pack(fill=tk.BOTH, expand=True)
+        # Gefilterte Römer zur Timeline hinzufügen
+        self.timeline.load_romans_from_list(self.__filtered_romans)
         
         # Beispiel-Events hinzufügen
         self.add_sample_events(True)
-    
     
     def add_sample_events(self, drawEvents = True):
         # Beispiel-
@@ -260,7 +249,9 @@ class TimelineFrame(BaseContentFrame):
                 self.timeline.start_year = self.start_year
                 self.timeline.end_year = self.end_year
                 self.timeline.events = []  # Events zurücksetzen
+                self.timeline.romans = []  # Römer zurücksetzen
                 self.timeline.draw_timeline()
+                self.timeline.load_romans_from_list(self.__filtered_romans)  # Römer neu laden
                 self.add_sample_events()  # Events neu hinzufügen
             
         except:
@@ -331,13 +322,13 @@ class TimelineFrame(BaseContentFrame):
                         return -year_num  # v.Chr. = negative Zahl
                     elif any(indicator in year_string for indicator in ['n.chr', 'n. chr', 'a.d', 'ad']):
                         return year_num   # n.Chr. = positive Zahl
-                    else:
+                    """ else:
                         # Heuristik für reine Zahlen
                         # Für römische Zeit: Zahlen < 100 meist v.Chr., >= 100 meist n.Chr.
                         if year_num < 100:
                             return -year_num  # Wahrscheinlich v.Chr.
                         else:
-                            return year_num   # Wahrscheinlich n.Chr.
+                            return year_num   # Wahrscheinlich n.Chr. """
             
             # Spezielle Behandlung für Bereiche
             range_patterns = [
@@ -392,6 +383,10 @@ class TimelineFrame(BaseContentFrame):
         skipped_count = 0
         
         for roman_data in romans_list:
+            # DEBUG
+            if roman_data.get('Name', '') == 'Tesz':
+                pass
+            
             birth_year, death_year = self.extract_birth_death_years(roman_data)
             
             # Nur Personen mit mindestens Geburtsjahr verarbeiten
@@ -404,10 +399,10 @@ class TimelineFrame(BaseContentFrame):
                 else:
                     estimated_death = False
                 
-                # Validierung: Sterbejahr muss nach Geburtsjahr liegen
+                """ # Validierung: Sterbejahr muss nach Geburtsjahr liegen
                 if death_year <= birth_year:
                     death_year = birth_year + 55
-                    estimated_death = True
+                    estimated_death = True """
                 
                 processed_person = {
                     'name': roman_data.get('Name', 'Unbekannt'),
@@ -435,19 +430,21 @@ class ModernTimeline:
         self.start_year = start_year
         self.end_year = end_year
         self.events = []
-        self.persons = []
+        self.romans = []
+        self.tooltip = None
+        self.tooltip_bg = None
         
         self.create_timeline()
     
     def create_timeline(self):
-        # Canvas für Timeline (kompakter)
+        # Canvas für Timeline + Römer (erweiterte Höhe)
         self.canvas = tk.Canvas(
             self.parent,
             bg=AppColors.CONTENT_FRAME,
             highlightthickness=0,
-            height=150  # Kleiner als vorher
+            height=500  # Größer für Römer-Bereich
         )
-        self.canvas.pack(fill=tk.X, padx=20, pady=15)
+        self.canvas.pack(fill=tk.BOTH, expand=True, padx=20, pady=15)
         
         # Horizontale Scrollbar
         scrollbar = ttk.Scrollbar(self.parent, orient="horizontal", command=self.canvas.xview)
@@ -459,13 +456,15 @@ class ModernTimeline:
     def draw_timeline(self):
         self.canvas.delete("all")
         
-        canvas_height = 150
-        timeline_y = canvas_height // 2
+        canvas_height = 500
+        timeline_y = 80  # Timeline weiter oben
         
         # Timeline-Linie
         total_years = self.end_year - self.start_year
         pixels_per_year = max(30, 1500 / total_years)
         timeline_width = total_years * pixels_per_year
+        self.timeline_width = timeline_width
+        self.pixels_per_year = pixels_per_year
         
         # Hauptlinie
         self.canvas.create_line(
@@ -505,6 +504,9 @@ class ModernTimeline:
         # Events zeichnen
         self.draw_events(pixels_per_year, timeline_y)
         
+        # Römer zeichnen
+        self.draw_romans(pixels_per_year, timeline_y + 60)
+        
         # Scroll-Region setzen
         self.canvas.configure(scrollregion=(0, 0, timeline_width + 100, canvas_height))
     
@@ -512,7 +514,7 @@ class ModernTimeline:
         for i, event in enumerate(self.events):
             x = 50 + (event['year'] - self.start_year) * pixels_per_year
             
-            # Event-Punkt (kleiner)
+            # Event-Punkt
             radius = 6
             self.canvas.create_oval(
                 x - radius, timeline_y - radius,
@@ -522,26 +524,203 @@ class ModernTimeline:
                 width=2
             )
             
-            # Event-Label (kompakter)
-            y_offset = -60
-            label_y = timeline_y + y_offset
+            # Event-Label (nach oben)
+            y_offset = -10
+            label_y = timeline_y + y_offset - (event['height'] * 15)
             
             # Event-Linie
             self.canvas.create_line(
-                x, timeline_y + (radius if y_offset > 0 else -radius),
-                x, label_y + event['height'] * 15,
+                x, timeline_y - radius,
+                x, label_y + 10,
                 fill=event.get('color', AppColors.ACCENT),
                 width=1
             )
             
             # Event-Text
             self.canvas.create_text(
-                x, label_y + event['height'] * 15 - 10,
+                x, label_y,
                 text=event['title'],
                 font=Fonts.STANDARD,
                 fill=AppColors.KU_COLOR,
                 justify=tk.CENTER
             )
+    
+    def draw_romans(self, pixels_per_year, start_y):
+        """Römer als Rechtecke mit mehreren Ebenen zeichnen"""
+        if not self.romans:
+            return
+        
+        # Römer nach Geburtsjahr sortieren
+        sorted_romans = sorted(self.romans, key=lambda x: x['birth_year'])
+        
+        # Ebenen-System für Überlappungsvermeidung
+        levels = []
+        level_height = 25
+        level_spacing = 5
+        max_levels = 12
+        
+        for roman in sorted_romans:
+            # Nur Römer im sichtbaren Zeitbereich
+            if (roman['death_year'] >= self.start_year and 
+                roman['birth_year'] <= self.end_year):
+                
+                # X-Koordinaten berechnen
+                birth_x = 50 + max(0, (roman['birth_year'] - self.start_year)) * pixels_per_year
+                death_x = 50 + min(self.timeline_width, (roman['death_year'] - self.start_year)) * pixels_per_year
+                
+                # Passende Ebene finden
+                level = self.find_available_level(levels, roman['birth_year'], roman['death_year'])
+                if level >= max_levels:
+                    continue  # Zu viele Ebenen, überspringen
+                
+                # Y-Position berechnen
+                current_y = start_y + 30 + (level * (level_height + level_spacing))
+                
+                # Rechteck zeichnen
+                rect_id = self.canvas.create_rectangle(
+                    birth_x, current_y,
+                    death_x, current_y + level_height,
+                    fill=roman['color'],
+                    outline="white",
+                    width=2
+                )
+                
+                # Name in Rechteck (falls genug Platz)
+                rect_width = death_x - birth_x
+                if rect_width > 80:
+                    # Vollständiger Name
+                    name_text = roman['name']
+                elif rect_width > 40:
+                    # Abgekürzter Name
+                    name_parts = roman['name'].split()
+                    if len(name_parts) > 1:
+                        name_text = f"{name_parts[0]} {name_parts[-1][0]}."
+                    else:
+                        name_text = roman['name'][:8] + "..."
+                else:
+                    # Nur Initialen
+                    name_parts = roman['name'].split()
+                    if len(name_parts) > 1:
+                        name_text = f"{name_parts[0][0]}.{name_parts[-1][0]}."
+                    else:
+                        name_text = roman['name'][:3]
+                
+                if rect_width > 25:  # Mindestbreite für Text
+                    text_x = (birth_x + death_x) / 2
+                    self.canvas.create_text(
+                        text_x, current_y + level_height // 2,
+                        text=name_text,
+                        font=Fonts.STANDARD_BOLD,
+                        fill="white",
+                        justify=tk.CENTER
+                    )
+                
+                # Tooltip-Events
+                self.canvas.tag_bind(rect_id, "<Enter>", 
+                    lambda e, r=roman: self.show_roman_tooltip(e, r))
+                self.canvas.tag_bind(rect_id, "<Leave>", 
+                    lambda e: self.hide_tooltip()),
+                self.canvas.tag_bind(rect_id, "<Motion>", 
+                                     lambda e: self.update_tooltip_position(e))
+                
+                # Ebene als belegt markieren
+                while len(levels) <= level:
+                    levels.append([])
+                levels[level].append((roman['birth_year'], roman['death_year']))
+    
+    def find_available_level(self, levels, birth_year, death_year):
+        """Findet die erste verfügbare Ebene ohne Überlappung"""
+        for level_idx, level_ranges in enumerate(levels):
+            overlaps = False
+            for existing_birth, existing_death in level_ranges:
+                # Prüfe auf Überlappung
+                if not (death_year <= existing_birth or birth_year >= existing_death):
+                    overlaps = True
+                    break
+            
+            if not overlaps:
+                return level_idx
+        
+        # Neue Ebene erstellen
+        return len(levels)
+    
+    def show_roman_tooltip(self, event, roman):
+        """Tooltip mit canvasx - folgt der Maus"""
+        self.hide_tooltip()
+        
+        # Tooltip-Daten speichern für Mouse-Follow
+        self.current_roman = roman
+        
+        # Tooltip erstellen
+        self.update_tooltip_position(event)
+
+    def update_tooltip_position(self, event):
+        """Tooltip-Position aktualisieren"""
+        if not hasattr(self, 'current_roman') or not self.current_roman:
+            return
+        
+        roman = self.current_roman
+        
+        # Tooltip-Text
+        name = roman['name']
+        birth = roman['birth_year']
+        death = roman['death_year']
+        lifespan = death - birth
+        
+        tooltip_lines = [f"👤 {name}"]
+        tooltip_lines.append(f"{Icons.BIRTH} {birth}" + ' v. Chr' if birth <= 0 else 'n. Chr')
+        tooltip_lines.append(f"{Icons.DEATH} {death}" + ' v. Chr' if death <= 0 else 'n. Chr')
+        tooltip_lines.append(f"⏳ {lifespan} Jahre")
+        
+        if roman.get('estimated_death', False):
+            tooltip_lines.append("⚠️ Sterbedatum geschätzt")
+        
+        tooltip_text = "\n".join(tooltip_lines)
+        
+        # Alten Tooltip löschen
+        if hasattr(self, 'tooltip') and self.tooltip:
+            self.canvas.delete(self.tooltip)
+        if hasattr(self, 'tooltip_bg') and self.tooltip_bg:
+            self.canvas.delete(self.tooltip_bg)
+        
+        # Neue Position
+        canvas_x = self.canvas.canvasx(event.x) + 50
+        canvas_y = self.canvas.canvasy(event.y) - 30
+        
+        # Neuen Tooltip erstellen
+        self.tooltip = self.canvas.create_text(
+            canvas_x + 15, canvas_y - 15,
+            text=tooltip_text,
+            font=Fonts.STANDARD,
+            fill=AppColors.KU_COLOR,
+            anchor=tk.NW,
+            width=280
+        )
+        
+        # Hintergrund
+        bbox = self.canvas.bbox(self.tooltip)
+        if bbox:
+            padding = 8
+            self.tooltip_bg = self.canvas.create_rectangle(
+                bbox[0] - padding, bbox[1] - padding,
+                bbox[2] + padding, bbox[3] + padding,
+                fill="#FFFFFF",
+                outline=roman['color'],
+                width=2
+            )
+            self.canvas.tag_lower(self.tooltip_bg)
+
+        self.canvas.tag_raise(self.tooltip_bg)  # Hintergrund nach vorne
+        self.canvas.tag_raise(self.tooltip)     # Text ganz nach vorne
+    
+    def hide_tooltip(self):
+        """Tooltip verstecken"""
+        if self.tooltip:
+            self.canvas.delete(self.tooltip)
+            self.tooltip = None
+        if self.tooltip_bg:
+            self.canvas.delete(self.tooltip_bg)
+            self.tooltip_bg = None
     
     def add_event(self, year, title, color=None, height=1):
         self.events.append({
@@ -552,254 +731,67 @@ class ModernTimeline:
         })
         self.draw_timeline()
     
-    def load_women_from_list(self, women_list):
-        """Frauen aus deiner Liste laden - angepasst für deine Datenstruktur"""
-        for woman in women_list:
-            # Die wichtigen Daten extrahieren
-            name = woman.get('name', '')
-            birth_year = woman.get('birth_year', '')
-            death_year = woman.get('death_year', '')
-            description = woman.get('description', '')
-            
-            # Falls description leer ist, aus raw_data nehmen
-            if not description and 'raw_data' in woman:
-                raw_desc = woman['raw_data'].get('Beschreibung', '')
-                if raw_desc:
-                    description = raw_desc
-                else:
-                    # Fallback: Familienbemerkungen verwenden
-                    description = woman['raw_data'].get('Familienbemerkungen', 'Römische Frau')
-            
-            # Random helle Farbe
-            color = self.get_random_bright_color()
-            
-            # Nur hinzufügen wenn Name und Jahre vorhanden und im Zeitbereich
-            if (name and birth_year is not None and death_year is not None and 
-                death_year >= self.start_year and birth_year <= self.end_year):
-                
-                # Zusätzliche Info für Tooltip
-                extra_info = self.extract_extra_info(woman)
-                
-                self.add_person(name, birth_year, death_year, color, description, extra_info)
-
-    def extract_extra_info(self, woman):
-        """Zusätzliche interessante Infos extrahieren"""
-        info = {}
+    def load_romans_from_list(self, romans_list):
+        """Römer aus der Liste laden"""
+        self.romans = []
         
-        if 'raw_data' in woman:
-            raw = woman['raw_data']
-            
-            # Geschätzte Todesdaten markieren
-            if woman.get('estimated_death', ''):
-                info['estimated_death'] = True
-            
-            # Original Datumsstrings
-            if woman.get('original_birth_string', ''):
-                info['birth_string'] = woman['original_birth_string']
-            if woman.get('original_death_string', ''):
-                info['death_string'] = woman['original_death_string']
-            
-            # Familie
-            if raw.get('Familienbemerkungen', ''):
-                info['family'] = raw['Familienbemerkungen']
-            
-            # Ehen
-            if raw.get('Anzahl Ehen', ''):
-                info['marriages'] = raw['Anzahl Ehen']
-            
-            # Kinder
-            if raw.get('Anzahl Kinder', ''):
-                info['children'] = raw['Anzahl Kinder']
-            
-            # Augusta-Titel
-            if raw.get('Ehrungen', {}).get('Augusta-Titel-Status', '') == 'Ja':
-                info['augusta'] = True
+        for roman in romans_list:
+            # Nur Römer im Zeitbereich
+            if (roman['death_year'] >= self.start_year and 
+                roman['birth_year'] <= self.end_year):
+                
+                # Zufällige Farbe generieren
+                color = self.get_random_bright_color()
+                
+                roman_data = {
+                    'name': roman['name'],
+                    'birth_year': roman['birth_year'],
+                    'death_year': roman['death_year'],
+                    'color': color,
+                    'estimated_death': roman.get('estimated_death', False),
+                    'original_birth_string': roman.get('original_birth_string', ''),
+                    'original_death_string': roman.get('original_death_string', ''),
+                    'description': roman.get('description', ''),
+                    'raw_data': roman.get('raw_data', {})
+                }
+                
+                self.romans.append(roman_data)
         
-        return info
-
-    def add_person(self, name, birth_year, death_year, color, description="", extra_info=None):
-        """Person hinzufügen - erweitert"""
-        self.persons.append({
-            'name': name,
-            'birth': birth_year,
-            'death': death_year,
-            'color': color,
-            'description': description,
-            'extra_info': extra_info or {}
-        })
+        print(f"Timeline: {len(self.romans)} Römer im Zeitbereich {self.start_year}-{self.end_year} geladen")
         self.draw_timeline()
-
-    def show_woman_tooltip(self, event, woman):
-        """Erweiterte Tooltips mit deinen Daten"""
-        # Basis-Info
-        name = woman['name']
-        birth = woman['birth']
-        death = woman['death']
-        lifespan = death - birth
-        description = woman['description']
-        extra = woman.get('extra_info', {})
-        
-        # Tooltip-Text zusammenbauen
-        tooltip_lines = [f"👩 {name}"]
-        
-        # Geburt/Tod mit Original-Strings falls vorhanden
-        if extra.get('birth_string', ''):
-            tooltip_lines.append(f"📅 {extra['birth_string']} - {death}")
-        else:
-            tooltip_lines.append(f"📅 {birth} - {death}")
-        
-        tooltip_lines.append(f"⏳ {lifespan} Jahre")
-        
-        # Geschätzter Tod markieren
-        if extra.get('estimated_death', ''):
-            tooltip_lines.append("⚠️ Sterbedatum geschätzt")
-        
-        # Familie
-        if extra.get('family', ''):
-            family_text = extra['family'][:60] + "..." if len(extra['family']) > 60 else extra['family']
-            tooltip_lines.append(f"👨‍👩‍👧‍👦 {family_text}")
-        
-        # Ehen und Kinder
-        if extra.get('marriages', ''):
-            tooltip_lines.append(f"💒 {extra['marriages']}")
-        if extra.get('children', ''):
-            tooltip_lines.append(f"👶 {extra['children']}")
-        
-        # Augusta-Titel
-        if extra.get('augusta', ''):
-            tooltip_lines.append("👑 Augusta-Titel")
-        
-        # Beschreibung (falls vorhanden)
-        if description and description != 'Römische Frau':
-            desc_text = description[:80] + "..." if len(description) > 80 else description
-            tooltip_lines.append(f"📝 {desc_text}")
-        
-        tooltip_text = "\n".join(tooltip_lines)
-        
-        # Tooltip positionieren
-        tooltip_x = min(event.x + 15, self.canvas.winfo_width() - 250)
-        tooltip_y = max(event.y - 50, 10)
-        
-        self.tooltip = self.canvas.create_text(
-            tooltip_x, tooltip_y,
-            text=tooltip_text,
-            font=("Arial", 9),
-            fill="#2C3E50",
-            anchor="nw",
-            width=240
-        )
-        
-        # Schöner Hintergrund
-        bbox = self.canvas.bbox(self.tooltip)
-        if bbox:
-            self.tooltip_bg = self.canvas.create_rectangle(
-                bbox[0] - 10, bbox[1] - 8,
-                bbox[2] + 10, bbox[3] + 8,
-                fill="#FFFFFF",
-                outline=woman['color'],
-                width=3
-            )
-            self.canvas.tag_lower(self.tooltip_bg)
-
-    def draw_persons(self, pixels_per_year, start_y):
-        """Frauen zeichnen - mit Spezial-Markierungen"""
-        sorted_women = sorted(self.persons, key=lambda x: x['birth'])
-        
-        row_height = 22
-        row_spacing = 3
-        max_rows = 8
-        current_row = 0
-        
-        # Label
-        self.canvas.create_text(
-            15, start_y - 10,
-            text="👩 Römische Frauen",
-            font=("Arial", 10, "bold"),
-            fill=AppColors.TEXT_PRIMARY,
-            anchor="e"
-        )
-        
-        for woman in sorted_women:
-            if (woman['death'] >= self.start_year and 
-                woman['birth'] <= self.end_year):
-                
-                current_y = start_y + (current_row * (row_height + row_spacing))
-                
-                # X-Koordinaten
-                birth_x = 50 + max(0, (woman['birth'] - self.start_year)) * pixels_per_year
-                death_x = 50 + min(self.timeline_width, (woman['death'] - self.start_year)) * pixels_per_year
-                
-                # Balken
-                rect_id = self.canvas.create_rectangle(
-                    birth_x, current_y + 2,
-                    death_x, current_y + row_height - 2,
-                    fill=woman['color'],
-                    outline="white",
-                    width=1
-                )
-                
-                # Spezial-Markierungen
-                extra = woman.get('extra_info', {})
-                
-                # Augusta-Titel: Krone-Symbol
-                if extra.get('augusta', ''):
-                    self.canvas.create_text(
-                        birth_x - 15, current_y + row_height//2,
-                        text="👑",
-                        font=("Arial", 10),
-                        anchor="center"
-                    )
-                
-                # Geschätzter Tod: gestrichelte Linie am Ende
-                if extra.get('estimated_death', ''):
-                    for i in range(0, row_height-4, 3):
-                        self.canvas.create_line(
-                            death_x - 5, current_y + 2 + i,
-                            death_x - 5, current_y + 2 + i + 1,
-                            fill="white", width=2
-                        )
-                
-                # Hover-Effekte
-                self.canvas.tag_bind(rect_id, "<Enter>", 
-                    lambda e, w=woman: self.show_woman_tooltip(e, w))
-                self.canvas.tag_bind(rect_id, "<Leave>", 
-                    lambda e: self.hide_tooltip())
-                
-                # Name auf Balken
-                text_x = (birth_x + death_x) / 2
-                if death_x - birth_x > 70:
-                    self.canvas.create_text(
-                        text_x, current_y + row_height//2,
-                        text=woman['name'],
-                        font=("Arial", 8, "bold"),
-                        fill="white",
-                        justify=tk.CENTER
-                    )
-                
-                current_row = (current_row + 1) % max_rows
     
     def get_random_bright_color(self):
-        """Zufällige helle Komplementärfarbe"""
-        bright_colors = [
-            "#FF6B9D",  # Helles Pink
-            "#4ECDC4",  # Türkis
-            "#45B7D1",  # Himmelblau
-            "#96CEB4",  # Mintgrün
-            "#FFEAA7",  # Helles Gelb
-            "#DDA0DD",  # Plum
-            "#98D8C8",  # Aquamarin
-            "#F7DC6F",  # Pastellgelb
-            "#BB8FCE",  # Lavendel
-            "#85C1E9",  # Babyblau
-            "#F8C471",  # Pfirsich
-            "#82E0AA",  # Hellgrün
-            "#F1948A",  # Lachs
-            "#AED6F1",  # Pulverblau
-            "#D7BDE2",  # Flieder
-            "#A9DFBF",  # Salbeigrün
-            "#FAD7A0",  # Champagner
-            "#D5A6BD",  # Dusty Rose
-            "#A3E4D7",  # Seafoam
-            "#F9E79F"   # Vanille
-        ]
+        """Zufällige helle Farbe für Römer"""
+        bright_colors = [ 
+        "#8B0000",  # Dunkelrot
+        "#2F4F4F",  # Dunkles Schiefergrau
+        "#191970",  # Mitternachtsblau
+        "#006400",  # Dunkelgrün
+        "#8B4513",  # Sattelbraun
+        "#4B0082",  # Indigo
+        "#2E8B57",  # Meeresgrün
+        "#B8860B",  # Dunkles Goldgelb
+        "#9932CC",  # Dunkles Orchidee
+        "#1E90FF",  # Dodgerblau
+        "#DC143C",  # Karmesinrot
+        "#00CED1",  # Dunkles Türkis
+        "#FF8C00",  # Dunkles Orange
+        "#9400D3",  # Violett
+        "#228B22",  # Waldgrün
+        "#FF1493",  # Tiefes Pink
+        "#00008B",  # Dunkelblau
+        "#8B008B",  # Dunkles Magenta
+        "#556B2F",  # Dunkles Olivgrün
+        "#800080",  # Purpur
+        "#CD853F",  # Peru
+        "#4682B4",  # Stahlblau
+        "#D2691E",  # Schokolade
+        "#6B8E23",  # Olivgrau
+        "#A0522D",  # Sienna
+        "#483D8B",  # Dunkles Schieferblau
+        "#B22222",  # Feuerziegelrot
+        "#5F9EA0",  # Cadetblau
+        "#D2B48C",  # Tan (etwas heller aber noch dunkel genug)
+        "#708090"   # Schiefergrau
+    ]
         return random.choice(bright_colors)
