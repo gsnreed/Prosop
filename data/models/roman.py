@@ -18,9 +18,6 @@ class Roman:
         # Restliche Eigenschaften übernehmen
         for key, value in kwargs.items():
             self.__properties[key] = value
-
-        for key, value in kwargs.items():
-            self.__properties[key] = value 
         
         logger.debug(f"Roman-Objekt mit dem Namen '{self.__properties['Name']}' erstellt.")
 

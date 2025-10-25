@@ -9,6 +9,7 @@ if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
 from utils.config import AppColors
+from utils.config import UIConstants, Icons, Fonts
 
 class BaseContentFrame(tk.Frame):
     """Basisklasse für alle Content-Frames"""

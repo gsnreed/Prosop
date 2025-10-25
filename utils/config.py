@@ -28,7 +28,7 @@ class AppConfig:
     NAV_OPTIONS = ['Startseite', 'Ansicht', 'Erstellung', 'Statistik',
                     'BibTex', 'Hilfe', 'Impressum']
     SUBMENUS = {
-        'Ansicht': ['Tabelle', 'Karte', 'Zeitstrahl'],
+        'Ansicht': ['Tabelle', 'Karte', 'Zeitstrahl \n- Überblick', 'Zeitstrahl \n- Detail'],
         'BibTex': ['Literatur hinzufügen', 'Zitieren', 'Verwalten']
     }
     
@@ -37,6 +37,70 @@ class AppConfig:
     TOOLTIP_DELAY = 500  # ms
     AUTOSAVE_INTERVAL = 300000  # 5 Minuten
     SEARCH_DELAY = 300  # ms für Live-Suche
+
+class TimelineConfig:
+    """Timeline-spezifische Konfigurationen"""
+    # Standard-Zeitbereiche
+    DEFAULT_START_YEAR = -100
+    DEFAULT_END_YEAR = 500
+    MIN_YEAR = -500  # 100 v.Chr.
+    MAX_YEAR = 600   # 600 n.Chr.
+    
+    # Zoom-Einstellungen
+    MIN_ZOOM_SPAN = 1     # Minimum: 1 Jahr
+    MAX_ZOOM_SPAN = 1000  # Maximum: 1000 Jahre
+    DEFAULT_ZOOM_SPAN = 100
+    ZOOM_FACTOR = 1.5
+    ZOOM_SENSITIVITY = 0.1
+    PAN_SENSITIVITY = 10
+    SMOOTH_SCROLL_STEPS = 5
+    
+    # Visualisierung
+    PERSON_HEIGHT = 35
+    TIMELINE_MARGIN = 20
+    SCALE_HEIGHT = 50
+    MIN_PERSON_WIDTH = 200
+    PERSON_ENTRY_HEIGHT = 35
+    SCALE_LABEL_WIDTH = 80
+    
+    # Performance
+    MAX_VISIBLE_PERSONS = 1000
+    LAZY_LOAD_THRESHOLD = 100
+    UPDATE_DEBOUNCE_MS = 300
+    
+    # Intervalle für Zeitskala
+    SCALE_INTERVALS = {
+        (1, 10): 1,
+        (11, 50): 5,
+        (51, 100): 10,
+        (101, 200): 25,
+        (201, 500): 50,
+        (501, 1000): 100
+    }
+
+class ViewModes:
+    """Verschiedene Ansichtsmodi für Timeline"""
+    
+    COMPACT = {
+        'person_height': 25,
+        'show_details': False,
+        'max_name_length': 20,
+        'show_portraits': False
+    }
+    
+    NORMAL = {
+        'person_height': 35,
+        'show_details': True,
+        'max_name_length': 30,
+        'show_portraits': False
+    }
+    
+    DETAILED = {
+        'person_height': 50,
+        'show_details': True,
+        'max_name_length': 50,
+        'show_portraits': True
+    }
 
 class AppColors:
     """Erweitertes Farbschema der Anwendung"""
@@ -78,6 +142,7 @@ class AppColors:
     TABLE_BORDER = "#dee2e6"
     
     # Buttons
+    BUTTON_PRIMARY = "#232F66"
     BUTTON_PRIMARY_BG = "#232F66"
     BUTTON_PRIMARY_FG = "#ffffff"
     BUTTON_PRIMARY_HOVER = "#1a2451"
@@ -126,10 +191,15 @@ class AppColors:
     
     # Status & Nachrichten
     STATUS_FG = "#6c757d"
+    SUCCESS = "#28a745"
     STATUS_SUCCESS = "#28a745"
+    WARNING = "#ffc107"
     STATUS_WARNING = "#ffc107"
+    ERROR = "#dc3545"
     STATUS_ERROR = "#dc3545"
+    INFO = "#17a2b8"
     STATUS_INFO = "#17a2b8"
+    ACCENT = "#232F66"
     
     # Formulare
     INPUT_BG = "#ffffff"
@@ -160,6 +230,49 @@ class AppColors:
     BORDER_LIGHT = "#e9ecef"
     BORDER_MEDIUM = "#dee2e6"
     BORDER_DARK = "#adb5bd"
+    
+    # Prosopografie-spezifische Farben
+    # Dynastien
+    DYNASTY_JULIO_CLAUDIAN = "#8B4513"  # Braun
+    DYNASTY_FLAVIAN = "#FF8C00"         # Orange
+    DYNASTY_ANTONINE = "#9370DB"        # Violett
+    DYNASTY_SEVERAN = "#DC143C"         # Rot
+    DYNASTY_UNKNOWN = "#808080"         # Grau
+    
+    # Ämter und Status
+    EMPEROR = "#FFD700"      # Gold
+    CONSUL = "#4169E1"       # Blau
+    SENATOR = "#32CD32"      # Grün
+    GENERAL = "#B22222"      # Rot
+    CITIZEN = "#808080"      # Grau
+    NOBILITY = "#9370DB"     # Violett
+    PLEBEIAN = "#8FBC8F"     # Hellgrün
+    
+    # Geschlecht
+    MALE = "#4169E1"         # Blau
+    FEMALE = "#FF1493"       # Pink
+    UNKNOWN_GENDER = "#808080" # Grau
+    
+    # Lebensphasen
+    CHILDHOOD = "#98FB98"    # Hellgrün
+    YOUTH = "#87CEEB"        # Himmelblau
+    ADULTHOOD = "#DDA0DD"    # Pflaume
+    OLD_AGE = "#F0E68C"      # Khaki
+    
+    # Datensicherheit
+    CERTAIN = "#228B22"      # Grün
+    PROBABLE = "#FFD700"     # Gold
+    POSSIBLE = "#FF8C00"     # Orange
+    UNCERTAIN = "#DC143C"    # Rot
+    
+    # Timeline-spezifische Farben
+    LIFE_LINE_COLOR = "#232F66"
+    BIRTH_MARKER_COLOR = "#28a745"
+    DEATH_MARKER_COLOR = "#dc3545"
+    REIGN_COLOR = "#ffc107"
+    UNCERTAINTY_COLOR = "#ff8c00"
+    TIMELINE_GRID = "#e9ecef"
+    TIMELINE_SCALE = "#6c757d"
 
 class Fonts:
     """Erweiterte Schriftarten und -größen"""
@@ -185,6 +298,12 @@ class Fonts:
     
     SUBHEADER = (FONT_FAMILY, 13, 'bold')
     SUBHEADER_SMALL = (FONT_FAMILY, 11, 'bold')
+    
+    # Text-Größen
+    TEXT_LARGE = (FONT_FAMILY, 13)
+    TEXT_MEDIUM = (FONT_FAMILY, 11)
+    TEXT_SMALL = (FONT_FAMILY, 10)
+    TEXT_TINY = (FONT_FAMILY, 9)
     
     # Tabellen
     TABLE = (FONT_FAMILY, 10)
@@ -260,6 +379,11 @@ class UIConstants:
     Z_OVERLAY = 100
     Z_MODAL = 1000
     Z_TOOLTIP = 10000
+    
+    # Timeline-spezifische Konstanten
+    TIMELINE_MIN_HEIGHT = 400
+    TIMELINE_MAX_HEIGHT = 800
+    TOOLTIP_MAX_WIDTH = 300
 
 class Icons:
     """Unicode-Icons für die Anwendung"""
@@ -311,6 +435,26 @@ class Icons:
     TROPHY = "🏆"
     SCROLL = "📜"
     SCENE = '📸'
+    
+    # Timeline-spezifische Icons
+    TIMELINE = "📊"
+    BIRTH = "🌱"
+    DEATH = "⚰️"
+    REIGN = "👑"
+    BATTLE = "⚔️"
+    ZOOM_IN = "🔍+"
+    ZOOM_OUT = "🔍-"
+    DYNASTY = "🏛️"
+    EMPEROR = "👑"
+    CONSUL = "⚖️"
+    SENATOR = "🏛️"
+    GENERAL = "🛡️"
+    
+    # Unsicherheit
+    UNCERTAIN = "❓"
+    APPROXIMATE = "≈"
+    BEFORE = "≤"
+    AFTER = "≥"
 
 class Messages:
     """Standardnachrichten der Anwendung"""
@@ -332,3 +476,100 @@ class Messages:
     SEARCH_PLACEHOLDER = "Suchen..."
     NO_SELECTION = "Kein Eintrag ausgewählt"
     NO_DATA = "Keine Daten vorhanden"
+    
+    # Timeline-spezifische Nachrichten
+    TIMELINE_LOADING = "Lade Timeline-Daten..."
+    TIMELINE_NO_DATA = "Keine Personen im ausgewählten Zeitraum"
+    TIMELINE_ERROR = "Fehler beim Laden der Timeline"
+    YEAR_RANGE_INVALID = "Ungültiger Jahresbereich"
+
+class DataValidation:
+    """Validierungsregeln für prosopografische Daten"""
+    
+    # Jahr-Validierung
+    @staticmethod
+    def is_valid_year(year):
+        """Prüft ob Jahr im gültigen Bereich liegt"""
+        if year is None:
+            return True
+        return TimelineConfig.MIN_YEAR <= year <= TimelineConfig.MAX_YEAR
+    
+    @staticmethod
+    def is_valid_date_range(start_year, end_year):
+        """Prüft ob Datumsbereich gültig ist"""
+        if start_year is None or end_year is None:
+            return True
+        return start_year <= end_year
+    
+    # Name-Validierung
+    @staticmethod
+    def is_valid_name(name):
+        """Prüft ob Name gültig ist"""
+        return name and len(name.strip()) > 0
+    
+    # Status-Validierung
+    VALID_TITLES = [
+        'Kaiser', 'Augustus', 'Caesar', 'Consul', 'Senator', 
+        'Praetor', 'Quaestor', 'Aedil', 'Tribun', 'Legat',
+        'Imperator', 'Princeps', 'Pontifex Maximus'
+    ]
+    
+    VALID_DYNASTIES = [
+        'Julisch-Claudisch', 'Flavisch', 'Antoninisch', 
+        'Severisch', 'Soldatenkaiser', 'Tetrarchie'
+    ]
+    
+    VALID_GENDERS = ['männlich', 'weiblich', 'unbekannt']
+    
+    VALID_STATUS = ['Kaiser', 'Adel', 'Bürger', 'Freigelassener', 'Sklave']
+
+class Localization:
+    """Lokalisierungsstrings"""
+    
+    GERMAN = {
+        'timeline_title': 'Zeitstrahl Überblick',
+        'birth': 'Geburt',
+        'death': 'Tod',
+        'reign': 'Regierungszeit',
+        'dynasty': 'Dynastie',
+        'year_ad': 'n.Chr.',
+        'year_bc': 'v.Chr.',
+        'loading': 'Lade Daten...',
+        'no_data': 'Keine Daten verfügbar',
+        'zoom_in': 'Vergrößern',
+        'zoom_out': 'Verkleinern',
+        'from_year': 'Von Jahr:',
+        'to_year': 'Bis Jahr:',
+        'update': 'Aktualisieren',
+        'filter_options': 'Filter & Anzeige',
+        'show_birth': 'Geburt anzeigen',
+        'show_death': 'Tod anzeigen',
+        'show_reign': 'Regierungszeit anzeigen',
+        'persons_loaded': 'Personen geladen',
+        'no_persons_in_range': 'Keine Personen im Zeitraum'
+    }
+    
+    ENGLISH = {
+        'timeline_title': 'Timeline Overview',
+        'birth': 'Birth',
+        'death': 'Death',
+        'reign': 'Reign',
+        'dynasty': 'Dynasty',
+        'year_ad': 'AD',
+        'year_bc': 'BC',
+        'loading': 'Loading data...',
+        'no_data': 'No data available',
+        'zoom_in': 'Zoom In',
+        'zoom_out': 'Zoom Out',
+        'from_year': 'From Year:',
+        'to_year': 'To Year:',
+        'update': 'Update',
+        'filter_options': 'Filter & Display',
+        'show_birth': 'Show Birth',
+        'show_death': 'Show Death',
+        'show_reign': 'Show Reign',
+        'persons_loaded': 'persons loaded',
+        'no_persons_in_range': 'No persons in time range'
+    }
+    
+    CURRENT = GERMAN  # Standard-Sprache

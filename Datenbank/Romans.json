@@ -1,11 +1,12 @@
 {
     "Römer": [
         {
+            "Beschreibung": "",
             "Name": "Octavia maior",
             "Männer": [],
             "Kinder": [
                 {
-                    "Name": "",
+                    "Name": "Mo",
                     "Geschlecht": "",
                     "Geburtsjahr": "",
                     "Bemerkungen": ""
@@ -82,6 +83,7 @@
             "Anzahl Ehen": "1x Verheiratet"
         },
         {
+            "Beschreibung": "",
             "Name": "Octavia minor",
             "Männer": [
                 "vor dem Jahr 54 v. Chr. mit C. Claudius Marcellus vermählt",
@@ -153,6 +155,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Antonia maior",
             "Männer": [
                 "cos. 16 v. Chr.(?): Heirat mit L. Domitius Ahenobarbus"
@@ -235,6 +238,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Antonia minor",
             "Männer": [
                 "ca. 16 v. Chr.: Heirat mit Nero Claudius Drusus d. Älteren"
@@ -317,6 +321,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Domitia Lepida",
             "Männer": [
                 "M. Valerius Messalla Barbatus",
@@ -395,6 +400,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Claudia Livia Iulia = Livilla",
             "Männer": [
                 "1 v. Chr. Heirat mit C. Caesar",
@@ -466,6 +472,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Servillia",
             "Männer": [
                 ""
@@ -536,6 +543,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Clodia",
             "Männer": [
                 "43-41 v. Chr.: Heirat mit Octavian"
@@ -606,6 +614,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Scribonia",
             "Männer": [
                 "cos. 56 v. Chr.: Cn. CorneliusLentulus Marcellinus ",
@@ -684,6 +693,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Livia Drusilla",
             "Männer": [
                 "43 v. Chr.: Heirat mit TiberiusClaudius Nero (RE Claudius Nr. 254)",
@@ -761,6 +771,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Iulia",
             "Männer": [
                 "25 v. Chr.: M. Marcellus (Cousin); Tod im August 23 v. Chr. ",
@@ -863,6 +874,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Vipsania Iulia",
             "Männer": [
                 "5/4 v. Chr.: Vermählung mit L. Aemilius Lepidus"
@@ -939,6 +951,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Vipsania Agrippina",
             "Männer": [
                 "16 v. Chr.: Heirat mit Tiberius",
@@ -1010,6 +1023,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Agrippina maior",
             "Männer": [
                 "5 n. Chr (?): Heirat mit Germanicus (ihr Cousin)"
@@ -1098,6 +1112,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Agrippina minor",
             "Männer": [
                 "28 n. Chr.: Heirat mit Cn. Domitius Ahenobarbus",
@@ -1170,6 +1185,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Iulia Drusilla",
             "Männer": [
                 "33 n.Chr.: Heirat mit L. Cassius Longinus",
@@ -1241,6 +1257,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Iulia Livilla",
             "Männer": [
                 "33 n. Chr.: Heirat mit M. Vinicius"
@@ -1311,6 +1328,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Iunia Claudilla (oder Iunia Claudia)",
             "Männer": [
                 "Juli/Aug. 33 - Ende 36/Anf. 37 n. Chr.Verheiratet mit Caligula"
@@ -1381,6 +1399,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Orestilla / Cornelia(Livia) Orestina",
             "Männer": [
                 "C. Calpurnius Piso",
@@ -1459,6 +1478,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Lollia Paulina",
             "Männer": [
                 "P. Memmius Regulus, Statthalter von Achaia, Macedonia und Moesia",
@@ -1530,6 +1550,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Milonia Caesonia",
             "Männer": [
                 ""
@@ -1600,6 +1621,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Iulia Drusilla",
             "Männer": [
                 ""
@@ -1667,6 +1689,7 @@
             ]
         },
         {
+            "Beschreibung": "",
             "Name": "Aemilia Lepida",
             "Männer": [
                 "Ehe mit Drusus (Sohn des Germanicus)"
@@ -1737,6 +1760,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Livia Medullina",
             "Männer": [
                 ""
@@ -1807,6 +1831,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Plautia Urgulanilla",
             "Männer": [
                 "zwischen 9 und 10 n. Chr.: Heirat mit Claudius;24 n. Chr.: Scheidung"
@@ -1883,6 +1908,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Aelia Paetina",
             "Männer": [
                 ""
@@ -1953,6 +1979,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Antonia",
             "Männer": [
                 "41-47: Verheiratet mit Cn. Pompeius Magnus",
@@ -2024,6 +2051,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Valeria Messalina",
             "Männer": [
                 "ca. 38/39 Heirat mit Claudius",
@@ -2101,6 +2129,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Iulia, Tochter des Drusus",
             "Männer": [
                 ""
@@ -2171,6 +2200,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Claudia Octavia",
             "Männer": [
                 ""
@@ -2241,6 +2271,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Claudia Antonia",
             "Männer": [
                 "41- 47 n. Chr.: Verheiratet mitGnaeus Pompeius Magnus",
@@ -2312,6 +2343,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Octavia Claudia",
             "Männer": [
                 "53 n. Chr. : Heirat mit Nero"
@@ -2382,6 +2414,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Poppaea Sabina",
             "Männer": [
                 "ca. 47-51 n. Chr.: Ehe mit Rufius Crispinus",
@@ -2460,6 +2493,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Claudia Augusta",
             "Männer": [
                 ""
@@ -2530,6 +2564,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Statilia Messalina",
             "Männer": [
                 "",
@@ -2602,6 +2637,7 @@
             "Anzahl Ehen": ""
         },
         {
+            "Beschreibung": "",
             "Name": "Claudia Acte",
             "Männer": [
                 ""
@@ -2672,6 +2708,7 @@
             "Anzahl Ehen": "2"
         },
         {
+            "Beschreibung": "",
             "Name": "Teströmer12",
             "Geburtsdatum": "11",
             "Geburtsort": "12",
@@ -2768,6 +2805,48 @@
             ],
             "Anzahl Ehen": "21",
             "Anzahl Kinder": "31"
+        },
+        {
+            "Beschreibung": "",
+            "Name": "Tesz",
+            "Geburtsdatum": "4",
+            "Geburtsort": "5t43",
+            "Sterbedatum": "",
+            "Sterbeort": "",
+            "Todesursache": "",
+            "Bemerkungen": "",
+            "Anzahl Ehen": "",
+            "Ehen": [],
+            "Anzahl Kinder": "",
+            "Kinder": [],
+            "Vater": "",
+            "Mutter": "",
+            "Geschwister": "",
+            "Vorfahren": "",
+            "Familienbemerkungen": "",
+            "Besonderheiten": {
+                "Auftreten": "",
+                "Kleidung": "",
+                "Schmuck": "",
+                "Öffentlich": "",
+                "Privat": "",
+                "Bemerkungen": ""
+            },
+            "Ehrungen": {
+                "Augusta-Titel-Status": "Unbekannt",
+                "Augusta-Titel-Details": "",
+                "Carpentum-Recht-Status": "Unbekannt",
+                "Carpentum-Recht-Details": "",
+                "Weitere": ""
+            },
+            "Quellen": {
+                "Divinisierung": "",
+                "Bestattung": "",
+                "Archäologische Quellen": "",
+                "Münzen": "",
+                "Inschriften": ""
+            },
+            "Literarische Quellen": []
         }
     ]
 }

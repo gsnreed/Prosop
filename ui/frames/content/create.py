@@ -1205,10 +1205,6 @@ class CreateFrame(BaseContentFrame):
         
         # Nummerierung aktualisieren
         self.UpdateLiterarySourceNumbers()
-        
-        # Überprüfe, ob Scrollbar benötigt wird
-        if hasattr(self.tab_literary_sources, 'canvas'):
-            self.tab_literary_sources.scroll_enabled = self.check_scroll_needed(self.tab_literary_sources)
 
     def UpdateLiterarySourceNumbers(self):
         """Aktualisiert die Nummerierung der literarischen Quellen"""
@@ -1419,10 +1415,6 @@ class CreateFrame(BaseContentFrame):
         # Nummerierung aktualisieren
         self.UpdateMarriageNumbers()
 
-        # Überprüfe, ob Scrollbar benötigt wird
-        if hasattr(self.tab_marriage, 'canvas'):
-            self.tab_marriage.scroll_enabled = self.check_scroll_needed(self.tab_marriage)
-
     def UpdateMarriageNumbers(self):
         """Aktualisiert die Nummerierung der Ehen"""
         for i, entry in enumerate(self.marriage_entries):
@@ -1432,22 +1424,7 @@ class CreateFrame(BaseContentFrame):
                 if isinstance(widget, tk.Label):
                     widget.config(text=f"Ehe #{i + 1}")
                     break
-        
-    def check_scroll_needed(self, tab):
-        """Überprüft, ob ein Scrollbar benötigt wird"""
-        canvas = tab.canvas
-        content_height = tab.content_frame.winfo_reqheight()
-        canvas_height = canvas.winfo_height()
-        
-        if content_height > canvas_height:
-            # Scrollbar anzeigen
-            tab.scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
-            return True
-        else:
-            # Scrollbar verstecken
-            tab.scrollbar.pack_forget()
-            return False
-    
+                
     def CreateChildrenContent(self, parent):
         """Erstellt den Inhalt für den Kinder-Tab"""
         container = tk.Frame(parent, bg=AppColors.TAB_BG)
@@ -1577,10 +1554,6 @@ class CreateFrame(BaseContentFrame):
         frame.destroy()
         self.UpdateChildNumbers()
 
-        # Überprüfe, ob Scrollbar benötigt wird
-        if hasattr(self.tab_children, 'canvas'):
-            self.tab_children.scroll_enabled = self.check_scroll_needed(self.tab_children)
-
     def UpdateChildNumbers(self):
         """Aktualisiert die Nummerierung der Ehen"""
         for i, entry in enumerate(self.children_entries):
@@ -1601,7 +1574,7 @@ class CreateFrame(BaseContentFrame):
         canvas = tk.Canvas(scroll_container, bg=AppColors.TAB_BG, highlightthickness=0)
         canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         
-        # Scrollbar
+        # Scrollbar (initially hidden)
         scrollbar = ttk.Scrollbar(scroll_container, orient=tk.VERTICAL, command=canvas.yview)
         
         # Canvas mit Scrollbar verbinden
@@ -1611,41 +1584,53 @@ class CreateFrame(BaseContentFrame):
         content_frame = tk.Frame(canvas, bg=AppColors.TAB_BG)
         canvas_window = canvas.create_window(0, 0, anchor=tk.NW, window=content_frame)
         
-        # Funktion zum Prüfen ob Scrolling nötig ist
-        def check_scroll_needed():
-            canvas.update_idletasks()
-            content_height = content_frame.winfo_reqheight()
-            canvas_height = canvas.winfo_height()
-            
-            if content_height > canvas_height:
-                # Scrollbar anzeigen
-                scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
-                return True
-            else:
-                # Scrollbar verstecken
-                scrollbar.pack_forget()
-                return False
-        
-        # Events für Canvas-Größenanpassung
+        # Improved event handlers
         def configure_scroll_region(event=None):
             canvas.configure(scrollregion=canvas.bbox("all"))
-            # Prüfe ob Scrollbar benötigt wird
-            tab.scroll_enabled = check_scroll_needed()
+            update_scrollbar_visibility()
         
         def configure_canvas_width(event=None):
             canvas_width = event.width
             canvas.itemconfig(canvas_window, width=canvas_width)
-            # Prüfe ob Scrollbar benötigt wird
-            tab.scroll_enabled = check_scroll_needed()
+            update_scrollbar_visibility()
         
+        def update_scrollbar_visibility():
+            """Zeigt/versteckt Scrollbar basierend auf Inhaltsgröße"""
+            canvas.update_idletasks()
+            bbox = canvas.bbox("all")
+            if bbox:
+                content_height = bbox[3] - bbox[1]
+                canvas_height = canvas.winfo_height()
+                
+                if content_height > canvas_height:
+                    if not tab.scroll_enabled:
+                        scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+                        tab.scroll_enabled = True
+                else:
+                    if tab.scroll_enabled:
+                        scrollbar.pack_forget()
+                        tab.scroll_enabled = False
+        
+        # Mouse wheel support
+        def on_mousewheel(event):
+            if tab.scroll_enabled:
+                canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+        
+        # Bind events
         content_frame.bind('<Configure>', configure_scroll_region)
         canvas.bind('<Configure>', configure_canvas_width)
+        canvas.bind("<MouseWheel>", on_mousewheel)  # Windows
+        canvas.bind("<Button-4>", lambda e: on_mousewheel(type('obj', (object,), {'delta': 120})))  # Linux
+        canvas.bind("<Button-5>", lambda e: on_mousewheel(type('obj', (object,), {'delta': -120})))  # Linux
         
         # Speichere Referenzen
         tab.canvas = canvas
         tab.scrollbar = scrollbar
         tab.content_frame = content_frame
-        tab.scroll_enabled = False  # Initial kein Scrolling
+        tab.scroll_enabled = False
+        tab.update_scrollbar_visibility = update_scrollbar_visibility  # For external calls
+        
+        return content_frame  # Return the frame where content should be added
 
     def FilterTable(self, event=None):
         """Filtert die Tabelle basierend auf der Sucheingabe"""
@@ -2458,9 +2443,3 @@ class CreateFrame(BaseContentFrame):
                 self.notebook.select(self.__class__.last_selected_tab)
             except:
                 self.notebook.select(0)
-        
-        # Scrollbars aktualisieren für alle Tabs
-        for tab in [self.tab_marriage, self.tab_children, self.tab_literary_sources]:
-            if hasattr(tab, 'canvas'):
-                tab.canvas.update_idletasks()
-                tab.scroll_enabled = self.check_scroll_needed(tab)

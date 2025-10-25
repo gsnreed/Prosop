@@ -10,6 +10,7 @@ if project_root not in sys.path:
 from ui.frames.content.start import StartseiteFrame
 from ui.frames.content.default import DefaultContentFrame
 from ui.frames.content.create import CreateFrame
+from ui.frames.content.timeline import TimelineFrame
 
 class ContentManager:
     """Verwaltet die verschiedenen Content-Frames"""
@@ -29,7 +30,7 @@ class ContentManager:
             # Ansicht Submenu
             'Ansicht - Tabelle': DefaultContentFrame,
             'Ansicht - Karte': DefaultContentFrame,
-            'Ansicht - Zeitstrahl': DefaultContentFrame,
+            'Ansicht - Zeitstrahl \n- Überblick': TimelineFrame,
             
             # Erstellung Submenu
             'Erstellung': CreateFrame,
