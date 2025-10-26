@@ -668,8 +668,8 @@ class ModernTimeline:
         lifespan = death - birth
         
         tooltip_lines = [f"👤 {name}"]
-        tooltip_lines.append(f"{Icons.BIRTH} {birth}" + (' v. Chr' if birth <= 0 else ' n. Chr'))
-        tooltip_lines.append(f"{Icons.DEATH} {death}" + (' v. Chr' if death <= 0 else ' n. Chr'))
+        tooltip_lines.append(f"{Icons.BIRTH} {abs(birth)}" + (' v. Chr' if birth <= 0 else ' n. Chr'))
+        tooltip_lines.append(f"{Icons.DEATH} {abs(death)}" + (' v. Chr' if death <= 0 else ' n. Chr'))
         tooltip_lines.append(f"⏳ {lifespan} Jahre")
         
         if roman.get('estimated_death', False):
