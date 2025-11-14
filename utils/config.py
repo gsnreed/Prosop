@@ -23,13 +23,15 @@ class AppConfig:
     LOG_FILE = resource_path('utils/log.log')
     
     # Anwendungstexte
-    MAIN_TITLE = 'Prosopographie der Julisch-Claudischen Kaiserzeit'
+    MAIN_TITLE = 'Prosopografischer Katalog "Frauen an den römischen Kaiserhöfen im 1. Jh. n. Chr."'
     NAVIGATION_TITLE = 'Navigation'
-    NAV_OPTIONS = ['Startseite', 'Ansicht', 'Erstellung', 'Statistik',
-                    'BibTex', 'Hilfe', 'Impressum']
+    NAV_OPTIONS = ['Startseite', 'Ansicht', 'Erstellung',
+                    'Literatur', 'Schlagwörter', 'Begriffsdefinitionen']
     SUBMENUS = {
         'Ansicht': ['Tabelle', 'Karte', 'Zeitstrahl \n- Überblick', 'Zeitstrahl \n- Detail'],
-        'BibTex': ['Literatur hinzufügen', 'Zitieren', 'Verwalten']
+        'Literatur': ['Hinzufügen', 'Verwalten'],
+        'Schlagwörter': ['On-Stage', 'Off-Stage', 'Normen &\nRollen', 'Grenzüberschreitung'],
+        'Begriffsdefinitionen': ['Geschlecht', 'Normen', 'Frauenmacht']
     }
     
     # UI-Konfiguration

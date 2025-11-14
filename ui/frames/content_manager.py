@@ -23,9 +23,6 @@ class ContentManager:
         self.__frames = {
             # Hauptnavigation
             'Startseite': StartseiteFrame,
-            'Statistik': DefaultContentFrame,  # Noch nicht implementiert
-            'Hilfe': DefaultContentFrame,
-            'Impressum': DefaultContentFrame,
             
             # Ansicht Submenu
             'Ansicht - Tabelle': DefaultContentFrame,
@@ -35,10 +32,18 @@ class ContentManager:
             # Erstellung Submenu
             'Erstellung': CreateFrame,
             
-            # BibTex Submenu
-            'BibTex - Literatur hinzufügen': DefaultContentFrame,
-            'BibTex - Zitieren': DefaultContentFrame,
-            'BibTex - Verwalten': DefaultContentFrame,
+            # Literatur Submenu
+            'Literatur - Hinzufügen': DefaultContentFrame,
+            'Literatur - Verwalten': DefaultContentFrame,
+
+            'Schlagwörter - On-Stage': DefaultContentFrame,
+            'Schlagwörter - Off-Stage': DefaultContentFrame,
+            'Schlagwörter - Normen &\nRollen': DefaultContentFrame,
+            'Schlagwörter - Grenzüberschreitung': DefaultContentFrame,
+            
+            'Begriffsdefinitionen - Geschlecht': DefaultContentFrame,
+            'Begriffsdefinitionen - Normen': DefaultContentFrame,
+            'Begriffsdefinitionen - Frauenmacht': DefaultContentFrame
         }
     
     def ShowContent(self, option: str) -> None:
