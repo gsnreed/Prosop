@@ -42,6 +42,7 @@ class StartseiteFrame(BaseContentFrame):
         )
         main_description.pack(pady=(5, 10), padx=20, anchor=tk.W)
 
+
         # Überschrift 1 - Fett
         heading1 = tk.Label(
             self,
